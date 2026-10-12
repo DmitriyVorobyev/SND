@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Catalog uuid="aa5e739d-ec8e-4731-9d73-ba8f85954055">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ШтатноеРасписание" category="Object">
+				<xr:TypeId>cc38717a-d40f-40f2-8dc6-18e8f9689df1</xr:TypeId>
+				<xr:ValueId>d0db9fd2-7754-432f-8f95-c6504ebf20a5</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ШтатноеРасписание" category="Ref">
+				<xr:TypeId>a0315a5f-ccb1-4810-965c-13bd5cbdad50</xr:TypeId>
+				<xr:ValueId>f61e0d38-ade8-41d0-a514-a34bf4e41975</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ШтатноеРасписание" category="Selection">
+				<xr:TypeId>5fb6676e-50ce-460f-a0eb-74c17ee4626c</xr:TypeId>
+				<xr:ValueId>766ea1c0-d419-4092-9364-244bf8e74fa0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ШтатноеРасписание" category="List">
+				<xr:TypeId>bc2805af-8269-4c3d-bea7-87815ab100fa</xr:TypeId>
+				<xr:ValueId>fd02cb57-aeaa-4509-a42b-f322a028690c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ШтатноеРасписание" category="Manager">
+				<xr:TypeId>1927e744-f903-4b8a-b5a8-b5d37f6bf93d</xr:TypeId>
+				<xr:ValueId>94de8e8c-7973-4540-b3e3-05ce10203ed8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:PropertyState>
+				<xr:Property>ObjectModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ШтатноеРасписание</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>b1f594d2-00a1-43fd-bb21-df062df93840</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="b8d8ba97-ed43-4953-8454-b396e5aa7a44">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ID_ДолжностьS</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>ca39dd71-88b6-4afd-84e9-90f76360b343</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>8</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Form>ФормаЭлемента</Form>
+			<Form>ФормаСписка</Form>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

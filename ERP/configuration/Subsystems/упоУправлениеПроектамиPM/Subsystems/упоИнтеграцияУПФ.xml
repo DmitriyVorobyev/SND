@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Subsystem uuid="02ed4046-a400-44fd-9e40-f98152c78cde">
+		<Properties>
+			<Name>упоИнтеграцияУПФ</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Интеграция УПФ</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоИнтеграцияEPMСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоСвязьПроектаСНаправлениемДеятельности</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоОбработкаЗаполнениеДокументовУНФ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоИнтеграцияКлиентСерверПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоПользователиПередЗаписью</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоИнтеграцияУПФКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоИнтеграцияУПФКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоСоответствиеСотрудниковИТрудовыхРесурсов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоИнтеграцияУПФСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоСоответствиеКлассификаторовЕдИзмИУпаковокЕдИзм</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоПриЗаписиПодразделенияИлиСтруктурыПредприятия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоСоответствиеСтатейДР</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоОбработкаЗаполненияЗаказаПоставщикуУПФ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоФункцииОбщегоНазначенияСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбновлениеИнформационнойБазыУПФ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоДоговорыКонтрагентовПередЗаписью</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОтчетыУНФ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.упоНастройкиОтраженияСтатейДР</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.АктВыполненныхРабот</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоСоответствиеСтавкиНДС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоПроектноеБюджетированиеСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоОбработкаПолученияФормыКонтрагентыИДоговоры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РасходнаяНакладная</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КлассификаторЕдиницИзмерения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СтавкиНДС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СтруктурныеЕдиницы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ФункциональнаяОпцияУчетПоПроектам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоКлассификаторЕдиницИзмеренияПриЗаписи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоСтавкаНДСПриЗаписи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоПриЗаписиСтатейДР_PM</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоПриЗаписиСтатейДР_Интеграция</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаВариантаОтчетаУНФ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоСоответствиеПодразделенийИСтруктурыПредприятия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоОбработкаПолученияФормыПодразделенияИСтруктурыПредприятия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоОбработкаПолученияФормыСтатейДР_PM</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.упоИнтеграцияСтатьяДоходовРасходовОбъект</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоЧтениеКонтрагентовРЛС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.упоИнтеграцияСтатьяДоходовРасходовСсылка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ПользователиПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоИнтеграцияКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.НачалоРаботыСПрограммойСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ФункциональнаяОпцияУчетПоНесколькимНаправлениямДеятельности</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоБазовыеПраваУПФ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидыНачисленийИУдержаний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Сотрудники</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоЧтениеОрганизацийРЛС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоИнтеграцияУПФВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоОбработкаПолученияФормыУпаковкиЕдиницыИзмерения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АнализБизнеса</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

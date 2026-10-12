@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<CommandsVisibility>
+		<Command name="Document.упоНазначениеТрудовыхРесурсовНаПроект.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.упоРоли.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.упоТрудовыеРесурсы.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.упоПрофилиРаспределенияТрудозатрат.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.упоПрофилиНастроекПрогнозаТрудозатратПоРолям.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.упоПанельРуководителяПодразделения.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="Catalog.упоРоли.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель1</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.упоТрудовыеРесурсы.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель1</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.упоПрофилиРаспределенияТрудозатрат.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель1</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.упоПрофилиНастроекПрогнозаТрудозатратПоРолям.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель1</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="CommonCommand.упоПанельОтчетовИнтерфейсТрудозатратыПроектов">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.упоОперативнаяЗагрузкаСпециалистов.Command.ОткрытьОбработку_упоОперативнаяЗагрузкаСпециалистов">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.упоПанельРуководителяПодразделения.Command.ОткрытьупоупоПанельРуководителяПодразделения">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
+		<Command name="Document.упоНазначениеТрудовыхРесурсовНаПроект.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.упоНазначениеТрудовыхРесурсовНаПроектнуюЗадачу.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.упоИзменениеРуководителяПроектнойЗадачи.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.упоПрогнозТрудозатратПоРолям.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.упоПланированиеТрудозатратПоТрудовымРесурсам.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.упоРоли.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель1</CommandGroup>
+		</Command>
+		<Command name="Catalog.упоТрудовыеРесурсы.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель1</CommandGroup>
+		</Command>
+		<Command name="Catalog.упоПрофилиРаспределенияТрудозатрат.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель1</CommandGroup>
+		</Command>
+		<Command name="Catalog.упоПрофилиНастроекПрогнозаТрудозатратПоРолям.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель1</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.упоПланировщик.Command.упоПланировщик">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель1</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelImportant</Group>
+		<Group>NavigationPanelOrdinary</Group>
+		<Group>CommandGroup.упоГруппаРазделитель1</Group>
+	</GroupsOrder>
+</CommandInterface>

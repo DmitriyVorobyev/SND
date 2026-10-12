@@ -1,0 +1,853 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Проекты</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<Customizable>false</Customizable>
+	<Scale>90</Scale>
+	<CommandSet>
+		<ExcludedCommand>HierarchicalList</ExcludedCommand>
+		<ExcludedCommand>LevelDown</ExcludedCommand>
+		<ExcludedCommand>LevelUp</ExcludedCommand>
+		<ExcludedCommand>List</ExcludedCommand>
+		<ExcludedCommand>MoveItem</ExcludedCommand>
+		<ExcludedCommand>Tree</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnSaveDataInSettingsAtServer">ПриСохраненииДанныхВНастройкахНаСервере</Event>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="NewWriteProcessing">ОбработкаЗаписиНового</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="ExternalEvent">ВнешнееСобытие</Event>
+		<Event name="OnReopen">ПриПовторномОткрытии</Event>
+		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="ActivationProcessing">ОбработкаАктивизации</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+		<Event name="BeforeLoadDataFromSettingsAtServer">ПередЗагрузкойДанныхИзНастроекНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="114">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1ExtendedTooltip" id="120"/>
+			<ChildItems>
+				<Button name="Обновить" id="167">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<Width>3</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<CommandName>Form.Item.Список.StandardCommand.Refresh</CommandName>
+					<ExtendedTooltip name="ОбновитьРасширеннаяПодсказка" id="168"/>
+				</Button>
+				<Button name="ОбработкаупоУпрощенныйВводСтруктурыПроектаупоУпрощенныйВводСтруктурыПроекта1" id="155">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<Width>3</Width>
+					<CommandName>DataProcessor.упоУпрощенныйВводСтруктурыПроекта.Command.упоУпрощенныйВводСтруктурыПроекта</CommandName>
+					<DataPath>Items.Список.CurrentData.Проект</DataPath>
+					<ExtendedTooltip name="ОбработкаупоУпрощенныйВводСтруктурыПроектаупоУпрощенныйВводСтруктурыПроекта1РасширеннаяПодсказка" id="156"/>
+				</Button>
+				<Button name="КомандаСделатьТекущим" id="169">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<Width>3</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<CommandName>Form.Command.КомандаСделатьТекущим</CommandName>
+					<ExtendedTooltip name="КомандаСделатьТекущимРасширеннаяПодсказка" id="170"/>
+				</Button>
+				<Button name="Создать" id="142">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.StandardCommand.Create</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Новый проект</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СоздатьРасширеннаяПодсказка" id="143"/>
+				</Button>
+				<UsualGroup name="ГруппаОтбор" id="162">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отбор</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ChildItemsWidth>LeftWidest</ChildItemsWidth>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОтборРасширеннаяПодсказка" id="163"/>
+					<ChildItems>
+						<InputField name="БыстрыйПоиск" id="115">
+							<DataPath>БыстрыйПоиск</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Поиск</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Left</TitleLocation>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="БыстрыйПоискКонтекстноеМеню" id="116"/>
+							<ExtendedTooltip name="БыстрыйПоискExtendedTooltip" id="121"/>
+							<Events>
+								<Event name="OnChange">БыстрыйПоискПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ОтборПоКомпоненту" id="164">
+							<DataPath>ОтборПоКомпоненту</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>16</MaxWidth>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Проекты</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xr:DesignTimeRef">Enum.упоКомпоненты.EnumValue.Проект</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Портфели проектов</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xr:DesignTimeRef">Enum.упоКомпоненты.EnumValue.ПортфельПроектов</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Программы проектов</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xr:DesignTimeRef">Enum.упоКомпоненты.EnumValue.ПрограммаПроектов</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Общефирменная деятельность</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xr:DesignTimeRef">Enum.упоКомпоненты.EnumValue.ОбщефирменнаяДеятельность</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ОтборПоКомпонентуКонтекстноеМеню" id="165"/>
+							<ExtendedTooltip name="ОтборПоКомпонентуРасширеннаяПодсказка" id="166"/>
+							<Events>
+								<Event name="OnChange">ОтборПоКомпонентуПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<CommandBar name="КоманднаяПанельФормы" id="179">
+					<HorizontalStretch>false</HorizontalStretch>
+					<ExtendedTooltip name="КоманднаяПанельФормыРасширеннаяПодсказка" id="180"/>
+					<ChildItems>
+						<Popup name="ПодменюСоздатьНаОсновании" id="177">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Создать на основании</v8:content>
+								</v8:item>
+							</Title>
+							<Picture>
+								<xr:Ref>StdPicture.InputOnBasis</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<Representation>Picture</Representation>
+							<ExtendedTooltip name="ПодменюСоздатьНаОснованииРасширеннаяПодсказка" id="178"/>
+						</Popup>
+						<Popup name="ПодменюОтчеты" id="181">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отчеты</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отчеты</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Picture>
+								<xr:Ref>CommonPicture.упоОтчетыПроект</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+								<xr:TransparentPixel x="14" y="5"/>
+							</Picture>
+							<Representation>Picture</Representation>
+							<ExtendedTooltip name="ПодменюОтчетыРасширеннаяПодсказка" id="182"/>
+						</Popup>
+					</ChildItems>
+				</CommandBar>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОсновная" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основная</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОсновнаяExtendedTooltip" id="123"/>
+			<ChildItems>
+				<Table name="Список" id="1">
+					<Representation>Tree</Representation>
+					<CommandBarLocation>None</CommandBarLocation>
+					<DefaultItem>true</DefaultItem>
+					<ChangeRowOrder>false</ChangeRowOrder>
+					<HeaderHeight>2</HeaderHeight>
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<SearchOnInput>DontUse</SearchOnInput>
+					<InitialTreeView>ExpandAllLevels</InitialTreeView>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>Список</DataPath>
+					<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список</v8:content>
+						</v8:item>
+					</Title>
+					<CommandSet>
+						<ExcludedCommand>HierarchicalList</ExcludedCommand>
+						<ExcludedCommand>LevelDown</ExcludedCommand>
+						<ExcludedCommand>LevelUp</ExcludedCommand>
+						<ExcludedCommand>List</ExcludedCommand>
+						<ExcludedCommand>MoveItem</ExcludedCommand>
+						<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+						<ExcludedCommand>Tree</ExcludedCommand>
+					</CommandSet>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<AutoRefresh>true</AutoRefresh>
+					<AutoRefreshPeriod>120</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>false</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+					<ContextMenu name="СписокКонтекстноеМеню" id="2">
+						<Autofill>false</Autofill>
+						<ChildItems>
+							<ButtonGroup name="СписокКонтекстноеМенюГруппа2" id="173">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Список контекстное меню группа 2</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="СписокКонтекстноеМенюГруппа2РасширеннаяПодсказка" id="174"/>
+								<ChildItems>
+									<Button name="СписокКонтекстноеМенюКомандаСделатьТекущим" id="109">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Command.КомандаСделатьТекущим</CommandName>
+										<ExtendedTooltip name="СписокКонтекстноеМенюКомандаСделатьТекущимExtendedTooltip" id="124"/>
+									</Button>
+								</ChildItems>
+							</ButtonGroup>
+							<ButtonGroup name="СписокКонтекстноеМенюГруппа3" id="175">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Список контекстное меню группа 3</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="СписокКонтекстноеМенюГруппа3РасширеннаяПодсказка" id="176"/>
+								<ChildItems>
+									<Button name="СписокКонтекстноеМенюОбработкаупоУпрощенныйВводСтруктурыПроектаупоУпрощенныйВводСтруктурыПроекта" id="157">
+										<Type>CommandBarButton</Type>
+										<CommandName>DataProcessor.упоУпрощенныйВводСтруктурыПроекта.Command.упоУпрощенныйВводСтруктурыПроекта</CommandName>
+										<DataPath>Items.Список.CurrentData.Проект</DataPath>
+										<ExtendedTooltip name="СписокКонтекстноеМенюОбработкаупоУпрощенныйВводСтруктурыПроектаупоУпрощенныйВводСтруктурыПроектаРасширеннаяПодсказка" id="158"/>
+									</Button>
+								</ChildItems>
+							</ButtonGroup>
+							<ButtonGroup name="СписокКонтекстноеМенюГруппа1" id="171">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Список контекстное меню группа 1</v8:content>
+									</v8:item>
+								</Title>
+								<CommandSource>Item.Список</CommandSource>
+								<ExtendedTooltip name="СписокКонтекстноеМенюГруппа1РасширеннаяПодсказка" id="172"/>
+							</ButtonGroup>
+						</ChildItems>
+					</ContextMenu>
+					<AutoCommandBar name="СписокКоманднаяПанель" id="3"/>
+					<ExtendedTooltip name="СписокExtendedTooltip" id="125"/>
+					<SearchStringAddition name="СписокСтрокаПоиска" id="144">
+						<AdditionSource>
+							<Item>Список</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="145"/>
+						<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="146"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СписокСостояниеПросмотра" id="147">
+						<AdditionSource>
+							<Item>Список</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="148"/>
+						<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="149"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СписокУправлениеПоиском" id="150">
+						<AdditionSource>
+							<Item>Список</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="151"/>
+						<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="152"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="Selection">СписокВыбор</Event>
+						<Event name="BeforeAddRow">СписокПередНачаломДобавления</Event>
+						<Event name="OnActivateRow">СписокПриАктивизацииСтроки</Event>
+					</Events>
+					<ChildItems>
+						<LabelField name="Проект" id="4">
+							<DataPath>Список.Проект</DataPath>
+							<ContextMenu name="ПроектКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="ПроектExtendedTooltip" id="126"/>
+						</LabelField>
+						<LabelField name="РуководительПроекта" id="6">
+							<DataPath>Список.РуководительПроекта</DataPath>
+							<ContextMenu name="РуководительПроектаКонтекстноеМеню" id="7"/>
+							<ExtendedTooltip name="РуководительПроектаExtendedTooltip" id="127"/>
+						</LabelField>
+						<LabelField name="СтатусПроекта" id="8">
+							<DataPath>Список.СтатусПроекта</DataPath>
+							<ContextMenu name="СтатусПроектаКонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="СтатусПроектаExtendedTooltip" id="128"/>
+						</LabelField>
+						<LabelField name="ПортфельПроектов" id="10">
+							<DataPath>Список.ПортфельПроектов</DataPath>
+							<ContextMenu name="ПортфельПроектовКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ПортфельПроектовExtendedTooltip" id="129"/>
+						</LabelField>
+						<LabelField name="ПрограммаПроектов" id="12">
+							<DataPath>Список.ПрограммаПроектов</DataPath>
+							<ContextMenu name="ПрограммаПроектовКонтекстноеМеню" id="13"/>
+							<ExtendedTooltip name="ПрограммаПроектовExtendedTooltip" id="130"/>
+						</LabelField>
+						<LabelField name="Подразделение" id="14">
+							<DataPath>Список.Подразделение</DataPath>
+							<ContextMenu name="ПодразделениеКонтекстноеМеню" id="15"/>
+							<ExtendedTooltip name="ПодразделениеExtendedTooltip" id="131"/>
+						</LabelField>
+						<LabelField name="Организация" id="16">
+							<DataPath>Список.Организация</DataPath>
+							<ContextMenu name="ОрганизацияКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ОрганизацияExtendedTooltip" id="132"/>
+						</LabelField>
+						<LabelField name="КураторПроекта" id="159">
+							<DataPath>Список.КураторПроекта</DataPath>
+							<ContextMenu name="КураторПроектаКонтекстноеМеню" id="160"/>
+							<ExtendedTooltip name="КураторПроектаРасширеннаяПодсказка" id="161"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Список.Код</Field>
+				<Field>Список.КураторПроекта</Field>
+				<Field>Список.Наименование</Field>
+				<Field>Список.Организация</Field>
+				<Field>Список.Подразделение</Field>
+				<Field>Список.ПолноеНаименование</Field>
+				<Field>Список.ПортфельНаименование</Field>
+				<Field>Список.ПортфельПроектов</Field>
+				<Field>Список.ПрограммаНаименование</Field>
+				<Field>Список.ПрограммаПроектов</Field>
+				<Field>Список.Проект</Field>
+				<Field>Список.РуководительПроекта</Field>
+				<Field>Список.РуководительПроектаНаименование</Field>
+				<Field>Список.Ссылка</Field>
+				<Field>Список.СтатусПроекта</Field>
+				<Field>Список.СтатусПроектаНаименование</Field>
+				<Field>Список.Шифр</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	РегистрСведенийупоСписокВыбораПроектов.РуководительПроекта КАК РуководительПроекта,
+	РегистрСведенийупоСписокВыбораПроектов.СтатусПроекта КАК СтатусПроекта,
+	РегистрСведенийупоСписокВыбораПроектов.Организация КАК Организация,
+	РегистрСведенийупоСписокВыбораПроектов.ПортфельПроектов КАК ПортфельПроектов,
+	РегистрСведенийупоСписокВыбораПроектов.ПрограммаПроектов КАК ПрограммаПроектов,
+	РегистрСведенийупоСписокВыбораПроектов.Подразделение КАК Подразделение,
+	РегистрСведенийупоСписокВыбораПроектов.Код КАК Код,
+	РегистрСведенийупоСписокВыбораПроектов.Компонент КАК Компонент,
+	РегистрСведенийупоСписокВыбораПроектов.ПолноеНаименование КАК ПолноеНаименование,
+	РегистрСведенийупоСписокВыбораПроектов.Наименование КАК Наименование,
+	РегистрСведенийупоСписокВыбораПроектов.ПортфельНаименование КАК ПортфельНаименование,
+	РегистрСведенийупоСписокВыбораПроектов.ПрограммаНаименование КАК ПрограммаНаименование,
+	РегистрСведенийупоСписокВыбораПроектов.РуководительПроектаНаименование КАК РуководительПроектаНаименование,
+	РегистрСведенийупоСписокВыбораПроектов.СтатусПроектаНаименование КАК СтатусПроектаНаименование,
+	Проекты.Ссылка КАК Ссылка,
+	Проекты.Ссылка КАК Проект,
+	РегистрСведенийупоСписокВыбораПроектов.КураторПроекта КАК КураторПроекта,
+	РегистрСведенийупоСписокВыбораПроектов.КураторПроектаНаименование КАК КураторПроектаНаименование,
+	РегистрСведенийупоСписокВыбораПроектов.Шифр КАК Шифр
+ИЗ
+	РегистрСведений.упоСписокВыбораПроектов КАК РегистрСведенийупоСписокВыбораПроектов
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.Проекты КАК Проекты
+		ПО РегистрСведенийупоСписокВыбораПроектов.Ссылка = Проекты.Ссылка</QueryText>
+				<MainTable>Catalog.Проекты</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemGroup">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:groupType>OrGroup</dcsset:groupType>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">РуководительПроектаНаименование</dcsset:left>
+								<dcsset:comparisonType>Contains</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:string"/>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">СтатусПроектаНаименование</dcsset:left>
+								<dcsset:comparisonType>Contains</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:string"/>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ПрограммаНаименование</dcsset:left>
+								<dcsset:comparisonType>Contains</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:string"/>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ПортфельНаименование</dcsset:left>
+								<dcsset:comparisonType>Contains</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:string"/>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ПолноеНаименование</dcsset:left>
+								<dcsset:comparisonType>Contains</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:string"/>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">КураторПроектаНаименование</dcsset:left>
+								<dcsset:comparisonType>Contains</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:string"/>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">Наименование</dcsset:left>
+								<dcsset:comparisonType>Contains</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:string"/>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">Шифр</dcsset:left>
+								<dcsset:comparisonType>Contains</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:string"/>
+							</dcsset:item>
+							<dcsset:presentation xsi:type="xs:string">БыстрыйПоиск</dcsset:presentation>
+							<dcsset:viewMode>Inaccessible</dcsset:viewMode>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:left xsi:type="dcscor:Field">Компонент</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:presentation xsi:type="xs:string">ОтборПоКомпоненту</dcsset:presentation>
+							<dcsset:viewMode>Inaccessible</dcsset:viewMode>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>ПортфельПроектов</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+					</dcsset:item>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="БыстрыйПоиск" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Быстрый поиск</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПредыдущийТекст" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предыдущий текст</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="упоТекущийПроект" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий проект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборПоКомпоненту" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор по компоненту</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.упоКомпоненты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПараметрыПодключаемыхКоманд" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры подключаемых команд</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Список</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Список.Проект</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:Field">упоТекущийПроект</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаСделатьТекущим" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сделать текущим</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сделать текущим</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.упоЗадачаРуководителя</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:TransparentPixel x="11" y="1"/>
+			</Picture>
+			<Action>КомандаСделатьТекущим</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<CommandBar>
+			<Item>
+				<Command>Document.упоАктуализацияПроекта.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоПроектнаяЗадача.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоРегистрацияПроекта.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоРучнаяАктуализацияПроекта.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Catalog.Проекты.Command.упоОткрытьКарточкуПроекта</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarImportant</CommandGroup>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+			<Item>
+				<Command>DataProcessor.упоРаботаСЗаданиями.Command.упоРаботаСЗаданиямиПроекта</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarImportant</CommandGroup>
+				<Index>5</Index>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+			<Item>
+				<Command>DataProcessor.упоТабличныйБюджетДДСПроекта.Command.ТабличныйБюджетДДСПроекта</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarImportant</CommandGroup>
+				<Index>3</Index>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+			<Item>
+				<Command>DataProcessor.упоТабличныйБюджетДРПроекта.Command.ТабличныйБюджетДРПроекта</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarImportant</CommandGroup>
+				<Index>4</Index>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+			<Item>
+				<Command>DataProcessor.упоУпрощенныйВводСтруктурыПроекта.Command.упоУпрощенныйВводСтруктурыПроекта</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarImportant</CommandGroup>
+				<Index>2</Index>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+			<Item>
+				<Command>DocumentJournal.упоУправлениеПроектом.Command.КомандаСтатусыПроекта</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarImportant</CommandGroup>
+				<Index>1</Index>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+			<Item>
+				<Command>CommonCommand.ИнтеграцияС1СДокументооборотСоздатьПисьмо</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>CommonCommand.ИнтеграцияС1СДокументооборотСоздатьБизнесПроцесс</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоРасчетКалендарногоПланаПроекта.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>DataProcessor.упоРаспределениеБДР.Command.КомандаОткрытьРаспределениеДоходов</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>DataProcessor.упоРаспределениеБДР.Command.КомандаВыполнитьРаспределениеДоходов</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Catalog.упоЗадания.Command.СоздатьЗадание</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоЗаявкаНаПроект.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоИзменениеРуководителяПроекта.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоНазначениеТрудовыхРесурсовНаПроект.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоПланированиеТрудозатратПоТрудовымРесурсам.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоПрогнозТрудозатратПоРолям.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоРегистрацияФактическихДоходовИРасходов.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоРегистрацияПоказателейПроекта.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоРегистрацияПоказателейЭффективностиПроекта.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоРегистрацияЮридическихУсловийДоговора.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</CommandBar>
+	</CommandInterface>
+</Form>

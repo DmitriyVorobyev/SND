@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<CommandBarLocation>Top</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="Закрыть" id="22">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<ExtendedTooltip name="ЗакрытьРасширеннаяПодсказка" id="23"/>
+			</Button>
+			<Button name="ФормаСправка" id="24">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Help</CommandName>
+				<ExtendedTooltip name="ФормаСправкаРасширеннаяПодсказка" id="25"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="ГруппаПроверка" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа проверка</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПроверкаРасширеннаяПодсказка" id="31"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаОписание1" id="32">
+					<EnableContentChange>true</EnableContentChange>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа описание</v8:content>
+						</v8:item>
+					</Title>
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОписание1РасширеннаяПодсказка" id="33"/>
+					<ChildItems>
+						<PictureDecoration name="ДекорацияРисунок1" id="34">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Декорация рисунок</v8:content>
+								</v8:item>
+							</Title>
+							<Picture>
+								<xr:Ref>CommonPicture.упоИнформацияЗеленая</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="ДекорацияРисунок1КонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="ДекорацияРисунок1РасширеннаяПодсказка" id="36"/>
+						</PictureDecoration>
+						<UsualGroup name="ГруппаПраво1" id="37">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа право</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа право</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПраво1РасширеннаяПодсказка" id="38"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияПусто1" id="39">
+									<ContextMenu name="ДекорацияПусто1КонтекстноеМеню" id="40"/>
+									<ExtendedTooltip name="ДекорацияПусто1РасширеннаяПодсказка" id="41"/>
+								</LabelDecoration>
+								<LabelDecoration name="ОбщаяИнфо1" id="42">
+									<TextColor>style:FieldSelectionBackColor</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Инструменты для проверки и исправления данных</v8:content>
+										</v8:item>
+									</Title>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<ContextMenu name="ОбщаяИнфо1КонтекстноеМеню" id="43"/>
+									<ExtendedTooltip name="ОбщаяИнфо1РасширеннаяПодсказка" id="44"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПроверкаГоризонталь" id="58">
+					<EnableContentChange>true</EnableContentChange>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа проверка горизонталь</v8:content>
+						</v8:item>
+					</Title>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПроверкаГоризонтальРасширеннаяПодсказка" id="59"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаПроверкаОтступ" id="51">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа проверка отступ</v8:content>
+								</v8:item>
+							</Title>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПроверкаОтступРасширеннаяПодсказка" id="52"/>
+							<ChildItems>
+								<PictureDecoration name="Декорация1" id="55">
+									<Width>1</Width>
+									<Height>1</Height>
+									<ContextMenu name="Декорация1КонтекстноеМеню" id="56"/>
+									<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="57"/>
+								</PictureDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПроверкаСодержание" id="53">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа проверка отступ</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПроверкаСодержаниеРасширеннаяПодсказка" id="54"/>
+							<ChildItems>
+								<LabelDecoration name="НадписьПоискПроблемСтруктурыПроекта" id="48">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Проверка структуры проекта</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="НадписьПоискПроблемСтруктурыПроектаКонтекстноеМеню" id="49"/>
+									<ExtendedTooltip name="НадписьПоискПроблемСтруктурыПроектаРасширеннаяПодсказка" id="50">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Поиск ошибок в календарно-сетевом плане проекта</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="Click">НадписьПоискПроблемСтруктурыПроектаНажатие</Event>
+									</Events>
+								</LabelDecoration>
+								<LabelDecoration name="НадписьПоискПроблемРолевойСтруктуры" id="45">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Поиск и исправление объектов с нарушением ролевой структуры</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="НадписьПоискПроблемРолевойСтруктурыКонтекстноеМеню" id="46"/>
+									<ExtendedTooltip name="НадписьПоискПроблемРолевойСтруктурыРасширеннаяПодсказка" id="47">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Поиск объектов с нарушением логики ввода данных: пользователей, диспетчеров, ролей, трудовых ресурсов и подразделений</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="Click">НадписьПоискПроблемРолевойСтруктурыНажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОчистка" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа очистка</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОчисткаРасширеннаяПодсказка" id="29"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаОписание" id="10">
+					<EnableContentChange>true</EnableContentChange>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа описание</v8:content>
+						</v8:item>
+					</Title>
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОписаниеРасширеннаяПодсказка" id="11"/>
+					<ChildItems>
+						<PictureDecoration name="ДекорацияРисунок" id="7">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Декорация рисунок</v8:content>
+								</v8:item>
+							</Title>
+							<Picture>
+								<xr:Ref>CommonPicture.упоЗеленаяГалка</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="ДекорацияРисунокКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="ДекорацияРисунокРасширеннаяПодсказка" id="9"/>
+						</PictureDecoration>
+						<UsualGroup name="ГруппаПраво" id="12">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа право</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа право</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПравоРасширеннаяПодсказка" id="13"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияПусто" id="14">
+									<ContextMenu name="ДекорацияПустоКонтекстноеМеню" id="15"/>
+									<ExtendedTooltip name="ДекорацияПустоРасширеннаяПодсказка" id="16"/>
+								</LabelDecoration>
+								<LabelDecoration name="ОбщаяИнфо" id="4">
+									<TextColor>style:FieldSelectionBackColor</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Инструменты для очистки базы</v8:content>
+										</v8:item>
+									</Title>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<ContextMenu name="ОбщаяИнфоКонтекстноеМеню" id="5"/>
+									<ExtendedTooltip name="ОбщаяИнфоРасширеннаяПодсказка" id="6"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаОписаниеГоризонталь" id="60">
+					<EnableContentChange>true</EnableContentChange>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа описание горизонталь</v8:content>
+						</v8:item>
+					</Title>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОписаниеГоризонтальРасширеннаяПодсказка" id="61"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаОписаниеОтступ" id="62">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа проверка отступ</v8:content>
+								</v8:item>
+							</Title>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОписаниеОтступРасширеннаяПодсказка" id="63"/>
+							<ChildItems>
+								<PictureDecoration name="Декорация2" id="64">
+									<Width>1</Width>
+									<Height>1</Height>
+									<ContextMenu name="Декорация2КонтекстноеМеню" id="65"/>
+									<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="66"/>
+								</PictureDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаОписаниеСодержание" id="67">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа описание содержание</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОписаниеСодержаниеРасширеннаяПодсказка" id="68"/>
+							<ChildItems>
+								<LabelDecoration name="НадписьСверткаПроцентыСтатусы" id="1">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Свертка регистров "Проценты готовности проектных задач" и "Статусы проектных задач"</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Свертка промежуточных значений в регистрах "Проценты готовности проектных задач" и "Статусы проектных задач"</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="НадписьСверткаПроцентыСтатусыКонтекстноеМеню" id="2"/>
+									<ExtendedTooltip name="НадписьСверткаПроцентыСтатусыРасширеннаяПодсказка" id="3">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Очистка промежуточных данных регистров для сокращения размеров регистров</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="Click">НадписьСверткаПроцентыСтатусыНажатие</Event>
+									</Events>
+								</LabelDecoration>
+								<LabelDecoration name="НадписьУдалениеПроекта" id="17">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Удаление проекта и его элементов</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пометка на удаление проекта и его элементов с поиском внутренних связей</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="НадписьУдалениеПроектаКонтекстноеМеню" id="18"/>
+									<ExtendedTooltip name="НадписьУдалениеПроектаРасширеннаяПодсказка" id="19">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Удаление проектов и связанных с ним элементов (документов, версий плана проекта, записей в регистрах)</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="Click">НадписьУдалениеПроектаНажатие</Event>
+									</Events>
+								</LabelDecoration>
+								<Button name="ОбработкаУдалениеПомеченныхОбъектовОткрыть" id="26">
+									<Type>Hyperlink</Type>
+									<CommandName>DataProcessor.УдалениеПомеченныхОбъектов.StandardCommand.Open</CommandName>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<ExtendedTooltip name="ОбработкаУдалениеПомеченныхОбъектовОткрытьРасширеннаяПодсказка" id="27">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Стандартый инструмент удаления помеченных на удаление объектов</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes/>
+</Form>

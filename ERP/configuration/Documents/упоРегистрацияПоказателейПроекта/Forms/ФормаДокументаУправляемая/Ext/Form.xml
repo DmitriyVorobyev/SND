@@ -1,0 +1,584 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Popup name="ПодменюСоздатьНаОсновании" id="62">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Создать на основании</v8:content>
+					</v8:item>
+				</Title>
+				<Picture>
+					<xr:Ref>StdPicture.InputOnBasis</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<Representation>Picture</Representation>
+				<ExtendedTooltip name="ПодменюСоздатьНаОснованииРасширеннаяПодсказка" id="63"/>
+			</Popup>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnSaveDataInSettingsAtServer">ПриСохраненииДанныхВНастройкахНаСервере</Event>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="NewWriteProcessing">ОбработкаЗаписиНового</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="ExternalEvent">ВнешнееСобытие</Event>
+		<Event name="OnReopen">ПриПовторномОткрытии</Event>
+		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="ActivationProcessing">ОбработкаАктивизации</Event>
+		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+		<Event name="BeforeLoadDataFromSettingsAtServer">ПередЗагрузкойДанныхИзНастроекНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаExtendedTooltip" id="25"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаНомерДатаМодификация" id="19">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер дата модификация</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНомерДатаМодификацияРасширеннаяПодсказка" id="26"/>
+					<ChildItems>
+						<InputField name="Номер" id="1">
+							<DataPath>Объект.Number</DataPath>
+							<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>10</MaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="НомерExtendedTooltip" id="27"/>
+						</InputField>
+						<InputField name="Дата" id="3">
+							<DataPath>Объект.Date</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>от</v8:content>
+								</v8:item>
+							</Title>
+							<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>20</MaxWidth>
+							<ContextMenu name="ДатаКонтекстноеМеню" id="4"/>
+							<ExtendedTooltip name="ДатаExtendedTooltip" id="28"/>
+						</InputField>
+						<LabelField name="НадписьПоследняяМодификация" id="21">
+							<DataPath>НадписьПоследняяМодификация</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<HorizontalAlign>Right</HorizontalAlign>
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Hiperlink>true</Hiperlink>
+							<ContextMenu name="НадписьПоследняяМодификацияКонтекстноеМеню" id="22"/>
+							<ExtendedTooltip name="НадписьПоследняяМодификацияExtendedTooltip" id="30"/>
+							<Events>
+								<Event name="Click">НадписьПоследняяМодификацияНажатие</Event>
+							</Events>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
+				<LabelField name="НадписьПроект" id="7">
+					<DataPath>НадписьПроект</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Hiperlink>true</Hiperlink>
+					<ContextMenu name="НадписьПроектКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="НадписьПроектExtendedTooltip" id="31"/>
+					<Events>
+						<Event name="Click">ПроектНажатие</Event>
+					</Events>
+				</LabelField>
+				<UsualGroup name="ГруппаПроект" id="54">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проект</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПроектРасширеннаяПодсказка" id="55"/>
+					<ChildItems>
+						<InputField name="Проект" id="56">
+							<DataPath>Проект</DataPath>
+							<HorizontalStretch>true</HorizontalStretch>
+							<DropListButton>false</DropListButton>
+							<ChoiceButton>true</ChoiceButton>
+							<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+							<AutoMarkIncomplete>true</AutoMarkIncomplete>
+							<ChooseType>false</ChooseType>
+							<ContextMenu name="ПроектКонтекстноеМеню" id="57"/>
+							<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="58"/>
+							<Events>
+								<Event name="OnChange">ПроектПриИзменении</Event>
+								<Event name="StartChoice">ПроектНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<InputField name="ПроектнаяЗадача" id="59">
+							<DataPath>ПроектнаяЗадача</DataPath>
+							<HorizontalStretch>true</HorizontalStretch>
+							<DropListButton>false</DropListButton>
+							<ChoiceButton>true</ChoiceButton>
+							<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="ПроектнаяЗадачаКонтекстноеМеню" id="60"/>
+							<ExtendedTooltip name="ПроектнаяЗадачаРасширеннаяПодсказка" id="61"/>
+							<Events>
+								<Event name="OnChange">ПроектнаяЗадачаПриИзменении</Event>
+								<Event name="StartChoice">ПроектнаяЗадачаНачалоВыбора</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаЗначенияПоказателейОбъекта" id="52">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Значения показателей</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<ExtendedTooltip name="ГруппаЗначенияПоказателейОбъектаРасширеннаяПодсказка" id="53"/>
+			<ChildItems>
+				<Table name="Индикаторы" id="9">
+					<Representation>List</Representation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>Объект.Индикаторы</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Индикаторы</v8:content>
+						</v8:item>
+					</Title>
+					<CommandSet>
+						<ExcludedCommand>Copy</ExcludedCommand>
+					</CommandSet>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ИндикаторыКонтекстноеМеню" id="10"/>
+					<AutoCommandBar name="ИндикаторыКоманднаяПанель" id="11">
+						<ChildItems>
+							<Button name="ИндикаторыТаблицаИндикаторыЗаполнить" id="24">
+								<Type>CommandBarButton</Type>
+								<Representation>PictureAndText</Representation>
+								<CommandName>Form.Command.ТаблицаИндикаторыЗаполнить</CommandName>
+								<Picture>
+									<xr:Ref>CommonPicture.упоДействиеЗапустить</xr:Ref>
+									<xr:LoadTransparent>false</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="ИндикаторыТаблицаИндикаторыЗаполнитьExtendedTooltip" id="32"/>
+							</Button>
+							<Button name="ИндикаторыТаблицаИндикаторыПодобрать" id="23">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ТаблицаИндикаторыПодобрать</CommandName>
+								<ExtendedTooltip name="ИндикаторыТаблицаИндикаторыПодобратьExtendedTooltip" id="33"/>
+							</Button>
+							<Button name="ИндикаторыТаблицаИндикаторыПересчитать" id="41">
+								<Type>CommandBarButton</Type>
+								<Representation>PictureAndText</Representation>
+								<CommandName>Form.Command.ТаблицаИндикаторыПересчитать</CommandName>
+								<Picture>
+									<xr:Ref>CommonPicture.Рассчитать</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="ИндикаторыТаблицаИндикаторыПересчитатьРасширеннаяПодсказка" id="42"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ИндикаторыExtendedTooltip" id="34"/>
+					<SearchStringAddition name="ИндикаторыСтрокаПоиска" id="43">
+						<AdditionSource>
+							<Item>Индикаторы</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ИндикаторыСтрокаПоискаКонтекстноеМеню" id="44"/>
+						<ExtendedTooltip name="ИндикаторыСтрокаПоискаРасширеннаяПодсказка" id="45"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ИндикаторыСостояниеПросмотра" id="46">
+						<AdditionSource>
+							<Item>Индикаторы</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ИндикаторыСостояниеПросмотраКонтекстноеМеню" id="47"/>
+						<ExtendedTooltip name="ИндикаторыСостояниеПросмотраРасширеннаяПодсказка" id="48"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ИндикаторыУправлениеПоиском" id="49">
+						<AdditionSource>
+							<Item>Индикаторы</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ИндикаторыУправлениеПоискомКонтекстноеМеню" id="50"/>
+						<ExtendedTooltip name="ИндикаторыУправлениеПоискомРасширеннаяПодсказка" id="51"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="Selection">ИндикаторыВыбор</Event>
+						<Event name="OnActivateRow">ИндикаторыПриАктивизацииСтроки</Event>
+						<Event name="Drag">ИндикаторыПеретаскивание</Event>
+						<Event name="ChoiceProcessing">ИндикаторыОбработкаВыбора</Event>
+						<Event name="BeforeRowChange">ИндикаторыПередНачаломИзменения</Event>
+					</Events>
+					<ChildItems>
+						<LabelField name="ИндикаторыНомерСтроки" id="12">
+							<DataPath>Объект.Индикаторы.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ИндикаторыНомерСтрокиКонтекстноеМеню" id="13"/>
+							<ExtendedTooltip name="ИндикаторыНомерСтрокиExtendedTooltip" id="35"/>
+						</LabelField>
+						<InputField name="ИндикаторыИндикатор" id="14">
+							<DataPath>Объект.Индикаторы.Индикатор</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>30</MaxWidth>
+							<ChoiceParameters>
+								<app:item name="Отбор.ВидЗаполнения">
+									<app:value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="v8:FixedArray">
+											<v8:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.упоВидЗаполненияИндикатора.EnumValue.Вручную</Value>
+											</v8:Value>
+											<v8:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.упоВидЗаполненияИндикатора.EnumValue.АвтоматическиВДокументе</Value>
+											</v8:Value>
+										</Value>
+									</app:value>
+								</app:item>
+							</ChoiceParameters>
+							<ContextMenu name="ИндикаторыИндикаторКонтекстноеМеню" id="15"/>
+							<ExtendedTooltip name="ИндикаторыИндикаторExtendedTooltip" id="36"/>
+							<Events>
+								<Event name="OnChange">ИндикаторыИндикаторПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ИндикаторыЗначениеИндикатора" id="16">
+							<DataPath>Объект.Индикаторы.ЗначениеИндикатора</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>20</MaxWidth>
+							<ContextMenu name="ИндикаторыЗначениеИндикатораКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ИндикаторыЗначениеИндикатораExtendedTooltip" id="37"/>
+							<Events>
+								<Event name="StartChoice">ИндикаторыЗначениеИндикатораНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<InputField name="ИндикаторыПолеЗаполнения" id="66">
+							<DataPath>Объект.Индикаторы.ПолеЗаполнения</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ShowInHeader>false</ShowInHeader>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ИндикаторыПолеЗаполненияКонтекстноеМеню" id="67"/>
+							<ExtendedTooltip name="ИндикаторыПолеЗаполненияРасширеннаяПодсказка" id="68"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДополнительныеРеквизиты" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительные реквизиты и свойства</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="ГруппаДополнительныеРеквизитыExtendedTooltip" id="40"/>
+		</UsualGroup>
+		<UsualGroup name="ГруппаКомментарий" id="64">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа комментарий</v8:content>
+				</v8:item>
+			</Title>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ThroughAlign>DontUse</ThroughAlign>
+			<ExtendedTooltip name="ГруппаКомментарийРасширеннаяПодсказка" id="65"/>
+			<ChildItems>
+				<InputField name="Комментарий" id="5">
+					<DataPath>Объект.Комментарий</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="КомментарийКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="КомментарийExtendedTooltip" id="38"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.упоРегистрацияПоказателейПроекта</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+			<Columns>
+				<AdditionalColumns table="Объект.Индикаторы">
+					<Column name="ВидЗаполненияИндикатора" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Вид заполнения индикатора</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>cfg:EnumRef.упоВидЗаполненияИндикатора</v8:Type>
+						</Type>
+					</Column>
+					<Column name="ТипЗначенияИндикатора" id="2">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Тип значения индикатора</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>v8:TypeDescription</v8:Type>
+						</Type>
+					</Column>
+					<Column name="ПолеЗаполнения" id="3">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>ПолеЗаполнения</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+		<Attribute name="НадписьПоследняяМодификация" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Надпись последняя модификация</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="НадписьПроект" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Проект" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПроектнаяЗадача" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проектная задача</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПараметрыПодключаемыхКоманд" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры подключаемых команд</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:use>false</dcsset:use>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Индикаторы</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.Индикаторы.ВидЗаполненияИндикатора</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.упоВидЗаполненияИндикатора.АвтоматическиВДокументе</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:Gainsboro</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ТаблицаИндикаторыПодобрать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подобрать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица индикаторы подобрать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.упоДействиеПерейти</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ТаблицаИндикаторыПодобрать</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ТаблицаИндикаторыЗаполнить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить всеми возможными индикаторами</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ТаблицаИндикаторыЗаполнить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ТаблицаИндикаторыПересчитать" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пересчитать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить перерасчет значений по формулам</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ТаблицаИндикаторыПересчитать</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<CommandBar>
+			<Item>
+				<Command>CommonCommand.ИнтеграцияС1СДокументооборотСоздатьПисьмо</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>CommonCommand.ИнтеграцияС1СДокументооборотСоздатьБизнесПроцесс</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Catalog.упоЗадания.Command.СоздатьЗадание</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>CommonCommand.ИнтеграцияС1СДокументооборотНачатьОбработку</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</CommandBar>
+	</CommandInterface>
+</Form>

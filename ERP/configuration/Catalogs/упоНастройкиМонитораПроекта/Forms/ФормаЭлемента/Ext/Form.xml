@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Width>62</Width>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<Pages name="Страницы" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="8"/>
+			<ChildItems>
+				<Page name="ГруппаПоказателиШапка" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Показатели шапки</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаПоказателиШапкаРасширеннаяПодсказка" id="10"/>
+					<ChildItems>
+						<Table name="ПоказателиШапка" id="11">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Объект.ПоказателиШапка</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Показатели шапка</v8:content>
+								</v8:item>
+							</Title>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПоказателиШапкаКонтекстноеМеню" id="12"/>
+							<AutoCommandBar name="ПоказателиШапкаКоманднаяПанель" id="13"/>
+							<ExtendedTooltip name="ПоказателиШапкаРасширеннаяПодсказка" id="14"/>
+							<SearchStringAddition name="ПоказателиШапкаСтрокаПоиска" id="15">
+								<AdditionSource>
+									<Item>ПоказателиШапка</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПоказателиШапкаСтрокаПоискаКонтекстноеМеню" id="16"/>
+								<ExtendedTooltip name="ПоказателиШапкаСтрокаПоискаРасширеннаяПодсказка" id="17"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПоказателиШапкаСостояниеПросмотра" id="18">
+								<AdditionSource>
+									<Item>ПоказателиШапка</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПоказателиШапкаСостояниеПросмотраКонтекстноеМеню" id="19"/>
+								<ExtendedTooltip name="ПоказателиШапкаСостояниеПросмотраРасширеннаяПодсказка" id="20"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПоказателиШапкаУправлениеПоиском" id="21">
+								<AdditionSource>
+									<Item>ПоказателиШапка</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПоказателиШапкаУправлениеПоискомКонтекстноеМеню" id="22"/>
+								<ExtendedTooltip name="ПоказателиШапкаУправлениеПоискомРасширеннаяПодсказка" id="23"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ПоказателиШапкаНомерСтроки" id="24">
+									<DataPath>Объект.ПоказателиШапка.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПоказателиШапкаНомерСтрокиКонтекстноеМеню" id="25"/>
+									<ExtendedTooltip name="ПоказателиШапкаНомерСтрокиРасширеннаяПодсказка" id="26"/>
+								</LabelField>
+								<InputField name="ПоказателиШапкаПоказатель" id="27">
+									<DataPath>Объект.ПоказателиШапка.Показатель</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПоказателиШапкаПоказательКонтекстноеМеню" id="28"/>
+									<ExtendedTooltip name="ПоказателиШапкаПоказательРасширеннаяПодсказка" id="29"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаПоказателиПрогресс" id="30">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Показатели прогресса</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаПоказателиПрогрессРасширеннаяПодсказка" id="31"/>
+					<ChildItems>
+						<Table name="ПоказателиПрогресс" id="32">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Объект.ПоказателиПрогресс</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Показатели прогресс</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>123</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПоказателиПрогрессКонтекстноеМеню" id="33"/>
+							<AutoCommandBar name="ПоказателиПрогрессКоманднаяПанель" id="34"/>
+							<ExtendedTooltip name="ПоказателиПрогрессРасширеннаяПодсказка" id="35">
+								<AutoMaxWidth>false</AutoMaxWidth>
+								<Title formatted="true">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>&lt;b&gt;&lt;i&gt;&lt;colorstyle -16&gt;Важно!&lt;/&gt;&lt;/&gt;&lt;/&gt; Обработка&lt;b&gt; "Монитор проекта"&lt;/&gt; выводит значения показателей прогресса в диапазоне от 0% до 100%, значения за переделами диапазона будут приведены к ближайшей границе.
+</v8:content>
+									</v8:item>
+								</Title>
+								<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+							</ExtendedTooltip>
+							<SearchStringAddition name="ПоказателиПрогрессСтрокаПоиска" id="36">
+								<AdditionSource>
+									<Item>ПоказателиПрогресс</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПоказателиПрогрессСтрокаПоискаКонтекстноеМеню" id="37"/>
+								<ExtendedTooltip name="ПоказателиПрогрессСтрокаПоискаРасширеннаяПодсказка" id="38"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПоказателиПрогрессСостояниеПросмотра" id="39">
+								<AdditionSource>
+									<Item>ПоказателиПрогресс</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПоказателиПрогрессСостояниеПросмотраКонтекстноеМеню" id="40"/>
+								<ExtendedTooltip name="ПоказателиПрогрессСостояниеПросмотраРасширеннаяПодсказка" id="41"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПоказателиПрогрессУправлениеПоиском" id="42">
+								<AdditionSource>
+									<Item>ПоказателиПрогресс</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПоказателиПрогрессУправлениеПоискомКонтекстноеМеню" id="43"/>
+								<ExtendedTooltip name="ПоказателиПрогрессУправлениеПоискомРасширеннаяПодсказка" id="44"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ПоказателиПрогрессНомерСтроки" id="45">
+									<DataPath>Объект.ПоказателиПрогресс.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПоказателиПрогрессНомерСтрокиКонтекстноеМеню" id="46"/>
+									<ExtendedTooltip name="ПоказателиПрогрессНомерСтрокиРасширеннаяПодсказка" id="47"/>
+								</LabelField>
+								<InputField name="ПоказателиПрогрессПоказатель" id="48">
+									<DataPath>Объект.ПоказателиПрогресс.Показатель</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПоказателиПрогрессПоказательКонтекстноеМеню" id="49"/>
+									<ExtendedTooltip name="ПоказателиПрогрессПоказательРасширеннаяПодсказка" id="50"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаПоказателиГрафик" id="51">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Показатели графика</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаПоказателиГрафикРасширеннаяПодсказка" id="52"/>
+					<ChildItems>
+						<Table name="ПоказателиГрафик" id="53">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Объект.ПоказателиГрафик</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Показатели график</v8:content>
+								</v8:item>
+							</Title>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПоказателиГрафикКонтекстноеМеню" id="54"/>
+							<AutoCommandBar name="ПоказателиГрафикКоманднаяПанель" id="55"/>
+							<ExtendedTooltip name="ПоказателиГрафикРасширеннаяПодсказка" id="56"/>
+							<SearchStringAddition name="ПоказателиГрафикСтрокаПоиска" id="57">
+								<AdditionSource>
+									<Item>ПоказателиГрафик</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПоказателиГрафикСтрокаПоискаКонтекстноеМеню" id="58"/>
+								<ExtendedTooltip name="ПоказателиГрафикСтрокаПоискаРасширеннаяПодсказка" id="59"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПоказателиГрафикСостояниеПросмотра" id="60">
+								<AdditionSource>
+									<Item>ПоказателиГрафик</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПоказателиГрафикСостояниеПросмотраКонтекстноеМеню" id="61"/>
+								<ExtendedTooltip name="ПоказателиГрафикСостояниеПросмотраРасширеннаяПодсказка" id="62"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПоказателиГрафикУправлениеПоиском" id="63">
+								<AdditionSource>
+									<Item>ПоказателиГрафик</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПоказателиГрафикУправлениеПоискомКонтекстноеМеню" id="64"/>
+								<ExtendedTooltip name="ПоказателиГрафикУправлениеПоискомРасширеннаяПодсказка" id="65"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ПоказателиГрафикНомерСтроки" id="66">
+									<DataPath>Объект.ПоказателиГрафик.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПоказателиГрафикНомерСтрокиКонтекстноеМеню" id="67"/>
+									<ExtendedTooltip name="ПоказателиГрафикНомерСтрокиРасширеннаяПодсказка" id="68"/>
+								</LabelField>
+								<InputField name="ПоказателиГрафикПоказатель" id="69">
+									<DataPath>Объект.ПоказателиГрафик.Показатель</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПоказателиГрафикПоказательКонтекстноеМеню" id="70"/>
+									<ExtendedTooltip name="ПоказателиГрафикПоказательРасширеннаяПодсказка" id="71"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаПериодыПоказателейГрафика" id="72">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Периоды показателей графика</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаПериодыПоказателейГрафикаРасширеннаяПодсказка" id="73"/>
+					<ChildItems>
+						<Table name="ПериодыПоказателейГрафика" id="74">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Объект.ПериодыПоказателейГрафика</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Периоды показателей графика</v8:content>
+								</v8:item>
+							</Title>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПериодыПоказателейГрафикаКонтекстноеМеню" id="75"/>
+							<AutoCommandBar name="ПериодыПоказателейГрафикаКоманднаяПанель" id="76"/>
+							<ExtendedTooltip name="ПериодыПоказателейГрафикаРасширеннаяПодсказка" id="77"/>
+							<SearchStringAddition name="ПериодыПоказателейГрафикаСтрокаПоиска" id="78">
+								<AdditionSource>
+									<Item>ПериодыПоказателейГрафика</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПериодыПоказателейГрафикаСтрокаПоискаКонтекстноеМеню" id="79"/>
+								<ExtendedTooltip name="ПериодыПоказателейГрафикаСтрокаПоискаРасширеннаяПодсказка" id="80"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПериодыПоказателейГрафикаСостояниеПросмотра" id="81">
+								<AdditionSource>
+									<Item>ПериодыПоказателейГрафика</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПериодыПоказателейГрафикаСостояниеПросмотраКонтекстноеМеню" id="82"/>
+								<ExtendedTooltip name="ПериодыПоказателейГрафикаСостояниеПросмотраРасширеннаяПодсказка" id="83"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПериодыПоказателейГрафикаУправлениеПоиском" id="84">
+								<AdditionSource>
+									<Item>ПериодыПоказателейГрафика</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПериодыПоказателейГрафикаУправлениеПоискомКонтекстноеМеню" id="85"/>
+								<ExtendedTooltip name="ПериодыПоказателейГрафикаУправлениеПоискомРасширеннаяПодсказка" id="86"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ПериодыПоказателейГрафикаНомерСтроки" id="87">
+									<DataPath>Объект.ПериодыПоказателейГрафика.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПериодыПоказателейГрафикаНомерСтрокиКонтекстноеМеню" id="88"/>
+									<ExtendedTooltip name="ПериодыПоказателейГрафикаНомерСтрокиРасширеннаяПодсказка" id="89"/>
+								</LabelField>
+								<InputField name="ПериодыПоказателейГрафикаДатаНачала" id="90">
+									<DataPath>Объект.ПериодыПоказателейГрафика.ДатаНачала</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПериодыПоказателейГрафикаДатаНачалаКонтекстноеМеню" id="91"/>
+									<ExtendedTooltip name="ПериодыПоказателейГрафикаДатаНачалаРасширеннаяПодсказка" id="92"/>
+								</InputField>
+								<InputField name="ПериодыПоказателейГрафикаДатаОкончания" id="93">
+									<DataPath>Объект.ПериодыПоказателейГрафика.ДатаОкончания</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПериодыПоказателейГрафикаДатаОкончанияКонтекстноеМеню" id="94"/>
+									<ExtendedTooltip name="ПериодыПоказателейГрафикаДатаОкончанияРасширеннаяПодсказка" id="95"/>
+								</InputField>
+								<InputField name="ПериодыПоказателейГрафикаПериод" id="96">
+									<DataPath>Объект.ПериодыПоказателейГрафика.Период</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПериодыПоказателейГрафикаПериодКонтекстноеМеню" id="97"/>
+									<ExtendedTooltip name="ПериодыПоказателейГрафикаПериодРасширеннаяПодсказка" id="98"/>
+									<Events>
+										<Event name="OnChange">ПериодыПоказателейГрафикаПериодПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.упоНастройкиМонитораПроекта</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<Columns>
+				<AdditionalColumns table="Объект.ПериодыПоказателейГрафика">
+					<Column name="Период" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Период</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>v8:StandardPeriod</v8:Type>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+	</Attributes>
+</Form>

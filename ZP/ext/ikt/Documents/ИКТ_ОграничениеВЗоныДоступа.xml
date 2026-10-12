@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Document uuid="a3f1095b-456d-4ba9-ae9a-160a3372b615">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ИКТ_ОграничениеВЗоныДоступа" category="Object">
+				<xr:TypeId>f8535a0e-ea43-4b38-9b70-6a08c72625ec</xr:TypeId>
+				<xr:ValueId>c7adeb53-023f-453b-acdf-5bd528c7b3cd</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ИКТ_ОграничениеВЗоныДоступа" category="Ref">
+				<xr:TypeId>66e04b17-69c7-4aee-ac27-75090bc7d481</xr:TypeId>
+				<xr:ValueId>4a7608c2-238f-4d54-881d-e5dacdac64e0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ИКТ_ОграничениеВЗоныДоступа" category="Selection">
+				<xr:TypeId>ac116cdf-b2cb-4ca0-979d-1c926b1dded6</xr:TypeId>
+				<xr:ValueId>f396d4ea-1c32-45ad-b61d-a717517f79ce</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ИКТ_ОграничениеВЗоныДоступа" category="List">
+				<xr:TypeId>f30ee347-8f7e-44fb-a7a0-381b8e187036</xr:TypeId>
+				<xr:ValueId>bad70fd6-3b87-4b0f-9f7c-9a673ec7ad55</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ИКТ_ОграничениеВЗоныДоступа" category="Manager">
+				<xr:TypeId>45b3db47-da5c-4c88-8727-c4cbb2fabdc1</xr:TypeId>
+				<xr:ValueId>2120ac37-835d-4797-abd6-6bc57a59f29a</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ИКТ_ОграничениеВЗоныДоступа</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>68b1e795-fbc0-4195-809a-f722060cbc4b</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="09a6633e-bb38-4d5b-9372-b0cff95693a7">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Сотрудник</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>f53815a3-40c8-4c07-9765-d5d2347fc2af</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="9e938596-6357-4ccb-9c78-17fcfc4ca552">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Действует</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>ceb4911d-675c-40b7-a22c-4c9f6eac840d</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<TabularSection uuid="25916193-8294-4201-9cae-eb9639570e02">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.ИКТ_ОграничениеВЗоныДоступа.ЗоныДоступа" category="TabularSection">
+						<xr:TypeId>d5301c65-9f89-4bc9-8064-f24490a40219</xr:TypeId>
+						<xr:ValueId>0f2d0a97-f358-4b01-bc19-2d90dea89cf2</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.ИКТ_ОграничениеВЗоныДоступа.ЗоныДоступа" category="TabularSectionRow">
+						<xr:TypeId>85147303-60ac-45b6-98e3-8f9a8e587e60</xr:TypeId>
+						<xr:ValueId>06f757a9-2b55-41db-acd2-5639f5242136</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ЗоныДоступа</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>494fbd1b-ed3d-4c59-967f-05d48b41b161</ExtendedConfigurationObject>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="d090b838-f4cd-440f-b2de-a2b23762458c">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Зона</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>ef972ef1-2969-4921-a7ea-cb10f7d4b012</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>cfg:CatalogRef.ИКТ_ЗоныДоступа</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

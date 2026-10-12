@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Popup name="ПодменюСоздатьНаОсновании" id="55">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Создать на основании</v8:content>
+					</v8:item>
+				</Title>
+				<Picture>
+					<xr:Ref>StdPicture.InputOnBasis</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<Representation>Picture</Representation>
+				<ExtendedTooltip name="ПодменюСоздатьНаОснованииРасширеннаяПодсказка" id="56"/>
+			</Popup>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnSaveDataInSettingsAtServer">ПриСохраненииДанныхВНастройкахНаСервере</Event>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="NewWriteProcessing">ОбработкаЗаписиНового</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="ExternalEvent">ВнешнееСобытие</Event>
+		<Event name="OnReopen">ПриПовторномОткрытии</Event>
+		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="ActivationProcessing">ОбработкаАктивизации</Event>
+		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+		<Event name="BeforeLoadDataFromSettingsAtServer">ПередЗагрузкойДанныхИзНастроекНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаExtendedTooltip" id="27"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаНомерДатаМодификация" id="53">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер дата модификация</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНомерДатаМодификацияРасширеннаяПодсказка" id="54"/>
+					<ChildItems>
+						<InputField name="Номер" id="4">
+							<DataPath>Объект.Number</DataPath>
+							<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>10</MaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="НомерКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="НомерExtendedTooltip" id="29"/>
+						</InputField>
+						<InputField name="Дата" id="6">
+							<DataPath>Объект.Date</DataPath>
+							<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+							<ContextMenu name="ДатаКонтекстноеМеню" id="7"/>
+							<ExtendedTooltip name="ДатаExtendedTooltip" id="30"/>
+						</InputField>
+						<LabelField name="НадписьПоследняяМодификация" id="8">
+							<DataPath>НадписьПоследняяМодификация</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<HorizontalAlign>Right</HorizontalAlign>
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Hiperlink>true</Hiperlink>
+							<ContextMenu name="НадписьПоследняяМодификацияКонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="НадписьПоследняяМодификацияExtendedTooltip" id="32"/>
+							<Events>
+								<Event name="Click">НадписьПоследняяМодификацияНажатие</Event>
+							</Events>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="Календарь" id="10">
+					<DataPath>Объект.Календарь</DataPath>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>40</MaxWidth>
+					<ContextMenu name="КалендарьКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="КалендарьExtendedTooltip" id="33"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОпределениеМощностиСледующимРолям" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Определение мощности следующим ролям</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<ExtendedTooltip name="ГруппаОпределениеМощностиСледующимРолямExtendedTooltip" id="34"/>
+			<ChildItems>
+				<Table name="МощностьРолей" id="13">
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>Объект.МощностьРолей</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Мощность ролей</v8:content>
+						</v8:item>
+					</Title>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="МощностьРолейКонтекстноеМеню" id="14"/>
+					<AutoCommandBar name="МощностьРолейКоманднаяПанель" id="15">
+						<ChildItems>
+							<Button name="МощностьРолейОпределениеМощностиРолейПодобрать" id="22">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ОпределениеМощностиРолейПодобрать</CommandName>
+								<ExtendedTooltip name="МощностьРолейОпределениеМощностиРолейПодобратьExtendedTooltip" id="35"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="МощностьРолейExtendedTooltip" id="36"/>
+					<SearchStringAddition name="МощностьРолейСтрокаПоиска" id="44">
+						<AdditionSource>
+							<Item>МощностьРолей</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="МощностьРолейСтрокаПоискаКонтекстноеМеню" id="45"/>
+						<ExtendedTooltip name="МощностьРолейСтрокаПоискаРасширеннаяПодсказка" id="46"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="МощностьРолейСостояниеПросмотра" id="47">
+						<AdditionSource>
+							<Item>МощностьРолей</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="МощностьРолейСостояниеПросмотраКонтекстноеМеню" id="48"/>
+						<ExtendedTooltip name="МощностьРолейСостояниеПросмотраРасширеннаяПодсказка" id="49"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="МощностьРолейУправлениеПоиском" id="50">
+						<AdditionSource>
+							<Item>МощностьРолей</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="МощностьРолейУправлениеПоискомКонтекстноеМеню" id="51"/>
+						<ExtendedTooltip name="МощностьРолейУправлениеПоискомРасширеннаяПодсказка" id="52"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="Drag">МощностьРолейПеретаскивание</Event>
+						<Event name="ChoiceProcessing">МощностьРолейОбработкаВыбора</Event>
+						<Event name="OnStartEdit">МощностьРолейПриНачалеРедактирования</Event>
+					</Events>
+					<ChildItems>
+						<LabelField name="МощностьРолейНомерСтроки" id="16">
+							<DataPath>Объект.МощностьРолей.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="МощностьРолейНомерСтрокиКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="МощностьРолейНомерСтрокиExtendedTooltip" id="37"/>
+						</LabelField>
+						<InputField name="МощностьРолейРоль" id="18">
+							<DataPath>Объект.МощностьРолей.Роль</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Роль трудового ресурса, для которой определяется мощность.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="МощностьРолейРольКонтекстноеМеню" id="19"/>
+							<ExtendedTooltip name="МощностьРолейРольExtendedTooltip" id="38"/>
+							<Events>
+								<Event name="OnChange">МощностьРолейРольПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="МощностьРолейПодразделение" id="25">
+							<DataPath>Объект.МощностьРолей.Подразделение</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="МощностьРолейПодразделениеКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="МощностьРолейПодразделениеExtendedTooltip" id="39"/>
+							<Events>
+								<Event name="StartChoice">МощностьРолейПодразделениеНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<InputField name="МощностьРолейМощность" id="20">
+							<DataPath>Объект.МощностьРолей.Мощность</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Количество трудовых ресурсов, выполняющих данную роль.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="МощностьРолейМощностьКонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="МощностьРолейМощностьExtendedTooltip" id="40"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДополнительныеРеквизиты" id="42">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительные реквизиты и свойства</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="ГруппаДополнительныеРеквизитыExtendedTooltip" id="43"/>
+		</UsualGroup>
+		<InputField name="Комментарий" id="23">
+			<DataPath>Объект.Комментарий</DataPath>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="24"/>
+			<ExtendedTooltip name="КомментарийExtendedTooltip" id="41"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.упоРегистрацияМощностиРолей</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="НадписьПоследняяМодификация" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Надпись последняя модификация</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ПараметрыПодключаемыхКоманд" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры подключаемых команд</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОпределениеМощностиРолейПодобрать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подобрать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть форму подбора ролей </v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.упоДействиеПерейти</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ОпределениеМощностиРолейПодобрать</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<CommandBar>
+			<Item>
+				<Command>CommonCommand.ИнтеграцияС1СДокументооборотСоздатьПисьмо</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>CommonCommand.ИнтеграцияС1СДокументооборотСоздатьБизнесПроцесс</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Catalog.упоЗадания.Command.СоздатьЗадание</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>CommonCommand.ИнтеграцияС1СДокументооборотНачатьОбработку</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</CommandBar>
+	</CommandInterface>
+</Form>

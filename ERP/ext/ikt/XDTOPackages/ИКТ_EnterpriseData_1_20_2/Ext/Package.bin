@@ -1,0 +1,242 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://v8.1c.ru/edi/edi_ext_ikt/EnterpriseData/1.20">
+	<import namespace="http://www.1c.ru/SSL/Exchange/Message"/>
+	<import namespace="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20"/>
+	<valueType name="ВидыДоговоров" base="xs:string" variety="Atomic">
+		<enumeration xsi:type="xs:string">СПокупателем</enumeration>
+		<enumeration xsi:type="xs:string">СПоставщиком</enumeration>
+		<enumeration xsi:type="xs:string">СКомиссионером</enumeration>
+		<enumeration xsi:type="xs:string">СКомитентом</enumeration>
+		<enumeration xsi:type="xs:string">СКомитентомНаЗакупку</enumeration>
+		<enumeration xsi:type="xs:string">СКомиссионеромНаЗакупку</enumeration>
+		<enumeration xsi:type="xs:string">Прочее</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.Валюты" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.СтраныМира" base="d2p1:Ref"/>
+	<valueType name="ТипGLN" base="xs:string" maxLength="13"/>
+	<valueType name="ЮридическоеФизическоеЛицо" base="xs:string" variety="Atomic">
+		<enumeration>ЮридическоеЛицо</enumeration>
+		<enumeration>ФизическоеЛицо</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.Организации" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.Контрагенты" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.КонтрагентыГруппа" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.Договоры" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.Сотрудники" base="d2p1:Ref"/>
+	<valueType name="ТипПрохода" base="xs:string" variety="Atomic">
+		<enumeration xsi:type="xs:string">Вход</enumeration>
+		<enumeration xsi:type="xs:string">Выход</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.ГрафикиРаботыСотрудников" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.ГрафикРаботыСотрудников" base="d2p1:Ref"/>
+	<valueType name="ТипНомерДокумента" base="xs:string" maxLength="256"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.ФизическиеЛица" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.ПоказателиРасчетаЗарплаты" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="ДокументСсылка.ДанныеДляРасчетаЗарплаты" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.ВидыДокументовВводДанныхДляРасчетаЗарплаты" base="d2p1:Ref"/>
+	<objectType name="Документ.ОтчетОРозничныхПродажах.ОплатаПлатежнымиКартами.Строка" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ДоговорЭквайринга" type="d3p1:КлючевыеСвойстваДоговор" lowerBound="0"/>
+	</objectType>
+	<objectType name="ОплатаПлатежнымиКартами.Строка" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ДоговорЭквайринга" type="d3p1:КлючевыеСвойстваДоговор" lowerBound="0"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваДоговор" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Ссылка" type="d3p1:СправочникСсылка.Договоры" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ВидДоговора" type="d3p1:ВидыДоговоров"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Организация" type="d3p1:КлючевыеСвойстваОрганизация"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Контрагент" type="d3p1:КлючевыеСвойстваКонтрагент"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ВалютаВзаиморасчетов" type="d3p1:КлючевыеСвойстваВалюта" lowerBound="0"/>
+		<property name="РасчетыВУсловныхЕдиницах" type="xs:boolean" lowerBound="0"/>
+		<property name="Наименование" type="xs:string" lowerBound="0"/>
+		<property name="Дата" type="xs:date" lowerBound="0"/>
+		<property name="Номер" type="xs:string" lowerBound="0"/>
+		<property name="ЭтоДоговорЭквайринга" type="xs:boolean" lowerBound="0"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваВалюта" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Ссылка" type="d3p1:СправочникСсылка.Валюты" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ДанныеКлассификатора" type="d3p1:ОбщиеСвойстваДанныеКлассификатора"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваОрганизация" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Ссылка" type="d3p1:СправочникСсылка.Организации" lowerBound="0"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="НаименованиеСокращенное" type="xs:string" lowerBound="0"/>
+		<property name="НаименованиеПолное" type="xs:string" lowerBound="0"/>
+		<property name="ИНН" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="12"/>
+		</property>
+		<property name="КПП" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="9"/>
+		</property>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ГоловнаяОрганизация" type="d3p1:КлючевыеСвойстваОрганизация" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ЮридическоеФизическоеЛицо" type="d3p1:ЮридическоеФизическоеЛицо"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="GLN" type="d3p1:ТипGLN" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="СтранаРегистрации" type="d3p1:КлючевыеСвойстваСтранаМира" lowerBound="0"/>
+		<property name="НалоговыйНомерНерезидента" type="xs:string" lowerBound="0"/>
+		<property name="РегистрационныйНомерНерезидента" type="xs:string" lowerBound="0"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваСтранаМира" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Ссылка" type="d3p1:СправочникСсылка.СтраныМира" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ДанныеКлассификатора" type="d3p1:ОбщиеСвойстваДанныеКлассификатора"/>
+	</objectType>
+	<objectType name="ОбщиеСвойстваДанныеКлассификатора" open="true" sequenced="true">
+		<property name="Код" type="xs:string" lowerBound="0"/>
+		<property name="Наименование" type="xs:string" lowerBound="0"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваКонтрагент" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Ссылка" type="d3p1:СправочникСсылка.Контрагенты" lowerBound="0"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="НаименованиеПолное" type="xs:string" lowerBound="0"/>
+		<property name="ИНН" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="12"/>
+		</property>
+		<property name="КПП" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="9"/>
+		</property>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ЮридическоеФизическоеЛицо" type="d3p1:ЮридическоеФизическоеЛицо"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="СтранаРегистрации" type="d3p1:КлючевыеСвойстваСтранаМира" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Группа" type="d3p1:КлючевыеСвойстваКонтрагентГруппа" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="GLN" type="d3p1:ТипGLN" lowerBound="0"/>
+		<property name="НалоговыйНомерНерезидента" type="xs:string" lowerBound="0"/>
+		<property name="РегистрационныйНомер" type="xs:string" lowerBound="0"/>
+		<property name="ИндивидуальныйПредприниматель" type="xs:boolean" lowerBound="0"/>
+		<property name="Самозанятый" type="xs:boolean" lowerBound="0"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваКонтрагентГруппа" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Ссылка" type="d3p1:СправочникСсылка.КонтрагентыГруппа" lowerBound="0"/>
+		<property name="Наименование" type="xs:string"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.17" name="Группа" type="d3p1:КлючевыеСвойстваКонтрагентГруппа" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Справочник.ИКТ_СобытияПроходаСКУД" base="d2p1:Object">
+		<property name="ID_ПроходаОтбор" type="xs:float"/>
+		<property xmlns:d3p1="http://ikt_ext" name="Записи" type="d3p1:Справочник.ИКТ_СобытияПроходаСКУДЗаписи" lowerBound="0"/>
+	</objectType>
+	<objectType name="Справочник.ИКТ_СобытияПроходаСКУДЗаписи">
+		<property xmlns:d3p1="http://ikt_ext" name="Строка" type="d3p1:Справочник.ИКТ_СобытияПроходаСКУДЗапись" upperBound="-1"/>
+	</objectType>
+	<objectType name="Справочник.ИКТ_СобытияПроходаСКУДЗапись" open="true" sequenced="true">
+		<property name="ID_Прохода" type="xs:float"/>
+		<property name="ID_ТочкиДоступа" type="xs:float" nillable="true"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_ext_ikt/EnterpriseData/1.20" name="ТипПрохода" type="d3p1:ТипПрохода" nillable="true"/>
+		<property name="internalEmpId" type="xs:float" nillable="true"/>
+		<property name="ВремяПрохода" type="xs:dateTime" nillable="true"/>
+		<property name="ЗначениеПропуска" type="xs:string" nillable="true"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_ext_ikt/EnterpriseData/1.20" name="Сотрудник" type="d3p1:СправочникСсылка.Сотрудники" nillable="true"/>
+		<property name="accessObjectId" type="xs:float" nillable="true"/>
+		<property name="ТипСобытия" type="xs:string" nillable="true"/>
+		<property name="zoneId" type="xs:float" nillable="true"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Документ.ВедомостьНаВыплатуЗарплаты" base="d2p1:Документ.ВедомостьНаВыплатуЗарплаты" open="true" sequenced="true"/>
+	<objectType xmlns:d2p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Документ.ВедомостьНаВыплатуЗарплаты.Зарплата" base="d2p1:Документ.ВедомостьНаВыплатуЗарплаты.Зарплата"/>
+	<objectType xmlns:d2p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Документ.ВедомостьНаВыплатуЗарплаты.Зарплата.Строка" base="d2p1:Документ.ВедомостьНаВыплатуЗарплаты.Зарплата.Строка" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_ext_ikt/EnterpriseData/1.20" name="Сотрудник" type="d3p1:СправочникСсылка.Сотрудники"/>
+	</objectType>
+	<objectType name="ОбщиеСвойстваОбъектовФормата"/>
+	<objectType name="КлючевыеСвойстваГрафикиРаботыСотрудников">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_ext_ikt/EnterpriseData/1.20" name="Ссылка" type="d3p1:СправочникСсылка.ГрафикиРаботыСотрудников"/>
+		<property name="Код" type="xs:string" lowerBound="0"/>
+		<property name="Наименование" type="xs:string" lowerBound="1"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Справочник.ГрафикиРаботыСотрудников" base="d2p1:Object">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_ext_ikt/EnterpriseData/1.20" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваГрафикиРаботыСотрудников"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_ext_ikt/EnterpriseData/1.20" name="ОбщиеСвойстваОбъектовФормата" type="d3p1:ОбщиеСвойстваОбъектовФормата" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Справочник.ГрафикРаботыСотрудников" base="d2p1:Object" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_ext_ikt/EnterpriseData/1.20" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваГрафикРаботыСотрудников"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_ext_ikt/EnterpriseData/1.20" name="Записи" type="d3p1:Справочник.ГрафикРаботыСотрудников.Запись" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_ext_ikt/EnterpriseData/1.20" name="ОбщиеСвойстваОбъектовФормата" type="d3p1:ОбщиеСвойстваОбъектовФормата" lowerBound="0"/>
+	</objectType>
+	<objectType name="Справочник.ГрафикРаботыСотрудников.Записи.Строка" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Сотрудник" type="d3p1:КлючевыеСвойстваСотрудники"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ГоловнаяОрганизация" type="d3p1:КлючевыеСвойстваОрганизация"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_ext_ikt/EnterpriseData/1.20" name="ГрафикРаботы" type="d3p1:КлючевыеСвойстваГрафикиРаботыСотрудников" lowerBound="0"/>
+		<property name="ДействуетДо" type="xs:date" lowerBound="0"/>
+		<property name="ДатаСобытия" type="xs:dateTime" lowerBound="0"/>
+	</objectType>
+	<objectType name="Справочник.ГрафикРаботыСотрудников.Запись">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_ext_ikt/EnterpriseData/1.20" name="Строка" type="d3p1:Справочник.ГрафикРаботыСотрудников.Записи.Строка" upperBound="-1"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваГрафикРаботыСотрудников" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_ext_ikt/EnterpriseData/1.20" name="Ссылка" type="d3p1:СправочникСсылка.ГрафикРаботыСотрудников" lowerBound="0"/>
+		<property name="Дата" type="xs:date"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_ext_ikt/EnterpriseData/1.20" name="Номер" type="d3p1:ТипНомерДокумента"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваСотрудники" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_ext_ikt/EnterpriseData/1.20" name="Ссылка" type="d3p1:СправочникСсылка.Сотрудники" lowerBound="0"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="ТабельныйНомер" type="xs:string"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_ext_ikt/EnterpriseData/1.20" name="ФизическоеЛицо" type="d3p1:КлючевыеСвойстваФизическоеЛицо"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_ext_ikt/EnterpriseData/1.20" name="ГоловнаяОрганизация" type="d3p1:КлючевыеСвойстваОрганизация"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваФизическоеЛицо" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_ext_ikt/EnterpriseData/1.20" name="Ссылка" type="d3p1:СправочникСсылка.ФизическиеЛица" lowerBound="0"/>
+		<property name="ФИО" type="xs:string"/>
+		<property name="Фамилия" type="xs:string" lowerBound="0"/>
+		<property name="Имя" type="xs:string" lowerBound="0"/>
+		<property name="Отчество" type="xs:string" lowerBound="0"/>
+		<property name="ДатаРождения" type="xs:date" lowerBound="0"/>
+		<property name="КодВПрограмме" type="xs:string" lowerBound="0"/>
+		<property name="ИНН" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="12"/>
+		</property>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Группа" type="d3p1:КлючевыеСвойстваФизическоеЛицоГруппа" lowerBound="0"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваФизическоеЛицоГруппа" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_ext_ikt/EnterpriseData/1.20" name="Ссылка" type="d3p1:СправочникСсылка.ФизическиеЛица" lowerBound="0"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="КодВПрограмме" type="xs:string" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_ext_ikt/EnterpriseData/1.20" name="Группа" type="d3p1:КлючевыеСвойстваФизическоеЛицоГруппа" lowerBound="0"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваПоказателиРасчетаЗарплаты">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_ext_ikt/EnterpriseData/1.20" name="Ссылка" type="d3p1:СправочникСсылка.ПоказателиРасчетаЗарплаты"/>
+		<property name="Наименование" type="xs:string" lowerBound="1"/>
+		<property name="Идентификатор" type="xs:string" lowerBound="1"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Справочник.ПоказателиРасчетаЗарплаты" base="d2p1:Object">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_ext_ikt/EnterpriseData/1.20" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваПоказателиРасчетаЗарплаты"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_ext_ikt/EnterpriseData/1.20" name="ОбщиеСвойстваОбъектовФормата" type="d3p1:ОбщиеСвойстваОбъектовФормата" lowerBound="0"/>
+		<property name="КраткоеНаименование" type="xs:string" nillable="true"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваДанныеДляРасчетаЗарплаты" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_ext_ikt/EnterpriseData/1.20" name="Ссылка" type="d3p1:ДокументСсылка.ДанныеДляРасчетаЗарплаты" lowerBound="0"/>
+		<property name="Дата" type="xs:dateTime"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Номер" type="d3p1:ТипНомерДокумента"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Документ.ДанныеДляРасчетаЗарплаты" base="d2p1:Object" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_ext_ikt/EnterpriseData/1.20" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваДанныеДляРасчетаЗарплаты"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_ext_ikt/EnterpriseData/1.20" name="Организация" type="d3p1:КлючевыеСвойстваОрганизация"/>
+		<property name="Период" type="xs:date" lowerBound="0"/>
+		<property name="ПериодОкончания" type="xs:date" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Сотрудник" type="d3p1:КлючевыеСвойстваСотрудники" nillable="true"/>
+		<property name="КраткийСоставДокумента" type="xs:string" nillable="true"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Подразделение" type="d3p1:КлючевыеСвойстваПодразделениеРегламентированногоУчета" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ПодразделениеУчетаЗатрат" type="d3p1:КлючевыеСвойстваПодразделениеРегламентированногоУчета" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_ext_ikt/EnterpriseData/1.20" name="ВидДокумента" type="d3p1:Справочник.ВидыДокументовВводДанныхДляРасчетаЗарплаты" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="СпособОтраженияЗарплатыВБухучете" type="d3p1:КлючевыеСвойстваСпособОтраженияЗарплатыВФинансовомУчете" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_ext_ikt/EnterpriseData/1.20" name="ЗначенияПоказателей" type="d3p1:Документ.ДанныеДляРасчетаЗарплаты.ЗначенияПоказателей"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_ext_ikt/EnterpriseData/1.20" name="ФизическиеЛица" type="d3p1:Документ.ДанныеДляРасчетаЗарплаты.ФизическиеЛица"/>
+	</objectType>
+	<objectType name="Документ.ДанныеДляРасчетаЗарплаты.ЗначенияПоказателей">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_ext_ikt/EnterpriseData/1.20" name="Строка" type="d3p1:Документ.ДанныеДляРасчетаЗарплаты.ЗначенияПоказателей.Строка" upperBound="-1"/>
+	</objectType>
+	<objectType name="Документ.ДанныеДляРасчетаЗарплаты.ЗначенияПоказателей.Строка" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Объект" type="d3p1:КлючевыеСвойстваСотрудники"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_ext_ikt/EnterpriseData/1.20" name="Показатель" type="d3p1:КлючевыеСвойстваПоказателиРасчетаЗарплаты"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Значение" type="d3p1:ТипСумма" nillable="true"/>
+		<property name="Период" type="xs:date" lowerBound="0"/>
+		<property name="ПериодОкончания" type="xs:date" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Коэффициент" type="d3p1:ТипСумма" nillable="true"/>
+	</objectType>
+	<objectType name="Документ.ДанныеДляРасчетаЗарплаты.ФизическиеЛица">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_ext_ikt/EnterpriseData/1.20" name="Строка" type="d3p1:Документ.ДанныеДляРасчетаЗарплаты.ФизическиеЛица.Строка" upperBound="-1"/>
+	</objectType>
+	<objectType name="Документ.ДанныеДляРасчетаЗарплаты.ФизическиеЛица.Строка" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_ext_ikt/EnterpriseData/1.20" name="ФизическоеЛицо" type="d3p1:КлючевыеСвойстваФизическоеЛицо"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваВидыДокументовВводДанныхДляРасчетаЗарплаты">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_ext_ikt/EnterpriseData/1.20" name="Ссылка" type="d3p1:СправочникСсылка.ВидыДокументовВводДанныхДляРасчетаЗарплаты"/>
+		<property name="Наименование" type="xs:string" lowerBound="1"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Справочник.ВидыДокументовВводДанныхДляРасчетаЗарплаты" base="d2p1:Object">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_ext_ikt/EnterpriseData/1.20" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваВидыДокументовВводДанныхДляРасчетаЗарплаты"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_ext_ikt/EnterpriseData/1.20" name="ОбщиеСвойстваОбъектовФормата" type="d3p1:ОбщиеСвойстваОбъектовФормата" lowerBound="0"/>
+	</objectType>
+</package>

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Subsystem uuid="bec053ee-5383-41d3-bff6-9c927b110684">
+		<Properties>
+			<Name>упоУправлениеПроектами</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Управление проектами</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоАктуализацияПроектаВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоПредставлениеПроектаВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоПроектыИЗадачиВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоРесурсыИНормыВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Проекты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоВидыОпераций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоПрофилиРаспределенияТрудозатрат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоСотрудники</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияФактическихДопЗатрат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияФактическихЗатратМатРесурсов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияФактическиВыполненногоОбъема</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DocumentJournal.упоВыполнениеПроекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DocumentJournal.упоДокументыРасчетаПроекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.упоМетодОперативногоПланирования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.упоСостояниеСтатусаЗадачи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.упоСпособРаспределенияТрудозатрат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.упоТипПроектнойЗадачи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.упоТипСвязи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.упоУровеньПланирования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.упоАнализВыполнимостиПроектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.упоВыборПроектнойЗадачи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоКалендариПроектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоПроцентыГотовностиПроектныхЗадач</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоФактТрудозатратПоДням</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.упоНастройкаКолонок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.упоТриСкрепки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоПечатьДиаграммыГанта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоВидыОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоОбъекты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.упоДинамикаЭкономикиПроекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоОтображениеУправляемойФормы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоПроцентыГотовностиПроектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоСвойстваПроектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоАктуальныеПланыЗатратМатериальныхРесурсов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоФактТрудозатратСводно</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоФактЗатратМатериальныхРесурсов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоАктуальныеПланыТрудозатратПоДнямВерсии</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоАктуальныеПланыТрудозатратСводноВерсии</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоАктуальныеПланыТрудозатратПоДнямТекущаяВерсия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоАктуальныеПланыТрудозатратСводноТекущаяВерсия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоХранитьВВерсияхПроцентыГотовСтатусыИФактСроки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоПечатьДиаграммыГантаКлиентСервер</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects>
+			<Subsystem>упоАктуализацияПроектов</Subsystem>
+			<Subsystem>упоБыстрыйВводПроекта</Subsystem>
+			<Subsystem>упоВерсионированиеПроекта</Subsystem>
+			<Subsystem>упоЖизненныйЦиклПроекта</Subsystem>
+			<Subsystem>упоЗадания</Subsystem>
+			<Subsystem>упоПланированиеПроекта</Subsystem>
+			<Subsystem>упоПроектныеРуководители</Subsystem>
+			<Subsystem>упоОтображениеДополнительнойИнформации</Subsystem>
+		</ChildObjects>
+	</Subsystem>
+</MetaDataObject>

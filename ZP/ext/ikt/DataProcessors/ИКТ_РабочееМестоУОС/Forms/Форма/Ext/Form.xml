@@ -1,0 +1,664 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаВвестиДокументУОС" id="43">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ВвестиДокументУОС</CommandName>
+				<ExtendedTooltip name="ФормаВвестиДокументУОСРасширеннаяПодсказка" id="44"/>
+			</Button>
+			<Button name="ФормаОткрытьДокумент" id="45">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОткрытьДокумент</CommandName>
+				<ExtendedTooltip name="ФормаОткрытьДокументРасширеннаяПодсказка" id="46"/>
+			</Button>
+			<Button name="ФормаЗаменитьДокумент" id="56">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗаменитьДокумент</CommandName>
+				<ExtendedTooltip name="ФормаЗаменитьДокументРасширеннаяПодсказка" id="57"/>
+			</Button>
+			<Button name="ФормаОбновить" id="69">
+				<Type>CommandBarButton</Type>
+				<Representation>Text</Representation>
+				<CommandName>Form.Command.ОбновитьСостояние</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Обновить</v8:content>
+					</v8:item>
+				</Title>
+				<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="ФормаОбновитьРасширеннаяПодсказка" id="70"/>
+			</Button>
+			<Button name="ФормаОбновитьСостояние" id="51">
+				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
+				<CommandName>Form.Command.ОбновитьСостояние</CommandName>
+				<ExtendedTooltip name="ФормаОбновитьСостояниеРасширеннаяПодсказка" id="52"/>
+			</Button>
+			<Button name="ФормаИгнорированиеДокумента" id="60">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ИгнорированиеДокумента</CommandName>
+				<ExtendedTooltip name="ФормаИгнорированиеДокументаРасширеннаяПодсказка" id="61"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="32">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="33"/>
+			<ChildItems>
+				<CheckBoxField name="ОтборПоДате" id="26">
+					<DataPath>ОтборПоДате</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОтборПоДатеКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ОтборПоДатеРасширеннаяПодсказка" id="28"/>
+					<Events>
+						<Event name="OnChange">ОтборПоДатеПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<InputField name="ДатаС" id="29">
+					<DataPath>ДатаС</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>с</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДатаСКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ДатаСРасширеннаяПодсказка" id="31"/>
+					<Events>
+						<Event name="OnChange">ДатаСПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ДатаПо" id="34">
+					<DataPath>ДатаПо</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>по</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДатаПоКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ДатаПоРасширеннаяПодсказка" id="36"/>
+					<Events>
+						<Event name="OnChange">ДатаПоПриИзменении</Event>
+					</Events>
+				</InputField>
+				<CheckBoxField name="ОтборПоСтатусу" id="37">
+					<DataPath>ОтборПоСтатусу</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОтборПоСтатусуКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="ОтборПоСтатусуРасширеннаяПодсказка" id="39"/>
+					<Events>
+						<Event name="OnChange">ОтборПоСтатусуПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<InputField name="Статус" id="40">
+					<DataPath>Статус</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СтатусКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="42"/>
+					<Events>
+						<Event name="OnChange">СтатусПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="СписокДокументов" id="1">
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>СписокДокументов</DataPath>
+			<RowPictureDataPath>~СписокДокументов.DefaultPicture</RowPictureDataPath>
+			<AutoRefresh>true</AutoRefresh>
+			<AutoRefreshPeriod>30</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="СписокДокументовКонтекстноеМеню" id="2">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="СписокДокументовКонтекстноеМенюОткрытьДокумент" id="47">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОткрытьДокумент</CommandName>
+						<ExtendedTooltip name="СписокДокументовКонтекстноеМенюОткрытьДокументРасширеннаяПодсказка" id="48"/>
+					</Button>
+					<Button name="СписокДокументовКонтекстноеМенюЗаменитьДокумент" id="58">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗаменитьДокумент</CommandName>
+						<ExtendedTooltip name="СписокДокументовКонтекстноеМенюЗаменитьДокументРасширеннаяПодсказка" id="59"/>
+					</Button>
+					<Button name="СписокДокументовКонтекстноеМенюПоискПоТекущемуЗначению" id="65">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.СписокДокументов.StandardCommand.FindByCurrentValue</CommandName>
+						<ExtendedTooltip name="СписокДокументовКонтекстноеМенюПоискПоТекущемуЗначениюРасширеннаяПодсказка" id="66"/>
+					</Button>
+					<Button name="СписокДокументовКонтекстноеМенюОтменитьПоиск" id="67">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.СписокДокументов.StandardCommand.CancelSearch</CommandName>
+						<ExtendedTooltip name="СписокДокументовКонтекстноеМенюОтменитьПоискРасширеннаяПодсказка" id="68"/>
+					</Button>
+					<Button name="СписокДокументовКонтекстноеМенюОбновить" id="71">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.СписокДокументов.StandardCommand.Refresh</CommandName>
+						<ExtendedTooltip name="СписокДокументовКонтекстноеМенюОбновитьРасширеннаяПодсказка" id="72"/>
+					</Button>
+				</ChildItems>
+			</ContextMenu>
+			<AutoCommandBar name="СписокДокументовКоманднаяПанель" id="3"/>
+			<ExtendedTooltip name="СписокДокументовРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="СписокДокументовСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>СписокДокументов</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокДокументовСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="СписокДокументовСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокДокументовСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>СписокДокументов</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокДокументовСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="СписокДокументовСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокДокументовУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>СписокДокументов</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокДокументовУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="СписокДокументовУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">СписокДокументовВыбор</Event>
+				<Event name="OnActivateRow">СписокДокументовПриАктивизацииСтроки</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="СписокДокументовДата" id="14">
+					<DataPath>СписокДокументов.Дата</DataPath>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ=dd.MM.yyyy</v8:content>
+						</v8:item>
+					</Format>
+					<ContextMenu name="СписокДокументовДатаКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="СписокДокументовДатаРасширеннаяПодсказка" id="16"/>
+				</LabelField>
+				<LabelField name="СписокДокументовДокументБУ" id="17">
+					<DataPath>СписокДокументов.ДокументБУ</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="СписокДокументовДокументБУКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="СписокДокументовДокументБУРасширеннаяПодсказка" id="19"/>
+				</LabelField>
+				<LabelField name="СписокДокументовДокументУОС" id="20">
+					<DataPath>СписокДокументов.ДокументУОС</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="СписокДокументовДокументУОСКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="СписокДокументовДокументУОСРасширеннаяПодсказка" id="22"/>
+				</LabelField>
+				<LabelField name="СписокДокументовСостояниеДокументаУОС" id="23">
+					<DataPath>СписокДокументов.СостояниеДокументаУОС</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние документа</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="СписокДокументовСостояниеДокументаУОСКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="СписокДокументовСостояниеДокументаУОСРасширеннаяПодсказка" id="25"/>
+				</LabelField>
+				<LabelField name="СписокДокументовТипЗначения" id="53">
+					<DataPath>СписокДокументов.ТипЗначения</DataPath>
+					<ContextMenu name="СписокДокументовТипЗначенияКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="СписокДокументовТипЗначенияРасширеннаяПодсказка" id="55"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+		<InputField name="РезультатПроверки" id="62">
+			<DataPath>РезультатПроверки</DataPath>
+			<TitleLocation>Top</TitleLocation>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<Height>3</Height>
+			<MultiLine>true</MultiLine>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<TextEdit>false</TextEdit>
+			<ContextMenu name="РезультатПроверкиКонтекстноеМеню" id="63"/>
+			<ExtendedTooltip name="РезультатПроверкиРасширеннаяПодсказка" id="64"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ИКТ_РабочееМестоУОС</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="СписокДокументов" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список документов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ВЫБОР
+		КОГДА ИКТ_СоответствиеДокументов.ДокументБУ = ЗНАЧЕНИЕ(Документ.ПриемНаРаботу.ПустаяСсылка)
+				ИЛИ ИКТ_СоответствиеДокументов.ДокументБУ = ЗНАЧЕНИЕ(Документ.Увольнение.ПустаяСсылка)
+				ИЛИ ИКТ_СоответствиеДокументов.ДокументБУ = ЗНАЧЕНИЕ(Документ.КадровыйПеревод.ПустаяСсылка)
+				ИЛИ ИКТ_СоответствиеДокументов.ДокументБУ = ЗНАЧЕНИЕ(Документ.КадровыйПереводСписком.ПустаяСсылка)
+				ИЛИ ИКТ_СоответствиеДокументов.ДокументБУ = ЗНАЧЕНИЕ(Документ.Командировка.ПустаяСсылка)
+				ИЛИ ИКТ_СоответствиеДокументов.ДокументБУ = ЗНАЧЕНИЕ(Документ.Отпуск.ПустаяСсылка)
+				ИЛИ ИКТ_СоответствиеДокументов.ДокументБУ = ЗНАЧЕНИЕ(Документ.БольничныйЛист.ПустаяСсылка)
+				ИЛИ ИКТ_СоответствиеДокументов.ДокументБУ = ЗНАЧЕНИЕ(Документ.ИзменениеГрафикаРаботыСписком.ПустаяСсылка)
+			ТОГДА ИКТ_СоответствиеДокументов.ДокументУУ.Дата
+		ИНАЧЕ ИКТ_СоответствиеДокументов.ДокументБУ.Дата
+	КОНЕЦ КАК Дата,
+	ИКТ_СоответствиеДокументов.ДокументБУ КАК ДокументБУ,
+	ИКТ_СоответствиеДокументов.ДокументУУ КАК ДокументУОС,
+	ИКТ_СоответствиеДокументов.СостояниеДокументаУУ КАК СостояниеДокументаУОС,
+	ВЫБОР
+		КОГДА ИКТ_СоответствиеДокументов.ДокументБУ = ЗНАЧЕНИЕ(Документ.ПриемНаРаботу.ПустаяСсылка)
+				ИЛИ ИКТ_СоответствиеДокументов.ДокументБУ = ЗНАЧЕНИЕ(Документ.Увольнение.ПустаяСсылка)
+				ИЛИ ИКТ_СоответствиеДокументов.ДокументБУ = ЗНАЧЕНИЕ(Документ.КадровыйПеревод.ПустаяСсылка)
+				ИЛИ ИКТ_СоответствиеДокументов.ДокументБУ = ЗНАЧЕНИЕ(Документ.КадровыйПереводСписком.ПустаяСсылка)
+				ИЛИ ИКТ_СоответствиеДокументов.ДокументБУ = ЗНАЧЕНИЕ(Документ.Командировка.ПустаяСсылка)
+				ИЛИ ИКТ_СоответствиеДокументов.ДокументБУ = ЗНАЧЕНИЕ(Документ.Отпуск.ПустаяСсылка)
+				ИЛИ ИКТ_СоответствиеДокументов.ДокументБУ = ЗНАЧЕНИЕ(Документ.БольничныйЛист.ПустаяСсылка)
+				ИЛИ ИКТ_СоответствиеДокументов.ДокументБУ = ЗНАЧЕНИЕ(Документ.ИзменениеГрафикаРаботыСписком.ПустаяСсылка)
+			ТОГДА ТИПЗНАЧЕНИЯ(ИКТ_СоответствиеДокументов.ДокументУУ)
+		ИНАЧЕ ТИПЗНАЧЕНИЯ(ИКТ_СоответствиеДокументов.ДокументБУ)
+	КОНЕЦ КАК ТипЗначения
+ИЗ
+	РегистрСведений.ИКТ_СоответствиеДокументов КАК ИКТ_СоответствиеДокументов</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Дата</dcssch:dataPath>
+					<dcssch:field>Дата</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДокументБУ</dcssch:dataPath>
+					<dcssch:field>ДокументБУ</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДокументУОС</dcssch:dataPath>
+					<dcssch:field>ДокументУОС</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ УОС</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СостояниеДокументаУОС</dcssch:dataPath>
+					<dcssch:field>СостояниеДокументаУОС</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние документа УОС</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТипЗначения</dcssch:dataPath>
+					<dcssch:field>ТипЗначения</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип значения</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<AutoSaveUserSettings>false</AutoSaveUserSettings>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:left xsi:type="dcscor:Field">ТипЗначения</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xmlns:d8p1="http://v8.1c.ru/8.2/data/types" xsi:type="v8:Type">d8p1:Undefined</dcsset:right>
+							<dcsset:userSettingID>0510934a-7898-4ed8-bab6-fb04b4e13653</dcsset:userSettingID>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Дата</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>СостояниеДокументаУОС</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">СостояниеДокументаУОС</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ЛС_СостояниеДокументовУОС.ИгнорироватьДокумент</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветФона</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">0:1cc6320e-7e2b-4ce7-83f9-5a997fa1f2e7</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>СостояниеДокументаУОС</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">СостояниеДокументаУОС</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ЛС_СостояниеДокументовУОС.ДокументОтсутствует</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветФона</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">web:LightCoral</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>СостояниеДокументаУОС</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">СостояниеДокументаУОС</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ЛС_СостояниеДокументовУОС.ДокументНеПрошелПроверку</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветФона</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">0:0235bc31-2797-4753-a53b-80a5aed107aa</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>СостояниеДокументаУОС</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">СостояниеДокументаУОС</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ЛС_СостояниеДокументовУОС.ДокументСозданИПроверен</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветФона</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">web:YellowGreen</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ДатаС" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата С</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаПо" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата по</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборПоДате" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор по дате</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборПоСтатусу" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор по статусу</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Статус" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ИКТ_СостояниеДокументовУОС</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДокументБУ" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ БУ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DocumentRef.БольничныйЛист</v8:Type>
+				<v8:Type>cfg:DocumentRef.Увольнение</v8:Type>
+				<v8:Type>cfg:DocumentRef.ИзменениеГрафикаРаботыСписком</v8:Type>
+				<v8:Type>cfg:DocumentRef.Командировка</v8:Type>
+				<v8:Type>cfg:DocumentRef.КадровыйПеревод</v8:Type>
+				<v8:Type>cfg:DocumentRef.ПриемНаРаботу</v8:Type>
+				<v8:Type>cfg:DocumentRef.Отпуск</v8:Type>
+				<v8:Type>cfg:DocumentRef.КадровыйПереводСписком</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДокументУУ" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ УУ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DocumentRef.БольничныйЛист</v8:Type>
+				<v8:Type>cfg:DocumentRef.Увольнение</v8:Type>
+				<v8:Type>cfg:DocumentRef.ИзменениеГрафикаРаботыСписком</v8:Type>
+				<v8:Type>cfg:DocumentRef.Командировка</v8:Type>
+				<v8:Type>cfg:DocumentRef.КадровыйПеревод</v8:Type>
+				<v8:Type>cfg:DocumentRef.ПриемНаРаботу</v8:Type>
+				<v8:Type>cfg:DocumentRef.Отпуск</v8:Type>
+				<v8:Type>cfg:DocumentRef.КадровыйПереводСписком</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Документ" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DocumentRef.БольничныйЛист</v8:Type>
+				<v8:Type>cfg:DocumentRef.Увольнение</v8:Type>
+				<v8:Type>cfg:DocumentRef.ИзменениеГрафикаРаботыСписком</v8:Type>
+				<v8:Type>cfg:DocumentRef.Командировка</v8:Type>
+				<v8:Type>cfg:DocumentRef.КадровыйПеревод</v8:Type>
+				<v8:Type>cfg:DocumentRef.ПриемНаРаботу</v8:Type>
+				<v8:Type>cfg:DocumentRef.Отпуск</v8:Type>
+				<v8:Type>cfg:DocumentRef.КадровыйПереводСписком</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РезультатПроверки" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результат проверки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВвестиДокументУОС" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ввести документ УОС</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ввести документ УОС</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВвестиДокументУОС</Action>
+		</Command>
+		<Command name="ОткрытьДокумент" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть документ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть документ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьДокумент</Action>
+		</Command>
+		<Command name="ОбновитьСостояние" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить состояние</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить состояние</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьСостояние</Action>
+		</Command>
+		<Command name="ЗаменитьДокумент" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заменить документ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заменить документ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаменитьДокумент</Action>
+		</Command>
+		<Command name="ИгнорированиеДокумента" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Игнорировать документ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Игнорирование документа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИгнорированиеДокумента</Action>
+		</Command>
+	</Commands>
+</Form>

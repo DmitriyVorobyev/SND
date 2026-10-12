@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Subsystem uuid="4a1497c2-e6cb-41da-87c8-a2a7286a66bc">
+		<Properties>
+			<Name>упоРаботаСОчередями</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Работа с очередями</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоРаботаСОчередямиКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоРаботаСОчередями</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.упоНастройкаПараметровPM</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоОтложенноеОтражениеПлановыхТрудозатратЗадач</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоОтложеннаяСинхронизацияПорученийЗадач</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоИспользоватьОтражениеПервичныхДокументовВПроектномБюджетировании</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоИспользоватьОповещения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.упоОбработкаДетекторовСобытий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.упоОбработкаПроизошедшихСобытий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.упоОтправкаСообщенийИзОчереди</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.упоОтражениеДокументовВПроектномБюджетировании</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.упоОтражениеПлановыхТрудозатратЗадач</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.упоПересчетОграниченийДоступаПоПроектам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.упоРасчетСроковПроектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.упоСинхронизацияПорученийЗадач</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоОчередьСинхронизацииПорученийЗадач</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоОчередьСобытийДляОповещений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоОшибкиОтраженияДокументовВПроектномБюджетировании</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоОчередьРасчетаСроковПроектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоОчередьПересчетаОграниченийДоступаПоПроектам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоОчередьОтраженияПлановыхТрудозатратЗадач</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоОчередьДокументовКОтражениюВПроектномБюджетировании</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоОтражениеДокументовВПроектномБюджетировании</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоОтправленныеСообщения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоОповещенияВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоОповещенияПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоОповещенияПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоЗадания</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоЗаданияСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоЗаданияСерверПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоЗаданияКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоПроектноеБюджетированиеВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоПроектноеБюджетированиеПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоПроектноеБюджетированиеСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоРаспределениеТрудозатратВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоРаспределениеТрудозатратПовтИспВыз</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоРасчетКалендарныхСроковРедакция3Сервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоРасчетКалендарныхСроковРедакция4Сервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоОграниченияДоступаПоПроектам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.упоРаботаСОчередями</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоРаботаСОчередямиВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.упоУправлениеВерсиямиПроекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.упоПереносПроектныхЗадач</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоУтверждениеПланаПроекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">c83f332a-2424-4372-a106-9528f37f6389</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоАвтоматическийРасчетСроковСвязанныхПроектов</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

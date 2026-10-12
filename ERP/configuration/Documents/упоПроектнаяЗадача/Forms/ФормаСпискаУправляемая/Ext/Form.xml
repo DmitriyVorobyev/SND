@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<CommandSet>
+		<ExcludedCommand>Post</ExcludedCommand>
+		<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+		<ExcludedCommand>UndoPosting</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаСтруктураПроекта" id="103">
+				<Type>CommandBarButton</Type>
+				<CommandName>DataProcessor.упоУпрощенныйВводСтруктурыПроекта.Command.упоУпрощенныйВводСтруктурыПроекта</CommandName>
+				<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+				<ExtendedTooltip name="ФормаСтруктураПроектаРасширеннаяПодсказка" id="104"/>
+			</Button>
+			<ButtonGroup name="ОсновныеКомандыПроекта" id="101">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Основные команды проекта</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Основные команды проекта</v8:content>
+					</v8:item>
+				</ToolTip>
+				<CommandSource>FormCommandPanelGlobalCommands</CommandSource>
+				<ExtendedTooltip name="ОсновныеКомандыПроектаРасширеннаяПодсказка" id="102"/>
+			</ButtonGroup>
+			<Popup name="ФормаГруппаЗадания" id="83">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Задания</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Задания</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="ФормаГруппаЗаданияРасширеннаяПодсказка" id="84"/>
+				<ChildItems>
+					<Button name="ФормаОбработкаупоРаботаСЗаданиямиПроектныеРешенияОбъекта" id="89">
+						<Type>CommandBarButton</Type>
+						<CommandName>DataProcessor.упоРаботаСЗаданиями.Command.ПроектныеРешенияОбъекта</CommandName>
+						<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+						<ExtendedTooltip name="ФормаОбработкаупоРаботаСЗаданиямиПроектныеРешенияОбъектаРасширеннаяПодсказка" id="90"/>
+					</Button>
+					<Button name="ФормаОбработкаупоРаботаСЗаданиямиупоРаботаСЗаданиямиПроекта" id="87">
+						<Type>CommandBarButton</Type>
+						<CommandName>DataProcessor.упоРаботаСЗаданиями.Command.упоРаботаСЗаданиямиПроекта</CommandName>
+						<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+						<ExtendedTooltip name="ФормаОбработкаупоРаботаСЗаданиямиупоРаботаСЗаданиямиПроектаРасширеннаяПодсказка" id="88"/>
+					</Button>
+					<Button name="ФормаОбработкаупоРаботаСЗаданиямиЗаданияНаПланированиеОбъекта" id="91">
+						<Type>CommandBarButton</Type>
+						<CommandName>DataProcessor.упоРаботаСЗаданиями.Command.ЗаданияНаПланированиеОбъекта</CommandName>
+						<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+						<ExtendedTooltip name="ФормаОбработкаупоРаботаСЗаданиямиЗаданияНаПланированиеОбъектаРасширеннаяПодсказка" id="92"/>
+					</Button>
+					<Button name="ФормаОбработкаупоРаботаСЗаданиямиЗаданияНаПрогнозОбъекта" id="95">
+						<Type>CommandBarButton</Type>
+						<CommandName>DataProcessor.упоРаботаСЗаданиями.Command.ЗаданияНаПрогнозОбъекта</CommandName>
+						<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+						<ExtendedTooltip name="ФормаОбработкаупоРаботаСЗаданиямиЗаданияНаПрогнозОбъектаРасширеннаяПодсказка" id="96"/>
+					</Button>
+				</ChildItems>
+			</Popup>
+			<Popup name="ПодменюСоздатьНаОсновании" id="93">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Создать на основании</v8:content>
+					</v8:item>
+				</Title>
+				<Picture>
+					<xr:Ref>StdPicture.InputOnBasis</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<Representation>Picture</Representation>
+				<ExtendedTooltip name="ПодменюСоздатьНаОснованииРасширеннаяПодсказка" id="94"/>
+			</Popup>
+			<Button name="СписокУдалитьЗадачу" id="79">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.УдалитьЗадачу</CommandName>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="СписокУдалитьЗадачуРасширеннаяПодсказка" id="80"/>
+			</Button>
+			<Button name="ФормаДополнительныеСведения" id="97">
+				<Type>CommandBarButton</Type>
+				<CommandName>CommonCommand.ДополнительныеСведенияКоманднаяПанель</CommandName>
+				<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="ФормаДополнительныеСведенияРасширеннаяПодсказка" id="98"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnSaveDataInSettingsAtServer">ПриСохраненииДанныхВНастройкахНаСервере</Event>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="NewWriteProcessing">ОбработкаЗаписиНового</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="ExternalEvent">ВнешнееСобытие</Event>
+		<Event name="OnReopen">ПриПовторномОткрытии</Event>
+		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="ActivationProcessing">ОбработкаАктивизации</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+		<Event name="BeforeLoadDataFromSettingsAtServer">ПередЗагрузкойДанныхИзНастроекНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="Список" id="1">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список</v8:content>
+				</v8:item>
+			</Title>
+			<CommandSet>
+				<ExcludedCommand>Post</ExcludedCommand>
+				<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+				<ExcludedCommand>UndoPosting</ExcludedCommand>
+			</CommandSet>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокExtendedTooltip" id="64"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="70">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="71"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="72"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="73">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="74"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="75"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="76">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="77"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="78"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="OnActivateRow">СписокПриАктивизацииСтроки</Event>
+			</Events>
+			<ChildItems>
+				<PictureField name="ЕстьФайлы" id="108">
+					<DataPath>Список.ЕстьФайлы</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<HeaderPicture>
+						<xr:Ref>CommonPicture.Скрепка</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</HeaderPicture>
+					<ValuesPicture>
+						<xr:Ref>CommonPicture.Скрепка</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</ValuesPicture>
+					<ContextMenu name="ЕстьФайлыКонтекстноеМеню" id="109"/>
+					<ExtendedTooltip name="ЕстьФайлыРасширеннаяПодсказка" id="110"/>
+				</PictureField>
+				<LabelField name="Номер" id="8">
+					<DataPath>Список.Номер</DataPath>
+					<ContextMenu name="НомерКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="НомерExtendedTooltip" id="65"/>
+				</LabelField>
+				<LabelField name="Дата" id="6">
+					<DataPath>Список.Дата</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="ДатаExtendedTooltip" id="66"/>
+				</LabelField>
+				<LabelField name="НазваниеПроектнойЗадачи" id="46">
+					<DataPath>Список.НазваниеПроектнойЗадачи</DataPath>
+					<ContextMenu name="НазваниеПроектнойЗадачиКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="НазваниеПроектнойЗадачиExtendedTooltip" id="67"/>
+				</LabelField>
+				<LabelField name="ЗадачаРодитель" id="34">
+					<DataPath>Список.ЗадачаРодитель</DataPath>
+					<ContextMenu name="ЗадачаРодительКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ЗадачаРодительExtendedTooltip" id="68"/>
+				</LabelField>
+				<LabelField name="Проект" id="62">
+					<DataPath>Список.Проект</DataPath>
+					<ContextMenu name="ПроектКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="ПроектExtendedTooltip" id="69"/>
+				</LabelField>
+				<LabelField name="КодПроектногоДокумента" id="105">
+					<DataPath>Список.КодПроектногоДокумента</DataPath>
+					<ContextMenu name="КодПроектногоДокументаКонтекстноеМеню" id="106"/>
+					<ExtendedTooltip name="КодПроектногоДокументаРасширеннаяПодсказка" id="107"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Список.Ссылка</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ДокументупоПроектнаяЗадача.Номер КАК Номер,
+	ДокументупоПроектнаяЗадача.Дата КАК Дата,
+	ДокументупоПроектнаяЗадача.Проект КАК Проект,
+	ВЫБОР
+		КОГДА упоСвойстваПроектныхЗадачСрезПоследних.ПроектнаяЗадача ЕСТЬ NULL
+			ТОГДА ДокументупоПроектнаяЗадача.ЗадачаРодитель
+		ИНАЧЕ упоСвойстваПроектныхЗадачСрезПоследних.ЗадачаРодитель
+	КОНЕЦ КАК ЗадачаРодитель,
+	ВЫБОР
+		КОГДА упоСвойстваПроектныхЗадачСрезПоследних.ПроектнаяЗадача ЕСТЬ NULL
+			ТОГДА ДокументупоПроектнаяЗадача.НазваниеПроектнойЗадачи
+		ИНАЧЕ упоСвойстваПроектныхЗадачСрезПоследних.НазваниеЗадачи
+	КОНЕЦ КАК НазваниеПроектнойЗадачи,
+	ВЫБОР
+		КОГДА упоСвойстваПроектныхЗадачСрезПоследних.ЗадачаОтменена ЕСТЬ NULL
+			ТОГДА ИСТИНА
+		ИНАЧЕ упоСвойстваПроектныхЗадачСрезПоследних.ЗадачаОтменена
+	КОНЕЦ КАК ЗадачаОтменена,
+	ДокументупоПроектнаяЗадача.Ссылка КАК Ссылка,
+	ДокументупоПроектнаяЗадача.КодПроектногоДокумента КАК КодПроектногоДокумента,
+	НаличиеФайлов.ЕстьФайлы КАК ЕстьФайлы
+ИЗ
+	Документ.упоПроектнаяЗадача КАК ДокументупоПроектнаяЗадача
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.упоСвойстваПроектныхЗадач.СрезПоследних(
+				,
+				Версия В
+					(ВЫБРАТЬ
+						упоВерсииПроекта.Версия КАК Версия
+					ИЗ
+						РегистрСведений.упоВерсииПроекта КАК упоВерсииПроекта
+					ГДЕ
+						упоВерсииПроекта.Текущая)) КАК упоСвойстваПроектныхЗадачСрезПоследних
+		ПО ДокументупоПроектнаяЗадача.Ссылка = упоСвойстваПроектныхЗадачСрезПоследних.ПроектнаяЗадача  
+		{ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.НаличиеФайлов КАК НаличиеФайлов
+        ПО ДокументупоПроектнаяЗадача.Ссылка = НаличиеФайлов.ОбъектСФайлами}</QueryText>
+				<MainTable>Document.упоПроектнаяЗадача</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ПараметрыПодключаемыхКоманд" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры подключаемых команд</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Список</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Список.ЗадачаОтменена</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="style:NormalTextFont" bold="false" italic="false" underline="false" strikeout="true" kind="StyleItem"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="УдалитьЗадачу" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить задачу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить задачу и провести расчет календарного плана</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Delete</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УдалитьЗадачу</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<CommandBar>
+			<Item>
+				<Command>CommonCommand.ИнтеграцияС1СДокументооборотСоздатьПисьмо</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>CommonCommand.ИнтеграцияС1СДокументооборотСоздатьБизнесПроцесс</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Catalog.упоЗадания.Command.СоздатьЗадание</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоЗакрытиеЭтапа.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоИзменениеРуководителяПроектнойЗадачи.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоНазначениеТрудовыхРесурсовНаПроектнуюЗадачу.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Catalog.упоЗадания.Command.СоздатьПроектноеРешение</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоПроектнаяЗадача.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоРегистрацияФактическихДопЗатрат.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоРегистрацияФактическихДоходовИРасходов.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоРегистрацияФактическихЗатратМатРесурсов.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоРегистрацияПоказателейПроекта.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоРегистрацияФактическиВыполненногоОбъема.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоРегистрацияФактическихДвиженийДенежныхСредств.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоРучнаяАктуализацияПроекта.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоСтатусОтчетПоПроекту.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>CommonCommand.ИнтеграцияС1СДокументооборотНачатьОбработку</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</CommandBar>
+	</CommandInterface>
+</Form>

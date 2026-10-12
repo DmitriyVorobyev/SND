@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Subsystem uuid="e32feb61-371e-4040-a958-94f789893a3e">
+		<Properties>
+			<Name>упоУправлениеДоговорами</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Управление договорами</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияЮридическихУсловийДоговора</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ChartOfCharacteristicTypes.ДополнительныеРеквизитыИСведения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НаборыДополнительныхРеквизитовИСведений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.упоВидыПлатежей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоСхемыОплаты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.упоСпособУчетаАванса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.упоСоставНаименованияДоговора</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоПравилаФормированияНаименованийДоговоров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоПравилоФормированияНаименованияДоговораПоУмолчанию</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоИспользоватьПодсистемуДоговоров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоАктуальнаяВерсияДоговора</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоУправлениеДоговорамиСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоВидДоговора</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.упоСозданиеДоговораИзШаблона</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоИзменениеСтатусаДоговора</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоСтатусыДоговоров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоСтатусыОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоЭтапыДоговоров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоСвязьЭтаповДоговораСПроектнымКонтуром</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоУправлениеДоговорамиКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоОперацииСДеревьямиКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоУправлениеДоговорамиКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоОперацииСДеревьямиСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоГрафикОплатыПоДоговору</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоЭтапыДоговора</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.упоНастройкаСвязей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.упоКоллекцияТипыЭтаповДоговоров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.упоНаправлениеДвиженияВыплата</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.упоНаправлениеДвиженияДоход</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.упоНаправлениеДвиженияПоступление</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.упоНаправлениеДвиженияРасход</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоРаботаСДоговорами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоЧтениеДоговоров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.упоТипыЮридическихУсловийДоговора</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<FunctionalOption uuid="81de54a7-bc42-4d41-80bc-f407fe9e1671">
+		<Properties>
+			<Name>упоЭтоEPM</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это EPM</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Ограничение доступности интеграционных объектов ERP</Comment>
+			<Location>Catalog.упоКонфигурацияПродуктаPM.Attribute.ЭтаКонфигурация</Location>
+			<PrivilegedGetMode>true</PrivilegedGetMode>
+			<Content>
+				<xr:Object>InformationRegister.упоКосвенныеНаправленияДеятельностиОПР_ОХР</xr:Object>
+				<xr:Object>InformationRegister.упоСопоставленныеФинансовыеСтатьи</xr:Object>
+				<xr:Object>DataProcessor.упоСопоставлениеФинансовыхСтатей</xr:Object>
+				<xr:Object>DataProcessor.упоСопоставлениеФинансовыхСтатей.Command.СопоставлениеФинансовыхСтатей</xr:Object>
+				<xr:Object>DataProcessor.упоПомощникРаспределенияРасходовПоПроектам</xr:Object>
+				<xr:Object>DataProcessor.упоПомощникРаспределенияРасходовПоПроектам.Command.ПомощникРаспределенияРасходовПоПроектам</xr:Object>
+				<xr:Object>Report.упоАнализРаспределенияДоходовИРасходов</xr:Object>
+				<xr:Object>Catalog.упоПравилаПолученияФактаДляПроектногоБюджетирования.Attribute.ПравилоПолученияФактаПоСтатьямБюджетов</xr:Object>
+				<xr:Object>Catalog.СтруктураПредприятия</xr:Object>
+				<xr:Object>Catalog.упоНачисленияЗУП</xr:Object>
+				<xr:Object>Catalog.упоНачисленияPM</xr:Object>
+				<xr:Object>Catalog.упоНастройкиРаспределенияЗарплаты</xr:Object>
+				<xr:Object>InformationRegister.упоСоответствиеВидовНачисленийERP_PM</xr:Object>
+				<xr:Object>InformationRegister.упоСоответствиеВидовНачисленийPM_ERP</xr:Object>
+				<xr:Object>InformationRegister.упоСоответствиеВидовНачисленийЗУП_PM</xr:Object>
+				<xr:Object>InformationRegister.упоСоответствиеНачисленийPM_ERP</xr:Object>
+				<xr:Object>InformationRegister.упоСхемаОтраженияНачисленийPM_ERP</xr:Object>
+			</Content>
+		</Properties>
+	</FunctionalOption>
+</MetaDataObject>

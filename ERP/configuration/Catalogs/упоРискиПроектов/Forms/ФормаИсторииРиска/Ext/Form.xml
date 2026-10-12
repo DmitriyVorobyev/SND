@@ -1,0 +1,518 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>История изменений риска проекта</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<Customizable>false</Customizable>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Группа1" id="1">
+			<ReadOnly>true</ReadOnly>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<Page name="Группа2" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Плановые данные</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<Table name="СвойстваПлан" id="5">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>СвойстваПлан</DataPath>
+							<RowPictureDataPath>СвойстваПлан.DefaultPicture</RowPictureDataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Свойства план</v8:content>
+								</v8:item>
+							</Title>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="СвойстваПланКонтекстноеМеню" id="6"/>
+							<AutoCommandBar name="СвойстваПланКоманднаяПанель" id="7"/>
+							<ExtendedTooltip name="СвойстваПланРасширеннаяПодсказка" id="8"/>
+							<SearchStringAddition name="СвойстваПланСтрокаПоиска" id="9">
+								<AdditionSource>
+									<Item>СвойстваПлан</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СвойстваПланСтрокаПоискаКонтекстноеМеню" id="12"/>
+								<ExtendedTooltip name="СвойстваПланСтрокаПоискаРасширеннаяПодсказка" id="13"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СвойстваПланСостояниеПросмотра" id="14">
+								<AdditionSource>
+									<Item>СвойстваПлан</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СвойстваПланСостояниеПросмотраКонтекстноеМеню" id="17"/>
+								<ExtendedTooltip name="СвойстваПланСостояниеПросмотраРасширеннаяПодсказка" id="18"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СвойстваПланУправлениеПоиском" id="19">
+								<AdditionSource>
+									<Item>СвойстваПлан</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СвойстваПланУправлениеПоискомКонтекстноеМеню" id="22"/>
+								<ExtendedTooltip name="СвойстваПланУправлениеПоискомРасширеннаяПодсказка" id="23"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="СвойстваПланПериод" id="30">
+									<DataPath>СвойстваПлан.Period</DataPath>
+									<ContextMenu name="СвойстваПланПериодКонтекстноеМеню" id="31"/>
+									<ExtendedTooltip name="СвойстваПланПериодРасширеннаяПодсказка" id="32"/>
+								</LabelField>
+								<LabelField name="СвойстваПланВероятностьВозникновения" id="36">
+									<DataPath>СвойстваПлан.ВероятностьВозникновения</DataPath>
+									<ContextMenu name="СвойстваПланВероятностьВозникновенияКонтекстноеМеню" id="37"/>
+									<ExtendedTooltip name="СвойстваПланВероятностьВозникновенияРасширеннаяПодсказка" id="38"/>
+								</LabelField>
+								<LabelField name="СвойстваПланДатаНаступленияПлан" id="39">
+									<DataPath>СвойстваПлан.ДатаНаступленияПлан</DataPath>
+									<ContextMenu name="СвойстваПланДатаНаступленияПланКонтекстноеМеню" id="40"/>
+									<ExtendedTooltip name="СвойстваПланДатаНаступленияПланРасширеннаяПодсказка" id="41"/>
+								</LabelField>
+								<LabelField name="СвойстваПланИсточник" id="42">
+									<DataPath>СвойстваПлан.Источник</DataPath>
+									<ContextMenu name="СвойстваПланИсточникКонтекстноеМеню" id="43"/>
+									<ExtendedTooltip name="СвойстваПланИсточникРасширеннаяПодсказка" id="44"/>
+								</LabelField>
+								<LabelField name="СвойстваПланКатегория" id="45">
+									<DataPath>СвойстваПлан.Категория</DataPath>
+									<ContextMenu name="СвойстваПланКатегорияКонтекстноеМеню" id="46"/>
+									<ExtendedTooltip name="СвойстваПланКатегорияРасширеннаяПодсказка" id="47"/>
+								</LabelField>
+								<LabelField name="СвойстваПланНаименование" id="48">
+									<DataPath>СвойстваПлан.Наименование</DataPath>
+									<ContextMenu name="СвойстваПланНаименованиеКонтекстноеМеню" id="49"/>
+									<ExtendedTooltip name="СвойстваПланНаименованиеРасширеннаяПодсказка" id="50"/>
+								</LabelField>
+								<LabelField name="СвойстваПланОжидаемаяСумма" id="51">
+									<DataPath>СвойстваПлан.ОжидаемаяСумма</DataPath>
+									<ContextMenu name="СвойстваПланОжидаемаяСуммаКонтекстноеМеню" id="52"/>
+									<ExtendedTooltip name="СвойстваПланОжидаемаяСуммаРасширеннаяПодсказка" id="53"/>
+								</LabelField>
+								<LabelField name="СвойстваПланПервопричина" id="54">
+									<DataPath>СвойстваПлан.Первопричина</DataPath>
+									<ContextMenu name="СвойстваПланПервопричинаКонтекстноеМеню" id="55"/>
+									<ExtendedTooltip name="СвойстваПланПервопричинаРасширеннаяПодсказка" id="56"/>
+								</LabelField>
+								<LabelField name="СвойстваПланПоследствие" id="57">
+									<DataPath>СвойстваПлан.Последствие</DataPath>
+									<ContextMenu name="СвойстваПланПоследствиеКонтекстноеМеню" id="58"/>
+									<ExtendedTooltip name="СвойстваПланПоследствиеРасширеннаяПодсказка" id="59"/>
+								</LabelField>
+								<LabelField name="СвойстваПланПояснительнаяИнформация" id="60">
+									<DataPath>СвойстваПлан.ПояснительнаяИнформация</DataPath>
+									<ContextMenu name="СвойстваПланПояснительнаяИнформацияКонтекстноеМеню" id="61"/>
+									<ExtendedTooltip name="СвойстваПланПояснительнаяИнформацияРасширеннаяПодсказка" id="62"/>
+								</LabelField>
+								<LabelField name="СвойстваПланСвязанСДоговор" id="66">
+									<DataPath>СвойстваПлан.СвязанСДоговор</DataPath>
+									<ContextMenu name="СвойстваПланСвязанСДоговорКонтекстноеМеню" id="67"/>
+									<ExtendedTooltip name="СвойстваПланСвязанСДоговорРасширеннаяПодсказка" id="68"/>
+								</LabelField>
+								<LabelField name="СвойстваПланСвязанСКонтрагент" id="69">
+									<DataPath>СвойстваПлан.СвязанСКонтрагент</DataPath>
+									<ContextMenu name="СвойстваПланСвязанСКонтрагентКонтекстноеМеню" id="70"/>
+									<ExtendedTooltip name="СвойстваПланСвязанСКонтрагентРасширеннаяПодсказка" id="71"/>
+								</LabelField>
+								<LabelField name="СвойстваПланСвязанСПроектнаяЗадача" id="72">
+									<DataPath>СвойстваПлан.СвязанСПроектнаяЗадача</DataPath>
+									<ContextMenu name="СвойстваПланСвязанСПроектнаяЗадачаКонтекстноеМеню" id="73"/>
+									<ExtendedTooltip name="СвойстваПланСвязанСПроектнаяЗадачаРасширеннаяПодсказка" id="74"/>
+								</LabelField>
+								<LabelField name="СвойстваПланСвязанССотрудник" id="75">
+									<DataPath>СвойстваПлан.СвязанССотрудник</DataPath>
+									<ContextMenu name="СвойстваПланСвязанССотрудникКонтекстноеМеню" id="76"/>
+									<ExtendedTooltip name="СвойстваПланСвязанССотрудникРасширеннаяПодсказка" id="77"/>
+								</LabelField>
+								<LabelField name="СвойстваПланСобытие" id="78">
+									<DataPath>СвойстваПлан.Событие</DataPath>
+									<ContextMenu name="СвойстваПланСобытиеКонтекстноеМеню" id="79"/>
+									<ExtendedTooltip name="СвойстваПланСобытиеРасширеннаяПодсказка" id="80"/>
+								</LabelField>
+								<LabelField name="СвойстваПланСумма" id="81">
+									<DataPath>СвойстваПлан.Сумма</DataPath>
+									<ContextMenu name="СвойстваПланСуммаКонтекстноеМеню" id="82"/>
+									<ExtendedTooltip name="СвойстваПланСуммаРасширеннаяПодсказка" id="83"/>
+								</LabelField>
+								<LabelField name="СвойстваПланТипРеакции" id="84">
+									<DataPath>СвойстваПлан.ТипРеакции</DataPath>
+									<ContextMenu name="СвойстваПланТипРеакцииКонтекстноеМеню" id="85"/>
+									<ExtendedTooltip name="СвойстваПланТипРеакцииРасширеннаяПодсказка" id="86"/>
+								</LabelField>
+								<LabelField name="СвойстваПланТипРиска" id="87">
+									<DataPath>СвойстваПлан.ТипРиска</DataPath>
+									<ContextMenu name="СвойстваПланТипРискаКонтекстноеМеню" id="88"/>
+									<ExtendedTooltip name="СвойстваПланТипРискаРасширеннаяПодсказка" id="89"/>
+								</LabelField>
+								<LabelField name="СвойстваПланУсловие" id="90">
+									<DataPath>СвойстваПлан.Условие</DataPath>
+									<ContextMenu name="СвойстваПланУсловиеКонтекстноеМеню" id="91"/>
+									<ExtendedTooltip name="СвойстваПланУсловиеРасширеннаяПодсказка" id="92"/>
+								</LabelField>
+								<LabelField name="СвойстваПланШаблон" id="93">
+									<DataPath>СвойстваПлан.Шаблон</DataPath>
+									<ContextMenu name="СвойстваПланШаблонКонтекстноеМеню" id="94"/>
+									<ExtendedTooltip name="СвойстваПланШаблонРасширеннаяПодсказка" id="95"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="Группа3" id="99">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Фактические данные</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="100"/>
+					<ChildItems>
+						<Table name="СвойстваФакт" id="101">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>СвойстваФакт</DataPath>
+							<RowPictureDataPath>СвойстваФакт.DefaultPicture</RowPictureDataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Свойства факт</v8:content>
+								</v8:item>
+							</Title>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="СвойстваФактКонтекстноеМеню" id="102"/>
+							<AutoCommandBar name="СвойстваФактКоманднаяПанель" id="103"/>
+							<ExtendedTooltip name="СвойстваФактРасширеннаяПодсказка" id="104"/>
+							<SearchStringAddition name="СвойстваФактСтрокаПоиска" id="105">
+								<AdditionSource>
+									<Item>СвойстваФакт</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СвойстваФактСтрокаПоискаКонтекстноеМеню" id="108"/>
+								<ExtendedTooltip name="СвойстваФактСтрокаПоискаРасширеннаяПодсказка" id="109"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СвойстваФактСостояниеПросмотра" id="110">
+								<AdditionSource>
+									<Item>СвойстваФакт</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СвойстваФактСостояниеПросмотраКонтекстноеМеню" id="113"/>
+								<ExtendedTooltip name="СвойстваФактСостояниеПросмотраРасширеннаяПодсказка" id="114"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СвойстваФактУправлениеПоиском" id="115">
+								<AdditionSource>
+									<Item>СвойстваФакт</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СвойстваФактУправлениеПоискомКонтекстноеМеню" id="118"/>
+								<ExtendedTooltip name="СвойстваФактУправлениеПоискомРасширеннаяПодсказка" id="119"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="СвойстваФактПериод" id="126">
+									<DataPath>СвойстваФакт.Period</DataPath>
+									<ContextMenu name="СвойстваФактПериодКонтекстноеМеню" id="127"/>
+									<ExtendedTooltip name="СвойстваФактПериодРасширеннаяПодсказка" id="128"/>
+								</LabelField>
+								<LabelField name="СвойстваФактДатаНаступленияФакт" id="132">
+									<DataPath>СвойстваФакт.ДатаНаступленияФакт</DataPath>
+									<ContextMenu name="СвойстваФактДатаНаступленияФактКонтекстноеМеню" id="133"/>
+									<ExtendedTooltip name="СвойстваФактДатаНаступленияФактРасширеннаяПодсказка" id="134"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="Приоритеты" id="141">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Приоритеты</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ПриоритетыРасширеннаяПодсказка" id="142"/>
+				</Page>
+				<Page name="Статусы" id="183">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статусы</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтатусыРасширеннаяПодсказка" id="184"/>
+					<ChildItems>
+						<Table name="Статусы1" id="185">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Статусы</DataPath>
+							<RowPictureDataPath>Статусы.DefaultPicture</RowPictureDataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Статусы 1</v8:content>
+								</v8:item>
+							</Title>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="Статусы1КонтекстноеМеню" id="186"/>
+							<AutoCommandBar name="Статусы1КоманднаяПанель" id="187"/>
+							<ExtendedTooltip name="Статусы1РасширеннаяПодсказка" id="188"/>
+							<SearchStringAddition name="Статусы1СтрокаПоиска" id="189">
+								<AdditionSource>
+									<Item>Статусы1</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="Статусы1СтрокаПоискаКонтекстноеМеню" id="192"/>
+								<ExtendedTooltip name="Статусы1СтрокаПоискаРасширеннаяПодсказка" id="193"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="Статусы1СостояниеПросмотра" id="194">
+								<AdditionSource>
+									<Item>Статусы1</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="Статусы1СостояниеПросмотраКонтекстноеМеню" id="197"/>
+								<ExtendedTooltip name="Статусы1СостояниеПросмотраРасширеннаяПодсказка" id="198"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="Статусы1УправлениеПоиском" id="199">
+								<AdditionSource>
+									<Item>Статусы1</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="Статусы1УправлениеПоискомКонтекстноеМеню" id="202"/>
+								<ExtendedTooltip name="Статусы1УправлениеПоискомРасширеннаяПодсказка" id="203"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="Статусы1Период" id="210">
+									<DataPath>Статусы.Period</DataPath>
+									<ContextMenu name="Статусы1ПериодКонтекстноеМеню" id="211"/>
+									<ExtendedTooltip name="Статусы1ПериодРасширеннаяПодсказка" id="212"/>
+								</LabelField>
+								<LabelField name="Статусы1Статус" id="219">
+									<DataPath>Статусы.Статус</DataPath>
+									<ContextMenu name="Статусы1СтатусКонтекстноеМеню" id="220"/>
+									<ExtendedTooltip name="Статусы1СтатусРасширеннаяПодсказка" id="221"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="СвойстваПлан" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свойства план</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	РегистрСведенийупоСвойстваРисковПроектовПланСрезПоследних.Период,
+	РегистрСведенийупоСвойстваРисковПроектовПланСрезПоследних.Регистратор,
+	РегистрСведенийупоСвойстваРисковПроектовПланСрезПоследних.НомерСтроки,
+	РегистрСведенийупоСвойстваРисковПроектовПланСрезПоследних.Активность,
+	РегистрСведенийупоСвойстваРисковПроектовПланСрезПоследних.Риск,
+	РегистрСведенийупоСвойстваРисковПроектовПланСрезПоследних.СвязанСПроектнаяЗадача,
+	РегистрСведенийупоСвойстваРисковПроектовПланСрезПоследних.Категория,
+	РегистрСведенийупоСвойстваРисковПроектовПланСрезПоследних.ТипРиска,
+	РегистрСведенийупоСвойстваРисковПроектовПланСрезПоследних.Шаблон,
+	РегистрСведенийупоСвойстваРисковПроектовПланСрезПоследних.Условие,
+	РегистрСведенийупоСвойстваРисковПроектовПланСрезПоследних.Событие,
+	РегистрСведенийупоСвойстваРисковПроектовПланСрезПоследних.Последствие,
+	РегистрСведенийупоСвойстваРисковПроектовПланСрезПоследних.Первопричина,
+	РегистрСведенийупоСвойстваРисковПроектовПланСрезПоследних.Источник,
+	РегистрСведенийупоСвойстваРисковПроектовПланСрезПоследних.СвязанСКонтрагент,
+	РегистрСведенийупоСвойстваРисковПроектовПланСрезПоследних.СвязанСДоговор,
+	РегистрСведенийупоСвойстваРисковПроектовПланСрезПоследних.СвязанССотрудник,
+	РегистрСведенийупоСвойстваРисковПроектовПланСрезПоследних.ТипРеакции,
+	РегистрСведенийупоСвойстваРисковПроектовПланСрезПоследних.ДатаНаступленияПлан,
+	РегистрСведенийупоСвойстваРисковПроектовПланСрезПоследних.Сумма,
+	РегистрСведенийупоСвойстваРисковПроектовПланСрезПоследних.ВероятностьВозникновения,
+	РегистрСведенийупоСвойстваРисковПроектовПланСрезПоследних.ОжидаемаяСумма,
+	РегистрСведенийупоСвойстваРисковПроектовПланСрезПоследних.ПояснительнаяИнформация,
+	РегистрСведенийупоСвойстваРисковПроектовПланСрезПоследних.Наименование
+ИЗ
+	РегистрСведений.упоСвойстваРисковПроектовПлан.СрезПоследних(, Риск = &amp;Риск) КАК РегистрСведенийупоСвойстваРисковПроектовПланСрезПоследних</QueryText>
+				<MainTable>InformationRegister.упоСвойстваРисковПроектовПлан.SliceLast</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Период</dcsset:field>
+							<dcsset:orderType>Desc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="СвойстваФакт" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свойства факт</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	РегистрСведенийупоСвойстваРисковПроектовФактСрезПоследних.Период,
+	РегистрСведенийупоСвойстваРисковПроектовФактСрезПоследних.Регистратор,
+	РегистрСведенийупоСвойстваРисковПроектовФактСрезПоследних.НомерСтроки,
+	РегистрСведенийупоСвойстваРисковПроектовФактСрезПоследних.Активность,
+	РегистрСведенийупоСвойстваРисковПроектовФактСрезПоследних.Риск,
+	РегистрСведенийупоСвойстваРисковПроектовФактСрезПоследних.ДатаНаступленияФакт
+ИЗ
+	РегистрСведений.упоСвойстваРисковПроектовФакт.СрезПоследних(, Риск = &amp;Риск) КАК РегистрСведенийупоСвойстваРисковПроектовФактСрезПоследних</QueryText>
+				<MainTable>InformationRegister.упоСвойстваРисковПроектовФакт.SliceLast</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Период</dcsset:field>
+							<dcsset:orderType>Desc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="Статусы" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статусы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	РегистрСведенийупоСтатусыРисковПроектовСрезПоследних.Период,
+	РегистрСведенийупоСтатусыРисковПроектовСрезПоследних.Регистратор,
+	РегистрСведенийупоСтатусыРисковПроектовСрезПоследних.НомерСтроки,
+	РегистрСведенийупоСтатусыРисковПроектовСрезПоследних.Активность,
+	РегистрСведенийупоСтатусыРисковПроектовСрезПоследних.Риск,
+	РегистрСведенийупоСтатусыРисковПроектовСрезПоследних.Статус
+ИЗ
+	РегистрСведений.упоСтатусыРисковПроектов.СрезПоследних(, Риск = &amp;Риск) КАК РегистрСведенийупоСтатусыРисковПроектовСрезПоследних</QueryText>
+				<MainTable>InformationRegister.упоСтатусыРисковПроектов.SliceLast</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Период</dcsset:field>
+							<dcsset:orderType>Desc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Parameters>
+		<Parameter name="Риск">
+			<Type>
+				<v8:Type>cfg:CatalogRef.упоРискиПроектов</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

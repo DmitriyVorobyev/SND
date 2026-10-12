@@ -1,0 +1,25 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20">
+	<import namespace="http://www.1c.ru/SSL/Exchange/Message"/>
+	<valueType name="ТипСумма" base="xs:decimal" totalDigits="15" fractionDigits="2"/>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Справочник.Сотрудники" base="d2p1:Object" open="true" sequenced="true">
+		<property name="Архив" type="xs:boolean" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Документ.ВедомостьНаВыплатуЗарплаты" base="d2p1:Object" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Зарплата" type="d3p1:Документ.ВедомостьНаВыплатуЗарплаты.Зарплата"/>
+	</objectType>
+	<objectType name="Документ.ВедомостьНаВыплатуЗарплаты.Зарплата">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Строка" type="d3p1:Документ.ВедомостьНаВыплатуЗарплаты.Зарплата.Строка" upperBound="-1"/>
+	</objectType>
+	<objectType name="Документ.ВедомостьНаВыплатуЗарплаты.Зарплата.Строка" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Сумма" type="d3p1:ТипСумма" nillable="true"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Справочник.СпособыОтраженияЗарплатыВФинансовомУчете" base="d2p1:Object" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваСпособОтраженияЗарплатыВФинансовомУчете"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваСпособОтраженияЗарплатыВФинансовомУчете" open="true" sequenced="true">
+		<property name="КодВПрограмме" type="xs:string" lowerBound="0"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваПодразделениеРегламентированногоУчета" open="true" sequenced="true">
+		<property name="Наименование" type="xs:string"/>
+	</objectType>
+</package>

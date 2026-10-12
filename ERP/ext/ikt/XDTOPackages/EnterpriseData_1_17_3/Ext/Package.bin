@@ -1,0 +1,97 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.17">
+	<import namespace="http://www.1c.ru/SSL/Exchange/Message"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="ДокументСсылка.ОтчетОРозничныхПродажах" base="d2p1:Ref"/>
+	<valueType name="ВидыДоговоров" base="xs:string" variety="Atomic">
+		<enumeration xsi:type="xs:string">СПокупателем</enumeration>
+		<enumeration xsi:type="xs:string">СПоставщиком</enumeration>
+		<enumeration xsi:type="xs:string">СКомиссионером</enumeration>
+		<enumeration xsi:type="xs:string">СКомитентом</enumeration>
+		<enumeration xsi:type="xs:string">СКомитентомНаЗакупку</enumeration>
+		<enumeration xsi:type="xs:string">СКомиссионеромНаЗакупку</enumeration>
+		<enumeration xsi:type="xs:string">Прочее</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.Валюты" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.СтраныМира" base="d2p1:Ref"/>
+	<valueType name="ТипGLN" base="xs:string" maxLength="13"/>
+	<valueType name="ЮридическоеФизическоеЛицо" base="xs:string" variety="Atomic">
+		<enumeration>ЮридическоеЛицо</enumeration>
+		<enumeration>ФизическоеЛицо</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.Организации" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.Контрагенты" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.КонтрагентыГруппа" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.Договоры" base="d2p1:Ref"/>
+	<objectType name="КлючевыеСвойстваДоговор" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.17" name="Ссылка" type="d3p1:СправочникСсылка.Договоры" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.17" name="ВидДоговора" type="d3p1:ВидыДоговоров"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.17" name="Организация" type="d3p1:КлючевыеСвойстваОрганизация"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.17" name="Контрагент" type="d3p1:КлючевыеСвойстваКонтрагент"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.17" name="ВалютаВзаиморасчетов" type="d3p1:КлючевыеСвойстваВалюта" lowerBound="0"/>
+		<property name="РасчетыВУсловныхЕдиницах" type="xs:boolean" lowerBound="0"/>
+		<property name="Наименование" type="xs:string" lowerBound="0"/>
+		<property name="Дата" type="xs:date" lowerBound="0"/>
+		<property name="Номер" type="xs:string" lowerBound="0"/>
+		<property name="ЭтоДоговорЭквайринга" type="xs:boolean" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Документ.ОтчетОРозничныхПродажах" base="d2p1:Object" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.17" name="ОплатаПлатежнымиКартами" type="d3p1:ОплатаПлатежнымиКартами" lowerBound="0"/>
+	</objectType>
+	<objectType name="ОплатаПлатежнымиКартами">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.17" name="Строка" type="d3p1:ОплатаПлатежнымиКартами.Строка" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="ОплатаПлатежнымиКартами.Строка" open="true" sequenced="true"/>
+	<objectType name="КлючевыеСвойстваВалюта" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.17" name="Ссылка" type="d3p1:СправочникСсылка.Валюты" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.17" name="ДанныеКлассификатора" type="d3p1:ОбщиеСвойстваДанныеКлассификатора"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваОрганизация" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.17" name="Ссылка" type="d3p1:СправочникСсылка.Организации" lowerBound="0"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="НаименованиеСокращенное" type="xs:string" lowerBound="0"/>
+		<property name="НаименованиеПолное" type="xs:string" lowerBound="0"/>
+		<property name="ИНН" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="12"/>
+		</property>
+		<property name="КПП" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="9"/>
+		</property>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.17" name="ГоловнаяОрганизация" type="d3p1:КлючевыеСвойстваОрганизация" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.17" name="ЮридическоеФизическоеЛицо" type="d3p1:ЮридическоеФизическоеЛицо"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.17" name="GLN" type="d3p1:ТипGLN" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.17" name="СтранаРегистрации" type="d3p1:КлючевыеСвойстваСтранаМира" lowerBound="0"/>
+		<property name="НалоговыйНомерНерезидента" type="xs:string" lowerBound="0"/>
+		<property name="РегистрационныйНомерНерезидента" type="xs:string" lowerBound="0"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваСтранаМира" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.17" name="Ссылка" type="d3p1:СправочникСсылка.СтраныМира" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.17" name="ДанныеКлассификатора" type="d3p1:ОбщиеСвойстваДанныеКлассификатора"/>
+	</objectType>
+	<objectType name="ОбщиеСвойстваДанныеКлассификатора" open="true" sequenced="true">
+		<property name="Код" type="xs:string" lowerBound="0"/>
+		<property name="Наименование" type="xs:string" lowerBound="0"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваКонтрагент" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.17" name="Ссылка" type="d3p1:СправочникСсылка.Контрагенты" lowerBound="0"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="НаименованиеПолное" type="xs:string" lowerBound="0"/>
+		<property name="ИНН" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="12"/>
+		</property>
+		<property name="КПП" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="9"/>
+		</property>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.17" name="ЮридическоеФизическоеЛицо" type="d3p1:ЮридическоеФизическоеЛицо"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.17" name="СтранаРегистрации" type="d3p1:КлючевыеСвойстваСтранаМира" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.17" name="Группа" type="d3p1:КлючевыеСвойстваКонтрагентГруппа" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.17" name="GLN" type="d3p1:ТипGLN" lowerBound="0"/>
+		<property name="НалоговыйНомерНерезидента" type="xs:string" lowerBound="0"/>
+		<property name="РегистрационныйНомер" type="xs:string" lowerBound="0"/>
+		<property name="ИндивидуальныйПредприниматель" type="xs:boolean" lowerBound="0"/>
+		<property name="Самозанятый" type="xs:boolean" lowerBound="0"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваКонтрагентГруппа" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.17" name="Ссылка" type="d3p1:СправочникСсылка.КонтрагентыГруппа" lowerBound="0"/>
+		<property name="Наименование" type="xs:string"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.17" name="Группа" type="d3p1:КлючевыеСвойстваКонтрагентГруппа" lowerBound="0"/>
+	</objectType>
+</package>

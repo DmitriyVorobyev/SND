@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Группы доступа</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>en</v8:lang>
+			<v8:content>Access groups</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="Выбрать" id="6">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>0</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Выбрать</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Select</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ВыбратьРасширеннаяПодсказка" id="7"/>
+			</Button>
+			<SearchStringAddition name="СтрокаПоиск" id="25">
+				<AdditionSource>
+					<Item>ГруппыДоступа</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Поиск</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Search</v8:content>
+					</v8:item>
+				</Title>
+				<ContextMenu name="СтрокаПоискКонтекстноеМеню" id="26"/>
+				<ExtendedTooltip name="СтрокаПоискРасширеннаяПодсказка" id="27"/>
+			</SearchStringAddition>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer" callType="ChangeAndValidate">Расш1_ПриСозданииНаСервереИзменениеИКонтроль</Event>
+	</Events>
+	<ChildItems>
+		<Table name="ГруппыДоступа" id="1">
+			<Representation>Tree</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<ReadOnly>true</ReadOnly>
+			<DefaultItem>true</DefaultItem>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<ChoiceMode>true</ChoiceMode>
+			<SelectionMode>SingleRow</SelectionMode>
+			<Header>false</Header>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<RowsPicture>
+				<xr:Ref>CommonPicture.ПиктограммыЭлементов</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</RowsPicture>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группы доступа</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Access groups</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ГруппыДоступаКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ГруппыДоступаКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ГруппыДоступаРасширеннаяПодсказка" id="8"/>
+			<SearchStringAddition name="ГруппыДоступаСтрокаПоиска" id="10">
+				<AdditionSource>
+					<Item>ГруппыДоступа</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ГруппыДоступаСтрокаПоискаКонтекстноеМеню" id="11"/>
+				<ExtendedTooltip name="ГруппыДоступаСтрокаПоискаРасширеннаяПодсказка" id="12"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ГруппыДоступаСостояниеПросмотра" id="13">
+				<AdditionSource>
+					<Item>ГруппыДоступа</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ГруппыДоступаСостояниеПросмотраКонтекстноеМеню" id="14"/>
+				<ExtendedTooltip name="ГруппыДоступаСостояниеПросмотраРасширеннаяПодсказка" id="15"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ГруппыДоступаУправлениеПоиском" id="16">
+				<AdditionSource>
+					<Item>ГруппыДоступа</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ГруппыДоступаУправлениеПоискомКонтекстноеМеню" id="17"/>
+				<ExtendedTooltip name="ГруппыДоступаУправлениеПоискомРасширеннаяПодсказка" id="18"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="Наименование" id="4">
+					<DefaultItem>true</DefaultItem>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Description</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="9"/>
+				</LabelField>
+				<InputField name="ГруппыДоступаСсылка" id="22">
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Reference</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ГруппыДоступаСсылкаКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ГруппыДоступаСсылкаРасширеннаяПодсказка" id="24"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<InputField name="ГруппыДоступаКомментарий" id="19">
+			<ReadOnly>true</ReadOnly>
+			<TitleLocation>Left</TitleLocation>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="ГруппыДоступаКомментарийКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ГруппыДоступаКомментарийРасширеннаяПодсказка" id="21"/>
+		</InputField>
+	</ChildItems>
+	<Attributes/>
+	<BaseForm version="2.20">
+		<Title>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Группы доступа</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Access groups</v8:content>
+			</v8:item>
+		</Title>
+		<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+		<AutoTitle>false</AutoTitle>
+		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+			<ChildItems>
+				<Button name="Выбрать" id="6">
+					<Type>CommandBarButton</Type>
+					<Representation>PictureAndText</Representation>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>0</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выбрать</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Select</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ВыбратьРасширеннаяПодсказка" id="7"/>
+				</Button>
+				<SearchStringAddition name="СтрокаПоиск" id="25">
+					<AdditionSource>
+						<Item>ГруппыДоступа</Item>
+						<Type>SearchStringRepresentation</Type>
+					</AdditionSource>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поиск</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Search</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="СтрокаПоискКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="СтрокаПоискРасширеннаяПодсказка" id="27"/>
+				</SearchStringAddition>
+			</ChildItems>
+		</AutoCommandBar>
+		<ChildItems>
+			<Table name="ГруппыДоступа" id="1">
+				<Representation>Tree</Representation>
+				<CommandBarLocation>None</CommandBarLocation>
+				<ReadOnly>true</ReadOnly>
+				<DefaultItem>true</DefaultItem>
+				<ChangeRowSet>false</ChangeRowSet>
+				<ChangeRowOrder>false</ChangeRowOrder>
+				<ChoiceMode>true</ChoiceMode>
+				<SelectionMode>SingleRow</SelectionMode>
+				<Header>false</Header>
+				<UseAlternationRowColor>true</UseAlternationRowColor>
+				<EnableStartDrag>true</EnableStartDrag>
+				<EnableDrag>true</EnableDrag>
+				<FileDragMode>AsFile</FileDragMode>
+				<RowsPicture>
+					<xr:Ref>CommonPicture.ПиктограммыЭлементов</xr:Ref>
+					<xr:LoadTransparent>false</xr:LoadTransparent>
+				</RowsPicture>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группы доступа</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Access groups</v8:content>
+					</v8:item>
+				</Title>
+				<ContextMenu name="ГруппыДоступаКонтекстноеМеню" id="2"/>
+				<AutoCommandBar name="ГруппыДоступаКоманднаяПанель" id="3">
+					<Autofill>false</Autofill>
+				</AutoCommandBar>
+				<ExtendedTooltip name="ГруппыДоступаРасширеннаяПодсказка" id="8"/>
+				<SearchStringAddition name="ГруппыДоступаСтрокаПоиска" id="10">
+					<AdditionSource>
+						<Item>ГруппыДоступа</Item>
+						<Type>SearchStringRepresentation</Type>
+					</AdditionSource>
+					<ContextMenu name="ГруппыДоступаСтрокаПоискаКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ГруппыДоступаСтрокаПоискаРасширеннаяПодсказка" id="12"/>
+				</SearchStringAddition>
+				<ViewStatusAddition name="ГруппыДоступаСостояниеПросмотра" id="13">
+					<AdditionSource>
+						<Item>ГруппыДоступа</Item>
+						<Type>ViewStatusRepresentation</Type>
+					</AdditionSource>
+					<ContextMenu name="ГруппыДоступаСостояниеПросмотраКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ГруппыДоступаСостояниеПросмотраРасширеннаяПодсказка" id="15"/>
+				</ViewStatusAddition>
+				<SearchControlAddition name="ГруппыДоступаУправлениеПоиском" id="16">
+					<AdditionSource>
+						<Item>ГруппыДоступа</Item>
+						<Type>SearchControl</Type>
+					</AdditionSource>
+					<ContextMenu name="ГруппыДоступаУправлениеПоискомКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ГруппыДоступаУправлениеПоискомРасширеннаяПодсказка" id="18"/>
+				</SearchControlAddition>
+				<ChildItems>
+					<LabelField name="Наименование" id="4">
+						<DefaultItem>true</DefaultItem>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Наименование</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Description</v8:content>
+							</v8:item>
+						</Title>
+						<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+						<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="9"/>
+					</LabelField>
+					<InputField name="ГруппыДоступаСсылка" id="22">
+						<UserVisible>
+							<xr:Common>false</xr:Common>
+						</UserVisible>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Ссылка</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Reference</v8:content>
+							</v8:item>
+						</Title>
+						<EditMode>EnterOnInput</EditMode>
+						<ContextMenu name="ГруппыДоступаСсылкаКонтекстноеМеню" id="23"/>
+						<ExtendedTooltip name="ГруппыДоступаСсылкаРасширеннаяПодсказка" id="24"/>
+					</InputField>
+				</ChildItems>
+			</Table>
+			<InputField name="ГруппыДоступаКомментарий" id="19">
+				<ReadOnly>true</ReadOnly>
+				<TitleLocation>Left</TitleLocation>
+				<AutoMaxWidth>false</AutoMaxWidth>
+				<MultiLine>true</MultiLine>
+				<ContextMenu name="ГруппыДоступаКомментарийКонтекстноеМеню" id="20"/>
+				<ExtendedTooltip name="ГруппыДоступаКомментарийРасширеннаяПодсказка" id="21"/>
+			</InputField>
+		</ChildItems>
+		<Attributes/>
+	</BaseForm>
+</Form>

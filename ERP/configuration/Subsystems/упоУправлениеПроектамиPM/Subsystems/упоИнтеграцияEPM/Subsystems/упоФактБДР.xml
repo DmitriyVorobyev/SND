@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Subsystem uuid="75dad116-6cde-4fb0-81f8-a1a6fb64d984">
+		<Properties>
+			<Name>упоФактБДР</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Факт БДР</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПриобретениеТоваровУслуг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоСопоставленныеФинансовыеСтатьи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоОтражатьФактДоходовПервичнымиДокументами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоОбработкаПолученияФормыСтатейДР_PM</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РеализацияТоваровУслуг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ChartOfCharacteristicTypes.СтатьиДоходов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоСоответствиеСтатейДР</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоПриЗаписиСтатейДР_Интеграция</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоОтражатьФактРасходаПриПриобретенииТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоСтатьиЗатрат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоДанныеПлановДоходовИРасходов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоИнтеграцияEPMСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.упоНастройкаПараметровPM</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ChartOfCharacteristicTypes.СтатьиРасходов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоСтатьиДоходов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Проекты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.АктВыполненныхРабот</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоДанныеПлановДоходовИРасходовПодразделения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоАктуальныеПланыДоходовИРасходовПодразделения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоАктуальныеПланыДоходовИРасходов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоТрансляцияПланаДоходаРасходовВОборотыБюджетов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоВключатьНДСВФактДоходовПервичныхДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияФактическихДоходовИРасходов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.упоСопоставлениеФинансовыхСтатей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоФактДоходовИРасходовПоДням</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоБазовыеПраваEPM</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоОтражатьФактДДСПервичнымиДокументами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоСтатьяРасходовПриПриобретенииТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Номенклатура</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоОтражатьФактРасходовПервичнымиДокументами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоВключатьНДСВФактРасходовПервичныхДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоСинхронизацияФактическихДоходовИРасходов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоКлючиАналитикиФактаБДР</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

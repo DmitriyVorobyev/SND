@@ -1,0 +1,757 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Width>150</Width>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Popup name="ПодменюСоздатьНаОсновании" id="191">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Создать на основании</v8:content>
+					</v8:item>
+				</Title>
+				<Picture>
+					<xr:Ref>StdPicture.InputOnBasis</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<Representation>Picture</Representation>
+				<ExtendedTooltip name="ПодменюСоздатьНаОснованииРасширеннаяПодсказка" id="192"/>
+			</Popup>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnSaveDataInSettingsAtServer">ПриСохраненииДанныхВНастройкахНаСервере</Event>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="NewWriteProcessing">ОбработкаЗаписиНового</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="ExternalEvent">ВнешнееСобытие</Event>
+		<Event name="OnReopen">ПриПовторномОткрытии</Event>
+		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="ActivationProcessing">ОбработкаАктивизации</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+		<Event name="BeforeLoadDataFromSettingsAtServer">ПередЗагрузкойДанныхИзНастроекНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="11"/>
+			<ChildItems>
+				<InputField name="СвойстваРискаНаименование" id="62">
+					<DataPath>СвойстваРиска.Наименование</DataPath>
+					<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					<ContextMenu name="СвойстваРискаНаименованиеКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="СвойстваРискаНаименованиеРасширеннаяПодсказка" id="64"/>
+				</InputField>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="ПриоритетРискаБДПриоритет" id="112">
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="ПриоритетРискаБДПриоритетКонтекстноеМеню" id="113"/>
+					<ExtendedTooltip name="ПриоритетРискаБДПриоритетРасширеннаяПодсказка" id="114"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаВебКлиент" id="68">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Веб клиент</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаВебКлиентРасширеннаяПодсказка" id="69"/>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОсновное" id="85">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа основное</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОсновноеРасширеннаяПодсказка" id="86"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаСвойства" id="72">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основные свойства</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>NormalSeparation</Representation>
+					<ExtendedTooltip name="ГруппаСвойстваРасширеннаяПодсказка" id="73"/>
+					<ChildItems>
+						<InputField name="СвойстваРискаТипРиска" id="12">
+							<DataPath>СвойстваРиска.ТипРиска</DataPath>
+							<ContextMenu name="СвойстваРискаТипРискаКонтекстноеМеню" id="13"/>
+							<ExtendedTooltip name="СвойстваРискаТипРискаРасширеннаяПодсказка" id="14"/>
+							<Events>
+								<Event name="OnChange">СвойстваРискаТипРискаПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="Владелец" id="7">
+							<DataPath>Объект.Owner</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ВладелецКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="9"/>
+						</InputField>
+						<InputField name="СвойстваРискаКатегория" id="15">
+							<DataPath>СвойстваРиска.Категория</DataPath>
+							<ContextMenu name="СвойстваРискаКатегорияКонтекстноеМеню" id="16"/>
+							<ExtendedTooltip name="СвойстваРискаКатегорияРасширеннаяПодсказка" id="17"/>
+						</InputField>
+						<InputField name="СвойстваРискаШаблон" id="87">
+							<DataPath>СвойстваРиска.Шаблон</DataPath>
+							<ContextMenu name="СвойстваРискаШаблонКонтекстноеМеню" id="88"/>
+							<ExtendedTooltip name="СвойстваРискаШаблонРасширеннаяПодсказка" id="89"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаСостояние" id="81">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>NormalSeparation</Representation>
+					<ExtendedTooltip name="ГруппаСостояниеРасширеннаяПодсказка" id="82"/>
+					<ChildItems>
+						<InputField name="СтатусРискаСтатус" id="53">
+							<DataPath>СтатусРиска.Статус</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Текущий статус</v8:content>
+								</v8:item>
+							</Title>
+							<QuickChoice>true</QuickChoice>
+							<ContextMenu name="СтатусРискаСтатусКонтекстноеМеню" id="54"/>
+							<ExtendedTooltip name="СтатусРискаСтатусРасширеннаяПодсказка" id="55"/>
+						</InputField>
+						<InputField name="СвойстваРискаТипРеакции" id="170">
+							<DataPath>СвойстваРиска.ТипРеакции</DataPath>
+							<ContextMenu name="СвойстваРискаТипРеакцииКонтекстноеМеню" id="171"/>
+							<ExtendedTooltip name="СвойстваРискаТипРеакцииРасширеннаяПодсказка" id="172"/>
+						</InputField>
+						<UsualGroup name="ГруппаДатаНаступления" id="76">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа дата наступления</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДатаНаступленияРасширеннаяПодсказка" id="77"/>
+							<ChildItems>
+								<InputField name="СвойстваРискаДатаНаступленияПлан" id="50">
+									<DataPath>СвойстваРиска.ДатаНаступленияПлан</DataPath>
+									<ContextMenu name="СвойстваРискаДатаНаступленияПланКонтекстноеМеню" id="51"/>
+									<ExtendedTooltip name="СвойстваРискаДатаНаступленияПланРасширеннаяПодсказка" id="52"/>
+								</InputField>
+								<InputField name="СвойстваРискаФактДатаНаступленияФакт" id="78">
+									<DataPath>СвойстваРискаФакт.ДатаНаступленияФакт</DataPath>
+									<ContextMenu name="СвойстваРискаФактДатаНаступленияФактКонтекстноеМеню" id="79"/>
+									<ExtendedTooltip name="СвойстваРискаФактДатаНаступленияФактРасширеннаяПодсказка" id="80"/>
+									<Events>
+										<Event name="OnChange">СвойстваРискаФактДатаНаступленияФактПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="ГруппаСтраницы" id="115">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="116"/>
+			<ChildItems>
+				<Page name="СтраницаПараметры" id="117">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаПараметрыРасширеннаяПодсказка" id="118"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаУсловиеСобытиеПоследствие" id="60">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа условие событие последствие</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаУсловиеСобытиеПоследствиеРасширеннаяПодсказка" id="61"/>
+							<ChildItems>
+								<InputField name="СвойстваРискаУсловие" id="18">
+									<DataPath>СвойстваРиска.Условие</DataPath>
+									<MultiLine>true</MultiLine>
+									<ContextMenu name="СвойстваРискаУсловиеКонтекстноеМеню" id="19"/>
+									<ExtendedTooltip name="СвойстваРискаУсловиеРасширеннаяПодсказка" id="20"/>
+								</InputField>
+								<InputField name="СвойстваРискаСобытие" id="21">
+									<DataPath>СвойстваРиска.Событие</DataPath>
+									<MultiLine>true</MultiLine>
+									<ContextMenu name="СвойстваРискаСобытиеКонтекстноеМеню" id="22"/>
+									<ExtendedTooltip name="СвойстваРискаСобытиеРасширеннаяПодсказка" id="23"/>
+								</InputField>
+								<InputField name="СвойстваРискаПоследствие" id="24">
+									<DataPath>СвойстваРиска.Последствие</DataPath>
+									<MultiLine>true</MultiLine>
+									<ContextMenu name="СвойстваРискаПоследствиеКонтекстноеМеню" id="25"/>
+									<ExtendedTooltip name="СвойстваРискаПоследствиеРасширеннаяПодсказка" id="26"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПервопричиныСвязи" id="83">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа первопричины связи</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПервопричиныСвязиРасширеннаяПодсказка" id="84"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаПервопричины" id="74">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Первопричина</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>NormalSeparation</Representation>
+									<ExtendedTooltip name="ГруппаПервопричиныРасширеннаяПодсказка" id="75"/>
+									<ChildItems>
+										<InputField name="СвойстваРискаИсточник" id="30">
+											<DataPath>СвойстваРиска.Источник</DataPath>
+											<ContextMenu name="СвойстваРискаИсточникКонтекстноеМеню" id="31"/>
+											<ExtendedTooltip name="СвойстваРискаИсточникРасширеннаяПодсказка" id="32"/>
+										</InputField>
+										<InputField name="СвойстваРискаПервопричина" id="27">
+											<DataPath>СвойстваРиска.Первопричина</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Описание первопричины</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Left</TitleLocation>
+											<MultiLine>true</MultiLine>
+											<ContextMenu name="СвойстваРискаПервопричинаКонтекстноеМеню" id="28"/>
+											<ExtendedTooltip name="СвойстваРискаПервопричинаРасширеннаяПодсказка" id="29"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаСвязи" id="56">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Связи с объектами БД</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>NormalSeparation</Representation>
+									<ExtendedTooltip name="ГруппаСвязиРасширеннаяПодсказка" id="57"/>
+									<ChildItems>
+										<InputField name="СвойстваРискаСвязанССотрудник" id="47">
+											<DataPath>СвойстваРиска.СвязанССотрудник</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сотрудник</v8:content>
+												</v8:item>
+											</Title>
+											<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
+											<ContextMenu name="СвойстваРискаСвязанССотрудникКонтекстноеМеню" id="48"/>
+											<ExtendedTooltip name="СвойстваРискаСвязанССотрудникРасширеннаяПодсказка" id="49"/>
+										</InputField>
+										<InputField name="СвойстваРискаСвязанСКонтрагент" id="41">
+											<DataPath>СвойстваРиска.СвязанСКонтрагент</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Контрагент</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="СвойстваРискаСвязанСКонтрагентКонтекстноеМеню" id="42"/>
+											<ExtendedTooltip name="СвойстваРискаСвязанСКонтрагентРасширеннаяПодсказка" id="43"/>
+										</InputField>
+										<InputField name="СвойстваРискаСвязанСДоговор" id="44">
+											<DataPath>СвойстваРиска.СвязанСДоговор</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Договор</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="СвойстваРискаСвязанСДоговорКонтекстноеМеню" id="45"/>
+											<ExtendedTooltip name="СвойстваРискаСвязанСДоговорРасширеннаяПодсказка" id="46"/>
+										</InputField>
+										<InputField name="СвойстваРискаСвязанСПроектнаяЗадача" id="179">
+											<DataPath>СвойстваРиска.СвязанСПроектнаяЗадача</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Проектная задача</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="СвойстваРискаСвязанСПроектнаяЗадачаКонтекстноеМеню" id="180"/>
+											<ExtendedTooltip name="СвойстваРискаСвязанСПроектнаяЗадачаРасширеннаяПодсказка" id="181"/>
+											<Events>
+												<Event name="StartChoice">СвойстваРискаСвязанСПроектнаяЗадачаНачалоВыбора</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаОценкаРисков" id="101">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Оценка рисков</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаОценкаРисковРасширеннаяПодсказка" id="102"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаСумма" id="105">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа сумма</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаСуммаРасширеннаяПодсказка" id="106"/>
+									<ChildItems>
+										<InputField name="СвойстваРискаСумма" id="92">
+											<DataPath>СвойстваРиска.Сумма</DataPath>
+											<ContextMenu name="СвойстваРискаСуммаКонтекстноеМеню" id="93"/>
+											<ExtendedTooltip name="СвойстваРискаСуммаРасширеннаяПодсказка" id="94"/>
+											<Events>
+												<Event name="OnChange">СвойстваРискаСуммаПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="СвойстваРискаВероятностьВозникновения" id="95">
+											<DataPath>СвойстваРиска.ВероятностьВозникновения</DataPath>
+											<ContextMenu name="СвойстваРискаВероятностьВозникновенияКонтекстноеМеню" id="96"/>
+											<ExtendedTooltip name="СвойстваРискаВероятностьВозникновенияРасширеннаяПодсказка" id="97"/>
+											<Events>
+												<Event name="OnChange">СвойстваРискаВероятностьВозникновенияПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<InputField name="СвойстваРискаОжидаемаяСумма" id="98">
+									<DataPath>СвойстваРиска.ОжидаемаяСумма</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<ContextMenu name="СвойстваРискаОжидаемаяСуммаКонтекстноеМеню" id="99"/>
+									<ExtendedTooltip name="СвойстваРискаОжидаемаяСуммаРасширеннаяПодсказка" id="100"/>
+								</InputField>
+								<InputField name="СвойстваРискаПояснительнаяИнформация" id="107">
+									<DataPath>СвойстваРиска.ПояснительнаяИнформация</DataPath>
+									<MultiLine>true</MultiLine>
+									<ContextMenu name="СвойстваРискаПояснительнаяИнформацияКонтекстноеМеню" id="108"/>
+									<ExtendedTooltip name="СвойстваРискаПояснительнаяИнформацияРасширеннаяПодсказка" id="109"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДополнительныеРеквизиты" id="90">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дополнительные реквизиты</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="ГруппаДополнительныеРеквизитыРасширеннаяПодсказка" id="91"/>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаРаботаСРисками" id="119">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Действия</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаРаботаСРискамиРасширеннаяПодсказка" id="120"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаПредупреждающиеДействия" id="130">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Предупреждающие действия</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаПредупреждающиеДействияРасширеннаяПодсказка" id="131"/>
+							<ChildItems>
+								<InputField name="ОтветственныйЗаПредупреждающиеДействия" id="127">
+									<DataPath>Объект.ОтветственныйЗаПредупреждающиеДействия</DataPath>
+									<ContextMenu name="ОтветственныйЗаПредупреждающиеДействияКонтекстноеМеню" id="128"/>
+									<ExtendedTooltip name="ОтветственныйЗаПредупреждающиеДействияРасширеннаяПодсказка" id="129"/>
+								</InputField>
+								<UsualGroup name="ГруппаПроверки" id="168">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Проверки</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>NormalSeparation</Representation>
+									<ExtendedTooltip name="ГруппаПроверкиРасширеннаяПодсказка" id="169"/>
+									<ChildItems>
+										<Table name="Проверки" id="137">
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<FileDragMode>AsFile</FileDragMode>
+											<DataPath>Объект.Проверки</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Проверки</v8:content>
+												</v8:item>
+											</Title>
+											<SearchStringLocation>None</SearchStringLocation>
+											<ViewStatusLocation>None</ViewStatusLocation>
+											<SearchControlLocation>None</SearchControlLocation>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="ПроверкиКонтекстноеМеню" id="138"/>
+											<AutoCommandBar name="ПроверкиКоманднаяПанель" id="139"/>
+											<ExtendedTooltip name="ПроверкиРасширеннаяПодсказка" id="140"/>
+											<SearchStringAddition name="ПроверкиСтрокаПоиска" id="182">
+												<AdditionSource>
+													<Item>Проверки</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ПроверкиСтрокаПоискаКонтекстноеМеню" id="183"/>
+												<ExtendedTooltip name="ПроверкиСтрокаПоискаРасширеннаяПодсказка" id="184"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="ПроверкиСостояниеПросмотра" id="185">
+												<AdditionSource>
+													<Item>Проверки</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ПроверкиСостояниеПросмотраКонтекстноеМеню" id="186"/>
+												<ExtendedTooltip name="ПроверкиСостояниеПросмотраРасширеннаяПодсказка" id="187"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="ПроверкиУправлениеПоиском" id="188">
+												<AdditionSource>
+													<Item>Проверки</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="ПроверкиУправлениеПоискомКонтекстноеМеню" id="189"/>
+												<ExtendedTooltip name="ПроверкиУправлениеПоискомРасширеннаяПодсказка" id="190"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<LabelField name="ПроверкиНомерСтроки" id="156">
+													<DataPath>Объект.Проверки.LineNumber</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ПроверкиНомерСтрокиКонтекстноеМеню" id="157"/>
+													<ExtendedTooltip name="ПроверкиНомерСтрокиРасширеннаяПодсказка" id="158"/>
+												</LabelField>
+												<InputField name="ПроверкиДатаПлан" id="159">
+													<DataPath>Объект.Проверки.ДатаПлан</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ПроверкиДатаПланКонтекстноеМеню" id="160"/>
+													<ExtendedTooltip name="ПроверкиДатаПланРасширеннаяПодсказка" id="161"/>
+												</InputField>
+												<InputField name="ПроверкиДатаФакт" id="162">
+													<DataPath>Объект.Проверки.ДатаФакт</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ПроверкиДатаФактКонтекстноеМеню" id="163"/>
+													<ExtendedTooltip name="ПроверкиДатаФактРасширеннаяПодсказка" id="164"/>
+												</InputField>
+												<InputField name="ПроверкиКомментарий" id="165">
+													<DataPath>Объект.Проверки.Комментарий</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ПроверкиКомментарийКонтекстноеМеню" id="166"/>
+													<ExtendedTooltip name="ПроверкиКомментарийРасширеннаяПодсказка" id="167"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДействия" id="132">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Варианты и действия по реагированию</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаДействияРасширеннаяПодсказка" id="133"/>
+							<ChildItems>
+								<InputField name="ОтветственныйЗаРеагированиеНаРиск" id="134">
+									<DataPath>Объект.ОтветственныйЗаРеагированиеНаРиск</DataPath>
+									<ContextMenu name="ОтветственныйЗаРеагированиеНаРискКонтекстноеМеню" id="135"/>
+									<ExtendedTooltip name="ОтветственныйЗаРеагированиеНаРискРасширеннаяПодсказка" id="136"/>
+								</InputField>
+								<InputField name="СтратегияРеагированияНаРиск" id="121">
+									<DataPath>Объект.СтратегияРеагированияНаРиск</DataPath>
+									<ChooseType>false</ChooseType>
+									<ContextMenu name="СтратегияРеагированияНаРискКонтекстноеМеню" id="122"/>
+									<ExtendedTooltip name="СтратегияРеагированияНаРискРасширеннаяПодсказка" id="123"/>
+								</InputField>
+								<InputField name="СтратегияРеагированияНаРискОписание" id="173">
+									<DataPath>Объект.СтратегияРеагированияНаРискОписание</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Описание</v8:content>
+										</v8:item>
+									</Title>
+									<MultiLine>true</MultiLine>
+									<ContextMenu name="СтратегияРеагированияНаРискОписаниеКонтекстноеМеню" id="174"/>
+									<ExtendedTooltip name="СтратегияРеагированияНаРискОписаниеРасширеннаяПодсказка" id="175"/>
+								</InputField>
+								<InputField name="ЗапаснаяСтратегияРеагированияНаРиск" id="124">
+									<DataPath>Объект.ЗапаснаяСтратегияРеагированияНаРиск</DataPath>
+									<ChooseType>false</ChooseType>
+									<ContextMenu name="ЗапаснаяСтратегияРеагированияНаРискКонтекстноеМеню" id="125"/>
+									<ExtendedTooltip name="ЗапаснаяСтратегияРеагированияНаРискРасширеннаяПодсказка" id="126"/>
+								</InputField>
+								<InputField name="ЗапаснаяРеагированияНаРискОписание" id="176">
+									<DataPath>Объект.ЗапаснаяРеагированияНаРискОписание</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Описание</v8:content>
+										</v8:item>
+									</Title>
+									<MultiLine>true</MultiLine>
+									<ContextMenu name="ЗапаснаяРеагированияНаРискОписаниеКонтекстноеМеню" id="177"/>
+									<ExtendedTooltip name="ЗапаснаяРеагированияНаРискОписаниеРасширеннаяПодсказка" id="178"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.упоРискиПроектов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="СвойстваРиска" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свойства риска</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.упоСвойстваРисковПроектовПлан</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="СтатусРиска" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус риска</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.упоСтатусыРисковПроектов</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="СвойстваРискаБД" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свойства риска</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.упоСвойстваРисковПроектовПлан</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СтатусРискаБД" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус риска</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.упоСтатусыРисковПроектов</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СвойстваРискаФакт" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свойства риска</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.упоСвойстваРисковПроектовФакт</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="СвойстваРискаФактБД" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свойства риска</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.упоСвойстваРисковПроектовФакт</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПриоритетРискаБД" id="8">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.упоПриоритетыРисковПроектов</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ЭлементСозданКопированием" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Элемент создан копированием</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПараметрыПодключаемыхКоманд" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры подключаемых команд</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>InformationRegister.упоПриоритетыРисковПроектов.StandardCommand.OpenByValue.Риск</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+		<CommandBar>
+			<Item>
+				<Command>CommonCommand.ИнтеграцияС1СДокументооборотСоздатьПисьмо</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>CommonCommand.ИнтеграцияС1СДокументооборотСоздатьБизнесПроцесс</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Catalog.упоЗадания.Command.СоздатьЗадание</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>CommonCommand.ИнтеграцияС1СДокументооборотНачатьОбработку</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</CommandBar>
+	</CommandInterface>
+</Form>

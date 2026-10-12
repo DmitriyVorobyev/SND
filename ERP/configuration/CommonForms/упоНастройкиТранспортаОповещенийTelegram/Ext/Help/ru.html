@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta http-equiv="content-type" content="text/html;charset=utf-8"></meta><link rel="stylesheet" type="text/css" href="v8help://service_book/service_style"></link></head><body class="">
+<h1>Шаги настройки подключения к Telegram</h1>
+<div><font size="2">Для отправки оповещений сервер 1С (или клиент, если база в файловом режиме) должен иметь доступ в интернет к ресурсу <b>https://api.telegram.org</b> по <b>443</b> порту.</font></div>
+<h2>1. Создание бота Telegram</h2>
+<p style="orphans: 2; widows: 2; "><font size="2">Через клиент Telegram открыть бот <font face="Verdana"><a href="https://t.me/botfather" style="box-sizing: border-box; color: rgb(0, 136, 204); outline: 0px; font-variant-ligatures: normal; orphans: 2; widows: 2;">@BotFather</a><font color="#333333"><span style="caret-color: rgb(51, 51, 51);">:</span></font></font></font></p>
+<p style="orphans: 2; widows: 2; "></p>
+<ol><li><font color="#333333" face="Verdana" size="2"><span style="caret-color: rgb(51, 51, 51);">Отправить команду <b>/newbot</b>.</span></font></li>
+<li><font color="#333333" face="Verdana" size="2">После ответов боту получить токен вида <i>1234567890:abcdefghijklmnopqrstuvwxwzABCDEFGHI</i>.</font></li>
+<li><font color="#333333" face="Verdana" size="2">Полученный токен ввести поле "<b>Токен</b>" формы настроек и сохранить.</font></li>
+<li><font color="#333333" face="Verdana" size="2">Нажать кнопку "<b>Проверить подключение</b>".</font></li>
+<li><font color="#333333" face="Verdana" size="2">В случае успешной настройки в поле ниже будет выведена информация о боте.</font></li></ol><h2><font color="#333333" face="Verdana" size="3"><span style="caret-color: rgb(51, 51, 51);">2. Установка соответствия пользователей 1С и Telegram</span></font></h2>
+<div>
+<ol><li><font color="#333333" face="Verdana" size="2"><span style="caret-color: rgb(51, 51, 51);">Пользователь через клиент Telegram должен добавить себе бота (имя вида <i>@ИмяБотаДляОповещений </i>создается на первом шаге).</span></font></li>
+<li><font color="#333333" face="Verdana" size="2"><span style="caret-color: rgb(51, 51, 51);">Пользователь должен отправить боту команду <b>/start</b>.</span></font></li>
+<li><font color="#333333" face="Verdana" size="2">Нажать кнопку "<b>Получить сообщения боту</b>" на странице "<b>Сообщения боту</b>".</font></li>
+<li><font color="#333333" face="Verdana" size="2">Выбрать в списке сообщений нужное (поле пользователя Telegram без соответствия выделено красным) и через контекстное меню вызвать команду "<b>Установить соответствие пользователя</b>".</font></li>
+<li><font color="#333333" face="Verdana" size="2">Выбрать соответствующего пользователя базы и записать.</font></li>
+<li><font color="#333333" face="Verdana" size="2">На странице "<b>Соответствие пользователей</b>" можно посмотреть установленные пары Пользователь базы - ID пользователя Telegram и отправить тестовое сообщение пользователю с помощью команды "<b>Отправить сообщение пользователю</b>".</font></li></ol></div>
+<p></p>
+
+
+</body></html>

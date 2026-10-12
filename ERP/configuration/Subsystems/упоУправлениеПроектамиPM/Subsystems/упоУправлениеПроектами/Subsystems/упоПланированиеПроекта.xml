@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Subsystem uuid="d8856c77-eac1-4ddc-851f-9db38448106b">
+		<Properties>
+			<Name>упоПланированиеПроекта</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Планирование проекта</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоРабочийКалендарьПоУмолчанию</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоРасчетКалендарныхСроковРедакция4Сервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DocumentJournal.упоПланированиеПроекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоМетодОперативногоПланированияПоУмолчанию</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоПроектнаяЗадача</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоНазначениеТрудовыхРесурсовНаПроект</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоРасчетКалендарногоПланаПроекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоНазначениеТрудовыхРесурсовНаПроектнуюЗадачу</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоУтверждениеПланаПроекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DocumentJournal.упоУправлениеПроектом</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.упоСпособПересчетаСтоимостиПоНорме</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.упоСпособПривязкиДоходаРасхода</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.упоПерерасчетСтоимостиРесурсовПроекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоВыделенныеТрудовыеРесурсы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоКодыСДР</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоПредусловияПроектныхЗадач</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоРасчетныеСрокиПроектныхЗадач</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоСвойстваПроектныхЗадач</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоСрокиПроектныхЗадач</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоРасчетКалендарныхСроковРедакция3Сервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.упоРасчетСроковПроектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоОчередьРасчетаСроковПроектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоЕдиницаТрудоемкостиПоУмолчанию</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоЕдиницаВремениПоУмолчанию</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

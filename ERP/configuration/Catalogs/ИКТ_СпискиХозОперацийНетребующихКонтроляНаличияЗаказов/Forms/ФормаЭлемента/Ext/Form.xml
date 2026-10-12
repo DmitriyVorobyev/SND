@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Наименование" id="1">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<Table name="СпискиСтатей" id="4">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.СписокХозОпераций</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СпискиСтатейКонтекстноеМеню" id="5"/>
+			<AutoCommandBar name="СпискиСтатейКоманднаяПанель" id="6"/>
+			<ExtendedTooltip name="СпискиСтатейРасширеннаяПодсказка" id="7"/>
+			<SearchStringAddition name="СпискиСтатейСтрокаПоиска" id="8">
+				<AdditionSource>
+					<Item>СпискиСтатей</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СпискиСтатейСтрокаПоискаКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="СпискиСтатейСтрокаПоискаРасширеннаяПодсказка" id="10"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СпискиСтатейСостояниеПросмотра" id="11">
+				<AdditionSource>
+					<Item>СпискиСтатей</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СпискиСтатейСостояниеПросмотраКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="СпискиСтатейСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СпискиСтатейУправлениеПоиском" id="14">
+				<AdditionSource>
+					<Item>СпискиСтатей</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СпискиСтатейУправлениеПоискомКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="СпискиСтатейУправлениеПоискомРасширеннаяПодсказка" id="16"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="СпискиСтатейНомерСтроки" id="17">
+					<DataPath>Объект.СписокХозОпераций.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СпискиСтатейНомерСтрокиКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="СпискиСтатейНомерСтрокиРасширеннаяПодсказка" id="19"/>
+				</LabelField>
+				<InputField name="СпискиСтатейХозОперация" id="20">
+					<DataPath>Объект.СписокХозОпераций.ХозОперация</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СпискиСтатейХозОперацияКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="СпискиСтатейХозОперацияРасширеннаяПодсказка" id="22"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ИКТ_СпискиХозОперацийНетребующихКонтроляНаличияЗаказов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,2291 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Проекты</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<Customizable>false</Customizable>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<CommandSet>
+		<ExcludedCommand>HierarchicalList</ExcludedCommand>
+		<ExcludedCommand>LevelDown</ExcludedCommand>
+		<ExcludedCommand>LevelUp</ExcludedCommand>
+		<ExcludedCommand>List</ExcludedCommand>
+		<ExcludedCommand>MoveItem</ExcludedCommand>
+		<ExcludedCommand>Tree</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Popup name="ПодменюСоздатьНаОсновании" id="300">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Создать на основании</v8:content>
+					</v8:item>
+				</Title>
+				<Picture>
+					<xr:Ref>StdPicture.InputOnBasis</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<Representation>Picture</Representation>
+				<ExtendedTooltip name="ПодменюСоздатьНаОснованииРасширеннаяПодсказка" id="301"/>
+			</Popup>
+			<ButtonGroup name="ФормаГруппа2" id="274">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Форма группа 2</v8:content>
+					</v8:item>
+				</Title>
+				<Representation>Compact</Representation>
+				<ExtendedTooltip name="ФормаГруппа2РасширеннаяПодсказка" id="275"/>
+				<ChildItems>
+					<Button name="ФормаКомандаСделатьТекущим" id="110">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.КомандаСделатьТекущим</CommandName>
+						<ExtendedTooltip name="ФормаКомандаСделатьТекущимExtendedTooltip" id="120"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
+			<ButtonGroup name="ФормаГруппа1" id="244">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Форма группа 1</v8:content>
+					</v8:item>
+				</Title>
+				<Representation>Compact</Representation>
+				<ExtendedTooltip name="ФормаГруппа1РасширеннаяПодсказка" id="245"/>
+				<ChildItems>
+					<Button name="ФормаСправочникПроектыОткрытьКарточкуПроекта" id="214">
+						<Type>CommandBarButton</Type>
+						<CommandName>Catalog.Проекты.Command.упоОткрытьКарточкуПроекта</CommandName>
+						<DataPath>Items.Список.CurrentData.Проект</DataPath>
+						<ExtendedTooltip name="ФормаСправочникПроектыОткрытьКарточкуПроектаРасширеннаяПодсказка" id="215"/>
+					</Button>
+					<Button name="ФормаОбработкаупоУпрощенныйВводСтруктурыПроектаупоУпрощенныйВводСтруктурыПроекта" id="216">
+						<Type>CommandBarButton</Type>
+						<CommandName>DataProcessor.упоУпрощенныйВводСтруктурыПроекта.Command.упоУпрощенныйВводСтруктурыПроекта</CommandName>
+						<DataPath>Items.Список.CurrentData.Проект</DataPath>
+						<ExtendedTooltip name="ФормаОбработкаупоУпрощенныйВводСтруктурыПроектаупоУпрощенныйВводСтруктурыПроектаРасширеннаяПодсказка" id="217"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
+			<ButtonGroup name="ФормаГруппа3" id="250">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Форма группа 3</v8:content>
+					</v8:item>
+				</Title>
+				<Representation>Compact</Representation>
+				<ExtendedTooltip name="ФормаГруппа3РасширеннаяПодсказка" id="251"/>
+				<ChildItems>
+					<Button name="ФормаОбработкаупоМониторПроектаМониторПроекта" id="218">
+						<Type>CommandBarButton</Type>
+						<CommandName>DataProcessor.упоМониторПроекта.Command.МониторПроекта</CommandName>
+						<DataPath>Items.Список.CurrentData.Проект</DataPath>
+						<ExtendedTooltip name="ФормаОбработкаупоМониторПроектаМониторПроектаРасширеннаяПодсказка" id="219"/>
+					</Button>
+					<Button name="ФормаОбработкаупоДеревоКлючевыхПоказателейПроектаупоСхемаПоказателейПроекта" id="242">
+						<Type>CommandBarButton</Type>
+						<CommandName>DataProcessor.упоДеревоКлючевыхПоказателейПроекта.Command.упоСхемаПоказателейПроекта</CommandName>
+						<DataPath>Items.Список.CurrentData.Проект</DataPath>
+						<ExtendedTooltip name="ФормаОбработкаупоДеревоКлючевыхПоказателейПроектаупоСхемаПоказателейПроектаРасширеннаяПодсказка" id="243"/>
+					</Button>
+					<Button name="ФормаОтчетупоСетевойГрафикСетевойГрафикПроекта" id="260">
+						<Type>CommandBarButton</Type>
+						<CommandName>Report.упоСетевойГрафик.Command.СетевойГрафикПроекта</CommandName>
+						<DataPath>Items.Список.CurrentData.Проект</DataPath>
+						<ExtendedTooltip name="ФормаОтчетупоСетевойГрафикСетевойГрафикПроектаРасширеннаяПодсказка" id="261"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
+			<ButtonGroup name="ФормаГруппа5" id="284">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Форма группа 5</v8:content>
+					</v8:item>
+				</Title>
+				<Representation>Compact</Representation>
+				<ExtendedTooltip name="ФормаГруппа5РасширеннаяПодсказка" id="285"/>
+				<ChildItems>
+					<Button name="ФормаЖурналДокументовупоУправлениеПроектомКомандаСтатусыПроекта" id="282">
+						<Type>CommandBarButton</Type>
+						<CommandName>DocumentJournal.упоУправлениеПроектом.Command.КомандаСтатусыПроекта</CommandName>
+						<DataPath>Items.Список.CurrentData.Проект</DataPath>
+						<ExtendedTooltip name="ФормаЖурналДокументовупоУправлениеПроектомКомандаСтатусыПроектаРасширеннаяПодсказка" id="283"/>
+					</Button>
+					<Button name="ФормаСправочникупоРискиПроектовупоРискиПроекта" id="230">
+						<Type>CommandBarButton</Type>
+						<CommandName>Catalog.упоРискиПроектов.Command.упоРискиПроекта</CommandName>
+						<DataPath>Items.Список.CurrentData.Проект</DataPath>
+						<ExtendedTooltip name="ФормаСправочникупоРискиПроектовупоРискиПроектаРасширеннаяПодсказка" id="231"/>
+					</Button>
+					<Button name="ФормаОбработкаупоУправлениеВерсиямиПроектаВерсииПроекта" id="238">
+						<Type>CommandBarButton</Type>
+						<CommandName>DataProcessor.упоУправлениеВерсиямиПроекта.Command.ВерсииПроекта</CommandName>
+						<DataPath>Items.Список.CurrentData.Проект</DataPath>
+						<ExtendedTooltip name="ФормаОбработкаупоУправлениеВерсиямиПроектаВерсииПроектаРасширеннаяПодсказка" id="239"/>
+					</Button>
+					<Popup name="СтатусОтчеты" id="296">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Статус-отчеты</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Статус-отчеты</v8:content>
+							</v8:item>
+						</ToolTip>
+						<Picture>
+							<xr:Ref>CommonPicture.упоСтатусКрасный</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<Representation>Picture</Representation>
+						<ExtendedTooltip name="СтатусОтчетыРасширеннаяПодсказка" id="297"/>
+						<ChildItems>
+							<Button name="ФормаДокументупоСводныйСтатусОтчетПоПроектамупоСводныеСтатусыПоПроектам" id="294">
+								<Type>CommandBarButton</Type>
+								<CommandName>Document.упоСводныйСтатусОтчетПоПроектам.Command.упоСводныеСтатусыПоПроектам</CommandName>
+								<DataPath>Items.Список.CurrentData.Проект</DataPath>
+								<ExtendedTooltip name="ФормаДокументупоСводныйСтатусОтчетПоПроектамупоСводныеСтатусыПоПроектамРасширеннаяПодсказка" id="295"/>
+							</Button>
+							<Button name="ФормаДокументупоСтатусОтчетПоПроектуСтатусОтчетыПоПроекту" id="298">
+								<Type>CommandBarButton</Type>
+								<CommandName>Document.упоСтатусОтчетПоПроекту.Command.СтатусОтчетыПоПроекту</CommandName>
+								<DataPath>Items.Список.CurrentData.Проект</DataPath>
+								<ExtendedTooltip name="ФормаДокументупоСтатусОтчетПоПроектуСтатусОтчетыПоПроектуРасширеннаяПодсказка" id="299"/>
+							</Button>
+						</ChildItems>
+					</Popup>
+				</ChildItems>
+			</ButtonGroup>
+			<ButtonGroup name="ФормаГруппа12" id="270">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Форма группа 12</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаГруппа12РасширеннаяПодсказка" id="271"/>
+				<ChildItems>
+					<Popup name="Задания" id="302">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Задания</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Задания</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="ЗаданияРасширеннаяПодсказка" id="303"/>
+						<ChildItems>
+							<Button name="ФормаОбработкаупоРаботаСЗаданиямиупоРаботаСЗаданиямиПроекта" id="234">
+								<Type>CommandBarButton</Type>
+								<CommandName>DataProcessor.упоРаботаСЗаданиями.Command.упоРаботаСЗаданиямиПроекта</CommandName>
+								<DataPath>Items.Список.CurrentData.Проект</DataPath>
+								<ExtendedTooltip name="ФормаОбработкаупоРаботаСЗаданиямиупоРаботаСЗаданиямиПроектаРасширеннаяПодсказка" id="235"/>
+							</Button>
+							<Button name="ФормаОбработкаупоРаботаСЗаданиямиПроектныеРешенияОбъекта" id="232">
+								<Type>CommandBarButton</Type>
+								<CommandName>DataProcessor.упоРаботаСЗаданиями.Command.ПроектныеРешенияОбъекта</CommandName>
+								<DataPath>Items.Список.CurrentData.Проект</DataPath>
+								<ExtendedTooltip name="ФормаОбработкаупоРаботаСЗаданиямиПроектныеРешенияОбъектаРасширеннаяПодсказка" id="233"/>
+							</Button>
+							<Button name="ФормаОбработкаупоРаботаСЗаданиямиЗаданияНаПланированиеОбъекта" id="304">
+								<Type>CommandBarButton</Type>
+								<CommandName>DataProcessor.упоРаботаСЗаданиями.Command.ЗаданияНаПланированиеОбъекта</CommandName>
+								<DataPath>Items.Список.CurrentData.Проект</DataPath>
+								<ExtendedTooltip name="ФормаОбработкаупоРаботаСЗаданиямиЗаданияНаПланированиеОбъектаРасширеннаяПодсказка" id="305"/>
+							</Button>
+							<Button name="ФормаОбработкаупоРаботаСЗаданиямиЗаданияНаПрогнозОбъекта" id="292">
+								<Type>CommandBarButton</Type>
+								<CommandName>DataProcessor.упоРаботаСЗаданиями.Command.ЗаданияНаПрогнозОбъекта</CommandName>
+								<DataPath>Items.Список.CurrentData.Проект</DataPath>
+								<ExtendedTooltip name="ФормаОбработкаупоРаботаСЗаданиямиЗаданияНаПрогнозОбъектаРасширеннаяПодсказка" id="293"/>
+							</Button>
+						</ChildItems>
+					</Popup>
+				</ChildItems>
+			</ButtonGroup>
+			<ButtonGroup name="ФормаГруппа4" id="272">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Форма группа 4</v8:content>
+					</v8:item>
+				</Title>
+				<Representation>Compact</Representation>
+				<ExtendedTooltip name="ФормаГруппа4РасширеннаяПодсказка" id="273"/>
+				<ChildItems>
+					<Button name="ФормаОбработкаупоХозяйственныеОперацииПроектаупоХозяйственныеОперацииПроекта" id="224">
+						<Type>CommandBarButton</Type>
+						<CommandName>DataProcessor.упоХозяйственныеОперацииПроекта.Command.упоХозяйственныеОперацииПроекта</CommandName>
+						<DataPath>Items.Список.CurrentData.Проект</DataPath>
+						<ExtendedTooltip name="ФормаОбработкаупоХозяйственныеОперацииПроектаупоХозяйственныеОперацииПроектаРасширеннаяПодсказка" id="225"/>
+					</Button>
+					<Button name="ФормаОбработкаупоПанельПоказателейОткрытьПанельПоказателейПоПрограмме" id="240">
+						<Type>CommandBarButton</Type>
+						<CommandName>DataProcessor.упоПанельПоказателей.Command.ОткрытьПанельПоказателейПоПрограмме</CommandName>
+						<DataPath>Items.Список.CurrentData.ПрограммаПроектов</DataPath>
+						<ExtendedTooltip name="ФормаОбработкаупоПанельПоказателейОткрытьПанельПоказателейПоПрограммеРасширеннаяПодсказка" id="241"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
+			<Popup name="ПодменюОтчеты" id="113">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Отчеты</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Отчеты</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Picture>
+					<xr:Ref>CommonPicture.упоОтчетыПроект</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+					<xr:TransparentPixel x="14" y="5"/>
+				</Picture>
+				<Representation>Picture</Representation>
+				<ExtendedTooltip name="ПодменюОтчетыРасширеннаяПодсказка" id="119"/>
+			</Popup>
+			<Popup name="ФормаГруппаИмпортЭкспорт" id="252">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Импорт и экспорт</v8:content>
+					</v8:item>
+				</Title>
+				<Picture>
+					<xr:Ref>CommonPicture.СинхронизацияДанныхПодсистема</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<Representation>Picture</Representation>
+				<ExtendedTooltip name="ФормаГруппаИмпортЭкспортРасширеннаяПодсказка" id="253"/>
+				<ChildItems>
+					<ButtonGroup name="ФормаГруппа8" id="262">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Форма группа 8</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ФормаГруппа8РасширеннаяПодсказка" id="263"/>
+						<ChildItems>
+							<Button name="ФормаОбработкаупоСохранениеПроектаВШаблонСохранениеПроектаВШаблонПроект" id="226">
+								<Type>CommandBarButton</Type>
+								<CommandName>DataProcessor.упоСохранениеПроектаВШаблон.Command.СохранениеПроектаВШаблонПроект</CommandName>
+								<DataPath>Items.Список.CurrentData.Проект</DataPath>
+								<ExtendedTooltip name="ФормаОбработкаупоСохранениеПроектаВШаблонСохранениеПроектаВШаблонПроектРасширеннаяПодсказка" id="227"/>
+							</Button>
+							<Button name="ФормаОбработкаупоСозданиеПроектаИзШаблонаСозданиеПроектаИзШаблонаПроект" id="228">
+								<Type>CommandBarButton</Type>
+								<CommandName>DataProcessor.упоСозданиеПроектаИзШаблона.Command.СозданиеПроектаИзШаблонаПроект</CommandName>
+								<DataPath>Items.Список.CurrentData.Проект</DataPath>
+								<ExtendedTooltip name="ФормаОбработкаупоСозданиеПроектаИзШаблонаСозданиеПроектаИзШаблонаПроектРасширеннаяПодсказка" id="229"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+					<ButtonGroup name="ФормаГруппа9" id="264">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Форма группа 9</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ФормаГруппа9РасширеннаяПодсказка" id="265"/>
+						<ChildItems>
+							<Button name="ФормаЭкспортВMSProject" id="118">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ЭкспортВMSProject</CommandName>
+								<ExtendedTooltip name="ФормаЭкспортВMSProjectExtendedTooltip" id="121"/>
+							</Button>
+							<Button name="ФормаИмпортИзMSProject" id="200">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ИмпортИзMSProject</CommandName>
+								<ExtendedTooltip name="ФормаИмпортИзMSProjectРасширеннаяПодсказка" id="201"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+					<ButtonGroup name="ФормаГруппа10" id="266">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Форма группа 10</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ФормаГруппа10РасширеннаяПодсказка" id="267"/>
+						<ChildItems>
+							<Button name="ФормаОбработкаупоЗагрузкаИзСметыЗагрузкаИзСметы" id="236">
+								<Type>CommandBarButton</Type>
+								<CommandName>DataProcessor.упоЗагрузкаИзСметы.Command.ЗагрузкаИзСметы</CommandName>
+								<DataPath>Items.Список.CurrentData.Проект</DataPath>
+								<ExtendedTooltip name="ФормаОбработкаупоЗагрузкаИзСметыЗагрузкаИзСметыРасширеннаяПодсказка" id="237"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+				</ChildItems>
+			</Popup>
+			<ButtonGroup name="ФормаГруппа11" id="268">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Форма группа 11</v8:content>
+					</v8:item>
+				</Title>
+				<Representation>Compact</Representation>
+				<ExtendedTooltip name="ФормаГруппа11РасширеннаяПодсказка" id="269"/>
+				<ChildItems>
+					<Popup name="ГруппаРаспределениеДоходов" id="286" DisplayImportance="Low">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Распределение БДР</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Распределение БДР</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="ГруппаРаспределениеДоходовРасширеннаяПодсказка" id="287"/>
+						<ChildItems>
+							<Button name="КомандаОбработкаРаспределениеДоходов_Задача" id="288">
+								<Type>CommandBarButton</Type>
+								<CommandName>DataProcessor.упоРаспределениеБДР.Command.КомандаВыполнитьРаспределениеДоходов</CommandName>
+								<DataPath>Items.Список.CurrentData.Проект</DataPath>
+								<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+								<ExtendedTooltip name="КомандаОбработкаРаспределениеДоходов_ЗадачаРасширеннаяПодсказка" id="289"/>
+							</Button>
+							<Button name="КомандаОбработкаРаспределениеДоходов_МастерРаспределения" id="290">
+								<Type>CommandBarButton</Type>
+								<CommandName>DataProcessor.упоРаспределениеБДР.Command.КомандаОткрытьРаспределениеДоходов</CommandName>
+								<DataPath>Items.Список.CurrentData.Проект</DataPath>
+								<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+								<ExtendedTooltip name="КомандаОбработкаРаспределениеДоходов_МастерРаспределенияРасширеннаяПодсказка" id="291"/>
+							</Button>
+						</ChildItems>
+					</Popup>
+					<Button name="ФормаОбработкаупоТабличныйБюджетДДСПроектаТабличныйБюджетДДСПроекта" id="222">
+						<Type>CommandBarButton</Type>
+						<CommandName>DataProcessor.упоТабличныйБюджетДДСПроекта.Command.ТабличныйБюджетДДСПроекта</CommandName>
+						<DataPath>Items.Список.CurrentData.Проект</DataPath>
+						<ExtendedTooltip name="ФормаОбработкаупоТабличныйБюджетДДСПроектаТабличныйБюджетДДСПроектаРасширеннаяПодсказка" id="223"/>
+					</Button>
+					<Button name="ФормаОбработкаупоТабличныйБюджетДРПроектаТабличныйБюджетДРПроекта" id="220">
+						<Type>CommandBarButton</Type>
+						<CommandName>DataProcessor.упоТабличныйБюджетДРПроекта.Command.ТабличныйБюджетДРПроекта</CommandName>
+						<DataPath>Items.Список.CurrentData.Проект</DataPath>
+						<ExtendedTooltip name="ФормаОбработкаупоТабличныйБюджетДРПроектаТабличныйБюджетДРПроектаРасширеннаяПодсказка" id="221"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnSaveDataInSettingsAtServer">ПриСохраненииДанныхВНастройкахНаСервере</Event>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="NewWriteProcessing">ОбработкаЗаписиНового</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="ExternalEvent">ВнешнееСобытие</Event>
+		<Event name="OnReopen">ПриПовторномОткрытии</Event>
+		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="ActivationProcessing">ОбработкаАктивизации</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+		<Event name="BeforeLoadDataFromSettingsAtServer">ПередЗагрузкойДанныхИзНастроекНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="114">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1ExtendedTooltip" id="122"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаОтбор" id="208">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отбор</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ChildItemsWidth>LeftWidest</ChildItemsWidth>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОтборРасширеннаяПодсказка" id="209"/>
+					<ChildItems>
+						<InputField name="БыстрыйПоиск" id="107">
+							<DataPath>БыстрыйПоиск</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Поиск</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Left</TitleLocation>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="БыстрыйПоискКонтекстноеМеню" id="108"/>
+							<ExtendedTooltip name="БыстрыйПоискExtendedTooltip" id="123"/>
+							<Events>
+								<Event name="OnChange">БыстрыйПоискПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ОтборПоКомпоненту" id="205">
+							<DataPath>ОтборПоКомпоненту</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Проекты</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xr:DesignTimeRef">Enum.упоКомпоненты.EnumValue.Проект</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Портфели проектов</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xr:DesignTimeRef">Enum.упоКомпоненты.EnumValue.ПортфельПроектов</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Программы проектов</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xr:DesignTimeRef">Enum.упоКомпоненты.EnumValue.ПрограммаПроектов</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Общефирменная деятельность</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xr:DesignTimeRef">Enum.упоКомпоненты.EnumValue.ОбщефирменнаяДеятельность</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ОтборПоКомпонентуКонтекстноеМеню" id="206"/>
+							<ExtendedTooltip name="ОтборПоКомпонентуРасширеннаяПодсказка" id="207"/>
+							<Events>
+								<Event name="OnChange">ОтборПоКомпонентуПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<CommandBar name="Группа2" id="117">
+					<HorizontalStretch>false</HorizontalStretch>
+					<HorizontalLocation>Right</HorizontalLocation>
+					<ExtendedTooltip name="Группа2ExtendedTooltip" id="124"/>
+					<ChildItems>
+						<Button name="ФормаНастройкаСписка" id="111">
+							<Type>CommandBarButton</Type>
+							<Representation>PictureAndText</Representation>
+							<CommandName>Form.Item.Список.StandardCommand.ListSettings</CommandName>
+							<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+							<ExtendedTooltip name="ФормаНастройкаСпискаExtendedTooltip" id="125"/>
+						</Button>
+						<Button name="ОчиститьНастройкиСписка" id="116">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ОчиститьНастройкиСписка</CommandName>
+							<ExtendedTooltip name="ОчиститьНастройкиСпискаExtendedTooltip" id="126"/>
+						</Button>
+						<Button name="СкрытьЭтапыПроекта" id="115">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.СкрытьЭтапыПроекта</CommandName>
+							<ExtendedTooltip name="СкрытьЭтапыПроектаExtendedTooltip" id="127"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОсновная" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основная</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОсновнаяExtendedTooltip" id="128"/>
+			<ChildItems>
+				<Table name="Список" id="1">
+					<Representation>List</Representation>
+					<CommandBarLocation>None</CommandBarLocation>
+					<DefaultItem>true</DefaultItem>
+					<ChangeRowOrder>false</ChangeRowOrder>
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<SearchOnInput>DontUse</SearchOnInput>
+					<InitialTreeView>ExpandTopLevel</InitialTreeView>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>Список</DataPath>
+					<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список</v8:content>
+						</v8:item>
+					</Title>
+					<CommandSet>
+						<ExcludedCommand>HierarchicalList</ExcludedCommand>
+						<ExcludedCommand>LevelDown</ExcludedCommand>
+						<ExcludedCommand>LevelUp</ExcludedCommand>
+						<ExcludedCommand>List</ExcludedCommand>
+						<ExcludedCommand>MoveItem</ExcludedCommand>
+						<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+						<ExcludedCommand>Tree</ExcludedCommand>
+					</CommandSet>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<AutoRefresh>false</AutoRefresh>
+					<AutoRefreshPeriod>60</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>false</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+					<ContextMenu name="СписокКонтекстноеМеню" id="2">
+						<Autofill>false</Autofill>
+						<ChildItems>
+							<ButtonGroup name="СписокКонтекстноеМенюГруппа1" id="276">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Список контекстное меню группа 1</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="СписокКонтекстноеМенюГруппа1РасширеннаяПодсказка" id="277"/>
+								<ChildItems>
+									<Button name="СписокКонтекстноеМенюКомандаСделатьТекущим" id="109">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Command.КомандаСделатьТекущим</CommandName>
+										<ExtendedTooltip name="СписокКонтекстноеМенюКомандаСделатьТекущимExtendedTooltip" id="129"/>
+									</Button>
+								</ChildItems>
+							</ButtonGroup>
+							<ButtonGroup name="СписокКонтекстноеМенюГруппа2" id="278">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Список контекстное меню группа 2</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="СписокКонтекстноеМенюГруппа2РасширеннаяПодсказка" id="279"/>
+								<ChildItems>
+									<Button name="СписокКонтекстноеМенюОбработкаупоУпрощенныйВводСтруктурыПроектаупоУпрощенныйВводСтруктурыПроекта" id="212">
+										<Type>CommandBarButton</Type>
+										<CommandName>DataProcessor.упоУпрощенныйВводСтруктурыПроекта.Command.упоУпрощенныйВводСтруктурыПроекта</CommandName>
+										<DataPath>Items.Список.CurrentData.Проект</DataPath>
+										<ExtendedTooltip name="СписокКонтекстноеМенюОбработкаупоУпрощенныйВводСтруктурыПроектаупоУпрощенныйВводСтруктурыПроектаРасширеннаяПодсказка" id="213"/>
+									</Button>
+								</ChildItems>
+							</ButtonGroup>
+							<ButtonGroup name="СписокКонтекстноеМенюГруппа3" id="280">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Список контекстное меню группа 3</v8:content>
+									</v8:item>
+								</Title>
+								<CommandSource>Item.Список</CommandSource>
+								<ExtendedTooltip name="СписокКонтекстноеМенюГруппа3РасширеннаяПодсказка" id="281"/>
+							</ButtonGroup>
+						</ChildItems>
+					</ContextMenu>
+					<AutoCommandBar name="СписокКоманднаяПанель" id="3">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="СписокExtendedTooltip" id="130"/>
+					<SearchStringAddition name="СписокСтрокаПоиска" id="182">
+						<AdditionSource>
+							<Item>Список</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="183"/>
+						<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="184"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СписокСостояниеПросмотра" id="185">
+						<AdditionSource>
+							<Item>Список</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="186"/>
+						<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="187"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СписокУправлениеПоиском" id="188">
+						<AdditionSource>
+							<Item>Список</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="189"/>
+						<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="190"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="Selection">СписокВыбор</Event>
+						<Event name="BeforeAddRow">СписокПередНачаломДобавления</Event>
+						<Event name="OnActivateRow">СписокПриАктивизацииСтроки</Event>
+					</Events>
+					<ChildItems>
+						<LabelField name="Проект" id="4">
+							<DataPath>Список.Проект</DataPath>
+							<ContextMenu name="ПроектКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="ПроектExtendedTooltip" id="131"/>
+						</LabelField>
+						<LabelField name="РуководительПроекта" id="6">
+							<DataPath>Список.РуководительПроекта</DataPath>
+							<ContextMenu name="РуководительПроектаКонтекстноеМеню" id="7"/>
+							<ExtendedTooltip name="РуководительПроектаExtendedTooltip" id="132"/>
+						</LabelField>
+						<LabelField name="Шифр" id="306">
+							<DataPath>Список.Шифр</DataPath>
+							<ContextMenu name="ШифрКонтекстноеМеню" id="307"/>
+							<ExtendedTooltip name="ШифрРасширеннаяПодсказка" id="308"/>
+						</LabelField>
+						<LabelField name="СтатусПроекта" id="8">
+							<DataPath>Список.СтатусПроекта</DataPath>
+							<ContextMenu name="СтатусПроектаКонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="СтатусПроектаExtendedTooltip" id="133"/>
+						</LabelField>
+						<LabelField name="ПортфельПроектов" id="10">
+							<DataPath>Список.ПортфельПроектов</DataPath>
+							<ContextMenu name="ПортфельПроектовКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ПортфельПроектовExtendedTooltip" id="134"/>
+						</LabelField>
+						<LabelField name="ПрограммаПроектов" id="12">
+							<DataPath>Список.ПрограммаПроектов</DataPath>
+							<ContextMenu name="ПрограммаПроектовКонтекстноеМеню" id="13"/>
+							<ExtendedTooltip name="ПрограммаПроектовExtendedTooltip" id="135"/>
+						</LabelField>
+						<LabelField name="Подразделение" id="14">
+							<DataPath>Список.Подразделение</DataPath>
+							<ContextMenu name="ПодразделениеКонтекстноеМеню" id="15"/>
+							<ExtendedTooltip name="ПодразделениеExtendedTooltip" id="136"/>
+						</LabelField>
+						<LabelField name="Организация" id="16">
+							<DataPath>Список.Организация</DataPath>
+							<ContextMenu name="ОрганизацияКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ОрганизацияExtendedTooltip" id="137"/>
+						</LabelField>
+						<LabelField name="КураторПроекта" id="202">
+							<DataPath>Список.КураторПроекта</DataPath>
+							<ContextMenu name="КураторПроектаКонтекстноеМеню" id="203"/>
+							<ExtendedTooltip name="КураторПроектаРасширеннаяПодсказка" id="204"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
+				<UsualGroup name="ГруппаЭтапыПроекта" id="50">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Этапы проекта</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>StrongSeparation</Representation>
+					<ExtendedTooltip name="ГруппаЭтапыПроектаExtendedTooltip" id="138"/>
+					<ChildItems>
+						<Table name="СписокЭтапов" id="19">
+							<Representation>Tree</Representation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<Width>45</Width>
+							<ChoiceMode>true</ChoiceMode>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<InitialListView>Beginning</InitialListView>
+							<InitialTreeView>ExpandTopLevel</InitialTreeView>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>СписокЭтапов</DataPath>
+							<RowPictureDataPath>СписокЭтапов.Картинка</RowPictureDataPath>
+							<RowsPicture>
+								<xr:Ref>CommonPicture.упоКоллекция_ТипыЗадачЯркиеНеяркие</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</RowsPicture>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Список этапов</v8:content>
+								</v8:item>
+							</Title>
+							<CommandSet>
+								<ExcludedCommand>ListSettings</ExcludedCommand>
+							</CommandSet>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>false</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="СписокЭтаповКонтекстноеМеню" id="20"/>
+							<AutoCommandBar name="СписокЭтаповКоманднаяПанель" id="21">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СписокЭтаповExtendedTooltip" id="139"/>
+							<SearchStringAddition name="СписокЭтаповСтрокаПоиска" id="191">
+								<AdditionSource>
+									<Item>СписокЭтапов</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокЭтаповСтрокаПоискаКонтекстноеМеню" id="192"/>
+								<ExtendedTooltip name="СписокЭтаповСтрокаПоискаРасширеннаяПодсказка" id="193"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокЭтаповСостояниеПросмотра" id="194">
+								<AdditionSource>
+									<Item>СписокЭтапов</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокЭтаповСостояниеПросмотраКонтекстноеМеню" id="195"/>
+								<ExtendedTooltip name="СписокЭтаповСостояниеПросмотраРасширеннаяПодсказка" id="196"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокЭтаповУправлениеПоиском" id="197">
+								<AdditionSource>
+									<Item>СписокЭтапов</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокЭтаповУправлениеПоискомКонтекстноеМеню" id="198"/>
+								<ExtendedTooltip name="СписокЭтаповУправлениеПоискомРасширеннаяПодсказка" id="199"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">СписокЭтаповВыбор</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="СписокЭтаповНаименование" id="22">
+									<DataPath>СписокЭтапов.Наименование</DataPath>
+									<ContextMenu name="СписокЭтаповНаименованиеКонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="СписокЭтаповНаименованиеExtendedTooltip" id="142"/>
+								</LabelField>
+								<LabelField name="СписокЭтаповКодСДР" id="179">
+									<DataPath>СписокЭтапов.КодСДР</DataPath>
+									<ContextMenu name="СписокЭтаповКодСДРКонтекстноеМеню" id="180"/>
+									<ExtendedTooltip name="СписокЭтаповКодСДРРасширеннаяПодсказка" id="181"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Список.Код</Field>
+				<Field>Список.КураторПроекта</Field>
+				<Field>Список.КураторПроектаНаименование</Field>
+				<Field>Список.Наименование</Field>
+				<Field>Список.Организация</Field>
+				<Field>Список.Подразделение</Field>
+				<Field>Список.ПолноеНаименование</Field>
+				<Field>Список.ПометкаУдаления</Field>
+				<Field>Список.ПортфельНаименование</Field>
+				<Field>Список.ПортфельПроектов</Field>
+				<Field>Список.ПрограммаНаименование</Field>
+				<Field>Список.ПрограммаПроектов</Field>
+				<Field>Список.Проект</Field>
+				<Field>Список.РуководительПроекта</Field>
+				<Field>Список.РуководительПроектаНаименование</Field>
+				<Field>Список.Ссылка</Field>
+				<Field>Список.СтатусПроекта</Field>
+				<Field>Список.СтатусПроектаНаименование</Field>
+				<Field>Список.Шифр</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	РегистрСведенийупоСписокВыбораПроектов.РуководительПроекта КАК РуководительПроекта,
+	РегистрСведенийупоСписокВыбораПроектов.СтатусПроекта КАК СтатусПроекта,
+	РегистрСведенийупоСписокВыбораПроектов.Организация КАК Организация,
+	РегистрСведенийупоСписокВыбораПроектов.ПортфельПроектов КАК ПортфельПроектов,
+	РегистрСведенийупоСписокВыбораПроектов.ПрограммаПроектов КАК ПрограммаПроектов,
+	РегистрСведенийупоСписокВыбораПроектов.Подразделение КАК Подразделение,
+	РегистрСведенийупоСписокВыбораПроектов.Код КАК Код,
+	РегистрСведенийупоСписокВыбораПроектов.ПолноеНаименование КАК ПолноеНаименование,
+	РегистрСведенийупоСписокВыбораПроектов.Наименование КАК Наименование,
+	РегистрСведенийупоСписокВыбораПроектов.Компонент КАК Компонент,
+	РегистрСведенийупоСписокВыбораПроектов.ПортфельНаименование КАК ПортфельНаименование,
+	РегистрСведенийупоСписокВыбораПроектов.ПрограммаНаименование КАК ПрограммаНаименование,
+	РегистрСведенийупоСписокВыбораПроектов.РуководительПроектаНаименование КАК РуководительПроектаНаименование,
+	РегистрСведенийупоСписокВыбораПроектов.СтатусПроектаНаименование КАК СтатусПроектаНаименование,
+	Проекты.Ссылка КАК Проект,
+	РегистрСведенийупоСписокВыбораПроектов.КураторПроекта КАК КураторПроекта,
+	РегистрСведенийупоСписокВыбораПроектов.КураторПроектаНаименование КАК КураторПроектаНаименование,
+	Проекты.Ссылка КАК Ссылка,
+	РегистрСведенийупоСписокВыбораПроектов.Шифр КАК Шифр
+ИЗ
+	РегистрСведений.упоСписокВыбораПроектов КАК РегистрСведенийупоСписокВыбораПроектов
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.Проекты КАК Проекты
+		ПО РегистрСведенийупоСписокВыбораПроектов.Ссылка = Проекты.Ссылка</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Автор</dcssch:dataPath>
+					<dcssch:field>Автор</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДоговорЗатрат</dcssch:dataPath>
+					<dcssch:field>ДоговорЗатрат</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоНастройкаМонитораПроекта</dcssch:dataPath>
+					<dcssch:field>упоНастройкаМонитораПроекта</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Организация</dcssch:dataPath>
+					<dcssch:field>Организация</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПодразделениеРасходовПоУмолчанию</dcssch:dataPath>
+					<dcssch:field>ПодразделениеРасходовПоУмолчанию</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Наименование1</dcssch:dataPath>
+					<dcssch:field>Наименование1</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование1</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВключитьДопЗатратыВПланРасходов</dcssch:dataPath>
+					<dcssch:field>ВключитьДопЗатратыВПланРасходов</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЗадачаОтменена</dcssch:dataPath>
+					<dcssch:field>ЗадачаОтменена</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ссылка</dcssch:dataPath>
+					<dcssch:field>Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоУчастникиПроекта</dcssch:dataPath>
+					<dcssch:field>упоУчастникиПроекта</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВключитьМатРесурсыВПланРасходов</dcssch:dataPath>
+					<dcssch:field>ВключитьМатРесурсыВПланРасходов</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>АвторИзменений</dcssch:dataPath>
+					<dcssch:field>АвторИзменений</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаМодификации</dcssch:dataPath>
+					<dcssch:field>ДатаМодификации</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВключитьСубпродуктыВПланДоходов</dcssch:dataPath>
+					<dcssch:field>ВключитьСубпродуктыВПланДоходов</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВключитьТрудРесурсыВПланРасходов</dcssch:dataPath>
+					<dcssch:field>ВключитьТрудРесурсыВПланРасходов</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СоздаватьЗаданияПриНазначенииРесурсов</dcssch:dataPath>
+					<dcssch:field>СоздаватьЗаданияПриНазначенииРесурсов</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДоговорДоходов</dcssch:dataPath>
+					<dcssch:field>ДоговорДоходов</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоСхемаОплатыПоУмолчаниюРасходы</dcssch:dataPath>
+					<dcssch:field>упоСхемаОплатыПоУмолчаниюРасходы</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИсточникФинансирования</dcssch:dataPath>
+					<dcssch:field>ИсточникФинансирования</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЭтоПроектнаяЗадача</dcssch:dataPath>
+					<dcssch:field>ЭтоПроектнаяЗадача</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КодСДР</dcssch:dataPath>
+					<dcssch:field>КодСДР</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>РольДоходовПоУмолчанию</dcssch:dataPath>
+					<dcssch:field>РольДоходовПоУмолчанию</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Комментарий</dcssch:dataPath>
+					<dcssch:field>Комментарий</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КонтрагентДоходов</dcssch:dataPath>
+					<dcssch:field>КонтрагентДоходов</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПортфельПроектов</dcssch:dataPath>
+					<dcssch:field>ПортфельПроектов</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КонтрагентЗатрат</dcssch:dataPath>
+					<dcssch:field>КонтрагентЗатрат</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НатуральныйПоказательДоходовПоУмолчанию</dcssch:dataPath>
+					<dcssch:field>НатуральныйПоказательДоходовПоУмолчанию</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Приоритет</dcssch:dataPath>
+					<dcssch:field>Приоритет</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Фазы</dcssch:dataPath>
+					<dcssch:field>Фазы</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоНаправлениеИнвестиций</dcssch:dataPath>
+					<dcssch:field>упоНаправлениеИнвестиций</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НатуральныйПоказательРасходовПоУмолчанию</dcssch:dataPath>
+					<dcssch:field>НатуральныйПоказательРасходовПоУмолчанию</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СтатьяЗатратПоУмолчанию</dcssch:dataPath>
+					<dcssch:field>СтатьяЗатратПоУмолчанию</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Объект</dcssch:dataPath>
+					<dcssch:field>Объект</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоТекущаяФаза</dcssch:dataPath>
+					<dcssch:field>упоТекущаяФаза</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПодразделениеДоходовПоУмолчанию</dcssch:dataPath>
+					<dcssch:field>ПодразделениеДоходовПоУмолчанию</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПрофильДоходовПоУмолчанию</dcssch:dataPath>
+					<dcssch:field>ПрофильДоходовПоУмолчанию</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоЦельПроекта</dcssch:dataPath>
+					<dcssch:field>упоЦельПроекта</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПрофильРасходовПоУмолчанию</dcssch:dataPath>
+					<dcssch:field>ПрофильРасходовПоУмолчанию</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоСтатьяРасходовРаспределенияЗарплаты</dcssch:dataPath>
+					<dcssch:field>упоСтатьяРасходовРаспределенияЗарплаты</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>РольРасходовПоУмолчанию</dcssch:dataPath>
+					<dcssch:field>РольРасходовПоУмолчанию</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СложностьПроекта</dcssch:dataPath>
+					<dcssch:field>СложностьПроекта</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СсылкаНаПроектнуюЗадачу</dcssch:dataPath>
+					<dcssch:field>СсылкаНаПроектнуюЗадачу</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СтатьяДоходовПоУмолчанию</dcssch:dataPath>
+					<dcssch:field>СтатьяДоходовПоУмолчанию</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТекущаяВерсия</dcssch:dataPath>
+					<dcssch:field>ТекущаяВерсия</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТипПроекта</dcssch:dataPath>
+					<dcssch:field>ТипПроекта</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоКорневойПроект</dcssch:dataPath>
+					<dcssch:field>упоКорневойПроект</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоВыгоды</dcssch:dataPath>
+					<dcssch:field>упоВыгоды</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоЕдиницаВремениПоУмолчанию</dcssch:dataPath>
+					<dcssch:field>упоЕдиницаВремениПоУмолчанию</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоКорректироватьДанныеВСтруктуре</dcssch:dataPath>
+					<dcssch:field>упоКорректироватьДанныеВСтруктуре</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
+					<dcssch:field>ПометкаУдаления</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоРезультатыПроекта</dcssch:dataPath>
+					<dcssch:field>упоРезультатыПроекта</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоОбоснованиеПроекта</dcssch:dataPath>
+					<dcssch:field>упоОбоснованиеПроекта</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоОсновнойИндикаторПоФазе</dcssch:dataPath>
+					<dcssch:field>упоОсновнойИндикаторПоФазе</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЦветПроекта</dcssch:dataPath>
+					<dcssch:field>ЦветПроекта</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоРежимУчетаВзносов</dcssch:dataPath>
+					<dcssch:field>упоРежимУчетаВзносов</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоЕдиницаТрудоемкостиПоУмолчанию</dcssch:dataPath>
+					<dcssch:field>упоЕдиницаТрудоемкостиПоУмолчанию</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЭтоАктируемаяЗадача</dcssch:dataPath>
+					<dcssch:field>ЭтоАктируемаяЗадача</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоКраткоеОписание</dcssch:dataPath>
+					<dcssch:field>упоКраткоеОписание</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоКартинкаПроекта</dcssch:dataPath>
+					<dcssch:field>упоКартинкаПроекта</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоГородПроекта</dcssch:dataPath>
+					<dcssch:field>упоГородПроекта</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоОкружениеПроекта</dcssch:dataPath>
+					<dcssch:field>упоОкружениеПроекта</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоВключитьПланДоходовВБДДС</dcssch:dataPath>
+					<dcssch:field>упоВключитьПланДоходовВБДДС</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоВключитьПланРасходовВБДДС</dcssch:dataPath>
+					<dcssch:field>упоВключитьПланРасходовВБДДС</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоСхемаОплатыПоУмолчаниюДоходы</dcssch:dataPath>
+					<dcssch:field>упоСхемаОплатыПоУмолчаниюДоходы</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоШифр</dcssch:dataPath>
+					<dcssch:field>упоШифр</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоТипСубпродукта</dcssch:dataPath>
+					<dcssch:field>упоТипСубпродукта</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоСтатьяРасходовВзносов</dcssch:dataPath>
+					<dcssch:field>упоСтатьяРасходовВзносов</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Подразделение</dcssch:dataPath>
+					<dcssch:field>Подразделение</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДополнительныеРеквизиты</dcssch:dataPath>
+					<dcssch:field>ДополнительныеРеквизиты</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Предопределенный</dcssch:dataPath>
+					<dcssch:field>Предопределенный</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИмяПредопределенныхДанных</dcssch:dataPath>
+					<dcssch:field>ИмяПредопределенныхДанных</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>РуководительПроекта</dcssch:dataPath>
+					<dcssch:field>РуководительПроекта</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СтатусПроекта</dcssch:dataPath>
+					<dcssch:field>СтатусПроекта</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПрограммаПроектов</dcssch:dataPath>
+					<dcssch:field>ПрограммаПроектов</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Код</dcssch:dataPath>
+					<dcssch:field>Код</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПолноеНаименование</dcssch:dataPath>
+					<dcssch:field>ПолноеНаименование</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Наименование</dcssch:dataPath>
+					<dcssch:field>Наименование</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Компонент</dcssch:dataPath>
+					<dcssch:field>Компонент</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПортфельНаименование</dcssch:dataPath>
+					<dcssch:field>ПортфельНаименование</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПрограммаНаименование</dcssch:dataPath>
+					<dcssch:field>ПрограммаНаименование</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>РуководительПроектаНаименование</dcssch:dataPath>
+					<dcssch:field>РуководительПроектаНаименование</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СтатусПроектаНаименование</dcssch:dataPath>
+					<dcssch:field>СтатусПроектаНаименование</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Проект</dcssch:dataPath>
+					<dcssch:field>Проект</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проект</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:inputParameters>
+						<dcscor:item>
+							<dcscor:parameter>ПараметрыВыбора</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:ChoiceParameters">
+								<dcscor:item>
+									<dcscor:choiceParameter>ЭтоФормаВыбораПроекта</dcscor:choiceParameter>
+									<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+								</dcscor:item>
+							</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ВыборГруппИЭлементов</dcscor:parameter>
+							<dcscor:value xsi:type="ent:FoldersAndItemsUse">Items</dcscor:value>
+						</dcscor:item>
+					</dcssch:inputParameters>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КураторПроекта</dcssch:dataPath>
+					<dcssch:field>КураторПроекта</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КураторПроектаНаименование</dcssch:dataPath>
+					<dcssch:field>КураторПроектаНаименование</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Шифр</dcssch:dataPath>
+					<dcssch:field>Шифр</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Родитель</dcssch:dataPath>
+					<dcssch:field>Родитель</dcssch:field>
+				</Field>
+				<MainTable>Catalog.Проекты</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemGroup">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:groupType>OrGroup</dcsset:groupType>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">РуководительПроектаНаименование</dcsset:left>
+								<dcsset:comparisonType>Contains</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:string"/>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">СтатусПроектаНаименование</dcsset:left>
+								<dcsset:comparisonType>Contains</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:string"/>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ПрограммаНаименование</dcsset:left>
+								<dcsset:comparisonType>Contains</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:string"/>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ПортфельНаименование</dcsset:left>
+								<dcsset:comparisonType>Contains</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:string"/>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ПолноеНаименование</dcsset:left>
+								<dcsset:comparisonType>Contains</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:string"/>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">Наименование</dcsset:left>
+								<dcsset:comparisonType>Contains</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:string"/>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">КураторПроектаНаименование</dcsset:left>
+								<dcsset:comparisonType>Contains</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:string"/>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">Шифр</dcsset:left>
+								<dcsset:comparisonType>Contains</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:string"/>
+							</dcsset:item>
+							<dcsset:presentation xsi:type="xs:string">БыстрыйПоиск</dcsset:presentation>
+							<dcsset:viewMode>Inaccessible</dcsset:viewMode>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:left xsi:type="dcscor:Field">Компонент</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:presentation xsi:type="xs:string">ОтборПоКомпоненту</dcsset:presentation>
+							<dcsset:viewMode>Inaccessible</dcsset:viewMode>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>СтатусПроекта.Порядок</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Наименование</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="СписокЭтапов" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список этапов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>~СписокЭтапов.Ref</Field>
+				<Field>СписокЭтапов.ЭтоПроектнаяЗадача</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	СправочникПроекты.Ссылка КАК Ссылка,
+	СправочникПроекты.ПометкаУдаления КАК ПометкаУдаления,
+	СправочникПроекты.Предопределенный КАК Предопределенный,
+	СправочникПроекты.Родитель КАК Родитель,
+	СправочникПроекты.Код КАК Код,
+	СправочникПроекты.Наименование КАК Наименование,
+	ВЫБОР
+		КОГДА НЕ СправочникПроекты.ЭтоПроектнаяЗадача
+			ТОГДА 99
+		КОГДА упоСвойстваПроектныхЗадачСрезПоследних.ЭтоВеха
+			ТОГДА 9
+		КОГДА упоСвойстваПроектныхЗадачСрезПоследних.ЭтоПакетРабот
+				И упоСвойстваПроектныхЗадачСрезПоследних.ЭтоМодельПакетаРабот
+			ТОГДА 6
+		КОГДА НЕ упоСвойстваПроектныхЗадачСрезПоследних.ЭтоПакетРабот
+				И НЕ упоСвойстваПроектныхЗадачСрезПоследних.ЭтоМодельПакетаРабот
+			ТОГДА 7
+		ИНАЧЕ 8
+	КОНЕЦ КАК Картинка,
+	СправочникПроекты.КодСДР КАК КодСДР,
+	СправочникПроекты.ЭтоПроектнаяЗадача КАК ЭтоПроектнаяЗадача
+ИЗ
+	Справочник.Проекты КАК СправочникПроекты
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.упоСвойстваПроектныхЗадач.СрезПоследних(, Версия = &amp;ТекущаяВерсия) КАК упоСвойстваПроектныхЗадачСрезПоследних
+		ПО (СправочникПроекты.ЭтоПроектнаяЗадача)
+			И СправочникПроекты.СсылкаНаПроектнуюЗадачу = упоСвойстваПроектныхЗадачСрезПоследних.ПроектнаяЗадача
+			И (НЕ упоСвойстваПроектныхЗадачСрезПоследних.ЗадачаОтменена)
+ГДЕ
+	НЕ(СправочникПроекты.ЭтоПроектнаяЗадача
+				И упоСвойстваПроектныхЗадачСрезПоследних.ПроектнаяЗадача ЕСТЬ NULL)</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДоговорЗатрат</dcssch:dataPath>
+					<dcssch:field>ДоговорЗатрат</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Автор</dcssch:dataPath>
+					<dcssch:field>Автор</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоНастройкаМонитораПроекта</dcssch:dataPath>
+					<dcssch:field>упоНастройкаМонитораПроекта</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Организация</dcssch:dataPath>
+					<dcssch:field>Организация</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПодразделениеРасходовПоУмолчанию</dcssch:dataPath>
+					<dcssch:field>ПодразделениеРасходовПоУмолчанию</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВключитьДопЗатратыВПланРасходов</dcssch:dataPath>
+					<dcssch:field>ВключитьДопЗатратыВПланРасходов</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПрограммаПроектов</dcssch:dataPath>
+					<dcssch:field>ПрограммаПроектов</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВключитьМатРесурсыВПланРасходов</dcssch:dataPath>
+					<dcssch:field>ВключитьМатРесурсыВПланРасходов</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>АвторИзменений</dcssch:dataPath>
+					<dcssch:field>АвторИзменений</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СоздаватьЗаданияПриНазначенииРесурсов</dcssch:dataPath>
+					<dcssch:field>СоздаватьЗаданияПриНазначенииРесурсов</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДоговорДоходов</dcssch:dataPath>
+					<dcssch:field>ДоговорДоходов</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаМодификации</dcssch:dataPath>
+					<dcssch:field>ДатаМодификации</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВключитьСубпродуктыВПланДоходов</dcssch:dataPath>
+					<dcssch:field>ВключитьСубпродуктыВПланДоходов</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВключитьТрудРесурсыВПланРасходов</dcssch:dataPath>
+					<dcssch:field>ВключитьТрудРесурсыВПланРасходов</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоСхемаОплатыПоУмолчаниюРасходы</dcssch:dataPath>
+					<dcssch:field>упоСхемаОплатыПоУмолчаниюРасходы</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИсточникФинансирования</dcssch:dataPath>
+					<dcssch:field>ИсточникФинансирования</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>РольДоходовПоУмолчанию</dcssch:dataPath>
+					<dcssch:field>РольДоходовПоУмолчанию</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Комментарий</dcssch:dataPath>
+					<dcssch:field>Комментарий</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Компонент</dcssch:dataPath>
+					<dcssch:field>Компонент</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КонтрагентДоходов</dcssch:dataPath>
+					<dcssch:field>КонтрагентДоходов</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КонтрагентЗатрат</dcssch:dataPath>
+					<dcssch:field>КонтрагентЗатрат</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПортфельПроектов</dcssch:dataPath>
+					<dcssch:field>ПортфельПроектов</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НатуральныйПоказательДоходовПоУмолчанию</dcssch:dataPath>
+					<dcssch:field>НатуральныйПоказательДоходовПоУмолчанию</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Приоритет</dcssch:dataPath>
+					<dcssch:field>Приоритет</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Фазы</dcssch:dataPath>
+					<dcssch:field>Фазы</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоНаправлениеИнвестиций</dcssch:dataPath>
+					<dcssch:field>упоНаправлениеИнвестиций</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НатуральныйПоказательРасходовПоУмолчанию</dcssch:dataPath>
+					<dcssch:field>НатуральныйПоказательРасходовПоУмолчанию</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СтатьяЗатратПоУмолчанию</dcssch:dataPath>
+					<dcssch:field>СтатьяЗатратПоУмолчанию</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Объект</dcssch:dataPath>
+					<dcssch:field>Объект</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Подразделение</dcssch:dataPath>
+					<dcssch:field>Подразделение</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДополнительныеРеквизиты</dcssch:dataPath>
+					<dcssch:field>ДополнительныеРеквизиты</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоТекущаяФаза</dcssch:dataPath>
+					<dcssch:field>упоТекущаяФаза</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПодразделениеДоходовПоУмолчанию</dcssch:dataPath>
+					<dcssch:field>ПодразделениеДоходовПоУмолчанию</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоКраткоеОписание</dcssch:dataPath>
+					<dcssch:field>упоКраткоеОписание</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоКартинкаПроекта</dcssch:dataPath>
+					<dcssch:field>упоКартинкаПроекта</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПолноеНаименование</dcssch:dataPath>
+					<dcssch:field>ПолноеНаименование</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПрофильДоходовПоУмолчанию</dcssch:dataPath>
+					<dcssch:field>ПрофильДоходовПоУмолчанию</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоЦельПроекта</dcssch:dataPath>
+					<dcssch:field>упоЦельПроекта</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПрофильРасходовПоУмолчанию</dcssch:dataPath>
+					<dcssch:field>ПрофильРасходовПоУмолчанию</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоСтатьяРасходовРаспределенияЗарплаты</dcssch:dataPath>
+					<dcssch:field>упоСтатьяРасходовРаспределенияЗарплаты</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>РольРасходовПоУмолчанию</dcssch:dataPath>
+					<dcssch:field>РольРасходовПоУмолчанию</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СложностьПроекта</dcssch:dataPath>
+					<dcssch:field>СложностьПроекта</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СсылкаНаПроектнуюЗадачу</dcssch:dataPath>
+					<dcssch:field>СсылкаНаПроектнуюЗадачу</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СтатьяДоходовПоУмолчанию</dcssch:dataPath>
+					<dcssch:field>СтатьяДоходовПоУмолчанию</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТекущаяВерсия</dcssch:dataPath>
+					<dcssch:field>ТекущаяВерсия</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТипПроекта</dcssch:dataPath>
+					<dcssch:field>ТипПроекта</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоКорневойПроект</dcssch:dataPath>
+					<dcssch:field>упоКорневойПроект</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоВыгоды</dcssch:dataPath>
+					<dcssch:field>упоВыгоды</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоЕдиницаВремениПоУмолчанию</dcssch:dataPath>
+					<dcssch:field>упоЕдиницаВремениПоУмолчанию</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоКорректироватьДанныеВСтруктуре</dcssch:dataPath>
+					<dcssch:field>упоКорректироватьДанныеВСтруктуре</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоРезультатыПроекта</dcssch:dataPath>
+					<dcssch:field>упоРезультатыПроекта</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоОбоснованиеПроекта</dcssch:dataPath>
+					<dcssch:field>упоОбоснованиеПроекта</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоОсновнойИндикаторПоФазе</dcssch:dataPath>
+					<dcssch:field>упоОсновнойИндикаторПоФазе</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЦветПроекта</dcssch:dataPath>
+					<dcssch:field>ЦветПроекта</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоРежимУчетаВзносов</dcssch:dataPath>
+					<dcssch:field>упоРежимУчетаВзносов</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоЕдиницаТрудоемкостиПоУмолчанию</dcssch:dataPath>
+					<dcssch:field>упоЕдиницаТрудоемкостиПоУмолчанию</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЭтоАктируемаяЗадача</dcssch:dataPath>
+					<dcssch:field>ЭтоАктируемаяЗадача</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоГородПроекта</dcssch:dataPath>
+					<dcssch:field>упоГородПроекта</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоВключитьПланДоходовВБДДС</dcssch:dataPath>
+					<dcssch:field>упоВключитьПланДоходовВБДДС</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоВключитьПланРасходовВБДДС</dcssch:dataPath>
+					<dcssch:field>упоВключитьПланРасходовВБДДС</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоСхемаОплатыПоУмолчаниюДоходы</dcssch:dataPath>
+					<dcssch:field>упоСхемаОплатыПоУмолчаниюДоходы</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоШифр</dcssch:dataPath>
+					<dcssch:field>упоШифр</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоТипСубпродукта</dcssch:dataPath>
+					<dcssch:field>упоТипСубпродукта</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЗадачаОтменена</dcssch:dataPath>
+					<dcssch:field>ЗадачаОтменена</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоСтатьяРасходовВзносов</dcssch:dataPath>
+					<dcssch:field>упоСтатьяРасходовВзносов</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоУчастникиПроекта</dcssch:dataPath>
+					<dcssch:field>упоУчастникиПроекта</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>упоОкружениеПроекта</dcssch:dataPath>
+					<dcssch:field>упоОкружениеПроекта</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИмяПредопределенныхДанных</dcssch:dataPath>
+					<dcssch:field>ИмяПредопределенныхДанных</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ссылка</dcssch:dataPath>
+					<dcssch:field>Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
+					<dcssch:field>ПометкаУдаления</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Предопределенный</dcssch:dataPath>
+					<dcssch:field>Предопределенный</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Родитель</dcssch:dataPath>
+					<dcssch:field>Родитель</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Код</dcssch:dataPath>
+					<dcssch:field>Код</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Наименование</dcssch:dataPath>
+					<dcssch:field>Наименование</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Картинка</dcssch:dataPath>
+					<dcssch:field>Картинка</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КодСДР</dcssch:dataPath>
+					<dcssch:field>КодСДР</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЭтоПроектнаяЗадача</dcssch:dataPath>
+					<dcssch:field>ЭтоПроектнаяЗадача</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Версия</dcssch:dataPath>
+					<dcssch:field>Версия</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПроектнаяЗадача</dcssch:dataPath>
+					<dcssch:field>ПроектнаяЗадача</dcssch:field>
+				</Field>
+				<Parameter>
+					<dcssch:name>Период</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</dcssch:valueType>
+					<dcssch:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcssch:value>
+					<dcssch:useRestriction>false</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>ТекущаяВерсия</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текущая версия</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:DocumentRef.упоВерсияПланаПроекта</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<MainTable>Catalog.Проекты</MainTable>
+				<AutoSaveUserSettings>false</AutoSaveUserSettings>
+				<GetInvisibleFieldPresentations>false</GetInvisibleFieldPresentations>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Ссылка</dcsset:left>
+							<dcsset:comparisonType>InHierarchy</dcsset:comparisonType>
+							<dcsset:presentation xsi:type="xs:string">ОсновнойОтборПоПроекту</dcsset:presentation>
+							<dcsset:viewMode>Inaccessible</dcsset:viewMode>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ПометкаУдаления</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+							<dcsset:viewMode>Inaccessible</dcsset:viewMode>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>КодСДР</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ЭтоФормаВыбора" id="3">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЭтоФормаВыбораПроектнойЗадачи" id="4">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЭтоФормаВыбораПроекта" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это форма выбора проекта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="БыстрыйПоиск" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Быстрый поиск</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПредыдущийТекст" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предыдущий текст</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="упоТекущийПроект" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий проект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="упоТекущийПроектПозиционирование" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий проект позиционирование</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="упоТекущийЭтапПозиционирование" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий этап позиционирование</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СкрыватьЭтапы" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скрывать этапы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЭтоФормаВыбораПроектнойЗадачиКакПроекта" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это форма выбора проектной задачи как проекта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборПоКомпоненту" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор по компоненту</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.упоКомпоненты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="упоТекущийЭтапПозиционированиеРаскрыть" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Упо текущий этап позиционирование раскрыть</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПараметрыПодключаемыхКоманд" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры подключаемых команд</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Список</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Список.Проект</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:Field">упоТекущийПроект</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаСделатьТекущим" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сделать текущим</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сделать текущим</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.упоЗадачаРуководителя</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:TransparentPixel x="11" y="1"/>
+			</Picture>
+			<Action>КомандаСделатьТекущим</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаОтборПоПроекту" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда отбор по проекту</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда отбор по проекту</v8:content>
+				</v8:item>
+			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СкрытьЭтапыПроекта" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скрыть этапы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать / Скрыть этапы проекта</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.упоПанельПользователя</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:TransparentPixel x="4" y="1"/>
+			</Picture>
+			<Action>СкрытьЭтапыПроекта</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОчиститьНастройкиСписка" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить настройки списка проектов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ClearFilter</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОчиститьНастройкиСписка</Action>
+			<Representation>Picture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЭкспортВMSProject" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Экспорт в MS Project</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Экспорт в MS Project</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.упоMSP</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ЭкспортВMSProject</Action>
+			<Representation>Picture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ИмпортИзMSProject" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Импорт из MS Project</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Импорт из MS Project</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.упоИмпортMSP</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ИмпортИзMSProject</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<CommandBar>
+			<Item>
+				<Command>Catalog.Проекты.Command.упоОткрытьКарточкуПроекта</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarImportant</CommandGroup>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>DataProcessor.упоРаботаСЗаданиями.Command.упоРаботаСЗаданиямиПроекта</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarImportant</CommandGroup>
+				<Index>5</Index>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+			<Item>
+				<Command>DataProcessor.упоТабличныйБюджетДДСПроекта.Command.ТабличныйБюджетДДСПроекта</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarImportant</CommandGroup>
+				<Index>3</Index>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+			<Item>
+				<Command>DataProcessor.упоТабличныйБюджетДРПроекта.Command.ТабличныйБюджетДРПроекта</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarImportant</CommandGroup>
+				<Index>4</Index>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+			<Item>
+				<Command>DataProcessor.упоУпрощенныйВводСтруктурыПроекта.Command.упоУпрощенныйВводСтруктурыПроекта</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarImportant</CommandGroup>
+				<Index>2</Index>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+			<Item>
+				<Command>DocumentJournal.упоУправлениеПроектом.Command.КомандаСтатусыПроекта</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarImportant</CommandGroup>
+				<Index>1</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>DataProcessor.упоРаботаСЗаданиями.Command.ПроектныеРешенияОбъекта</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarImportant</CommandGroup>
+				<Index>6</Index>
+			</Item>
+			<Item>
+				<Command>Document.упоРасчетКалендарногоПланаПроекта.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоАктуализацияПроекта.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>DataProcessor.упоРаботаСЗаданиями.Command.ЗаданияНаПланированиеОбъекта</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+			<Item>
+				<Command>Document.упоСводныйСтатусОтчетПоПроектам.Command.упоСводныеСтатусыПоПроектам</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>CommonCommand.ИнтеграцияС1СДокументооборотСоздатьПисьмо</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>CommonCommand.ИнтеграцияС1СДокументооборотСоздатьБизнесПроцесс</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Catalog.упоЗадания.Command.СоздатьЗадание</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоЗаявкаНаПроект.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоНазначениеТрудовыхРесурсовНаПроект.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоПланированиеТрудозатратПоТрудовымРесурсам.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоИзменениеРуководителяПроекта.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоПрогнозТрудозатратПоРолям.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоПроектнаяЗадача.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоРегистрацияФактическихДоходовИРасходов.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоРегистрацияПоказателейПроекта.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоРегистрацияПоказателейЭффективностиПроекта.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоРегистрацияПроекта.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоРегистрацияЮридическихУсловийДоговора.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоРучнаяАктуализацияПроекта.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>CommonCommand.ИнтеграцияС1СДокументооборотНачатьОбработку</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоСтатусОтчетПоПроекту.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</CommandBar>
+	</CommandInterface>
+</Form>

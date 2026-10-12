@@ -1,0 +1,851 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Popup name="ПодменюСоздатьНаОсновании" id="90">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Создать на основании</v8:content>
+					</v8:item>
+				</Title>
+				<Picture>
+					<xr:Ref>StdPicture.InputOnBasis</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<Representation>Picture</Representation>
+				<ExtendedTooltip name="ПодменюСоздатьНаОснованииРасширеннаяПодсказка" id="91"/>
+			</Popup>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnSaveDataInSettingsAtServer">ПриСохраненииДанныхВНастройкахНаСервере</Event>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="NewWriteProcessing">ОбработкаЗаписиНового</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="ExternalEvent">ВнешнееСобытие</Event>
+		<Event name="OnReopen">ПриПовторномОткрытии</Event>
+		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="ActivationProcessing">ОбработкаАктивизации</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+		<Event name="BeforeLoadDataFromSettingsAtServer">ПередЗагрузкойДанныхИзНастроекНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаExtendedTooltip" id="16"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаШапкаЛево" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шапка лево</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаШапкаЛевоExtendedTooltip" id="17"/>
+					<ChildItems>
+						<InputField name="Код" id="6">
+							<DataPath>Объект.Code</DataPath>
+							<ContextMenu name="КодКонтекстноеМеню" id="7"/>
+							<ExtendedTooltip name="КодExtendedTooltip" id="18"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаШапкаПраво" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шапка право</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаШапкаПравоExtendedTooltip" id="19"/>
+					<ChildItems>
+						<LabelField name="НадписьПоследняяМодификация" id="4">
+							<DataPath>НадписьПоследняяМодификация</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<Hiperlink>true</Hiperlink>
+							<ContextMenu name="НадписьПоследняяМодификацияКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="НадписьПоследняяМодификацияExtendedTooltip" id="20"/>
+							<Events>
+								<Event name="Click">НадписьПоследняяМодификацияНажатие</Event>
+							</Events>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Наименование" id="10">
+			<DataPath>Объект.Description</DataPath>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="НаименованиеExtendedTooltip" id="22"/>
+		</InputField>
+		<InputField name="ПолноеНаименование" id="12">
+			<DataPath>Объект.ПолноеНаименование</DataPath>
+			<ContextMenu name="ПолноеНаименованиеКонтекстноеМеню" id="13"/>
+			<ExtendedTooltip name="ПолноеНаименованиеExtendedTooltip" id="23"/>
+		</InputField>
+		<InputField name="Родитель" id="8">
+			<DataPath>Объект.Parent</DataPath>
+			<ContextMenu name="РодительКонтекстноеМеню" id="9"/>
+			<ExtendedTooltip name="РодительExtendedTooltip" id="21"/>
+		</InputField>
+		<UsualGroup name="ГруппаРежимаИнтеграции" id="80">
+			<EnableContentChange>true</EnableContentChange>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа режима интеграции</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаРежимаИнтеграцииРасширеннаяПодсказка" id="81"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаАдаптация" id="147">
+					<EnableContentChange>true</EnableContentChange>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Адаптация к режиму интеграции</v8:content>
+						</v8:item>
+					</Title>
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаАдаптацияРасширеннаяПодсказка" id="148"/>
+				</UsualGroup>
+				<InputField name="упоСхемаОплаты" id="27">
+					<DataPath>Объект.упоСхемаОплаты</DataPath>
+					<ContextMenu name="упоСхемаОплатыКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="упоСхемаОплатыРасширеннаяПодсказка" id="29"/>
+				</InputField>
+				<UsualGroup name="ГруппаКлассификаторЗатрат" id="134">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа классификатор затрат</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>NormalSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ThroughAlign>Use</ThroughAlign>
+					<ExtendedTooltip name="ГруппаКлассификаторЗатратРасширеннаяПодсказка" id="135"/>
+					<ChildItems>
+						<InputField name="КлассификаторЗатрат" id="136">
+							<DataPath>Объект.КлассификаторЗатрат</DataPath>
+							<ContextMenu name="КлассификаторЗатратКонтекстноеМеню" id="137"/>
+							<ExtendedTooltip name="КлассификаторЗатратРасширеннаяПодсказка" id="138"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаОтражениеЗатратВРасходах" id="30">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки отражения статьи затрат в плане расходов</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>NormalSeparation</Representation>
+					<ExtendedTooltip name="ГруппаОтражениеЗатратВРасходахРасширеннаяПодсказка" id="31"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаЗначенияПоУмолчанию" id="139">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Значения по умолчанию</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ThroughAlign>Use</ThroughAlign>
+							<ExtendedTooltip name="ГруппаЗначенияПоУмолчаниюРасширеннаяПодсказка" id="140"/>
+							<ChildItems>
+								<InputField name="СпособПривязкиРасходовПоУмолчанию" id="141">
+									<DataPath>Объект.СпособПривязкиРасходовПоУмолчанию</DataPath>
+									<ContextMenu name="СпособПривязкиРасходовПоУмолчаниюКонтекстноеМеню" id="142"/>
+									<ExtendedTooltip name="СпособПривязкиРасходовПоУмолчаниюРасширеннаяПодсказка" id="143"/>
+								</InputField>
+								<InputField name="ПрофильРаспределенияПоУмолчанию" id="144">
+									<DataPath>Объект.ПрофильРаспределенияПоУмолчанию</DataPath>
+									<ContextMenu name="ПрофильРаспределенияПоУмолчаниюКонтекстноеМеню" id="145"/>
+									<ExtendedTooltip name="ПрофильРаспределенияПоУмолчаниюРасширеннаяПодсказка" id="146"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ОтражениеТрудозатраты" id="32">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отражение трудозатрат</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ОтражениеТрудозатратыРасширеннаяПодсказка" id="33"/>
+							<ChildItems>
+								<UsualGroup name="ТрудозатратыСпособПривязки" id="49">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Трудозатраты способ привязки</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ТрудозатратыСпособПривязкиРасширеннаяПодсказка" id="50"/>
+									<ChildItems>
+										<InputField name="СпособПривязкиРасходовТрудозатраты" id="34">
+											<DataPath>Объект.СпособПривязкиРасходовТрудозатраты</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Способ привязки</v8:content>
+												</v8:item>
+											</Title>
+											<ChoiceParameters>
+												<app:item name="БезДаты">
+													<app:value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xs:boolean">true</Value>
+													</app:value>
+												</app:item>
+											</ChoiceParameters>
+											<ContextMenu name="СпособПривязкиРасходовТрудозатратыКонтекстноеМеню" id="35"/>
+											<ExtendedTooltip name="СпособПривязкиРасходовТрудозатратыРасширеннаяПодсказка" id="36"/>
+											<Events>
+												<Event name="OnChange">СпособПривязкиРасходовТрудозатратыПриИзменении</Event>
+											</Events>
+										</InputField>
+										<Pages name="УточнениеПривязки" id="69">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Уточнение привязки</v8:content>
+												</v8:item>
+											</Title>
+											<PagesRepresentation>None</PagesRepresentation>
+											<ExtendedTooltip name="УточнениеПривязкиРасширеннаяПодсказка" id="70"/>
+											<ChildItems>
+												<Page name="СтраницаПрофильПривязки" id="71">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Страница профиль привязки</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="СтраницаПрофильПривязкиРасширеннаяПодсказка" id="72"/>
+													<ChildItems>
+														<InputField name="ПрофильРаспределенияРасходовТрудозатраты" id="37">
+															<DataPath>Объект.ПрофильРаспределенияРасходовТрудозатраты</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Профиль распределения</v8:content>
+																</v8:item>
+															</Title>
+															<AutoMarkIncomplete>true</AutoMarkIncomplete>
+															<ContextMenu name="ПрофильРаспределенияРасходовТрудозатратыКонтекстноеМеню" id="38"/>
+															<ExtendedTooltip name="ПрофильРаспределенияРасходовТрудозатратыРасширеннаяПодсказка" id="39"/>
+														</InputField>
+													</ChildItems>
+												</Page>
+												<Page name="СтраницаПериодАгрегации" id="73">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Страница период агрегации</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="СтраницаПериодАгрегацииРасширеннаяПодсказка" id="74"/>
+													<ChildItems>
+														<InputField name="ПериодАгрегацииРасходовТрудозатраты" id="40">
+															<DataPath>Объект.ПериодАгрегацииРасходовТрудозатраты</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Период агрегации</v8:content>
+																</v8:item>
+															</Title>
+															<AutoMarkIncomplete>true</AutoMarkIncomplete>
+															<ContextMenu name="ПериодАгрегацииРасходовТрудозатратыКонтекстноеМеню" id="41"/>
+															<ExtendedTooltip name="ПериодАгрегацииРасходовТрудозатратыРасширеннаяПодсказка" id="42"/>
+														</InputField>
+													</ChildItems>
+												</Page>
+												<Page name="СтраницаПусто" id="75">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Страница пусто</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="СтраницаПустоРасширеннаяПодсказка" id="76"/>
+													<ChildItems>
+														<LabelDecoration name="Декорация1" id="77">
+															<ContextMenu name="Декорация1КонтекстноеМеню" id="78"/>
+															<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="79"/>
+														</LabelDecoration>
+													</ChildItems>
+												</Page>
+											</ChildItems>
+										</Pages>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ТрудозатратыКонтрагентДоговор" id="53">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Трудозатраты контрагент договор</v8:content>
+										</v8:item>
+									</Title>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ТрудозатратыКонтрагентДоговорРасширеннаяПодсказка" id="54"/>
+									<ChildItems>
+										<InputField name="КонтрагентРасходовТрудозатраты" id="43">
+											<DataPath>Объект.КонтрагентРасходовТрудозатраты</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Контрагент</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="КонтрагентРасходовТрудозатратыКонтекстноеМеню" id="44"/>
+											<ExtendedTooltip name="КонтрагентРасходовТрудозатратыРасширеннаяПодсказка" id="45"/>
+										</InputField>
+										<InputField name="ДоговорРасходовТрудозатраты" id="46">
+											<DataPath>Объект.ДоговорРасходовТрудозатраты</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Договор</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДоговорРасходовТрудозатратыКонтекстноеМеню" id="47"/>
+											<ExtendedTooltip name="ДоговорРасходовТрудозатратыРасширеннаяПодсказка" id="48"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ОтражениеЗатраты" id="51">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отражение объемов, потребностей, доп.затрат</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ThroughAlign>Use</ThroughAlign>
+							<ExtendedTooltip name="ОтражениеЗатратыРасширеннаяПодсказка" id="52"/>
+							<ChildItems>
+								<InputField name="ПрофильРаспределенияРасходовЗатраты" id="63">
+									<DataPath>Объект.ПрофильРаспределенияРасходовЗатраты</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Профиль распределения</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ПрофильРаспределенияРасходовЗатратыКонтекстноеМеню" id="64"/>
+									<ExtendedTooltip name="ПрофильРаспределенияРасходовЗатратыРасширеннаяПодсказка" id="65"/>
+								</InputField>
+								<UsualGroup name="ЗатратыКонтрагентДоговор" id="55">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Затраты контрагент договор</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<ShowTitle>false</ShowTitle>
+									<ThroughAlign>Use</ThroughAlign>
+									<ExtendedTooltip name="ЗатратыКонтрагентДоговорРасширеннаяПодсказка" id="56"/>
+									<ChildItems>
+										<InputField name="КонтрагентРасходовЗатраты" id="57">
+											<DataPath>Объект.КонтрагентРасходовЗатраты</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Контрагент</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="КонтрагентРасходовЗатратыКонтекстноеМеню" id="58"/>
+											<ExtendedTooltip name="КонтрагентРасходовЗатратыРасширеннаяПодсказка" id="59"/>
+										</InputField>
+										<InputField name="ДоговорРасходовЗатраты" id="60">
+											<DataPath>Объект.ДоговорРасходовЗатраты</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Договор</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДоговорРасходовЗатратыКонтекстноеМеню" id="61"/>
+											<ExtendedTooltip name="ДоговорРасходовЗатратыРасширеннаяПодсказка" id="62"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="НастройкиРаспределениеРасходов" id="82">
+					<EnableContentChange>true</EnableContentChange>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Распределение расходов</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Распределение общепроизводственных и общехозяйственных расходов по проектам</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ToolTipRepresentation>Button</ToolTipRepresentation>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<ExtendedTooltip name="НастройкиРаспределениеРасходовРасширеннаяПодсказка" id="83"/>
+					<ChildItems>
+						<UsualGroup name="НастройкиРаспределениеРасходовРегл" id="92">
+							<EnableContentChange>true</EnableContentChange>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>В регл. учете</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="НастройкиРаспределениеРасходовРеглРасширеннаяПодсказка" id="93"/>
+							<ChildItems>
+								<InputField name="СпособыРаспределенияРасходовПоПроектамРегл" id="107">
+									<DataPath>Объект.СпособыРаспределенияРасходовПоПроектамРегл</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Способ распределения расходов по проектам</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СпособыРаспределенияРасходовПоПроектамРеглКонтекстноеМеню" id="108"/>
+									<ExtendedTooltip name="СпособыРаспределенияРасходовПоПроектамРеглРасширеннаяПодсказка" id="109"/>
+									<Events>
+										<Event name="OnChange">СпособыРаспределенияРасходовПоПроектамРеглПриИзменении</Event>
+									</Events>
+								</InputField>
+								<UsualGroup name="СпособыРаспределенияРасходовПоПроектамРеглНадпись" id="100">
+									<Visible>false</Visible>
+									<EnableContentChange>true</EnableContentChange>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Способы распределения расходов по проектам регл надпись</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Способы распределения расходов по проектам регл надпись</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="СпособыРаспределенияРасходовПоПроектамРеглНадписьРасширеннаяПодсказка" id="101"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация2" id="110">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Способ распределения расходов по проектам:</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация2КонтекстноеМеню" id="111"/>
+											<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="112"/>
+										</LabelDecoration>
+										<LabelDecoration name="Декорация3" id="113">
+											<TextColor>style:BorderColor</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content> доступно при ручном способе распределения расходов</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация3КонтекстноеМеню" id="114"/>
+											<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="115"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<InputField name="СтатьяРаспределенияРасходовРегл" id="104">
+									<DataPath>Объект.СтатьяРаспределенияРасходовРегл</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статья распределения расходов</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СтатьяРаспределенияРасходовРеглКонтекстноеМеню" id="105"/>
+									<ExtendedTooltip name="СтатьяРаспределенияРасходовРеглРасширеннаяПодсказка" id="106"/>
+								</InputField>
+								<UsualGroup name="СтатьяРаспределенияРасходовРеглНадпись" id="102">
+									<Visible>false</Visible>
+									<EnableContentChange>true</EnableContentChange>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статья распределения расходов регл надпись</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статья распределения расходов регл надпись</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="СтатьяРаспределенияРасходовРеглНадписьРасширеннаяПодсказка" id="103"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация4" id="116">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Статья распределения расходов:</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация4КонтекстноеМеню" id="117"/>
+											<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="118"/>
+										</LabelDecoration>
+										<LabelDecoration name="Декорация5" id="119">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:BorderColor</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>                     доступно при ручном способе распределения расходов</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация5КонтекстноеМеню" id="120"/>
+											<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="121"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="НастройкиРаспределениеРасходовУпр" id="94">
+							<EnableContentChange>true</EnableContentChange>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>В упр. учете</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="НастройкиРаспределениеРасходовУпрРасширеннаяПодсказка" id="95"/>
+							<ChildItems>
+								<InputField name="СпособыРаспределенияРасходовПоПроектам" id="84">
+									<DataPath>СпособыРаспределенияРасходовПоПроектам</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Способ распределения расходов по проектам</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СпособыРаспределенияРасходовПоПроектамКонтекстноеМеню" id="85"/>
+									<ExtendedTooltip name="СпособыРаспределенияРасходовПоПроектамРасширеннаяПодсказка" id="86"/>
+									<Events>
+										<Event name="OnChange">СпособыРаспределенияРасходовПоПроектамПриИзменении</Event>
+									</Events>
+								</InputField>
+								<UsualGroup name="СпособыРаспределенияРасходовПоПроектамНадпись" id="96">
+									<Visible>false</Visible>
+									<EnableContentChange>true</EnableContentChange>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Способы распределения расходов по проектам надпись</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Способы распределения расходов по проектам надпись</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="СпособыРаспределенияРасходовПоПроектамНадписьРасширеннаяПодсказка" id="97"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация6" id="122">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Способ распределения расходов по проектам:</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация6КонтекстноеМеню" id="123"/>
+											<ExtendedTooltip name="Декорация6РасширеннаяПодсказка" id="124"/>
+										</LabelDecoration>
+										<LabelDecoration name="Декорация7" id="125">
+											<TextColor>style:BorderColor</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content> доступно при ручном способе распределения расходов</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация7КонтекстноеМеню" id="126"/>
+											<ExtendedTooltip name="Декорация7РасширеннаяПодсказка" id="127"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<InputField name="СтатьяРаспределенияРасходов" id="87">
+									<DataPath>СтатьяРаспределенияРасходов</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статья распределения расходов</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СтатьяРаспределенияРасходовКонтекстноеМеню" id="88"/>
+									<ExtendedTooltip name="СтатьяРаспределенияРасходовРасширеннаяПодсказка" id="89"/>
+								</InputField>
+								<UsualGroup name="СтатьяРаспределенияРасходовНадпись" id="98">
+									<Visible>false</Visible>
+									<EnableContentChange>true</EnableContentChange>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статья распределения расходов надпись</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статья распределения расходов надпись</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="СтатьяРаспределенияРасходовНадписьРасширеннаяПодсказка" id="99"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация8" id="128">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Статья распределения расходов:</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация8КонтекстноеМеню" id="129"/>
+											<ExtendedTooltip name="Декорация8РасширеннаяПодсказка" id="130"/>
+										</LabelDecoration>
+										<LabelDecoration name="Декорация9" id="131">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:BorderColor</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>                     доступно при ручном способе распределения расходов</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация9КонтекстноеМеню" id="132"/>
+											<ExtendedTooltip name="Декорация9РасширеннаяПодсказка" id="133"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДополнительныеРеквизиты" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительные реквизиты и свойства</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="ГруппаДополнительныеРеквизитыExtendedTooltip" id="26"/>
+		</UsualGroup>
+		<UsualGroup name="ГруппаКомментарий" id="149">
+			<EnableContentChange>true</EnableContentChange>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комментарий</v8:content>
+				</v8:item>
+			</Title>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ThroughAlign>DontUse</ThroughAlign>
+			<ExtendedTooltip name="ГруппаКомментарийРасширеннаяПодсказка" id="150"/>
+			<ChildItems>
+				<InputField name="Комментарий" id="14">
+					<DataPath>Объект.Комментарий</DataPath>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="КомментарийКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="КомментарийExtendedTooltip" id="24"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.упоСтатьиЗатрат</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="НадписьПоследняяМодификация" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Надпись последняя модификация</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ПараметрыПодключаемыхКоманд" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры подключаемых команд</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="УточнениеПривязки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уточнение привязки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:Type>cfg:CatalogRef.упоПрофилиРаспределенияДоходовИРасходов</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СпособыРаспределенияРасходовПоПроектам" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Способы распределения расходов по проектам</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.упоСпособыРаспределенияРасходовПоПроектам</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СтатьяРаспределенияРасходов" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статья распределения расходов регл</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.упоСтатьиЗатрат</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<CommandInterface>
+		<CommandBar>
+			<Item>
+				<Command>CommonCommand.ИнтеграцияС1СДокументооборотСоздатьПисьмо</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>CommonCommand.ИнтеграцияС1СДокументооборотСоздатьБизнесПроцесс</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Catalog.упоЗадания.Command.СоздатьЗадание</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>CommonCommand.ИнтеграцияС1СДокументооборотНачатьОбработку</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</CommandBar>
+	</CommandInterface>
+</Form>

@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Выбор стиля оформления</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<Customizable>false</Customizable>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаПерезапуск" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа перезапуск</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа перезапуск</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Height>1</Height>
+			<GroupVerticalAlign>Top</GroupVerticalAlign>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>style:FormBackColor</BackColor>
+			<ExtendedTooltip name="ГруппаПерезапускРасширеннаяПодсказка" id="20"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаПредложениеПерезапуска" id="29">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа предложение перезапуска</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа предложение перезапуска</v8:content>
+						</v8:item>
+					</ToolTip>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПредложениеПерезапускаРасширеннаяПодсказка" id="30"/>
+					<ChildItems>
+						<LabelDecoration name="НадписьПредупреждение" id="21">
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>&lt;fontsize 10&gt;Для изменения внешнего вида нужно выполнить перезапуск&lt;/&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НадписьПредупреждениеКонтекстноеМеню" id="22"/>
+							<ExtendedTooltip name="НадписьПредупреждениеРасширеннаяПодсказка" id="23"/>
+						</LabelDecoration>
+						<Button name="КомандаПерезапуститьСеанс" id="24">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.КомандаПерезапуститьСеанс</CommandName>
+							<ExtendedTooltip name="КомандаПерезапуститьСеансРасширеннаяПодсказка" id="25"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<LabelDecoration name="ДекорацияОтступ" id="26">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Height>2</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<ContextMenu name="ДекорацияОтступКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ДекорацияОтступРасширеннаяПодсказка" id="28"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаСтили" id="1">
+			<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСтилиРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаСтильПоУмолчанию" id="9">
+					<Visible>false</Visible>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<BackColor>style:FormBackColor</BackColor>
+					<ExtendedTooltip name="ГруппаСтильПоУмолчаниюРасширеннаяПодсказка" id="10"/>
+					<ChildItems>
+						<LabelDecoration name="НадписьСтильПоУмолчанию" id="13">
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>&lt;fontsize 12&gt;По умолчанию:&lt;/&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НадписьСтильПоУмолчаниюКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="НадписьСтильПоУмолчаниюРасширеннаяПодсказка" id="15"/>
+						</LabelDecoration>
+						<PictureDecoration name="упоСтильПоУмолчанию" id="3">
+							<Width>45</Width>
+							<Height>10</Height>
+							<Hyperlink>true</Hyperlink>
+							<PictureSize>Proportionally</PictureSize>
+							<Picture>
+								<xr:Abs>Picture.png</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="упоСтильПоУмолчаниюКонтекстноеМеню" id="4"/>
+							<ExtendedTooltip name="упоСтильПоУмолчаниюРасширеннаяПодсказка" id="5"/>
+						</PictureDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаСтильСиний" id="11">
+					<Visible>false</Visible>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<BackColor>style:FormBackColor</BackColor>
+					<ExtendedTooltip name="ГруппаСтильСинийРасширеннаяПодсказка" id="12"/>
+					<ChildItems>
+						<LabelDecoration name="НадписьСтильСиний" id="16">
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>&lt;fontsize 12&gt;Синий:&lt;/&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НадписьСтильСинийКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="НадписьСтильСинийРасширеннаяПодсказка" id="18"/>
+						</LabelDecoration>
+						<PictureDecoration name="упоСтильСиний" id="6">
+							<Width>45</Width>
+							<Height>10</Height>
+							<Hyperlink>true</Hyperlink>
+							<PictureSize>Proportionally</PictureSize>
+							<Picture>
+								<xr:Abs>Picture.png</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<Border width="3">
+								<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+							</Border>
+							<ContextMenu name="упоСтильСинийКонтекстноеМеню" id="7"/>
+							<ExtendedTooltip name="упоСтильСинийРасширеннаяПодсказка" id="8"/>
+						</PictureDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ВыбранныйСтиль" id="1">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущийСтиль" id="2">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЦветФона" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цвет фона</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ЦветФонаАктивный" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цвет фона активный</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ДоступныеСтили" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доступные стили</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Имя" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Название" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Название</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИмяОбщейКартинкиПревью" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя общей картинки превью</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаПерезапуститьСеанс" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перезапустить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда перезапустить сеанс</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаПерезапуститьСеанс</Action>
+		</Command>
+	</Commands>
+</Form>

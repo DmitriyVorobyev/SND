@@ -1,0 +1,435 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnSaveDataInSettingsAtServer">ПриСохраненииДанныхВНастройкахНаСервере</Event>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="NewWriteProcessing">ОбработкаЗаписиНового</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="ExternalEvent">ВнешнееСобытие</Event>
+		<Event name="OnReopen">ПриПовторномОткрытии</Event>
+		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="ActivationProcessing">ОбработкаАктивизации</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+		<Event name="BeforeLoadDataFromSettingsAtServer">ПередЗагрузкойДанныхИзНастроекНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="28">
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="29"/>
+			<ChildItems>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<LabelField name="НадписьПоследняяМодификация" id="34">
+					<DataPath>НадписьПоследняяМодификация</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<HorizontalAlign>Right</HorizontalAlign>
+					<Hiperlink>true</Hiperlink>
+					<ContextMenu name="НадписьПоследняяМодификацияКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="НадписьПоследняяМодификацияExtendedTooltip" id="36"/>
+					<Events>
+						<Event name="Click">НадписьПоследняяМодификацияНажатие</Event>
+					</Events>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<UsualGroup name="ГруппаНДС" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выделение НДС</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа НДС</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<ExtendedTooltip name="ГруппаНДСРасширеннаяПодсказка" id="31"/>
+			<ChildItems>
+				<InputField name="СтавкаНДС" id="13">
+					<DataPath>Объект.СтавкаНДС</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ставка НДС по умолчанию</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СтавкаНДСКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="СтавкаНДСРасширеннаяПодсказка" id="15"/>
+				</InputField>
+				<CheckBoxField name="ФлагВыделитьНДСДоходов" id="7">
+					<DataPath>Объект.ФлагВыделитьНДСДоходов</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ФлагВыделитьНДСДоходовКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ФлагВыделитьНДСДоходовРасширеннаяПодсказка" id="9"/>
+					<Events>
+						<Event name="OnChange">ФлагВыделитьНДСДоходовПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ФлагВыделитьНДСРасходов" id="10">
+					<DataPath>Объект.ФлагВыделитьНДСРасходов</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ФлагВыделитьНДСРасходовКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ФлагВыделитьНДСРасходовРасширеннаяПодсказка" id="12"/>
+					<Events>
+						<Event name="OnChange">ФлагВыделитьНДСРасходовПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<Table name="ОтборСтатьиНДС" id="40">
+					<TitleLocation>Auto</TitleLocation>
+					<Height>4</Height>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.ОтборСтатьиНДС</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Не выделять НДС в расходах по статьям затрат</v8:content>
+						</v8:item>
+					</Title>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ОтборСтатьиНДСКонтекстноеМеню" id="41"/>
+					<AutoCommandBar name="ОтборСтатьиНДСКоманднаяПанель" id="42">
+						<Autofill>false</Autofill>
+						<ChildItems>
+							<Button name="ОтборСтатьиВыделенияНДСДобавить" id="59">
+								<Type>CommandBarButton</Type>
+								<Representation>Picture</Representation>
+								<CommandName>Form.Item.ОтборСтатьиНДС.StandardCommand.Add</CommandName>
+								<ExtendedTooltip name="ОтборСтатьиВыделенияНДСДобавитьРасширеннаяПодсказка" id="60"/>
+							</Button>
+							<Button name="ОтборСтатьиВыделенияНДСУдалить" id="61">
+								<Type>CommandBarButton</Type>
+								<Representation>Picture</Representation>
+								<CommandName>Form.Item.ОтборСтатьиНДС.StandardCommand.Delete</CommandName>
+								<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+								<ExtendedTooltip name="ОтборСтатьиВыделенияНДСУдалитьРасширеннаяПодсказка" id="62"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ОтборСтатьиНДСРасширеннаяПодсказка" id="43"/>
+					<SearchStringAddition name="ОтборСтатьиНДССтрокаПоиска" id="44">
+						<AdditionSource>
+							<Item>ОтборСтатьиНДС</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ОтборСтатьиНДССтрокаПоискаКонтекстноеМеню" id="45"/>
+						<ExtendedTooltip name="ОтборСтатьиНДССтрокаПоискаРасширеннаяПодсказка" id="46"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ОтборСтатьиНДССостояниеПросмотра" id="47">
+						<AdditionSource>
+							<Item>ОтборСтатьиНДС</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ОтборСтатьиНДССостояниеПросмотраКонтекстноеМеню" id="48"/>
+						<ExtendedTooltip name="ОтборСтатьиНДССостояниеПросмотраРасширеннаяПодсказка" id="49"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ОтборСтатьиНДСУправлениеПоиском" id="50">
+						<AdditionSource>
+							<Item>ОтборСтатьиНДС</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ОтборСтатьиНДСУправлениеПоискомКонтекстноеМеню" id="51"/>
+						<ExtendedTooltip name="ОтборСтатьиНДСУправлениеПоискомРасширеннаяПодсказка" id="52"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="ОтборСтатьиВыделенияНДССтатья" id="56">
+							<DataPath>Объект.ОтборСтатьиНДС.Статья</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Статья затрат</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ОтборСтатьиВыделенияНДССтатьяКонтекстноеМеню" id="57"/>
+							<ExtendedTooltip name="ОтборСтатьиВыделенияНДССтатьяРасширеннаяПодсказка" id="58"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаРаспределение" id="32">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Распределение доходов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Распределение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<ExtendedTooltip name="ГруппаРаспределениеРасширеннаяПодсказка" id="33"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаУчестьРасходы" id="68">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа учесть расходы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа учесть расходы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>NormalSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаУчестьРасходыРасширеннаяПодсказка" id="69"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаРаспределениеДоходовПоРасходам" id="63">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Распределение доходов по расходам</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Распределение доходов по расходам</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаРаспределениеДоходовПоРасходамРасширеннаяПодсказка" id="64"/>
+							<ChildItems>
+								<CheckBoxField name="ФлагУчестьРасходы" id="16">
+									<DataPath>Объект.ФлагУчестьРасходы</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Распределить доходы по расходам</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ФлагУчестьРасходыКонтекстноеМеню" id="17"/>
+									<ExtendedTooltip name="ФлагУчестьРасходыРасширеннаяПодсказка" id="18"/>
+									<Events>
+										<Event name="OnChange">ФлагУчестьРасходыПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<RadioButtonField name="СпособРаспределенияДоходовПоРасходам" id="65">
+									<DataPath>Объект.СпособРаспределенияДоходовПоРасходам</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<RadioButtonType>Auto</RadioButtonType>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>По суммам</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xr:DesignTimeRef">Enum.упоСпособыРаспределенияРасходовВОбработкеРаспределенияБДР.EnumValue.ПоСуммам</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Пропорционально</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xr:DesignTimeRef">Enum.упоСпособыРаспределенияРасходовВОбработкеРаспределенияБДР.EnumValue.Пропорционально</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="СпособРаспределенияДоходовПоРасходамКонтекстноеМеню" id="66"/>
+									<ExtendedTooltip name="СпособРаспределенияДоходовПоРасходамРасширеннаяПодсказка" id="67"/>
+									<Events>
+										<Event name="OnChange">СпособРаспределенияДоходовПоРасходамПриИзменении</Event>
+									</Events>
+								</RadioButtonField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="УчестьРасходы_ОтборСССП" id="19">
+							<DataPath>Объект.УчестьРасходы_ОтборСССП</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выделить расходы СС/СП</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>При распределении доходов выделить сумму расходов</v8:content>
+								</v8:item>
+							</ToolTip>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="УчестьРасходы_ОтборСССПКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="УчестьРасходы_ОтборСССПРасширеннаяПодсказка" id="21" DisplayImportance="High"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаРаспределитьПоТрудозатратам" id="70">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа учесть расходы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа учесть расходы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>NormalSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаРаспределитьПоТрудозатратамРасширеннаяПодсказка" id="71"/>
+					<ChildItems>
+						<CheckBoxField name="ФлагРаспределитьПоТрудозатратам" id="25">
+							<DataPath>Объект.ФлагРаспределитьПоТрудозатратам</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ФлагРаспределитьПоТрудозатратамКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="ФлагРаспределитьПоТрудозатратамРасширеннаяПодсказка" id="27"/>
+							<Events>
+								<Event name="OnChange">ФлагРаспределитьПоТрудозатратамПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="РаспределитьПоТрудозатратам_ИсключитьСССП" id="22">
+							<DataPath>Объект.РаспределитьПоТрудозатратам_ИсключитьСССП</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Исключить роли СС/СП</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Исключить из расчета распределения доходов роли</v8:content>
+								</v8:item>
+							</ToolTip>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="РаспределитьПоТрудозатратам_ИсключитьСССПКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="РаспределитьПоТрудозатратам_ИсключитьСССПРасширеннаяПодсказка" id="24"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<CheckBoxField name="РаспределитьПланВыпускаТранслированныйНаДоход" id="72">
+					<DataPath>Объект.РаспределитьПланВыпускаТранслированныйНаДоход</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="РаспределитьПланВыпускаТранслированныйНаДоходКонтекстноеМеню" id="73"/>
+					<ExtendedTooltip name="РаспределитьПланВыпускаТранслированныйНаДоходРасширеннаяПодсказка" id="74"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Комментарий" id="37">
+			<DataPath>Объект.Комментарий</DataPath>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="39"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.упоНастройкиРаспределенияБДР</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="НадписьПоследняяМодификация" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Надпись последняя модификация</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СтавкаНДС</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemGroup">
+						<dcsset:groupType>OrGroup</dcsset:groupType>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Объект.ФлагВыделитьНДСДоходов</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Объект.ФлагВыделитьНДСРасходов</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.СтавкаНДС</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+</Form>

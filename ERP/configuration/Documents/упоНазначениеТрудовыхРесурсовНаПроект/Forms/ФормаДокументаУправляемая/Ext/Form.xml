@@ -1,0 +1,532 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Popup name="ПодменюСоздатьНаОсновании" id="83">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Создать на основании</v8:content>
+					</v8:item>
+				</Title>
+				<Picture>
+					<xr:Ref>StdPicture.InputOnBasis</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<Representation>Picture</Representation>
+				<ExtendedTooltip name="ПодменюСоздатьНаОснованииРасширеннаяПодсказка" id="84"/>
+			</Popup>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnSaveDataInSettingsAtServer">ПриСохраненииДанныхВНастройкахНаСервере</Event>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="NewWriteProcessing">ОбработкаЗаписиНового</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="ExternalEvent">ВнешнееСобытие</Event>
+		<Event name="OnReopen">ПриПовторномОткрытии</Event>
+		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="ActivationProcessing">ОбработкаАктивизации</Event>
+		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+		<Event name="BeforeLoadDataFromSettingsAtServer">ПередЗагрузкойДанныхИзНастроекНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="34">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаExtendedTooltip" id="41"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаНомерДатаМодификация" id="81">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер дата модификация</v8:content>
+						</v8:item>
+					</Title>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ThroughAlign>Use</ThroughAlign>
+					<ExtendedTooltip name="ГруппаНомерДатаМодификацияРасширеннаяПодсказка" id="82"/>
+					<ChildItems>
+						<InputField name="Номер" id="1">
+							<DataPath>Объект.Number</DataPath>
+							<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>10</MaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="НомерExtendedTooltip" id="42"/>
+						</InputField>
+						<InputField name="Дата" id="3">
+							<DataPath>Объект.Date</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>от</v8:content>
+								</v8:item>
+							</Title>
+							<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ДатаКонтекстноеМеню" id="4"/>
+							<ExtendedTooltip name="ДатаExtendedTooltip" id="43"/>
+						</InputField>
+						<LabelField name="НадписьПоследняяМодификация" id="35">
+							<DataPath>НадписьПоследняяМодификация</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<HorizontalAlign>Right</HorizontalAlign>
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Hiperlink>true</Hiperlink>
+							<ContextMenu name="НадписьПоследняяМодификацияКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="НадписьПоследняяМодификацияExtendedTooltip" id="44"/>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
+				<LabelField name="НадписьПроект" id="37">
+					<DataPath>НадписьПроект</DataPath>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>40</MaxWidth>
+					<Hiperlink>true</Hiperlink>
+					<ContextMenu name="НадписьПроектКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="НадписьПроектExtendedTooltip" id="45"/>
+					<Events>
+						<Event name="Click">НадписьПроектНажатие</Event>
+					</Events>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="Страницы" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыExtendedTooltip" id="46"/>
+			<ChildItems>
+				<Page name="ГруппаВыделяемыеРесурсы" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Назначаемые ресурсы</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаВыделяемыеРесурсыExtendedTooltip" id="47"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаВыделяемые" id="32">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Трудовые ресурсы, назначаемые на проект</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="ГруппаВыделяемыеExtendedTooltip" id="48"/>
+							<ChildItems>
+								<Table name="ВыделяемыеРесурсы" id="17">
+									<Representation>List</Representation>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>Объект.ВыделяемыеРесурсы</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выделяемые ресурсы</v8:content>
+										</v8:item>
+									</Title>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ВыделяемыеРесурсыКонтекстноеМеню" id="18"/>
+									<AutoCommandBar name="ВыделяемыеРесурсыКоманднаяПанель" id="19">
+										<ChildItems>
+											<Button name="ВыделяемыеРесурсыПодобратьНазначаемыеРоли" id="39">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ПодобратьНазначаемыеРоли</CommandName>
+												<ExtendedTooltip name="ВыделяемыеРесурсыПодобратьНазначаемыеРолиExtendedTooltip" id="49"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ВыделяемыеРесурсыExtendedTooltip" id="50"/>
+									<SearchStringAddition name="ВыделяемыеРесурсыСтрокаПоиска" id="60">
+										<AdditionSource>
+											<Item>ВыделяемыеРесурсы</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ВыделяемыеРесурсыСтрокаПоискаКонтекстноеМеню" id="61"/>
+										<ExtendedTooltip name="ВыделяемыеРесурсыСтрокаПоискаРасширеннаяПодсказка" id="62"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ВыделяемыеРесурсыСостояниеПросмотра" id="63">
+										<AdditionSource>
+											<Item>ВыделяемыеРесурсы</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ВыделяемыеРесурсыСостояниеПросмотраКонтекстноеМеню" id="64"/>
+										<ExtendedTooltip name="ВыделяемыеРесурсыСостояниеПросмотраРасширеннаяПодсказка" id="65"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ВыделяемыеРесурсыУправлениеПоиском" id="66">
+										<AdditionSource>
+											<Item>ВыделяемыеРесурсы</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ВыделяемыеРесурсыУправлениеПоискомКонтекстноеМеню" id="67"/>
+										<ExtendedTooltip name="ВыделяемыеРесурсыУправлениеПоискомРасширеннаяПодсказка" id="68"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="Drag">ВыделяемыеРесурсыПеретаскивание</Event>
+										<Event name="ChoiceProcessing">ВыделяемыеРесурсыОбработкаВыбора</Event>
+									</Events>
+									<ChildItems>
+										<InputField name="ВыделяемыеРесурсыРесурс" id="22">
+											<DataPath>Объект.ВыделяемыеРесурсы.Ресурс</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Трудовой ресурс</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ВыделяемыеРесурсыРесурсКонтекстноеМеню" id="23"/>
+											<ExtendedTooltip name="ВыделяемыеРесурсыРесурсExtendedTooltip" id="51"/>
+										</InputField>
+										<InputField name="ВыделяемыеРесурсыПодразделение" id="78">
+											<DataPath>Объект.ВыделяемыеРесурсы.Подразделение</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ВыделяемыеРесурсыПодразделениеКонтекстноеМеню" id="79"/>
+											<ExtendedTooltip name="ВыделяемыеРесурсыПодразделениеРасширеннаяПодсказка" id="80"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаОсвобождаемыеРесурсы" id="24">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Освобождаемые ресурсы</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаОсвобождаемыеРесурсыExtendedTooltip" id="52"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаОсвобождаемые" id="33">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Трудовые ресурсы, освобождаемые с проекта</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="ГруппаОсвобождаемыеExtendedTooltip" id="53"/>
+							<ChildItems>
+								<Table name="ОсвобождаемыеРесурсы" id="25">
+									<Representation>List</Representation>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>Объект.ОсвобождаемыеРесурсы</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Освобождаемые ресурсы</v8:content>
+										</v8:item>
+									</Title>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ОсвобождаемыеРесурсыКонтекстноеМеню" id="26"/>
+									<AutoCommandBar name="ОсвобождаемыеРесурсыКоманднаяПанель" id="27">
+										<ChildItems>
+											<Button name="ОсвобождаемыеРесурсыПодобратьОсвобождаемыеРоли" id="85">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ПодобратьОсвобождаемыеРоли</CommandName>
+												<ExtendedTooltip name="ОсвобождаемыеРесурсыПодобратьОсвобождаемыеРолиРасширеннаяПодсказка" id="86"/>
+											</Button>
+											<Button name="ОсвобождаемыеРесурсыЗаполнитьОсвобождаемыеРесурсы" id="40">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ЗаполнитьОсвобождаемыеРесурсы</CommandName>
+												<ExtendedTooltip name="ОсвобождаемыеРесурсыЗаполнитьОсвобождаемыеРесурсыExtendedTooltip" id="54"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ОсвобождаемыеРесурсыExtendedTooltip" id="55"/>
+									<SearchStringAddition name="ОсвобождаемыеРесурсыСтрокаПоиска" id="69">
+										<AdditionSource>
+											<Item>ОсвобождаемыеРесурсы</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ОсвобождаемыеРесурсыСтрокаПоискаКонтекстноеМеню" id="70"/>
+										<ExtendedTooltip name="ОсвобождаемыеРесурсыСтрокаПоискаРасширеннаяПодсказка" id="71"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ОсвобождаемыеРесурсыСостояниеПросмотра" id="72">
+										<AdditionSource>
+											<Item>ОсвобождаемыеРесурсы</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ОсвобождаемыеРесурсыСостояниеПросмотраКонтекстноеМеню" id="73"/>
+										<ExtendedTooltip name="ОсвобождаемыеРесурсыСостояниеПросмотраРасширеннаяПодсказка" id="74"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ОсвобождаемыеРесурсыУправлениеПоиском" id="75">
+										<AdditionSource>
+											<Item>ОсвобождаемыеРесурсы</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ОсвобождаемыеРесурсыУправлениеПоискомКонтекстноеМеню" id="76"/>
+										<ExtendedTooltip name="ОсвобождаемыеРесурсыУправлениеПоискомРасширеннаяПодсказка" id="77"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="Drag">ОсвобождаемыеРесурсыПеретаскивание</Event>
+										<Event name="ChoiceProcessing">ОсвобождаемыеРесурсыОбработкаВыбора</Event>
+									</Events>
+									<ChildItems>
+										<InputField name="ОсвобождаемыеРесурсыРесурс" id="30">
+											<DataPath>Объект.ОсвобождаемыеРесурсы.Ресурс</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Трудовой ресурс</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ОсвобождаемыеРесурсыРесурсКонтекстноеМеню" id="31"/>
+											<ExtendedTooltip name="ОсвобождаемыеРесурсыРесурсExtendedTooltip" id="56"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<UsualGroup name="ГруппаДополнительныеРеквизиты" id="58">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительные реквизиты и свойства</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="ГруппаДополнительныеРеквизитыExtendedTooltip" id="59"/>
+		</UsualGroup>
+		<InputField name="Комментарий" id="13">
+			<DataPath>Объект.Комментарий</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="КомментарийExtendedTooltip" id="57"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.упоНазначениеТрудовыхРесурсовНаПроект</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="НадписьПоследняяМодификация" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Надпись последняя модификация</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="НадписьПроект" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПараметрыПодключаемыхКоманд" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры подключаемых команд</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПодобратьНазначаемыеРоли" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подобрать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подобрать назначаемые роли</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.упоДействиеПерейти</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ПодобратьНазначаемыеРоли</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗаполнитьОсвобождаемыеРесурсы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить освобождаемые ресурсы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.упоДействиеВыполнить</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗаполнитьОсвобождаемыеРесурсы</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПодобратьОсвобождаемыеРоли" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подобрать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подобрать освобождаемые роли</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.упоДействиеПерейти</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПодобратьОсвобождаемыеРоли</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>2:94eeb067-ea86-4197-8944-c4c26ec8a586</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+			<Item>
+				<Command>3</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>3</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>3</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+		<CommandBar>
+			<Item>
+				<Command>CommonCommand.ИнтеграцияС1СДокументооборотСоздатьПисьмо</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>CommonCommand.ИнтеграцияС1СДокументооборотСоздатьБизнесПроцесс</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Catalog.упоЗадания.Command.СоздатьЗадание</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>CommonCommand.ИнтеграцияС1СДокументооборотНачатьОбработку</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</CommandBar>
+	</CommandInterface>
+</Form>

@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<UsualGroup name="Допуск" id="38">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Допуск</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Допуск</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ДопускРасширеннаяПодсказка" id="39"/>
+			<ChildItems>
+				<CheckBoxField name="ТребуетсяДопуск" id="32">
+					<DataPath>Объект.ТребуетсяДопуск</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТребуетсяДопускКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ТребуетсяДопускРасширеннаяПодсказка" id="34"/>
+				</CheckBoxField>
+				<InputField name="ГруппаДопуска" id="35">
+					<DataPath>Объект.ГруппаДопуска</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ГруппаДопускаКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ГруппаДопускаРасширеннаяПодсказка" id="37"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Медосмотр" id="40">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Медосмотр</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Медосмотр</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="МедосмотрРасширеннаяПодсказка" id="41"/>
+			<ChildItems>
+				<CheckBoxField name="НуженМедосмотр" id="42">
+					<DataPath>Объект.НуженМедосмотр</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="НуженМедосмотрКонтекстноеМеню" id="43"/>
+					<ExtendedTooltip name="НуженМедосмотрРасширеннаяПодсказка" id="44"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ТочкиДоступа" id="7">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ТочкиДоступа</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТочкиДоступаКонтекстноеМеню" id="8"/>
+			<AutoCommandBar name="ТочкиДоступаКоманднаяПанель" id="9"/>
+			<ExtendedTooltip name="ТочкиДоступаРасширеннаяПодсказка" id="10"/>
+			<SearchStringAddition name="ТочкиДоступаСтрокаПоиска" id="11">
+				<AdditionSource>
+					<Item>ТочкиДоступа</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТочкиДоступаСтрокаПоискаКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ТочкиДоступаСтрокаПоискаРасширеннаяПодсказка" id="13"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТочкиДоступаСостояниеПросмотра" id="14">
+				<AdditionSource>
+					<Item>ТочкиДоступа</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТочкиДоступаСостояниеПросмотраКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ТочкиДоступаСостояниеПросмотраРасширеннаяПодсказка" id="16"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТочкиДоступаУправлениеПоиском" id="17">
+				<AdditionSource>
+					<Item>ТочкиДоступа</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТочкиДоступаУправлениеПоискомКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="ТочкиДоступаУправлениеПоискомРасширеннаяПодсказка" id="19"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ТочкиДоступаНомерСтроки" id="20">
+					<DataPath>Объект.ТочкиДоступа.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТочкиДоступаНомерСтрокиКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ТочкиДоступаНомерСтрокиРасширеннаяПодсказка" id="22"/>
+				</LabelField>
+				<InputField name="ТочкиДоступаТочка" id="23">
+					<DataPath>Объект.ТочкиДоступа.Точка</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТочкиДоступаТочкаКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ТочкиДоступаТочкаРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<InputField name="ТочкиДоступаКод" id="26">
+					<DataPath>Объект.ТочкиДоступа.Код</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТочкиДоступаКодКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ТочкиДоступаКодРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="ТочкиДоступаТипВхода" id="29">
+					<DataPath>Объект.ТочкиДоступа.ТипПрохода</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТочкиДоступаТипВходаКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ТочкиДоступаТипВходаРасширеннаяПодсказка" id="31"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ИКТ_ЗоныДоступа</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

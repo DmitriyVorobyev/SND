@@ -1,0 +1,3234 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Задания:</v8:content>
+		</v8:item>
+	</Title>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer" callType="After">Расш1_ПриСозданииНаСервереПосле</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ОсновнаяПанель" id="585">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основная панель</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОсновнаяПанельРасширеннаяПодсказка" id="586"/>
+			<ChildItems>
+				<CommandBar name="КоманднаяПанельОсновнойТаблицы" id="82">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Командная панель основной таблицы</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="КоманднаяПанельОсновнойТаблицыРасширеннаяПодсказка" id="485"/>
+					<ChildItems>
+						<Button name="Справка" id="174">
+							<Type>CommandBarButton</Type>
+							<CommandName>0</CommandName>
+							<ExtendedTooltip name="СправкаРасширеннаяПодсказка" id="486"/>
+						</Button>
+						<Button name="Создать" id="399">
+							<Type>CommandBarButton</Type>
+							<CommandName>0</CommandName>
+							<ExtendedTooltip name="СоздатьРасширеннаяПодсказка" id="487"/>
+						</Button>
+						<Button name="Скопировать" id="583">
+							<Type>CommandBarButton</Type>
+							<CommandName>0</CommandName>
+							<ExtendedTooltip name="СкопироватьРасширеннаяПодсказка" id="584"/>
+						</Button>
+						<Button name="УстановитьПометкуУдаления" id="550">
+							<Type>CommandBarButton</Type>
+							<CommandName>0</CommandName>
+							<ExtendedTooltip name="УстановитьПометкуУдаленияРасширеннаяПодсказка" id="551"/>
+						</Button>
+						<ButtonGroup name="КнопкиОтбора" id="57">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Кнопки отбора</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="КнопкиОтбораРасширеннаяПодсказка" id="489"/>
+							<ChildItems>
+								<ButtonGroup name="Группа7" id="611">
+									<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="612"/>
+									<ChildItems>
+										<Button name="КомандаОбновить" id="634">
+											<Type>CommandBarButton</Type>
+											<CommandName>0</CommandName>
+											<ExtendedTooltip name="КомандаОбновитьРасширеннаяПодсказка" id="635"/>
+										</Button>
+									</ChildItems>
+								</ButtonGroup>
+								<Button name="ЗаданияОткрыть" id="55">
+									<Type>CommandBarButton</Type>
+									<CommandName>0</CommandName>
+									<ExtendedTooltip name="ЗаданияОткрытьРасширеннаяПодсказка" id="491"/>
+								</Button>
+								<Button name="СделатьОсновным" id="403">
+									<Type>CommandBarButton</Type>
+									<Visible>false</Visible>
+									<CommandName>0</CommandName>
+									<ExtendedTooltip name="СделатьОсновнымРасширеннаяПодсказка" id="492"/>
+								</Button>
+								<ButtonGroup name="Группа4" id="605">
+									<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="606"/>
+									<ChildItems>
+										<Button name="ЗаданияНапоминание" id="98">
+											<Type>CommandBarButton</Type>
+											<CommandName>0</CommandName>
+											<ExtendedTooltip name="ЗаданияНапоминаниеРасширеннаяПодсказка" id="498"/>
+										</Button>
+									</ChildItems>
+								</ButtonGroup>
+								<ButtonGroup name="Группа6" id="609">
+									<Representation>Compact</Representation>
+									<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="610"/>
+									<ChildItems>
+										<Button name="ЗаданияУстановитьОтбор" id="59">
+											<Type>CommandBarButton</Type>
+											<CommandName>0</CommandName>
+											<ExtendedTooltip name="ЗаданияУстановитьОтборРасширеннаяПодсказка" id="493"/>
+										</Button>
+										<Button name="ЗаданияУдалитьОтбор" id="60">
+											<Type>CommandBarButton</Type>
+											<Enabled>false</Enabled>
+											<CommandName>0</CommandName>
+											<ExtendedTooltip name="ЗаданияУдалитьОтборРасширеннаяПодсказка" id="494"/>
+										</Button>
+									</ChildItems>
+								</ButtonGroup>
+								<ButtonGroup name="Группа5" id="607">
+									<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="608"/>
+									<ChildItems>
+										<Button name="ИзменитьФорму" id="482">
+											<Type>CommandBarButton</Type>
+											<CommandName>0</CommandName>
+											<ExtendedTooltip name="ИзменитьФормуРасширеннаяПодсказка" id="497"/>
+										</Button>
+										<Button name="НастройкаСписка" id="132">
+											<Type>CommandBarButton</Type>
+											<CommandName>0</CommandName>
+											<ExtendedTooltip name="НастройкаСпискаРасширеннаяПодсказка" id="495"/>
+										</Button>
+										<Button name="СохранитьНастройкиДинамическогоСписка" id="617">
+											<Type>CommandBarButton</Type>
+											<CommandName>0</CommandName>
+											<ExtendedTooltip name="СохранитьНастройкиДинамическогоСпискаРасширеннаяПодсказка" id="618"/>
+										</Button>
+										<Button name="ЗагрузитьНастройкиДинамическогоСписка" id="619">
+											<Type>CommandBarButton</Type>
+											<CommandName>0</CommandName>
+											<ExtendedTooltip name="ЗагрузитьНастройкиДинамическогоСпискаРасширеннаяПодсказка" id="620"/>
+										</Button>
+									</ChildItems>
+								</ButtonGroup>
+							</ChildItems>
+						</ButtonGroup>
+						<ButtonGroup name="ЗаданияГруппа1" id="54">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Задания группа 1</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ЗаданияГруппа1РасширеннаяПодсказка" id="500"/>
+						</ButtonGroup>
+						<Popup name="Группа1" id="163">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Задания</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Представление списка</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Picture>
+								<xr:Ref>CommonPicture.ИерархическийСписок</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<Representation>Picture</Representation>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="502"/>
+							<ChildItems>
+								<Button name="Список" id="165">
+									<Type>CommandBarButton</Type>
+									<CommandName>0</CommandName>
+									<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+									<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="503"/>
+								</Button>
+								<Button name="ИерархическийСписок" id="166">
+									<Type>CommandBarButton</Type>
+									<CommandName>0</CommandName>
+									<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+									<ExtendedTooltip name="ИерархическийСписокРасширеннаяПодсказка" id="504"/>
+								</Button>
+								<Button name="Дерево" id="167">
+									<Type>CommandBarButton</Type>
+									<CommandName>0</CommandName>
+									<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+									<ExtendedTooltip name="ДеревоРасширеннаяПодсказка" id="505"/>
+								</Button>
+							</ChildItems>
+						</Popup>
+						<ButtonGroup name="КнопкиПредставления" id="157">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Кнопки представления</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Representation>Compact</Representation>
+							<ExtendedTooltip name="КнопкиПредставленияРасширеннаяПодсказка" id="501"/>
+							<ChildItems>
+								<Button name="Вертикально" id="158">
+									<Type>CommandBarButton</Type>
+									<CommandName>0</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Расположить комментарии под таблицей</v8:content>
+										</v8:item>
+									</Title>
+									<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+									<ExtendedTooltip name="ВертикальноРасширеннаяПодсказка" id="506"/>
+								</Button>
+								<Button name="Горизонтально" id="159">
+									<Type>CommandBarButton</Type>
+									<CommandName>0</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Расположить комментарии справа от таблицы</v8:content>
+										</v8:item>
+									</Title>
+									<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+									<ExtendedTooltip name="ГоризонтальноРасширеннаяПодсказка" id="507"/>
+								</Button>
+							</ChildItems>
+						</ButtonGroup>
+						<ButtonGroup name="Группа9" id="630">
+							<ExtendedTooltip name="Группа9РасширеннаяПодсказка" id="631"/>
+							<ChildItems>
+								<Button name="КомандаОчередьЗадачИсполнителя" id="628">
+									<Type>CommandBarButton</Type>
+									<CommandName>0</CommandName>
+									<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+									<ExtendedTooltip name="КомандаОчередьЗадачИсполнителяРасширеннаяПодсказка" id="629"/>
+								</Button>
+								<Button name="КомандаОтключитьГруппуЗадания" id="632">
+									<Type>CommandBarButton</Type>
+									<CommandName>0</CommandName>
+									<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+									<ExtendedTooltip name="КомандаОтключитьГруппуЗаданияРасширеннаяПодсказка" id="633"/>
+								</Button>
+								<Button name="ПоказыватьОбсуждения" id="636">
+									<Type>CommandBarButton</Type>
+									<CommandName>0</CommandName>
+									<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+									<ExtendedTooltip name="ПоказыватьОбсужденияРасширеннаяПодсказка" id="637"/>
+								</Button>
+								<Button name="ПоказыватьПрочие" id="638">
+									<Type>CommandBarButton</Type>
+									<CommandName>0</CommandName>
+									<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+									<ExtendedTooltip name="ПоказыватьПрочиеРасширеннаяПодсказка" id="639"/>
+								</Button>
+							</ChildItems>
+						</ButtonGroup>
+						<ButtonGroup name="Группа2" id="601">
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="602"/>
+							<ChildItems>
+								<Button name="ПоказатьЗакрытыеОтмененные" id="241">
+									<Type>CommandBarButton</Type>
+									<Representation>PictureAndText</Representation>
+									<CommandName>0</CommandName>
+									<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+									<ExtendedTooltip name="ПоказатьЗакрытыеОтмененныеРасширеннаяПодсказка" id="508"/>
+								</Button>
+								<Button name="КомандаЗаданияПроектовЯРПКуратор" id="657">
+									<Type>CommandBarButton</Type>
+									<CommandName>0</CommandName>
+									<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+									<ExtendedTooltip name="КомандаЗаданияПроектовЯРПКураторРасширеннаяПодсказка" id="658"/>
+								</Button>
+							</ChildItems>
+						</ButtonGroup>
+						<ButtonGroup name="Группа3" id="603">
+							<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="604"/>
+							<ChildItems>
+								<Button name="ИзменитьТекущегоСотрудника" id="552">
+									<Type>CommandBarButton</Type>
+									<CommandName>0</CommandName>
+									<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+									<ExtendedTooltip name="ИзменитьТекущегоСотрудникаРасширеннаяПодсказка" id="553"/>
+								</Button>
+							</ChildItems>
+						</ButtonGroup>
+						<Popup name="ПодменюСоздатьНаОсновании" id="643">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Создать на основании</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ПодменюСоздатьНаОснованииРасширеннаяПодсказка" id="644"/>
+						</Popup>
+						<Popup name="ГруппаСохранитьЗагрузить" id="645">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сохранить \ загрузить настройку</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Picture>
+								<xr:Ref>StdPicture.CustomizeForm</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<Representation>Picture</Representation>
+							<ExtendedTooltip name="ГруппаСохранитьЗагрузитьExtendedTooltip" id="646"/>
+							<ChildItems>
+								<Button name="ФормаКомандаЗагрузитьНастройку" id="647">
+									<Type>CommandBarButton</Type>
+									<CommandName>0</CommandName>
+									<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+									<ExtendedTooltip name="ФормаКомандаЗагрузитьНастройкуExtendedTooltip" id="648"/>
+								</Button>
+								<Button name="ФормаКомандаСохранитьНастройку" id="649">
+									<Type>CommandBarButton</Type>
+									<CommandName>0</CommandName>
+									<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+									<ExtendedTooltip name="ФормаКомандаСохранитьНастройкуExtendedTooltip" id="650"/>
+								</Button>
+							</ChildItems>
+						</Popup>
+					</ChildItems>
+				</CommandBar>
+				<Button name="СкрытьИсторию" id="587">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<CommandName>0</CommandName>
+					<Picture>
+						<xr:Ref>CommonPicture.Комментарий</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="СкрытьИсториюРасширеннаяПодсказка" id="588"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Основная" id="162">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основная</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОсновнаяРасширеннаяПодсказка" id="483"/>
+			<ChildItems>
+				<UsualGroup name="ОсновнаяТаблица" id="22">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основная таблица</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ОсновнаяТаблицаРасширеннаяПодсказка" id="484"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаОтборы" id="581">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отборы</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОтборыРасширеннаяПодсказка" id="582"/>
+							<ChildItems>
+								<InputField name="Автор" id="575">
+									<ClearButton>true</ClearButton>
+									<OpenButton>false</OpenButton>
+									<ContextMenu name="АвторКонтекстноеМеню" id="576"/>
+									<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="577"/>
+								</InputField>
+								<InputField name="Исполнитель" id="578">
+									<ClearButton>true</ClearButton>
+									<OpenButton>false</OpenButton>
+									<ContextMenu name="ИсполнительКонтекстноеМеню" id="579"/>
+									<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="580"/>
+								</InputField>
+								<InputField name="ВидЗадания" id="563">
+									<TitleLocation>Left</TitleLocation>
+									<ClearButton>true</ClearButton>
+									<OpenButton>false</OpenButton>
+									<CreateButton>false</CreateButton>
+									<ListChoiceMode>true</ListChoiceMode>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Catalog.упоВидыЗаданий.Обсуждение</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Catalog.упоВидыЗаданий.Поручение</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Catalog.упоВидыЗаданий.ПроектноеРешение</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Catalog.упоВидыЗаданий.Согласование</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ВидЗаданияКонтекстноеМеню" id="564"/>
+									<ExtendedTooltip name="ВидЗаданияРасширеннаяПодсказка" id="565"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПользовательскиеНастройки" id="651">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пользовательские настройки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пользовательские настройки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПользовательскиеНастройкиРасширеннаяПодсказка" id="652"/>
+						</UsualGroup>
+						<Table name="Задания" id="104">
+							<Representation>Tree</Representation>
+							<InitialTreeView>ExpandAllLevels</InitialTreeView>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<RowsPicture>
+								<xr:Ref>CommonPicture.упоКоллекцияСостоянияЗаданий</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</RowsPicture>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Задания</v8:content>
+								</v8:item>
+							</Title>
+							<SearchStringLocation>None</SearchStringLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<AutoRefresh>true</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>true</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<UserSettingsGroup>ГруппаПользовательскиеНастройки</UserSettingsGroup>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="ЗаданияКонтекстноеМеню" id="105">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="Открыть" id="130">
+										<Type>CommandBarButton</Type>
+										<CommandName>0</CommandName>
+										<ExtendedTooltip name="ОткрытьРасширеннаяПодсказка" id="510"/>
+									</Button>
+									<ButtonGroup name="ЗаданияКонтекстноеМенюГруппа3" id="613">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Задания контекстное меню группа 3</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ЗаданияКонтекстноеМенюГруппа3РасширеннаяПодсказка" id="614"/>
+										<ChildItems>
+											<Button name="УстановитьОтбор" id="122">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Отобрать</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="УстановитьОтборРасширеннаяПодсказка" id="509"/>
+											</Button>
+											<Button name="УдалитьОтбор" id="126">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<ExtendedTooltip name="УдалитьОтборРасширеннаяПодсказка" id="514"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<ButtonGroup name="ЗаданияКонтекстноеМенюГруппа1" id="123">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Задания контекстное меню группа 1</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ЗаданияКонтекстноеМенюГруппа1РасширеннаяПодсказка" id="511"/>
+										<ChildItems>
+											<Button name="Добавить" id="124">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<ExtendedTooltip name="ДобавитьРасширеннаяПодсказка" id="512"/>
+											</Button>
+											<Button name="Копировать" id="125">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<ExtendedTooltip name="КопироватьРасширеннаяПодсказка" id="513"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<ButtonGroup name="ЗаданияКонтекстноеМенюГруппа4" id="615">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Задания контекстное меню группа 4</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ЗаданияКонтекстноеМенюГруппа4РасширеннаяПодсказка" id="616"/>
+										<ChildItems>
+											<Button name="Напоминание" id="128">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<ExtendedTooltip name="НапоминаниеРасширеннаяПодсказка" id="516"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<ButtonGroup name="ЗаданияКонтекстноеМенюГруппа2" id="129">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Задания контекстное меню группа 2</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ЗаданияКонтекстноеМенюГруппа2РасширеннаяПодсказка" id="517"/>
+										<ChildItems>
+											<Button name="ЗаданияКонтекстноеМенюОбновить" id="173">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<ExtendedTooltip name="ЗаданияКонтекстноеМенюОбновитьРасширеннаяПодсказка" id="518"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<Button name="ЗаданияКонтекстноеМенюНайти" id="655">
+										<Type>CommandBarButton</Type>
+										<CommandName>0</CommandName>
+										<ExtendedTooltip name="ЗаданияКонтекстноеМенюНайтиРасширеннаяПодсказка" id="656"/>
+									</Button>
+									<Button name="ЗаданияКонтекстноеМенюОтменитьПоиск" id="653">
+										<Type>CommandBarButton</Type>
+										<CommandName>0</CommandName>
+										<ExtendedTooltip name="ЗаданияКонтекстноеМенюОтменитьПоискРасширеннаяПодсказка" id="654"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="ЗаданияКоманднаяПанель" id="106">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ЗаданияРасширеннаяПодсказка" id="520"/>
+							<SearchStringAddition name="ЗаданияСтрокаПоиска" id="566">
+								<AdditionSource>
+									<Item>Задания</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗаданияСтрокаПоискаКонтекстноеМеню" id="567"/>
+								<ExtendedTooltip name="ЗаданияСтрокаПоискаРасширеннаяПодсказка" id="568"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ЗаданияСостояниеПросмотра" id="569">
+								<AdditionSource>
+									<Item>Задания</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗаданияСостояниеПросмотраКонтекстноеМеню" id="570"/>
+								<ExtendedTooltip name="ЗаданияСостояниеПросмотраРасширеннаяПодсказка" id="571"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ЗаданияУправлениеПоиском" id="572">
+								<AdditionSource>
+									<Item>Задания</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗаданияУправлениеПоискомКонтекстноеМеню" id="573"/>
+								<ExtendedTooltip name="ЗаданияУправлениеПоискомРасширеннаяПодсказка" id="574"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ЗаданияЗадание" id="109">
+									<Width>11</Width>
+									<ContextMenu name="ЗаданияЗаданиеКонтекстноеМеню" id="110"/>
+									<ExtendedTooltip name="ЗаданияЗаданиеРасширеннаяПодсказка" id="530"/>
+								</LabelField>
+								<LabelField name="ЗаданияПорядокПоГруппеОчереди" id="625">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>№</v8:content>
+										</v8:item>
+									</Title>
+									<Width>2</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ЗаданияПорядокПоГруппеОчередиКонтекстноеМеню" id="626"/>
+									<ExtendedTooltip name="ЗаданияПорядокПоГруппеОчередиРасширеннаяПодсказка" id="627"/>
+								</LabelField>
+								<LabelField name="ЗаданияПроект" id="111">
+									<Width>1</Width>
+									<ContextMenu name="ЗаданияПроектКонтекстноеМеню" id="112"/>
+									<ExtendedTooltip name="ЗаданияПроектРасширеннаяПодсказка" id="531"/>
+								</LabelField>
+								<LabelField name="ЗаданияПроектнаяЗадача" id="113">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Задача</v8:content>
+										</v8:item>
+									</Title>
+									<Width>1</Width>
+									<ContextMenu name="ЗаданияПроектнаяЗадачаКонтекстноеМеню" id="114"/>
+									<ExtendedTooltip name="ЗаданияПроектнаяЗадачаРасширеннаяПодсказка" id="532"/>
+								</LabelField>
+								<LabelField name="ЗаданияОбъектБазы" id="595">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Объект</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ЗаданияОбъектБазыКонтекстноеМеню" id="596"/>
+									<ExtendedTooltip name="ЗаданияОбъектБазыРасширеннаяПодсказка" id="597"/>
+								</LabelField>
+								<LabelField name="ЗаданияАвторСотрудник" id="238">
+									<Width>1</Width>
+									<ContextMenu name="ЗаданияАвторСотрудникКонтекстноеМеню" id="239"/>
+									<ExtendedTooltip name="ЗаданияАвторСотрудникРасширеннаяПодсказка" id="533"/>
+								</LabelField>
+								<LabelField name="ЗаданияИсполнитель" id="107">
+									<Width>1</Width>
+									<ContextMenu name="ЗаданияИсполнительКонтекстноеМеню" id="108"/>
+									<ExtendedTooltip name="ЗаданияИсполнительРасширеннаяПодсказка" id="534"/>
+								</LabelField>
+								<LabelField name="ЗаданияДатаНачалаПлан" id="410">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Начало план</v8:content>
+										</v8:item>
+									</Title>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ДФ=dd.MM.yyyy</v8:content>
+										</v8:item>
+									</Format>
+									<ContextMenu name="ЗаданияДатаНачалаПланКонтекстноеМеню" id="411"/>
+									<ExtendedTooltip name="ЗаданияДатаНачалаПланРасширеннаяПодсказка" id="535"/>
+								</LabelField>
+								<LabelField name="ЗаданияДатаОкончанияПлан" id="408">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Окончание план</v8:content>
+										</v8:item>
+									</Title>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ДФ=dd.MM.yyyy</v8:content>
+										</v8:item>
+									</Format>
+									<ContextMenu name="ЗаданияДатаОкончанияПланКонтекстноеМеню" id="409"/>
+									<ExtendedTooltip name="ЗаданияДатаОкончанияПланРасширеннаяПодсказка" id="537"/>
+								</LabelField>
+								<LabelField name="ЗаданияСтатус" id="117">
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус задания</v8:content>
+										</v8:item>
+									</Title>
+									<Width>1</Width>
+									<ContextMenu name="ЗаданияСтатусКонтекстноеМеню" id="118"/>
+									<ExtendedTooltip name="ЗаданияСтатусРасширеннаяПодсказка" id="539"/>
+								</LabelField>
+								<LabelField name="ЗаданияВидЗадания" id="589">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Вид задания</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ЗаданияВидЗаданияКонтекстноеМеню" id="590"/>
+									<ExtendedTooltip name="ЗаданияВидЗаданияРасширеннаяПодсказка" id="591"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ИсторияСобытий" id="23">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>История событий</v8:content>
+						</v8:item>
+					</Title>
+					<Width>40</Width>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ИсторияСобытийРасширеннаяПодсказка" id="540"/>
+					<ChildItems>
+						<LabelField name="ВыбранноеЗадание" id="598">
+							<TitleLocation>None</TitleLocation>
+							<Hiperlink>true</Hiperlink>
+							<ContextMenu name="ВыбранноеЗаданиеКонтекстноеМеню" id="599"/>
+							<ExtendedTooltip name="ВыбранноеЗаданиеРасширеннаяПодсказка" id="600"/>
+						</LabelField>
+						<LabelField name="ВыбранныеЗадания" id="640">
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="ВыбранныеЗаданияКонтекстноеМеню" id="641"/>
+							<ExtendedTooltip name="ВыбранныеЗаданияРасширеннаяПодсказка" id="642"/>
+						</LabelField>
+						<UsualGroup name="ПанельДобавленияКомментария" id="27">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>История событий</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<CollapsedRepresentationTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Поменять статус или оставить комментарий</v8:content>
+								</v8:item>
+							</CollapsedRepresentationTitle>
+							<Representation>None</Representation>
+							<ShowLeftMargin>false</ShowLeftMargin>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ПанельДобавленияКомментарияРасширеннаяПодсказка" id="542"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаДействия" id="302">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действия</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаДействияРасширеннаяПодсказка" id="544"/>
+									<ChildItems>
+										<Pages name="ГруппаИзменитьСтатус" id="310">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Изменить статус</v8:content>
+												</v8:item>
+											</Title>
+											<PagesRepresentation>None</PagesRepresentation>
+											<ExtendedTooltip name="ГруппаИзменитьСтатусРасширеннаяПодсказка" id="545"/>
+											<ChildItems>
+												<Page name="СтраницаИзмененияНедоступны" id="297">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Страница изменения недоступны</v8:content>
+														</v8:item>
+													</Title>
+													<HorizontalStretch>true</HorizontalStretch>
+													<VerticalStretch>false</VerticalStretch>
+													<ExtendedTooltip name="СтраницаИзмененияНедоступныРасширеннаяПодсказка" id="546"/>
+													<ChildItems>
+														<InputField name="ПолеКомментария" id="25">
+															<TitleLocation>None</TitleLocation>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Введите в это поле комментарий к изменению статуса</v8:content>
+																</v8:item>
+															</ToolTip>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<Height>4</Height>
+															<AutoMaxHeight>false</AutoMaxHeight>
+															<MaxHeight>4</MaxHeight>
+															<VerticalStretch>true</VerticalStretch>
+															<MultiLine>true</MultiLine>
+															<DropListWidth>1</DropListWidth>
+															<InputHint>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Введите в это поле комментарий к изменению статуса.</v8:content>
+																</v8:item>
+															</InputHint>
+															<ContextMenu name="ПолеКомментарияКонтекстноеМеню" id="26"/>
+															<ExtendedTooltip name="ПолеКомментарияРасширеннаяПодсказка" id="543"/>
+														</InputField>
+													</ChildItems>
+												</Page>
+											</ChildItems>
+										</Pages>
+										<Button name="Комментировать" id="32">
+											<Type>UsualButton</Type>
+											<CommandName>0</CommandName>
+											<TextColor>style:FieldSelectionBackColor</TextColor>
+											<ExtendedTooltip name="КомментироватьРасширеннаяПодсказка" id="548"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<HTMLDocumentField name="ПолеИстории" id="33">
+							<TitleLocation>None</TitleLocation>
+							<Width>1</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Height>1</Height>
+							<ContextMenu name="ПолеИсторииКонтекстноеМеню" id="34"/>
+							<ExtendedTooltip name="ПолеИсторииРасширеннаяПодсказка" id="549"/>
+						</HTMLDocumentField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ЗаданияКонтроллерыТекст</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Задания.ВводНовогоКонтроллера</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="dcscor:Field">ЗаданияКонтроллерыТекст</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ЗаданияКонтроллеры</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Задания.ВводНовогоКонтроллера</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ЗаданияКонтроллеры</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Задания.ВводНовогоКонтроллера</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ЗаданияСтатус</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ЗаданияФактВыполнения</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Задания.ЭтоОтбор</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияЗадание</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияПроект</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияСрок</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияПроектнаяЗадача</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияИсполнитель</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияКонтроллеры</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ЗаданияСтатус</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияФактВыполнения</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияКонтроллерыТекст</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Задания.ЭтоОтбор</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Задания.Статус</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.упоЗаданияСтатусы.ПустаяСсылка</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:CornSilk</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:DarkGray</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">Отбор</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ЗаданияЗадание</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияПроект</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияСрок</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияПроектнаяЗадача</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияИсполнитель</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияКонтроллеры</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияСтатус</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияФактВыполнения</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияКонтроллерыТекст</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Задания.ЭтоОтбор</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Задания.Задание</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string"/>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:CornSilk</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:DarkGray</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">Отбор</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияЗадание</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ЗаданияПроект</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияСрок</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияПроектнаяЗадача</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияИсполнитель</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияКонтроллеры</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияСтатус</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияФактВыполнения</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияКонтроллерыТекст</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Задания.ЭтоОтбор</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Задания.Проект</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.Проекты.ПустаяСсылка</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:CornSilk</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:DarkGray</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">Отбор</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияЗадание</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияПроект</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ЗаданияСрок</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияПроектнаяЗадача</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияИсполнитель</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияКонтроллеры</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияСтатус</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияФактВыполнения</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияКонтроллерыТекст</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Задания.ЭтоОтбор</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Задания.Срок</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="v8:StandardBeginningDate">
+							<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+							<v8:date>0001-01-01T00:00:00</v8:date>
+						</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:CornSilk</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:DarkGray</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">Отбор</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияЗадание</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияПроект</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияСрок</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ЗаданияПроектнаяЗадача</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияИсполнитель</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияКонтроллеры</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияСтатус</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияФактВыполнения</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияКонтроллерыТекст</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Задания.ЭтоОтбор</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Задания.ПроектнаяЗадача</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.Проекты.ПустаяСсылка</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:CornSilk</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:DarkGray</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">Отбор</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияЗадание</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияПроект</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияСрок</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияПроектнаяЗадача</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ЗаданияИсполнитель</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияКонтроллеры</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияСтатус</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияФактВыполнения</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияКонтроллерыТекст</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Задания.ЭтоОтбор</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Задания.Исполнитель</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.упоТрудовыеРесурсы.ПустаяСсылка</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:CornSilk</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:DarkGray</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">Отбор</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияЗадание</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияПроект</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияСрок</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияПроектнаяЗадача</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияИсполнитель</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ЗаданияКонтроллеры</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияСтатус</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияФактВыполнения</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ЗаданияКонтроллерыТекст</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Задания.ЭтоОтбор</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Задания.Контроллеры</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.упоСотрудники.ПустаяСсылка</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:CornSilk</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:DarkGray</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">Отбор</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияЗадание</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияПроект</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияСрок</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияПроектнаяЗадача</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияИсполнитель</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияКонтроллеры</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияСтатус</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ЗаданияФактВыполнения</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ЗаданияКонтроллерыТекст</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Задания.ЭтоОтбор</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Задания.КодЗадания</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="v8:StandardBeginningDate">
+							<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+							<v8:date>0001-01-01T00:00:00</v8:date>
+						</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:CornSilk</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:DarkGray</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">Отбор</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ЗаданияПорядокПоГруппеОчереди</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">списЗадания.ПорядокУстановлен</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>-</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ЗаданияЗадание</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ЗаданияПорядокПоГруппеОчереди</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ЗаданияПроект</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ЗаданияПроектнаяЗадача</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ЗаданияОбъектБазы</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ЗаданияАвторСотрудник</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ЗаданияИсполнитель</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ЗаданияДатаНачалаПлан</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ЗаданияДатаОкончанияПлан</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ЗаданияСтатус</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ЗаданияВидЗадания</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">списЗадания.Задание</dcsset:left>
+						<dcsset:comparisonType>InList</dcsset:comparisonType>
+						<dcsset:right xsi:type="v8:ValueListType">
+							<v8:valueType/>
+							<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+						</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ИзмененноеЗначениеРеквизитаЦвет</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+				<dcsset:presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Выделение выбранных заданий</v8:content>
+					</v8:item>
+				</dcsset:presentation>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Задания</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">списЗадания.ПометкаУдаления</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="style:NormalTextFont" bold="false" italic="true" underline="false" strikeout="true" kind="StyleItem"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<BaseForm version="2.20">
+		<Title>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Задания:</v8:content>
+			</v8:item>
+		</Title>
+		<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+		<AutoTitle>false</AutoTitle>
+		<VerticalScroll>useIfNecessary</VerticalScroll>
+		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+			<Autofill>false</Autofill>
+		</AutoCommandBar>
+		<ChildItems>
+			<UsualGroup name="ОсновнаяПанель" id="585">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Основная панель</v8:content>
+					</v8:item>
+				</Title>
+				<Group>Horizontal</Group>
+				<Behavior>Usual</Behavior>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ОсновнаяПанельРасширеннаяПодсказка" id="586"/>
+				<ChildItems>
+					<CommandBar name="КоманднаяПанельОсновнойТаблицы" id="82">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Командная панель основной таблицы</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="КоманднаяПанельОсновнойТаблицыРасширеннаяПодсказка" id="485"/>
+						<ChildItems>
+							<Button name="Справка" id="174">
+								<Type>CommandBarButton</Type>
+								<CommandName>0</CommandName>
+								<ExtendedTooltip name="СправкаРасширеннаяПодсказка" id="486"/>
+							</Button>
+							<Button name="Создать" id="399">
+								<Type>CommandBarButton</Type>
+								<CommandName>0</CommandName>
+								<ExtendedTooltip name="СоздатьРасширеннаяПодсказка" id="487"/>
+							</Button>
+							<Button name="Скопировать" id="583">
+								<Type>CommandBarButton</Type>
+								<CommandName>0</CommandName>
+								<ExtendedTooltip name="СкопироватьРасширеннаяПодсказка" id="584"/>
+							</Button>
+							<Button name="УстановитьПометкуУдаления" id="550">
+								<Type>CommandBarButton</Type>
+								<CommandName>0</CommandName>
+								<ExtendedTooltip name="УстановитьПометкуУдаленияРасширеннаяПодсказка" id="551"/>
+							</Button>
+							<ButtonGroup name="КнопкиОтбора" id="57">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Кнопки отбора</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="КнопкиОтбораРасширеннаяПодсказка" id="489"/>
+								<ChildItems>
+									<ButtonGroup name="Группа7" id="611">
+										<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="612"/>
+										<ChildItems>
+											<Button name="КомандаОбновить" id="634">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<ExtendedTooltip name="КомандаОбновитьРасширеннаяПодсказка" id="635"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<Button name="ЗаданияОткрыть" id="55">
+										<Type>CommandBarButton</Type>
+										<CommandName>0</CommandName>
+										<ExtendedTooltip name="ЗаданияОткрытьРасширеннаяПодсказка" id="491"/>
+									</Button>
+									<Button name="СделатьОсновным" id="403">
+										<Type>CommandBarButton</Type>
+										<Visible>false</Visible>
+										<CommandName>0</CommandName>
+										<ExtendedTooltip name="СделатьОсновнымРасширеннаяПодсказка" id="492"/>
+									</Button>
+									<ButtonGroup name="Группа4" id="605">
+										<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="606"/>
+										<ChildItems>
+											<Button name="ЗаданияНапоминание" id="98">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<ExtendedTooltip name="ЗаданияНапоминаниеРасширеннаяПодсказка" id="498"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<ButtonGroup name="Группа6" id="609">
+										<Representation>Compact</Representation>
+										<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="610"/>
+										<ChildItems>
+											<Button name="ЗаданияУстановитьОтбор" id="59">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<ExtendedTooltip name="ЗаданияУстановитьОтборРасширеннаяПодсказка" id="493"/>
+											</Button>
+											<Button name="ЗаданияУдалитьОтбор" id="60">
+												<Type>CommandBarButton</Type>
+												<Enabled>false</Enabled>
+												<CommandName>0</CommandName>
+												<ExtendedTooltip name="ЗаданияУдалитьОтборРасширеннаяПодсказка" id="494"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<ButtonGroup name="Группа5" id="607">
+										<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="608"/>
+										<ChildItems>
+											<Button name="ИзменитьФорму" id="482">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<ExtendedTooltip name="ИзменитьФормуРасширеннаяПодсказка" id="497"/>
+											</Button>
+											<Button name="НастройкаСписка" id="132">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<ExtendedTooltip name="НастройкаСпискаРасширеннаяПодсказка" id="495"/>
+											</Button>
+											<Button name="СохранитьНастройкиДинамическогоСписка" id="617">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<ExtendedTooltip name="СохранитьНастройкиДинамическогоСпискаРасширеннаяПодсказка" id="618"/>
+											</Button>
+											<Button name="ЗагрузитьНастройкиДинамическогоСписка" id="619">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<ExtendedTooltip name="ЗагрузитьНастройкиДинамическогоСпискаРасширеннаяПодсказка" id="620"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+								</ChildItems>
+							</ButtonGroup>
+							<ButtonGroup name="ЗаданияГруппа1" id="54">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Задания группа 1</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="ЗаданияГруппа1РасширеннаяПодсказка" id="500"/>
+							</ButtonGroup>
+							<Popup name="Группа1" id="163">
+								<Visible>false</Visible>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Задания</v8:content>
+									</v8:item>
+								</Title>
+								<ToolTip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Представление списка</v8:content>
+									</v8:item>
+								</ToolTip>
+								<Picture>
+									<xr:Ref>CommonPicture.ИерархическийСписок</xr:Ref>
+									<xr:LoadTransparent>false</xr:LoadTransparent>
+								</Picture>
+								<Representation>Picture</Representation>
+								<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="502"/>
+								<ChildItems>
+									<Button name="Список" id="165">
+										<Type>CommandBarButton</Type>
+										<CommandName>0</CommandName>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="503"/>
+									</Button>
+									<Button name="ИерархическийСписок" id="166">
+										<Type>CommandBarButton</Type>
+										<CommandName>0</CommandName>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ИерархическийСписокРасширеннаяПодсказка" id="504"/>
+									</Button>
+									<Button name="Дерево" id="167">
+										<Type>CommandBarButton</Type>
+										<CommandName>0</CommandName>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ДеревоРасширеннаяПодсказка" id="505"/>
+									</Button>
+								</ChildItems>
+							</Popup>
+							<ButtonGroup name="КнопкиПредставления" id="157">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Кнопки представления</v8:content>
+									</v8:item>
+								</Title>
+								<HorizontalStretch>false</HorizontalStretch>
+								<Representation>Compact</Representation>
+								<ExtendedTooltip name="КнопкиПредставленияРасширеннаяПодсказка" id="501"/>
+								<ChildItems>
+									<Button name="Вертикально" id="158">
+										<Type>CommandBarButton</Type>
+										<CommandName>0</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Расположить комментарии под таблицей</v8:content>
+											</v8:item>
+										</Title>
+										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ВертикальноРасширеннаяПодсказка" id="506"/>
+									</Button>
+									<Button name="Горизонтально" id="159">
+										<Type>CommandBarButton</Type>
+										<CommandName>0</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Расположить комментарии справа от таблицы</v8:content>
+											</v8:item>
+										</Title>
+										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ГоризонтальноРасширеннаяПодсказка" id="507"/>
+									</Button>
+								</ChildItems>
+							</ButtonGroup>
+							<ButtonGroup name="Группа9" id="630">
+								<ExtendedTooltip name="Группа9РасширеннаяПодсказка" id="631"/>
+								<ChildItems>
+									<Button name="КомандаОчередьЗадачИсполнителя" id="628">
+										<Type>CommandBarButton</Type>
+										<CommandName>0</CommandName>
+										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="КомандаОчередьЗадачИсполнителяРасширеннаяПодсказка" id="629"/>
+									</Button>
+									<Button name="КомандаОтключитьГруппуЗадания" id="632">
+										<Type>CommandBarButton</Type>
+										<CommandName>0</CommandName>
+										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="КомандаОтключитьГруппуЗаданияРасширеннаяПодсказка" id="633"/>
+									</Button>
+									<Button name="ПоказыватьОбсуждения" id="636">
+										<Type>CommandBarButton</Type>
+										<CommandName>0</CommandName>
+										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ПоказыватьОбсужденияРасширеннаяПодсказка" id="637"/>
+									</Button>
+									<Button name="ПоказыватьПрочие" id="638">
+										<Type>CommandBarButton</Type>
+										<CommandName>0</CommandName>
+										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ПоказыватьПрочиеРасширеннаяПодсказка" id="639"/>
+									</Button>
+								</ChildItems>
+							</ButtonGroup>
+							<ButtonGroup name="Группа2" id="601">
+								<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="602"/>
+								<ChildItems>
+									<Button name="ПоказатьЗакрытыеОтмененные" id="241">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>0</CommandName>
+										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ПоказатьЗакрытыеОтмененныеРасширеннаяПодсказка" id="508"/>
+									</Button>
+									<Button name="КомандаЗаданияПроектовЯРПКуратор" id="657">
+										<Type>CommandBarButton</Type>
+										<CommandName>0</CommandName>
+										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="КомандаЗаданияПроектовЯРПКураторРасширеннаяПодсказка" id="658"/>
+									</Button>
+								</ChildItems>
+							</ButtonGroup>
+							<ButtonGroup name="Группа3" id="603">
+								<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="604"/>
+								<ChildItems>
+									<Button name="ИзменитьТекущегоСотрудника" id="552">
+										<Type>CommandBarButton</Type>
+										<CommandName>0</CommandName>
+										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ИзменитьТекущегоСотрудникаРасширеннаяПодсказка" id="553"/>
+									</Button>
+								</ChildItems>
+							</ButtonGroup>
+							<Popup name="ПодменюСоздатьНаОсновании" id="643">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Создать на основании</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="ПодменюСоздатьНаОснованииРасширеннаяПодсказка" id="644"/>
+							</Popup>
+							<Popup name="ГруппаСохранитьЗагрузить" id="645">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Настройки</v8:content>
+									</v8:item>
+								</Title>
+								<ToolTip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Сохранить \ загрузить настройку</v8:content>
+									</v8:item>
+								</ToolTip>
+								<HorizontalStretch>false</HorizontalStretch>
+								<Picture>
+									<xr:Ref>StdPicture.CustomizeForm</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<Representation>Picture</Representation>
+								<ExtendedTooltip name="ГруппаСохранитьЗагрузитьExtendedTooltip" id="646"/>
+								<ChildItems>
+									<Button name="ФормаКомандаЗагрузитьНастройку" id="647">
+										<Type>CommandBarButton</Type>
+										<CommandName>0</CommandName>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ФормаКомандаЗагрузитьНастройкуExtendedTooltip" id="648"/>
+									</Button>
+									<Button name="ФормаКомандаСохранитьНастройку" id="649">
+										<Type>CommandBarButton</Type>
+										<CommandName>0</CommandName>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ФормаКомандаСохранитьНастройкуExtendedTooltip" id="650"/>
+									</Button>
+								</ChildItems>
+							</Popup>
+						</ChildItems>
+					</CommandBar>
+					<Button name="СкрытьИсторию" id="587">
+						<Type>UsualButton</Type>
+						<Representation>Picture</Representation>
+						<CommandName>0</CommandName>
+						<Picture>
+							<xr:Ref>CommonPicture.Комментарий</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="СкрытьИсториюРасширеннаяПодсказка" id="588"/>
+					</Button>
+				</ChildItems>
+			</UsualGroup>
+			<UsualGroup name="Основная" id="162">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Основная</v8:content>
+					</v8:item>
+				</Title>
+				<Group>Horizontal</Group>
+				<Behavior>Usual</Behavior>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ОсновнаяРасширеннаяПодсказка" id="483"/>
+				<ChildItems>
+					<UsualGroup name="ОсновнаяТаблица" id="22">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Основная таблица</v8:content>
+							</v8:item>
+						</Title>
+						<Group>Vertical</Group>
+						<Behavior>Usual</Behavior>
+						<Representation>None</Representation>
+						<ShowTitle>false</ShowTitle>
+						<ExtendedTooltip name="ОсновнаяТаблицаРасширеннаяПодсказка" id="484"/>
+						<ChildItems>
+							<UsualGroup name="ГруппаОтборы" id="581">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Отборы</v8:content>
+									</v8:item>
+								</Title>
+								<Group>Horizontal</Group>
+								<Behavior>Usual</Behavior>
+								<Representation>None</Representation>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="ГруппаОтборыРасширеннаяПодсказка" id="582"/>
+								<ChildItems>
+									<InputField name="Автор" id="575">
+										<ClearButton>true</ClearButton>
+										<OpenButton>false</OpenButton>
+										<ContextMenu name="АвторКонтекстноеМеню" id="576"/>
+										<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="577"/>
+									</InputField>
+									<InputField name="Исполнитель" id="578">
+										<ClearButton>true</ClearButton>
+										<OpenButton>false</OpenButton>
+										<ContextMenu name="ИсполнительКонтекстноеМеню" id="579"/>
+										<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="580"/>
+									</InputField>
+									<InputField name="ВидЗадания" id="563">
+										<TitleLocation>Left</TitleLocation>
+										<ClearButton>true</ClearButton>
+										<OpenButton>false</OpenButton>
+										<CreateButton>false</CreateButton>
+										<ListChoiceMode>true</ListChoiceMode>
+										<ChoiceList>
+											<xr:Item>
+												<xr:Presentation/>
+												<xr:CheckState>0</xr:CheckState>
+												<xr:Value xsi:type="FormChoiceListDesTimeValue">
+													<Presentation/>
+													<Value xsi:type="xr:DesignTimeRef">Catalog.упоВидыЗаданий.Обсуждение</Value>
+												</xr:Value>
+											</xr:Item>
+											<xr:Item>
+												<xr:Presentation/>
+												<xr:CheckState>0</xr:CheckState>
+												<xr:Value xsi:type="FormChoiceListDesTimeValue">
+													<Presentation/>
+													<Value xsi:type="xr:DesignTimeRef">Catalog.упоВидыЗаданий.Поручение</Value>
+												</xr:Value>
+											</xr:Item>
+											<xr:Item>
+												<xr:Presentation/>
+												<xr:CheckState>0</xr:CheckState>
+												<xr:Value xsi:type="FormChoiceListDesTimeValue">
+													<Presentation/>
+													<Value xsi:type="xr:DesignTimeRef">Catalog.упоВидыЗаданий.ПроектноеРешение</Value>
+												</xr:Value>
+											</xr:Item>
+											<xr:Item>
+												<xr:Presentation/>
+												<xr:CheckState>0</xr:CheckState>
+												<xr:Value xsi:type="FormChoiceListDesTimeValue">
+													<Presentation/>
+													<Value xsi:type="xr:DesignTimeRef">Catalog.упоВидыЗаданий.Согласование</Value>
+												</xr:Value>
+											</xr:Item>
+										</ChoiceList>
+										<ContextMenu name="ВидЗаданияКонтекстноеМеню" id="564"/>
+										<ExtendedTooltip name="ВидЗаданияРасширеннаяПодсказка" id="565"/>
+									</InputField>
+								</ChildItems>
+							</UsualGroup>
+							<UsualGroup name="ГруппаПользовательскиеНастройки" id="651">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Пользовательские настройки</v8:content>
+									</v8:item>
+								</Title>
+								<ToolTip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Пользовательские настройки</v8:content>
+									</v8:item>
+								</ToolTip>
+								<Behavior>Usual</Behavior>
+								<Representation>None</Representation>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="ГруппаПользовательскиеНастройкиРасширеннаяПодсказка" id="652"/>
+							</UsualGroup>
+							<Table name="Задания" id="104">
+								<Representation>Tree</Representation>
+								<InitialTreeView>ExpandAllLevels</InitialTreeView>
+								<EnableStartDrag>true</EnableStartDrag>
+								<EnableDrag>true</EnableDrag>
+								<FileDragMode>AsFile</FileDragMode>
+								<RowsPicture>
+									<xr:Ref>CommonPicture.упоКоллекцияСостоянияЗаданий</xr:Ref>
+									<xr:LoadTransparent>false</xr:LoadTransparent>
+								</RowsPicture>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Задания</v8:content>
+									</v8:item>
+								</Title>
+								<SearchStringLocation>None</SearchStringLocation>
+								<SearchControlLocation>None</SearchControlLocation>
+								<AutoRefresh>true</AutoRefresh>
+								<AutoRefreshPeriod>60</AutoRefreshPeriod>
+								<Period>
+									<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+									<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+									<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+								</Period>
+								<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+								<RestoreCurrentRow>true</RestoreCurrentRow>
+								<TopLevelParent xsi:nil="true"/>
+								<ShowRoot>true</ShowRoot>
+								<AllowRootChoice>false</AllowRootChoice>
+								<UpdateOnDataChange>Auto</UpdateOnDataChange>
+								<UserSettingsGroup>ГруппаПользовательскиеНастройки</UserSettingsGroup>
+								<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+								<ContextMenu name="ЗаданияКонтекстноеМеню" id="105">
+									<Autofill>false</Autofill>
+									<ChildItems>
+										<Button name="Открыть" id="130">
+											<Type>CommandBarButton</Type>
+											<CommandName>0</CommandName>
+											<ExtendedTooltip name="ОткрытьРасширеннаяПодсказка" id="510"/>
+										</Button>
+										<ButtonGroup name="ЗаданияКонтекстноеМенюГруппа3" id="613">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Задания контекстное меню группа 3</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ЗаданияКонтекстноеМенюГруппа3РасширеннаяПодсказка" id="614"/>
+											<ChildItems>
+												<Button name="УстановитьОтбор" id="122">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Отобрать</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="УстановитьОтборРасширеннаяПодсказка" id="509"/>
+												</Button>
+												<Button name="УдалитьОтбор" id="126">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<ExtendedTooltip name="УдалитьОтборРасширеннаяПодсказка" id="514"/>
+												</Button>
+											</ChildItems>
+										</ButtonGroup>
+										<ButtonGroup name="ЗаданияКонтекстноеМенюГруппа1" id="123">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Задания контекстное меню группа 1</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ЗаданияКонтекстноеМенюГруппа1РасширеннаяПодсказка" id="511"/>
+											<ChildItems>
+												<Button name="Добавить" id="124">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<ExtendedTooltip name="ДобавитьРасширеннаяПодсказка" id="512"/>
+												</Button>
+												<Button name="Копировать" id="125">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<ExtendedTooltip name="КопироватьРасширеннаяПодсказка" id="513"/>
+												</Button>
+											</ChildItems>
+										</ButtonGroup>
+										<ButtonGroup name="ЗаданияКонтекстноеМенюГруппа4" id="615">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Задания контекстное меню группа 4</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ЗаданияКонтекстноеМенюГруппа4РасширеннаяПодсказка" id="616"/>
+											<ChildItems>
+												<Button name="Напоминание" id="128">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<ExtendedTooltip name="НапоминаниеРасширеннаяПодсказка" id="516"/>
+												</Button>
+											</ChildItems>
+										</ButtonGroup>
+										<ButtonGroup name="ЗаданияКонтекстноеМенюГруппа2" id="129">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Задания контекстное меню группа 2</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ЗаданияКонтекстноеМенюГруппа2РасширеннаяПодсказка" id="517"/>
+											<ChildItems>
+												<Button name="ЗаданияКонтекстноеМенюОбновить" id="173">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<ExtendedTooltip name="ЗаданияКонтекстноеМенюОбновитьРасширеннаяПодсказка" id="518"/>
+												</Button>
+											</ChildItems>
+										</ButtonGroup>
+										<Button name="ЗаданияКонтекстноеМенюНайти" id="655">
+											<Type>CommandBarButton</Type>
+											<CommandName>0</CommandName>
+											<ExtendedTooltip name="ЗаданияКонтекстноеМенюНайтиРасширеннаяПодсказка" id="656"/>
+										</Button>
+										<Button name="ЗаданияКонтекстноеМенюОтменитьПоиск" id="653">
+											<Type>CommandBarButton</Type>
+											<CommandName>0</CommandName>
+											<ExtendedTooltip name="ЗаданияКонтекстноеМенюОтменитьПоискРасширеннаяПодсказка" id="654"/>
+										</Button>
+									</ChildItems>
+								</ContextMenu>
+								<AutoCommandBar name="ЗаданияКоманднаяПанель" id="106">
+									<Autofill>false</Autofill>
+								</AutoCommandBar>
+								<ExtendedTooltip name="ЗаданияРасширеннаяПодсказка" id="520"/>
+								<SearchStringAddition name="ЗаданияСтрокаПоиска" id="566">
+									<AdditionSource>
+										<Item>Задания</Item>
+										<Type>SearchStringRepresentation</Type>
+									</AdditionSource>
+									<ContextMenu name="ЗаданияСтрокаПоискаКонтекстноеМеню" id="567"/>
+									<ExtendedTooltip name="ЗаданияСтрокаПоискаРасширеннаяПодсказка" id="568"/>
+								</SearchStringAddition>
+								<ViewStatusAddition name="ЗаданияСостояниеПросмотра" id="569">
+									<AdditionSource>
+										<Item>Задания</Item>
+										<Type>ViewStatusRepresentation</Type>
+									</AdditionSource>
+									<ContextMenu name="ЗаданияСостояниеПросмотраКонтекстноеМеню" id="570"/>
+									<ExtendedTooltip name="ЗаданияСостояниеПросмотраРасширеннаяПодсказка" id="571"/>
+								</ViewStatusAddition>
+								<SearchControlAddition name="ЗаданияУправлениеПоиском" id="572">
+									<AdditionSource>
+										<Item>Задания</Item>
+										<Type>SearchControl</Type>
+									</AdditionSource>
+									<ContextMenu name="ЗаданияУправлениеПоискомКонтекстноеМеню" id="573"/>
+									<ExtendedTooltip name="ЗаданияУправлениеПоискомРасширеннаяПодсказка" id="574"/>
+								</SearchControlAddition>
+								<ChildItems>
+									<LabelField name="ЗаданияЗадание" id="109">
+										<Width>11</Width>
+										<ContextMenu name="ЗаданияЗаданиеКонтекстноеМеню" id="110"/>
+										<ExtendedTooltip name="ЗаданияЗаданиеРасширеннаяПодсказка" id="530"/>
+									</LabelField>
+									<LabelField name="ЗаданияПорядокПоГруппеОчереди" id="625">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>№</v8:content>
+											</v8:item>
+										</Title>
+										<Width>2</Width>
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<HorizontalStretch>false</HorizontalStretch>
+										<ContextMenu name="ЗаданияПорядокПоГруппеОчередиКонтекстноеМеню" id="626"/>
+										<ExtendedTooltip name="ЗаданияПорядокПоГруппеОчередиРасширеннаяПодсказка" id="627"/>
+									</LabelField>
+									<LabelField name="ЗаданияПроект" id="111">
+										<Width>1</Width>
+										<ContextMenu name="ЗаданияПроектКонтекстноеМеню" id="112"/>
+										<ExtendedTooltip name="ЗаданияПроектРасширеннаяПодсказка" id="531"/>
+									</LabelField>
+									<LabelField name="ЗаданияПроектнаяЗадача" id="113">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Задача</v8:content>
+											</v8:item>
+										</Title>
+										<Width>1</Width>
+										<ContextMenu name="ЗаданияПроектнаяЗадачаКонтекстноеМеню" id="114"/>
+										<ExtendedTooltip name="ЗаданияПроектнаяЗадачаРасширеннаяПодсказка" id="532"/>
+									</LabelField>
+									<LabelField name="ЗаданияОбъектБазы" id="595">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Объект</v8:content>
+											</v8:item>
+										</Title>
+										<ContextMenu name="ЗаданияОбъектБазыКонтекстноеМеню" id="596"/>
+										<ExtendedTooltip name="ЗаданияОбъектБазыРасширеннаяПодсказка" id="597"/>
+									</LabelField>
+									<LabelField name="ЗаданияАвторСотрудник" id="238">
+										<Width>1</Width>
+										<ContextMenu name="ЗаданияАвторСотрудникКонтекстноеМеню" id="239"/>
+										<ExtendedTooltip name="ЗаданияАвторСотрудникРасширеннаяПодсказка" id="533"/>
+									</LabelField>
+									<LabelField name="ЗаданияИсполнитель" id="107">
+										<Width>1</Width>
+										<ContextMenu name="ЗаданияИсполнительКонтекстноеМеню" id="108"/>
+										<ExtendedTooltip name="ЗаданияИсполнительРасширеннаяПодсказка" id="534"/>
+									</LabelField>
+									<LabelField name="ЗаданияДатаНачалаПлан" id="410">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Начало план</v8:content>
+											</v8:item>
+										</Title>
+										<Format>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>ДФ=dd.MM.yyyy</v8:content>
+											</v8:item>
+										</Format>
+										<ContextMenu name="ЗаданияДатаНачалаПланКонтекстноеМеню" id="411"/>
+										<ExtendedTooltip name="ЗаданияДатаНачалаПланРасширеннаяПодсказка" id="535"/>
+									</LabelField>
+									<LabelField name="ЗаданияДатаОкончанияПлан" id="408">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Окончание план</v8:content>
+											</v8:item>
+										</Title>
+										<Format>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>ДФ=dd.MM.yyyy</v8:content>
+											</v8:item>
+										</Format>
+										<ContextMenu name="ЗаданияДатаОкончанияПланКонтекстноеМеню" id="409"/>
+										<ExtendedTooltip name="ЗаданияДатаОкончанияПланРасширеннаяПодсказка" id="537"/>
+									</LabelField>
+									<LabelField name="ЗаданияСтатус" id="117">
+										<ReadOnly>true</ReadOnly>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Статус задания</v8:content>
+											</v8:item>
+										</Title>
+										<Width>1</Width>
+										<ContextMenu name="ЗаданияСтатусКонтекстноеМеню" id="118"/>
+										<ExtendedTooltip name="ЗаданияСтатусРасширеннаяПодсказка" id="539"/>
+									</LabelField>
+									<LabelField name="ЗаданияВидЗадания" id="589">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Вид задания</v8:content>
+											</v8:item>
+										</Title>
+										<ContextMenu name="ЗаданияВидЗаданияКонтекстноеМеню" id="590"/>
+										<ExtendedTooltip name="ЗаданияВидЗаданияРасширеннаяПодсказка" id="591"/>
+									</LabelField>
+								</ChildItems>
+							</Table>
+						</ChildItems>
+					</UsualGroup>
+					<UsualGroup name="ИсторияСобытий" id="23">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>История событий</v8:content>
+							</v8:item>
+						</Title>
+						<Width>40</Width>
+						<Group>Vertical</Group>
+						<Behavior>Usual</Behavior>
+						<Representation>None</Representation>
+						<ShowTitle>false</ShowTitle>
+						<ExtendedTooltip name="ИсторияСобытийРасширеннаяПодсказка" id="540"/>
+						<ChildItems>
+							<LabelField name="ВыбранноеЗадание" id="598">
+								<TitleLocation>None</TitleLocation>
+								<Hiperlink>true</Hiperlink>
+								<ContextMenu name="ВыбранноеЗаданиеКонтекстноеМеню" id="599"/>
+								<ExtendedTooltip name="ВыбранноеЗаданиеРасширеннаяПодсказка" id="600"/>
+							</LabelField>
+							<LabelField name="ВыбранныеЗадания" id="640">
+								<TitleLocation>None</TitleLocation>
+								<ContextMenu name="ВыбранныеЗаданияКонтекстноеМеню" id="641"/>
+								<ExtendedTooltip name="ВыбранныеЗаданияРасширеннаяПодсказка" id="642"/>
+							</LabelField>
+							<UsualGroup name="ПанельДобавленияКомментария" id="27">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>История событий</v8:content>
+									</v8:item>
+								</Title>
+								<Group>Horizontal</Group>
+								<Behavior>Usual</Behavior>
+								<CollapsedRepresentationTitle>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Поменять статус или оставить комментарий</v8:content>
+									</v8:item>
+								</CollapsedRepresentationTitle>
+								<Representation>None</Representation>
+								<ShowLeftMargin>false</ShowLeftMargin>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="ПанельДобавленияКомментарияРасширеннаяПодсказка" id="542"/>
+								<ChildItems>
+									<UsualGroup name="ГруппаДействия" id="302">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Действия</v8:content>
+											</v8:item>
+										</Title>
+										<Group>Vertical</Group>
+										<Behavior>Usual</Behavior>
+										<Representation>None</Representation>
+										<ShowTitle>false</ShowTitle>
+										<ExtendedTooltip name="ГруппаДействияРасширеннаяПодсказка" id="544"/>
+										<ChildItems>
+											<Pages name="ГруппаИзменитьСтатус" id="310">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Изменить статус</v8:content>
+													</v8:item>
+												</Title>
+												<PagesRepresentation>None</PagesRepresentation>
+												<ExtendedTooltip name="ГруппаИзменитьСтатусРасширеннаяПодсказка" id="545"/>
+												<ChildItems>
+													<Page name="СтраницаИзмененияНедоступны" id="297">
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Страница изменения недоступны</v8:content>
+															</v8:item>
+														</Title>
+														<HorizontalStretch>true</HorizontalStretch>
+														<VerticalStretch>false</VerticalStretch>
+														<ExtendedTooltip name="СтраницаИзмененияНедоступныРасширеннаяПодсказка" id="546"/>
+														<ChildItems>
+															<InputField name="ПолеКомментария" id="25">
+																<TitleLocation>None</TitleLocation>
+																<ToolTip>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Введите в это поле комментарий к изменению статуса</v8:content>
+																	</v8:item>
+																</ToolTip>
+																<AutoMaxWidth>false</AutoMaxWidth>
+																<Height>4</Height>
+																<AutoMaxHeight>false</AutoMaxHeight>
+																<MaxHeight>4</MaxHeight>
+																<VerticalStretch>true</VerticalStretch>
+																<MultiLine>true</MultiLine>
+																<DropListWidth>1</DropListWidth>
+																<InputHint>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Введите в это поле комментарий к изменению статуса.</v8:content>
+																	</v8:item>
+																</InputHint>
+																<ContextMenu name="ПолеКомментарияКонтекстноеМеню" id="26"/>
+																<ExtendedTooltip name="ПолеКомментарияРасширеннаяПодсказка" id="543"/>
+															</InputField>
+														</ChildItems>
+													</Page>
+												</ChildItems>
+											</Pages>
+											<Button name="Комментировать" id="32">
+												<Type>UsualButton</Type>
+												<CommandName>0</CommandName>
+												<TextColor>style:FieldSelectionBackColor</TextColor>
+												<ExtendedTooltip name="КомментироватьРасширеннаяПодсказка" id="548"/>
+											</Button>
+										</ChildItems>
+									</UsualGroup>
+								</ChildItems>
+							</UsualGroup>
+							<HTMLDocumentField name="ПолеИстории" id="33">
+								<TitleLocation>None</TitleLocation>
+								<Width>1</Width>
+								<AutoMaxWidth>false</AutoMaxWidth>
+								<Height>1</Height>
+								<ContextMenu name="ПолеИсторииКонтекстноеМеню" id="34"/>
+								<ExtendedTooltip name="ПолеИсторииРасширеннаяПодсказка" id="549"/>
+							</HTMLDocumentField>
+						</ChildItems>
+					</UsualGroup>
+				</ChildItems>
+			</UsualGroup>
+		</ChildItems>
+		<Attributes>
+			<ConditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ЗаданияКонтроллерыТекст</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Задания.ВводНовогоКонтроллера</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:use>false</dcscor:use>
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:Field">ЗаданияКонтроллерыТекст</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Видимость</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ЗаданияКонтроллеры</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Задания.ВводНовогоКонтроллера</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Видимость</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ЗаданияКонтроллеры</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Задания.ВводНовогоКонтроллера</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Видимость</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ЗаданияСтатус</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ЗаданияФактВыполнения</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Задания.ЭтоОтбор</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияЗадание</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияПроект</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияСрок</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияПроектнаяЗадача</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияИсполнитель</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияКонтроллеры</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ЗаданияСтатус</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияФактВыполнения</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияКонтроллерыТекст</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Задания.ЭтоОтбор</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Задания.Статус</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.упоЗаданияСтатусы.ПустаяСсылка</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">web:CornSilk</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">web:DarkGray</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="xs:string">Отбор</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ЗаданияЗадание</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияПроект</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияСрок</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияПроектнаяЗадача</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияИсполнитель</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияКонтроллеры</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияСтатус</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияФактВыполнения</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияКонтроллерыТекст</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Задания.ЭтоОтбор</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Задания.Задание</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:string"/>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">web:CornSilk</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">web:DarkGray</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="xs:string">Отбор</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияЗадание</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ЗаданияПроект</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияСрок</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияПроектнаяЗадача</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияИсполнитель</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияКонтроллеры</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияСтатус</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияФактВыполнения</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияКонтроллерыТекст</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Задания.ЭтоОтбор</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Задания.Проект</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.Проекты.ПустаяСсылка</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">web:CornSilk</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">web:DarkGray</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="xs:string">Отбор</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияЗадание</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияПроект</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ЗаданияСрок</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияПроектнаяЗадача</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияИсполнитель</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияКонтроллеры</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияСтатус</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияФактВыполнения</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияКонтроллерыТекст</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Задания.ЭтоОтбор</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Задания.Срок</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="v8:StandardBeginningDate">
+								<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+								<v8:date>0001-01-01T00:00:00</v8:date>
+							</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">web:CornSilk</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">web:DarkGray</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="xs:string">Отбор</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияЗадание</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияПроект</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияСрок</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ЗаданияПроектнаяЗадача</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияИсполнитель</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияКонтроллеры</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияСтатус</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияФактВыполнения</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияКонтроллерыТекст</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Задания.ЭтоОтбор</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Задания.ПроектнаяЗадача</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.Проекты.ПустаяСсылка</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">web:CornSilk</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">web:DarkGray</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="xs:string">Отбор</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияЗадание</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияПроект</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияСрок</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияПроектнаяЗадача</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ЗаданияИсполнитель</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияКонтроллеры</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияСтатус</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияФактВыполнения</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияКонтроллерыТекст</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Задания.ЭтоОтбор</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Задания.Исполнитель</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.упоТрудовыеРесурсы.ПустаяСсылка</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">web:CornSilk</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">web:DarkGray</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="xs:string">Отбор</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияЗадание</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияПроект</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияСрок</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияПроектнаяЗадача</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияИсполнитель</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ЗаданияКонтроллеры</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияСтатус</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияФактВыполнения</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ЗаданияКонтроллерыТекст</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Задания.ЭтоОтбор</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Задания.Контроллеры</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.упоСотрудники.ПустаяСсылка</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">web:CornSilk</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">web:DarkGray</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="xs:string">Отбор</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияЗадание</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияПроект</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияСрок</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияПроектнаяЗадача</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияИсполнитель</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияКонтроллеры</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияСтатус</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ЗаданияФактВыполнения</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ЗаданияКонтроллерыТекст</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Задания.ЭтоОтбор</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Задания.КодЗадания</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="v8:StandardBeginningDate">
+								<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+								<v8:date>0001-01-01T00:00:00</v8:date>
+							</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">web:CornSilk</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">web:DarkGray</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="xs:string">Отбор</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ЗаданияПорядокПоГруппеОчереди</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">списЗадания.ПорядокУстановлен</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>-</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ЗаданияЗадание</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ЗаданияПорядокПоГруппеОчереди</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ЗаданияПроект</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ЗаданияПроектнаяЗадача</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ЗаданияОбъектБазы</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ЗаданияАвторСотрудник</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ЗаданияИсполнитель</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ЗаданияДатаНачалаПлан</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ЗаданияДатаОкончанияПлан</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ЗаданияСтатус</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ЗаданияВидЗадания</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">списЗадания.Задание</dcsset:left>
+							<dcsset:comparisonType>InList</dcsset:comparisonType>
+							<dcsset:right xsi:type="v8:ValueListType">
+								<v8:valueType/>
+								<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+							</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:ИзмененноеЗначениеРеквизитаЦвет</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+					<dcsset:presentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выделение выбранных заданий</v8:content>
+						</v8:item>
+					</dcsset:presentation>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>Задания</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">списЗадания.ПометкаУдаления</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" ref="style:NormalTextFont" bold="false" italic="true" underline="false" strikeout="true" kind="StyleItem"/>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+			</ConditionalAppearance>
+		</Attributes>
+	</BaseForm>
+</Form>

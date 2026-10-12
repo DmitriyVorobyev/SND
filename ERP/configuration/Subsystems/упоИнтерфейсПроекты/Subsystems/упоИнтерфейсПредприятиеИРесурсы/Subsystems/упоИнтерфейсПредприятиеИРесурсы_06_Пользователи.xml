@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Subsystem uuid="999ff1dd-2b20-482c-a6fa-8e2c25d1bcf6">
+		<Properties>
+			<Name>упоИнтерфейсПредприятиеИРесурсы_06_Пользователи</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователи</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоИзменениеВладельцаРесурсов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоИзменениеДолжностиСотрудника</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияРолейТрудовогоРесурса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоСмещениеВладельцаРесурсов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоСмещениеРолейТрудовогоРесурса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияСтоимостиРесурса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияСотрудника</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияСоставаПодразделения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоИзменениеСоставаПодразделения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоТрудовыеРесурсы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоРоли</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияВладельцаРесурсов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияДиспетчера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияМощностиРолей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоОсвобождениеДиспетчера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияРабочегоКалендаря</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Должности</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПодразделенияОрганизаций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоВидыОпераций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоВнепроектныеЗадачи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоЕдиницыВремени</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоНастройкиКалендарей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоНормыСтоимости</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоОбъекты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоПричиныПотерьРабочегоВремени</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоПрофилиРаспределенияТрудозатрат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоРабочиеКалендари</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоСотрудники</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоШаблоныКонтрагентов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияРуководителяПодразделения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоПодразделения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоИзменениеРабочегоКалендаря</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.упоДополнительныеОбработкиПредприятиеИРесурсы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.упоДополнительныеОтчетыПредприятиеИРесурсы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоВидыОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.упоРегистрацияСотрудника</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.упоПанельОтчетовИнтерфейсПредприятиеИРесурсы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоПрофилиРаспределенияДоходовИРасходов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Пользователи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияСтоимостиРесурсов</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

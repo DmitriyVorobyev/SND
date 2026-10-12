@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Subsystem uuid="2502b000-3818-449b-b5f7-022c9b7528a3">
+		<Properties>
+			<Name>упоТМЦ</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ТМЦ</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗаказКлиента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗаказНаПроизводство</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗаказНаПроизводство2_2</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗаказПоставщику</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоПроектнаяЗадача</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НаправленияДеятельности</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.упоФормированиеЗаказовПроектнойЗадачи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.упоНастройкаПараметровPM</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоИнтеграцияEPMСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоСвязьПроектаСНаправлениемДеятельности</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбновлениеИнформационнойБазыPMO</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ЭтапыОплатыКлиентом</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ЭтапыОплатыПоставщику</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоСинхронизацияФактическихДвиженийДенежныхСредств</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияФактическихДвиженийДенежныхСредств</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоБиблиотекаШаблоновВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоДвиженияДенежныхСредств</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоДвиженияДенежныхСредствСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.упоАнализ_БДР_по_БДДССКД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.упоДвиженияДенежныхСредствПланФактСКД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.упоСкользящийБДДСПроекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.упоСкользящийБДРОбъемыБДДС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоАктуальныеПланыДвиженийДенежныхСредств</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоДанныеПлановДвиженияДенежныхСредств</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоФактДвиженийДенежныхСредств</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоШаблоныПроектныхЗадач</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоСтатьяРасходовПриПриобретенииТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоОтражатьФактРасходаПриПриобретенииТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">60f31d12-4f6f-4707-a1e3-48e52cf86ab2</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоБазовыеПраваPM</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоБазовыеПраваEPM</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоНастройкаПараметровPM</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоТолькоПросмотр</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Номенклатура</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоДанныеПлановПотребностейМатериальныхРесурсов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоАктуальныеПланыЗатратМатериальныхРесурсов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоАктуализацияПроектаВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоАналитикаПоПодразделениямСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоДоходыИРасходы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.упоУпрощенныйВводСтруктурыПроекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоСохранениеДанныхПроекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.упоЭтапыГрафика</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

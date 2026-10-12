@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Добавление пользователей для автоматического назначения ограничений по проектам</v8:content>
+		</v8:item>
+	</Title>
+	<Width>60</Width>
+	<AutoTitle>false</AutoTitle>
+	<ShowTitle>false</ShowTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="КомандаВыполнить" id="20">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.КомандаВыполнить</CommandName>
+				<ExtendedTooltip name="КомандаВыполнитьРасширеннаяПодсказка" id="21"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnSaveDataInSettingsAtServer">ПриСохраненииДанныхВНастройкахНаСервере</Event>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="NewWriteProcessing">ОбработкаЗаписиНового</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="ExternalEvent">ВнешнееСобытие</Event>
+		<Event name="OnReopen">ПриПовторномОткрытии</Event>
+		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
+		<Event name="NavigationProcessing">ОбработкаПерехода</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="ActivationProcessing">ОбработкаАктивизации</Event>
+		<Event name="OnChangeDisplaySettings">ПриИзмененииПараметровЭкрана</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+		<Event name="URLProcessing">ОбработкаНавигационнойСсылки</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+		<Event name="BeforeLoadDataFromSettingsAtServer">ПередЗагрузкойДанныхИзНастроекНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Профиль" id="1">
+			<DataPath>Профиль</DataPath>
+			<CreateButton>false</CreateButton>
+			<ListChoiceMode>true</ListChoiceMode>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
+			<ContextMenu name="ПрофильКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПрофильРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<LabelDecoration name="ДекорацияПредудупреждение" id="26">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<TextColor>style:ТекстИнформационнойНадписи</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Для каждого из указанных ниже пользователей будет создана отдельная группа (каждый пользователь будет включен в соответствующую группу). Группе доступа будет назначен указанный выше профиль ограничений.  В группе доступа автоматически будет заполнен перечень проектов, к которым пользователь может иметь доступ (авторы незарегистрированных проектов, диспетчеры руководителей и кураторов проектов, диспетчеры руководителей задач). 
+
+ВАЖНО! Если пользователь входит в другие группы доступа, в которых настроено ограничение доступа по проектам, то ограничения доступа по проектам будут накладываться с учетом всех ограничений всех групп доступа в которые входит пользователь (то есть, если одна группа доступа дает доступ к ПроектуА, а другая группа доступа не дает доступ к ПроектуА, то пользователь получит доступ к ПроектуА, и, если одна группа доступа не дает доступ к ПроектуА, а другая группа доступа дает доступ в целом к справочнику Проекты, то пользователь получит доступ к ПроектуА).</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ДекорацияПредудупреждениеКонтекстноеМеню" id="27"/>
+			<ExtendedTooltip name="ДекорацияПредудупреждениеРасширеннаяПодсказка" id="28"/>
+		</LabelDecoration>
+		<Table name="СписокПользователей" id="4">
+			<Representation>List</Representation>
+			<TitleLocation>Top</TitleLocation>
+			<Header>false</Header>
+			<HorizontalLines>false</HorizontalLines>
+			<VerticalLines>false</VerticalLines>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>СписокПользователей</DataPath>
+			<RowPictureDataPath>СписокПользователей.Picture</RowPictureDataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список пользователей</v8:content>
+				</v8:item>
+			</Title>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>Pickup</ExcludedCommand>
+			</CommandSet>
+			<ContextMenu name="СписокПользователейКонтекстноеМеню" id="5"/>
+			<AutoCommandBar name="СписокПользователейКоманднаяПанель" id="6">
+				<ChildItems>
+					<Button name="СписокПользователейКомандаДобавить" id="22">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.КомандаДобавить</CommandName>
+						<ExtendedTooltip name="СписокПользователейКомандаДобавитьРасширеннаяПодсказка" id="23"/>
+					</Button>
+					<Button name="СписокПользователейКомандаПодбор" id="24">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.КомандаПодбор</CommandName>
+						<ExtendedTooltip name="СписокПользователейКомандаПодборРасширеннаяПодсказка" id="25"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокПользователейРасширеннаяПодсказка" id="7"/>
+			<SearchStringAddition name="СписокПользователейСтрокаПоиска" id="8">
+				<AdditionSource>
+					<Item>СписокПользователей</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокПользователейСтрокаПоискаКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="СписокПользователейСтрокаПоискаРасширеннаяПодсказка" id="10"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокПользователейСостояниеПросмотра" id="11">
+				<AdditionSource>
+					<Item>СписокПользователей</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокПользователейСостояниеПросмотраКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="СписокПользователейСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокПользователейУправлениеПоиском" id="14">
+				<AdditionSource>
+					<Item>СписокПользователей</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокПользователейУправлениеПоискомКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="СписокПользователейУправлениеПоискомРасширеннаяПодсказка" id="16"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">СписокПользователейВыбор</Event>
+				<Event name="BeforeAddRow">СписокПользователейПередНачаломДобавления</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="СписокПользователейЗначение" id="17">
+					<DataPath>СписокПользователей.Value</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ContextMenu name="СписокПользователейЗначениеКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="СписокПользователейЗначениеРасширеннаяПодсказка" id="19"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Профиль" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Профиль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ПрофилиГруппДоступа</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="СписокПользователей" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список пользователей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаВыполнить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаВыполнить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаДобавить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаДобавить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаПодбор" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаПодбор</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

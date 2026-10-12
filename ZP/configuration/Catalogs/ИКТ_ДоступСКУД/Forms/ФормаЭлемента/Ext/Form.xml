@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Сотрудник" id="7">
+			<DataPath>Объект.Сотрудник</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="СотрудникКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="СотрудникРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="IDСотрудника" id="10">
+			<DataPath>Объект.IDСотрудника</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ID сотрудника</v8:content>
+				</v8:item>
+			</Title>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="IDСотрудникаКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="IDСотрудникаРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Должность" id="22">
+			<DataPath>Объект.Должность</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДолжностьКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ДолжностьРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<InputField name="Подразделение" id="25">
+			<DataPath>Объект.Подразделение</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПодразделениеКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="ПодразделениеРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<InputField name="ПриемНаРаботу" id="28">
+			<DataPath>Объект.ПриемНаРаботу</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПриемНаРаботуКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="ПриемНаРаботуРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<InputField name="КадровыйПеревод" id="96">
+			<DataPath>Объект.КадровыйПеревод</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КадровыйПереводКонтекстноеМеню" id="97"/>
+			<ExtendedTooltip name="КадровыйПереводРасширеннаяПодсказка" id="98"/>
+		</InputField>
+		<InputField name="ГрафикРаботы" id="99">
+			<DataPath>Объект.ГрафикРаботы</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ГрафикРаботыКонтекстноеМеню" id="100"/>
+			<ExtendedTooltip name="ГрафикРаботыРасширеннаяПодсказка" id="101"/>
+		</InputField>
+		<InputField name="ЗаключениеМедицинскогоОсмотра" id="34">
+			<DataPath>Объект.ЗаключениеМедицинскогоОсмотра</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ЗаключениеМедицинскогоОсмотраКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="ЗаключениеМедицинскогоОсмотраРасширеннаяПодсказка" id="36"/>
+		</InputField>
+		<InputField name="Удостоверение" id="133">
+			<DataPath>Объект.Удостоверение</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="УдостоверениеКонтекстноеМеню" id="134"/>
+			<ExtendedTooltip name="УдостоверениеРасширеннаяПодсказка" id="135"/>
+		</InputField>
+		<InputField name="РаботаВВыходныеИПраздничныеДни" id="37">
+			<DataPath>Объект.РаботаВВыходныеИПраздничныеДни</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="РаботаВВыходныеИПраздничныеДниКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="РаботаВВыходныеИПраздничныеДниРасширеннаяПодсказка" id="39"/>
+		</InputField>
+		<InputField name="Увольнение" id="40">
+			<DataPath>Объект.Увольнение</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="УвольнениеКонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="УвольнениеРасширеннаяПодсказка" id="42"/>
+		</InputField>
+		<InputField name="ОграничениеДоступа" id="136">
+			<DataPath>Объект.ОграничениеДоступа</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ОграничениеДоступаКонтекстноеМеню" id="137"/>
+			<ExtendedTooltip name="ОграничениеДоступаРасширеннаяПодсказка" id="138"/>
+		</InputField>
+		<Table name="ЗоныИТочкиДоступа" id="43">
+			<TitleLocation>Top</TitleLocation>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<Height>5</Height>
+			<AutoMaxHeight>false</AutoMaxHeight>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<DataPath>Объект.ЗоныИТочкиДоступа</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зоны и точки доступа</v8:content>
+				</v8:item>
+			</Title>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+			</CommandSet>
+			<CurrentRowUse>Choice</CurrentRowUse>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ЗоныИТочкиДоступаКонтекстноеМеню" id="44"/>
+			<AutoCommandBar name="ЗоныИТочкиДоступаКоманднаяПанель" id="45">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ЗоныИТочкиДоступаРасширеннаяПодсказка" id="46"/>
+			<SearchStringAddition name="ЗоныИТочкиДоступаСтрокаПоиска" id="47">
+				<AdditionSource>
+					<Item>ЗоныИТочкиДоступа</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЗоныИТочкиДоступаСтрокаПоискаКонтекстноеМеню" id="48"/>
+				<ExtendedTooltip name="ЗоныИТочкиДоступаСтрокаПоискаРасширеннаяПодсказка" id="49"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ЗоныИТочкиДоступаСостояниеПросмотра" id="50">
+				<AdditionSource>
+					<Item>ЗоныИТочкиДоступа</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЗоныИТочкиДоступаСостояниеПросмотраКонтекстноеМеню" id="51"/>
+				<ExtendedTooltip name="ЗоныИТочкиДоступаСостояниеПросмотраРасширеннаяПодсказка" id="52"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ЗоныИТочкиДоступаУправлениеПоиском" id="53">
+				<AdditionSource>
+					<Item>ЗоныИТочкиДоступа</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ЗоныИТочкиДоступаУправлениеПоискомКонтекстноеМеню" id="54"/>
+				<ExtendedTooltip name="ЗоныИТочкиДоступаУправлениеПоискомРасширеннаяПодсказка" id="55"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeAddRow">ЗоныИТочкиДоступаПередНачаломДобавления</Event>
+				<Event name="BeforeDeleteRow">ЗоныИТочкиДоступаПередУдалением</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="ЗоныИТочкиДоступаНомерСтроки" id="130">
+					<DataPath>Объект.ЗоныИТочкиДоступа.LineNumber</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЗоныИТочкиДоступаНомерСтрокиКонтекстноеМеню" id="131"/>
+					<ExtendedTooltip name="ЗоныИТочкиДоступаНомерСтрокиРасширеннаяПодсказка" id="132"/>
+				</LabelField>
+				<InputField name="ЗоныИТочкиДоступаЗонаДоступа" id="59">
+					<DataPath>Объект.ЗоныИТочкиДоступа.ЗонаДоступа</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<DropListButton>false</DropListButton>
+					<ChoiceButton>false</ChoiceButton>
+					<ClearButton>false</ClearButton>
+					<SpinButton>false</SpinButton>
+					<OpenButton>true</OpenButton>
+					<CreateButton>false</CreateButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<QuickChoice>false</QuickChoice>
+					<ChooseType>false</ChooseType>
+					<TextEdit>false</TextEdit>
+					<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
+					<ContextMenu name="ЗоныИТочкиДоступаЗонаДоступаКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="ЗоныИТочкиДоступаЗонаДоступаРасширеннаяПодсказка" id="61"/>
+					<Events>
+						<Event name="OnChange">ЗоныИТочкиДоступаЗонаДоступаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ЗоныИТочкиДоступаТочкаДоступа" id="62">
+					<DataPath>Объект.ЗоныИТочкиДоступа.ТочкаДоступа</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<DropListButton>false</DropListButton>
+					<ChoiceButton>false</ChoiceButton>
+					<ClearButton>false</ClearButton>
+					<SpinButton>false</SpinButton>
+					<OpenButton>true</OpenButton>
+					<CreateButton>false</CreateButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<QuickChoice>false</QuickChoice>
+					<ChooseType>false</ChooseType>
+					<TextEdit>false</TextEdit>
+					<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
+					<ContextMenu name="ЗоныИТочкиДоступаТочкаДоступаКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="ЗоныИТочкиДоступаТочкаДоступаРасширеннаяПодсказка" id="64"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<LabelDecoration name="СтатусДоступаНадпись" id="127">
+			<ContextMenu name="СтатусДоступаНадписьКонтекстноеМеню" id="128"/>
+			<ExtendedTooltip name="СтатусДоступаНадписьРасширеннаяПодсказка" id="129"/>
+		</LabelDecoration>
+		<Table name="СтатусыДоступа" id="102">
+			<TitleLocation>Top</TitleLocation>
+			<ReadOnly>true</ReadOnly>
+			<Height>4</Height>
+			<AutoMaxHeight>false</AutoMaxHeight>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.СтатусыДоступа</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статусы доступа</v8:content>
+				</v8:item>
+			</Title>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СтатусыДоступаКонтекстноеМеню" id="103"/>
+			<AutoCommandBar name="СтатусыДоступаКоманднаяПанель" id="104">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СтатусыДоступаРасширеннаяПодсказка" id="105"/>
+			<SearchStringAddition name="СтатусыДоступаСтрокаПоиска" id="106">
+				<AdditionSource>
+					<Item>СтатусыДоступа</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СтатусыДоступаСтрокаПоискаКонтекстноеМеню" id="107"/>
+				<ExtendedTooltip name="СтатусыДоступаСтрокаПоискаРасширеннаяПодсказка" id="108"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СтатусыДоступаСостояниеПросмотра" id="109">
+				<AdditionSource>
+					<Item>СтатусыДоступа</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СтатусыДоступаСостояниеПросмотраКонтекстноеМеню" id="110"/>
+				<ExtendedTooltip name="СтатусыДоступаСостояниеПросмотраРасширеннаяПодсказка" id="111"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СтатусыДоступаУправлениеПоиском" id="112">
+				<AdditionSource>
+					<Item>СтатусыДоступа</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СтатусыДоступаУправлениеПоискомКонтекстноеМеню" id="113"/>
+				<ExtendedTooltip name="СтатусыДоступаУправлениеПоискомРасширеннаяПодсказка" id="114"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="СтатусыДоступаСтатус" id="118">
+					<DataPath>Объект.СтатусыДоступа.Статус</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СтатусыДоступаСтатусКонтекстноеМеню" id="119"/>
+					<ExtendedTooltip name="СтатусыДоступаСтатусРасширеннаяПодсказка" id="120"/>
+				</InputField>
+				<InputField name="СтатусыДоступаКомментарий" id="121">
+					<DataPath>Объект.СтатусыДоступа.Комментарий</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СтатусыДоступаКомментарийКонтекстноеМеню" id="122"/>
+					<ExtendedTooltip name="СтатусыДоступаКомментарийРасширеннаяПодсказка" id="123"/>
+				</InputField>
+				<InputField name="СтатусыДоступаДокументОснование" id="124">
+					<DataPath>Объект.СтатусыДоступа.ДокументОснование</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СтатусыДоступаДокументОснованиеКонтекстноеМеню" id="125"/>
+					<ExtendedTooltip name="СтатусыДоступаДокументОснованиеРасширеннаяПодсказка" id="126"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ИКТ_ДоступСКУД</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

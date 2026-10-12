@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Subsystem uuid="ecb23c4e-43d8-4951-aae4-c539d99a8776">
+		<Properties>
+			<Name>упоЗаявкиНаПроекты</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заявки на проекты</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоСоответствиеСтратегическимЦелям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.упоВлияниеЦелей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоСтратегическиеЦели</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоСоответствиеСтратегическимЦелям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоСтатусыЗаявокНаПроект</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.упоПодсистемаЗаявкиНаПроекты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.упоПодсистемаЗаявкиНаПроекты16</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоЗаявкаНаПроект</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоФормированиеБизнесПлана</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.упоСтатусыЗаявокНаПроект</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоИспользоватьЗаявкиНаПроекты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.упоИспользоватьЗаявкиНаПроекты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоПоказательБалла</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоПоказательСтавкаДисконтирования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияПоказателейЭффективностиПроекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоРасчетИтоговогоБаллаПроектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоИтоговыйБаллПроектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоПрограммыПроектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоПортфелиПроектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.упоВидЗаполненияИндикатора</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоДобавлениеИзменениеИтоговыйБаллПроекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоЧтениеИтоговыйБаллПроекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоДобавлениеИзменениеЗаявокНаПроекты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоЧтениеЗаявокНаПроекты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоРазделЗаявкиНаПроекты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоДобавлениеИзменениеСтратегическихЦелей_НСИ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоЧтениеСтратегическихЦелей_НСИ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоДобавлениеИзменениеФормированияБизнесПлана</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоЧтениеФормированияБизнесПлана</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоДобавлениеИзменениеСоответствияСтратегическимЦелям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоЧтениеСоответствияСтратегическимЦелям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоДобавлениеИзменениеПоказателейЭффективностиПроектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоЧтениеПоказателейЭффективностиПроектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоПоказателиЭффективностиПроектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоПоказателиПроектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоДобавлениеИзменениеЗаявокНаПроектыБезПроведения</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Catalog uuid="8703e49b-34c3-463d-961f-96d4d3245cec">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.упоЗадания" category="Object">
+				<xr:TypeId>d354bcfb-d635-4498-9fe2-1f5162be404e</xr:TypeId>
+				<xr:ValueId>087461c2-bef9-4e7d-a04c-6cc946cc194e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.упоЗадания" category="Ref">
+				<xr:TypeId>b19f90e2-76c5-41bc-af8f-8f6b8adcba03</xr:TypeId>
+				<xr:ValueId>468cf367-1054-4545-8367-894f3874bda4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.упоЗадания" category="Selection">
+				<xr:TypeId>8e209860-321b-40ac-b93d-7020663f648e</xr:TypeId>
+				<xr:ValueId>7e3d8eba-29aa-41e8-8df1-70dda0e089db</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.упоЗадания" category="List">
+				<xr:TypeId>cd27272c-1fe7-4829-b9a8-798450aad224</xr:TypeId>
+				<xr:ValueId>15f12a82-91dd-460e-835e-a861a4bf7570</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.упоЗадания" category="Manager">
+				<xr:TypeId>14fa831e-6847-43c8-8bd8-0fd3be82a343</xr:TypeId>
+				<xr:ValueId>3115a10c-5901-4f3c-b49f-5220b46833c8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:PropertyState>
+				<xr:Property>ObjectModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+			<xr:PropertyState>
+				<xr:Property>ManagerModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>упоЗадания</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>d7a14f10-a153-4a1b-9077-392424c31300</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="28eff09d-28e6-45d2-89fd-44402a2b090a">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Исполнитель</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>3d3a2b13-5ca2-4378-b072-4ae39039946e</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.упоТрудовыеРесурсы</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Form>ФормаЭлемента</Form>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

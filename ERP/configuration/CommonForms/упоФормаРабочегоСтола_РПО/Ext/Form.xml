@@ -1,0 +1,931 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Width>56</Width>
+	<AutoTitle>false</AutoTitle>
+	<HorizontalSpacing>None</HorizontalSpacing>
+	<VerticalSpacing>Half</VerticalSpacing>
+	<Customizable>false</Customizable>
+	<CommandBarLocation>None</CommandBarLocation>
+	<ConversationsRepresentation>DontShow</ConversationsRepresentation>
+	<ShowTitle>false</ShowTitle>
+	<ShowCloseButton>false</ShowCloseButton>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnSaveDataInSettingsAtServer">ПриСохраненииДанныхВНастройкахНаСервере</Event>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="NewWriteProcessing">ОбработкаЗаписиНового</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="ExternalEvent">ВнешнееСобытие</Event>
+		<Event name="OnReopen">ПриПовторномОткрытии</Event>
+		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="ActivationProcessing">ОбработкаАктивизации</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+		<Event name="BeforeLoadDataFromSettingsAtServer">ПередЗагрузкойДанныхИзНастроекНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа18" id="209">
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа18РасширеннаяПодсказка" id="210"/>
+			<ChildItems>
+				<UsualGroup name="Группа1" id="3">
+					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа1ExtendedTooltip" id="128"/>
+					<ChildItems>
+						<UsualGroup name="Группа2" id="4">
+							<Height>12</Height>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2ExtendedTooltip" id="129"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация14" id="72">
+									<Height>5</Height>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;fontsize 16&gt;&lt;color #e35f13&gt;Заказы&lt;/&gt;&lt;/&gt;&lt;fontsize 18&gt;&lt;color #6cc1ef&gt;
+&lt;/&gt;&lt;/&gt;&lt;fontsize 18&gt;&lt;color #005197&gt;CRM&lt;/&gt;&lt;/&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<ContextMenu name="Декорация14КонтекстноеМеню" id="73"/>
+									<ExtendedTooltip name="Декорация14ExtendedTooltip" id="132"/>
+								</LabelDecoration>
+								<UsualGroup name="Группа11" id="101">
+									<Height>7</Height>
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа11ExtendedTooltip" id="134"/>
+									<ChildItems>
+										<UsualGroup name="Группа13" id="108">
+											<GroupVerticalAlign>Center</GroupVerticalAlign>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа13ExtendedTooltip" id="135"/>
+											<ChildItems>
+												<RadioButtonField name="ОтборПроектов" id="88">
+													<DataPath>ОтборПроектов</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<RadioButtonType>RadioButtons</RadioButtonType>
+													<ColumnsCount>1</ColumnsCount>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content> </v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xr:DesignTimeRef">Enum.упоВидыСписковПроектов.EnumValue.ПортфельЗаказов</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content> </v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xr:DesignTimeRef">Enum.упоВидыСписковПроектов.EnumValue.ПроектыВИнициации</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content> </v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xr:DesignTimeRef">Enum.упоВидыСписковПроектов.EnumValue.ПроектыВыполняемые</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content> </v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xr:DesignTimeRef">Enum.упоВидыСписковПроектов.EnumValue.ПроектыОстановленные</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content> </v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xr:DesignTimeRef">Enum.упоВидыСписковПроектов.EnumValue.ПроектыЗавершенные</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<BorderColor>style:FormBackColor</BorderColor>
+													<ContextMenu name="ОтборПроектовКонтекстноеМеню" id="89"/>
+													<ExtendedTooltip name="ОтборПроектовExtendedTooltip" id="136"/>
+													<Events>
+														<Event name="OnChange">ОтборПроектовПриИзменении</Event>
+													</Events>
+												</RadioButtonField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="Группа12" id="102">
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа12ExtendedTooltip" id="137"/>
+											<ChildItems>
+												<Button name="ОткрытьПортфельЗаказов" id="116">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.ОткрытьПортфельЗаказов</CommandName>
+													<ShapeRepresentation>None</ShapeRepresentation>
+													<ExtendedTooltip name="ОткрытьПортфельЗаказовExtendedTooltip" id="138"/>
+												</Button>
+												<Button name="ОткрытьПроектыВИнициации" id="117">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.ОткрытьПроектыВИнициации</CommandName>
+													<ShapeRepresentation>None</ShapeRepresentation>
+													<ExtendedTooltip name="ОткрытьПроектыВИнициацииExtendedTooltip" id="139"/>
+												</Button>
+												<Button name="ОткрытьПроектыВыполняемые" id="118">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.ОткрытьПроектыВыполняемые</CommandName>
+													<ShapeRepresentation>None</ShapeRepresentation>
+													<ExtendedTooltip name="ОткрытьПроектыВыполняемыеExtendedTooltip" id="140"/>
+												</Button>
+												<Button name="ОткрытьПроектыОстановленные" id="119">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.ОткрытьПроектыОстановленные</CommandName>
+													<ShapeRepresentation>None</ShapeRepresentation>
+													<ExtendedTooltip name="ОткрытьПроектыОстановленныеExtendedTooltip" id="141"/>
+												</Button>
+												<Button name="ОткрытьПроектыЗавершенные" id="120">
+													<Type>UsualButton</Type>
+													<Representation>PictureAndText</Representation>
+													<CommandName>Form.Command.ОткрытьПроектыЗавершенные</CommandName>
+													<ShapeRepresentation>None</ShapeRepresentation>
+													<ExtendedTooltip name="ОткрытьПроектыЗавершенныеExtendedTooltip" id="142"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа4" id="6">
+							<Width>16</Width>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа4ExtendedTooltip" id="146"/>
+							<ChildItems>
+								<PictureDecoration name="Декорация1" id="1">
+									<Width>14</Width>
+									<Height>5</Height>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<Hyperlink>true</Hyperlink>
+									<PictureSize>Proportionally</PictureSize>
+									<Picture>
+										<xr:Ref>CommonPicture.упоПроектныйТреугольник</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="Декорация1КонтекстноеМеню" id="2"/>
+									<ExtendedTooltip name="Декорация1ExtendedTooltip" id="147"/>
+									<Events>
+										<Event name="Click">Декорация1Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<LabelDecoration name="НадписьERP" id="232">
+									<Visible>false</Visible>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;fontsize 16&gt;&lt;color #e35f13&gt;Ресурсы и
+финансы
+&lt;/&gt;&lt;/&gt;&lt;fontsize 18&gt;&lt;color #005197&gt;ERP&lt;/&gt;&lt;/&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<ContextMenu name="НадписьERPКонтекстноеМеню" id="233"/>
+									<ExtendedTooltip name="НадписьERPРасширеннаяПодсказка" id="234"/>
+								</LabelDecoration>
+								<LabelDecoration name="НадписьPM" id="235">
+									<HorizontalStretch>true</HorizontalStretch>
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;fontsize 16&gt;&lt;color #e35f13&gt;Ресурсы и
+финансы&lt;/&gt;&lt;/&gt;&lt;fontsize 18&gt;&lt;color #6cc1ef&gt;
+&lt;/&gt;&lt;/&gt;&lt;fontsize 18&gt;&lt;color #005197&gt;FRM&lt;/&gt;&lt;/&gt;
+</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<ContextMenu name="НадписьPMКонтекстноеМеню" id="236"/>
+									<ExtendedTooltip name="НадписьPMРасширеннаяПодсказка" id="237"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа3" id="5">
+							<Height>12</Height>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа3ExtendedTooltip" id="163"/>
+							<ChildItems>
+								<UsualGroup name="Группа14" id="222">
+									<Height>5</Height>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа14РасширеннаяПодсказка" id="223"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация18" id="76">
+											<HorizontalStretch>true</HorizontalStretch>
+											<Title formatted="true">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>&lt;fontsize 16&gt;&lt;color #e35f13&gt;Проекты&lt;/&gt;&lt;/&gt;&lt;fontsize 16&gt;&lt;color #e15413&gt;
+&lt;/&gt;&lt;/&gt;&lt;fontsize 18&gt;&lt;color #005197&gt;PMO&lt;/&gt;&lt;/&gt;</v8:content>
+												</v8:item>
+											</Title>
+											<HorizontalAlign>Center</HorizontalAlign>
+											<ContextMenu name="Декорация18КонтекстноеМеню" id="77"/>
+											<ExtendedTooltip name="Декорация18ExtendedTooltip" id="166"/>
+										</LabelDecoration>
+										<InputField name="упоТекущийПроект" id="16">
+											<DataPath>упоТекущийПроект</DataPath>
+											<SkipOnInput>true</SkipOnInput>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Текущий проект</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>None</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Текущий проект</v8:content>
+												</v8:item>
+											</ToolTip>
+											<OpenButton>false</OpenButton>
+											<ChoiceParameters>
+												<app:item name="Отбор.ЭтоПроектнаяЗадача">
+													<app:value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xs:boolean">false</Value>
+													</app:value>
+												</app:item>
+												<app:item name="ЭтоФормаВыбораПроекта">
+													<app:value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xs:boolean">true</Value>
+													</app:value>
+												</app:item>
+											</ChoiceParameters>
+											<InputHint>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Текущий проект</v8:content>
+												</v8:item>
+											</InputHint>
+											<ContextMenu name="упоТекущийПроектКонтекстноеМеню" id="17"/>
+											<ExtendedTooltip name="упоТекущийПроектExtendedTooltip" id="167"/>
+											<Events>
+												<Event name="OnChange">упоТекущийПроектПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа10" id="196">
+									<Height>7</Height>
+									<Group>Horizontal</Group>
+									<HorizontalSpacing>Single</HorizontalSpacing>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа10РасширеннаяПодсказка" id="197"/>
+									<ChildItems>
+										<UsualGroup name="Группа8" id="67">
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа8ExtendedTooltip" id="168"/>
+											<ChildItems>
+												<Button name="СправочникПроектыупоОткрытьТекущийПроект" id="7">
+													<Type>UsualButton</Type>
+													<CommandName>Catalog.Проекты.Command.упоОткрытьТекущийПроект</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Паспорт</v8:content>
+														</v8:item>
+													</Title>
+													<ShapeRepresentation>None</ShapeRepresentation>
+													<ExtendedTooltip name="СправочникПроектыупоОткрытьТекущийПроектExtendedTooltip" id="169"/>
+												</Button>
+												<Button name="ОбработкаупоУпрощенныйВводСтруктурыПроектаупоУпрощенныйВводСтруктурыПроекта" id="127">
+													<Type>UsualButton</Type>
+													<Representation>PictureAndText</Representation>
+													<DefaultItem>true</DefaultItem>
+													<CommandName>DataProcessor.упоУпрощенныйВводСтруктурыПроекта.Command.упоУпрощенныйВводСтруктурыПроекта</CommandName>
+													<DataPath>упоТекущийПроект</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Структура</v8:content>
+														</v8:item>
+													</Title>
+													<ShapeRepresentation>None</ShapeRepresentation>
+													<ExtendedTooltip name="ОбработкаупоУпрощенныйВводСтруктурыПроектаупоУпрощенныйВводСтруктурыПроектаExtendedTooltip" id="171"/>
+												</Button>
+												<Button name="ОбработкаупоТабличныйБюджетДДСПроектаТабличныйБюджетДДСПроекта" id="21">
+													<Type>UsualButton</Type>
+													<Representation>PictureAndText</Representation>
+													<CommandName>DataProcessor.упоТабличныйБюджетДДСПроекта.Command.ТабличныйБюджетДДС</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>БДДС</v8:content>
+														</v8:item>
+													</Title>
+													<ShapeRepresentation>None</ShapeRepresentation>
+													<ExtendedTooltip name="ОбработкаупоТабличныйБюджетДДСПроектаТабличныйБюджетДДСПроектаExtendedTooltip" id="172"/>
+												</Button>
+												<Button name="ОбработкаупоТабличныйБюджетДРПроектаТабличныйБюджетДРПроекта" id="123">
+													<Type>UsualButton</Type>
+													<Representation>PictureAndText</Representation>
+													<CommandName>DataProcessor.упоТабличныйБюджетДРПроекта.Command.ТабличныйБюджетДР</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>БДР</v8:content>
+														</v8:item>
+													</Title>
+													<ShapeRepresentation>None</ShapeRepresentation>
+													<ExtendedTooltip name="ОбработкаупоТабличныйБюджетДРПроектаТабличныйБюджетДРПроектаExtendedTooltip" id="173"/>
+												</Button>
+												<Button name="ОбработкаупоХозяйственныеОперацииПроектаупоХозяйственныеОперацииПроекта" id="194">
+													<Type>UsualButton</Type>
+													<Representation>PictureAndText</Representation>
+													<CommandName>DataProcessor.упоХозяйственныеОперацииПроекта.Command.упоХозяйственныеОперацииПроекта</CommandName>
+													<DataPath>упоТекущийПроект</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Хоз. операции</v8:content>
+														</v8:item>
+													</Title>
+													<ShapeRepresentation>None</ShapeRepresentation>
+													<ExtendedTooltip name="ОбработкаупоХозяйственныеОперацииПроектаупоХозяйственныеОперацииПроектаРасширеннаяПодсказка" id="195"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="Группа15" id="198">
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа15РасширеннаяПодсказка" id="199"/>
+											<ChildItems>
+												<Button name="ЖурналДокументовупоУправлениеПроектомКомандаФазыПроекта" id="124">
+													<Type>UsualButton</Type>
+													<Representation>PictureAndText</Representation>
+													<CommandName>DocumentJournal.упоУправлениеПроектом.Command.КомандаСтатусыПроекта</CommandName>
+													<DataPath>упоТекущийПроект</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Статусы</v8:content>
+														</v8:item>
+													</Title>
+													<ShapeRepresentation>None</ShapeRepresentation>
+													<ExtendedTooltip name="ЖурналДокументовупоУправлениеПроектомКомандаФазыПроектаExtendedTooltip" id="170"/>
+												</Button>
+												<Button name="ОбработкаупоРаботасЗаданиямиРаботасЗаданиямиПроекта" id="190">
+													<Type>UsualButton</Type>
+													<Representation>PictureAndText</Representation>
+													<CommandName>DataProcessor.упоРаботаСЗаданиями.Command.упоРаботаСЗаданиямиПроекта</CommandName>
+													<DataPath>упоТекущийПроект</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Поручения</v8:content>
+														</v8:item>
+													</Title>
+													<ShapeRepresentation>None</ShapeRepresentation>
+													<ExtendedTooltip name="ОбработкаупоРаботасЗаданиямиРаботасЗаданиямиПроектаРасширеннаяПодсказка" id="191"/>
+												</Button>
+												<Button name="ОбработкаупоРаботасЗаданиямиПроектныеРешения" id="188">
+													<Type>UsualButton</Type>
+													<Representation>PictureAndText</Representation>
+													<CommandName>DataProcessor.упоРаботаСЗаданиями.Command.ПроектныеРешенияОбъекта</CommandName>
+													<DataPath>упоТекущийПроект</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Решения</v8:content>
+														</v8:item>
+													</Title>
+													<ShapeRepresentation>None</ShapeRepresentation>
+													<ExtendedTooltip name="ОбработкаупоРаботасЗаданиямиПроектныеРешенияРасширеннаяПодсказка" id="189"/>
+												</Button>
+												<Button name="ОбработкаупоУправлениеВерсиямиПроектаВерсииПроекта" id="203">
+													<Type>UsualButton</Type>
+													<Representation>PictureAndText</Representation>
+													<CommandName>DataProcessor.упоУправлениеВерсиямиПроекта.Command.ВерсииПроекта</CommandName>
+													<DataPath>упоТекущийПроект</DataPath>
+													<ShapeRepresentation>None</ShapeRepresentation>
+													<ExtendedTooltip name="ОбработкаупоУправлениеВерсиямиПроектаВерсииПроектаРасширеннаяПодсказка" id="204"/>
+												</Button>
+												<Button name="ОбщаяКомандаупоРискиПроектов" id="186">
+													<Type>UsualButton</Type>
+													<Representation>PictureAndText</Representation>
+													<CommandName>CommonCommand.упоРискиПроектов</CommandName>
+													<Picture>
+														<xr:Ref>CommonPicture.упоИнтерфейсРискиПроекта16_Цветная</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Риски</v8:content>
+														</v8:item>
+													</Title>
+													<ShapeRepresentation>None</ShapeRepresentation>
+													<ExtendedTooltip name="ОбщаяКомандаупоРискиПроектовРасширеннаяПодсказка" id="187"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа7" id="48">
+					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+					<Group>Vertical</Group>
+					<HorizontalSpacing>Double</HorizontalSpacing>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа7ExtendedTooltip" id="151"/>
+					<ChildItems>
+						<UsualGroup name="Группа22" id="230">
+							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа22РасширеннаяПодсказка" id="231"/>
+							<ChildItems>
+								<UsualGroup name="Группа20" id="213">
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа20РасширеннаяПодсказка" id="214"/>
+									<ChildItems>
+										<CommandBar name="Группа6" id="182">
+											<HorizontalLocation>Center</HorizontalLocation>
+											<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="183"/>
+											<ChildItems>
+												<Popup name="ОтчетыПортфеля" id="43">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Отчеты портфеля</v8:content>
+														</v8:item>
+													</Title>
+													<TitleTextColor>style:упоЦветВажногоСтильITLand</TitleTextColor>
+													<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+													<Picture>
+														<xr:Ref>CommonPicture.Отчеты</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<Representation>PictureAndText</Representation>
+													<ShapeRepresentation>None</ShapeRepresentation>
+													<BorderColor>auto</BorderColor>
+													<ExtendedTooltip name="ОтчетыПортфеляExtendedTooltip" id="144"/>
+												</Popup>
+											</ChildItems>
+										</CommandBar>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа21" id="218">
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа21РасширеннаяПодсказка" id="219"/>
+									<ChildItems>
+										<CommandBar name="Группа5" id="180">
+											<HorizontalLocation>Center</HorizontalLocation>
+											<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="181"/>
+											<ChildItems>
+												<Popup name="ОтчетыПроекта" id="20">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Отчеты проекта</v8:content>
+														</v8:item>
+													</Title>
+													<TitleTextColor>style:упоЦветВажногоСтильITLand</TitleTextColor>
+													<Picture>
+														<xr:Ref>CommonPicture.Отчеты</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<Representation>PictureAndText</Representation>
+													<ShapeRepresentation>None</ShapeRepresentation>
+													<BorderColor>auto</BorderColor>
+													<ExtendedTooltip name="ОтчетыПроектаExtendedTooltip" id="174"/>
+												</Popup>
+											</ChildItems>
+										</CommandBar>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа16" id="205">
+							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа16РасширеннаяПодсказка" id="206"/>
+							<ChildItems>
+								<UsualGroup name="Группа9" id="113">
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа9ExtendedTooltip" id="153"/>
+									<ChildItems>
+										<Button name="ОтчетупоАнализПроектовПоПоказателямОткрытьАнализПроектаПоПоказателям" id="126">
+											<Type>UsualButton</Type>
+											<Representation>PictureAndText</Representation>
+											<CommandName>DataProcessor.упоПанельПоказателей.Command.ОткрытьупоПанельПоказателей</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.упоПанельРуководителя</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<ExtendedTooltip name="ОтчетупоАнализПроектовПоПоказателямОткрытьАнализПроектаПоПоказателямExtendedTooltip" id="154"/>
+										</Button>
+										<Button name="ОбработкаупоАнализВыполнимостиПроектовОткрыть" id="125">
+											<Type>UsualButton</Type>
+											<Representation>PictureAndText</Representation>
+											<CommandName>DataProcessor.упоАнализВыполнимостиПроектов.Command.ОткрытьОбработкуупоАнализВыполнимостиПроектов</CommandName>
+											<Picture>
+												<xr:Ref>StdPicture.PivotChart</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Анализ выполнимости проектов</v8:content>
+												</v8:item>
+											</Title>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<ExtendedTooltip name="ОбработкаупоАнализВыполнимостиПроектовОткрытьExtendedTooltip" id="155"/>
+										</Button>
+										<Button name="ОбработкаупоОперативнаяЗагрузкаСпециалистовОткрыть" id="47">
+											<Type>UsualButton</Type>
+											<Representation>PictureAndText</Representation>
+											<CommandName>DataProcessor.упоОперативнаяЗагрузкаСпециалистов.Command.ОткрытьОбработку_упоОперативнаяЗагрузкаСпециалистов</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.упоОперативнаяЗагрузкаСпециалистов</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<ExtendedTooltip name="ОбработкаупоОперативнаяЗагрузкаСпециалистовОткрытьExtendedTooltip" id="156"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа17" id="207">
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа17РасширеннаяПодсказка" id="208"/>
+									<ChildItems>
+										<UsualGroup name="Группа19" id="224">
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа19РасширеннаяПодсказка" id="225"/>
+										</UsualGroup>
+										<Button name="ОтчетупоТематическийПланОткрытьОтчетупоТематическийПлан" id="178">
+											<Type>UsualButton</Type>
+											<Representation>PictureAndText</Representation>
+											<CommandName>Report.упоТематическийПлан.Command.ОткрытьОтчетупоТематическийПлан</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.упоТематическийПлан</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<ExtendedTooltip name="ОтчетупоТематическийПланОткрытьОтчетупоТематическийПланРасширеннаяПодсказка" id="179"/>
+										</Button>
+										<Button name="ОткрытьСтруктуруПрограммыПортфеля" id="220">
+											<Type>UsualButton</Type>
+											<Representation>PictureAndText</Representation>
+											<MaxWidth>26</MaxWidth>
+											<CommandName>Form.Command.ОткрытьСтруктуруПрограммыПортфеля</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Структура программы/ портфеля</v8:content>
+												</v8:item>
+											</Title>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<ExtendedTooltip name="ОткрытьСтруктуруПрограммыПортфеляРасширеннаяПодсказка" id="221"/>
+										</Button>
+										<Button name="ДокументупоРаспределениеРабочегоВремениЗаНеделюОткрытьСписок" id="112">
+											<Type>UsualButton</Type>
+											<Representation>PictureAndText</Representation>
+											<CommandName>Document.упоРаспределениеРабочегоВремениЗаНеделю.StandardCommand.OpenList</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.упоРаспределениеРабочегоВремени</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Распределение рабочего времени</v8:content>
+												</v8:item>
+											</Title>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<ExtendedTooltip name="ДокументупоРаспределениеРабочегоВремениЗаНеделюОткрытьСписокExtendedTooltip" id="157"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="упоТекущийПроект" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий проект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="упоТекущийПортфель" id="2">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РесурсыИФинансы" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ресурсы и финансы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборПроектов" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проекты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.упоВидыСписковПроектов</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ФазыПроекта" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фазы проекта</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фазы проекта</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.DocumentJournal</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ФазыПроекта</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ФазыПроектов" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фазы проектов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фазы проекта</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.DocumentJournal</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ФазыПроекта</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьПортфельЗаказов" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Портфель заказов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Портфель заказов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.упоПортфельЗаказов</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьПортфельЗаказов</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьПроектыВИнициации" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проекты в инициации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проекты в инициации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.упоПроектыВИнициации</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьПроектыВИнициации</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьПроектыВыполняемые" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполняемые проекты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполняемые проекты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.упоПроектыВыполняемые</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьПроектыВыполняемые</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьПроектыОстановленные" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остановленные проекты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остановленные проекты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.упоПроектыОстановленные</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьПроектыОстановленные</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьПроектыЗавершенные" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завершенные проекты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завершенные проекты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.упоПроектыЗавершенные</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьПроектыЗавершенные</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьСтруктуруПрограммыПортфеля" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть структуру программы портфеля</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть структуру программы портфеля</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.упоСтруктураПрограммы</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьСтруктуруПрограммыПортфеля</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

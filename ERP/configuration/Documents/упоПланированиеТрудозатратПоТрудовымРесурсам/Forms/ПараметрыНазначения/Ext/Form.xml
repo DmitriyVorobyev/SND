@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="19">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="20"/>
+			<ChildItems>
+				<LabelDecoration name="Декорация1" id="36">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Назначить</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="Декорация1КонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="38"/>
+				</LabelDecoration>
+				<LabelField name="ТрудовойРесурс" id="13">
+					<DataPath>ТрудовойРесурс</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<Width>13</Width>
+					<Hiperlink>true</Hiperlink>
+					<ContextMenu name="ТрудовойРесурсКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ТрудовойРесурсРасширеннаяПодсказка" id="15"/>
+				</LabelField>
+				<LabelField name="Роль" id="21">
+					<DataPath>Роль</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>как</v8:content>
+						</v8:item>
+					</Title>
+					<Width>18</Width>
+					<Hiperlink>true</Hiperlink>
+					<ContextMenu name="РольКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="РольРасширеннаяПодсказка" id="23"/>
+				</LabelField>
+				<LabelField name="ПроектнаяЗадачаЗеркало" id="16">
+					<DataPath>ПроектнаяЗадачаЗеркало</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>на</v8:content>
+						</v8:item>
+					</Title>
+					<Width>30</Width>
+					<Hiperlink>true</Hiperlink>
+					<ContextMenu name="ПроектнаяЗадачаЗеркалоКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ПроектнаяЗадачаЗеркалоРасширеннаяПодсказка" id="18"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<CheckBoxField name="ДобавитьВОчередь" id="41">
+			<DataPath>ДобавитьВОчередь</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ДобавитьВОчередьКонтекстноеМеню" id="42"/>
+			<ExtendedTooltip name="ДобавитьВОчередьРасширеннаяПодсказка" id="43"/>
+			<Events>
+				<Event name="OnChange">ДобавитьВОчередьПриИзменении</Event>
+			</Events>
+		</CheckBoxField>
+		<UsualGroup name="ГруппаПараметров" id="44">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметров</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПараметровРасширеннаяПодсказка" id="45"/>
+			<ChildItems>
+				<InputField name="ПрофильРаспределения" id="1">
+					<DataPath>ПрофильРаспределения</DataPath>
+					<ContextMenu name="ПрофильРаспределенияКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ПрофильРаспределенияРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<UsualGroup name="Группа3" id="29">
+					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="30"/>
+					<ChildItems>
+						<InputField name="ДатаСтарта" id="4">
+							<DataPath>ДатаСтарта</DataPath>
+							<ContextMenu name="ДатаСтартаКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="ДатаСтартаРасширеннаяПодсказка" id="6"/>
+							<Events>
+								<Event name="OnChange">ДатаСтартаПриИзменении</Event>
+							</Events>
+						</InputField>
+						<LabelField name="МинимальнаяДатаСтарта" id="31">
+							<DataPath>МинимальнаяДатаСтарта</DataPath>
+							<ContextMenu name="МинимальнаяДатаСтартаКонтекстноеМеню" id="32"/>
+							<ExtendedTooltip name="МинимальнаяДатаСтартаРасширеннаяПодсказка" id="33"/>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа5" id="49">
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="50"/>
+					<ChildItems>
+						<UsualGroup name="Группа4" id="39">
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="40"/>
+							<ChildItems>
+								<InputField name="КоличествоЧасов" id="7">
+									<DataPath>КоличествоЧасов</DataPath>
+									<EditFormat>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ЧДЦ=1; ЧН=; ЧГ=</v8:content>
+										</v8:item>
+									</EditFormat>
+									<ContextMenu name="КоличествоЧасовКонтекстноеМеню" id="8"/>
+									<ExtendedTooltip name="КоличествоЧасовРасширеннаяПодсказка" id="9"/>
+									<Events>
+										<Event name="OnChange">КоличествоЧасовПриИзменении</Event>
+									</Events>
+								</InputField>
+								<CheckBoxField name="РаспределятьНаПериодПланирования" id="51">
+									<DataPath>РаспределятьНаПериодПланирования</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="РаспределятьНаПериодПланированияКонтекстноеМеню" id="52"/>
+									<ExtendedTooltip name="РаспределятьНаПериодПланированияРасширеннаяПодсказка" id="53"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа2" id="24">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<HorizontalAlign>Left</HorizontalAlign>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="25"/>
+							<ChildItems>
+								<LabelField name="КоличествоЧасовПоРолиЗаПериод" id="46">
+									<DataPath>КоличествоЧасовПоРолиЗаПериод</DataPath>
+									<TitleLocation>Left</TitleLocation>
+									<HorizontalAlign>Left</HorizontalAlign>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="КоличествоЧасовПоРолиЗаПериодКонтекстноеМеню" id="47"/>
+									<ExtendedTooltip name="КоличествоЧасовПоРолиЗаПериодРасширеннаяПодсказка" id="48"/>
+								</LabelField>
+								<LabelField name="КоличествоЧасовПоРоли" id="26">
+									<DataPath>КоличествоЧасовПоРоли</DataPath>
+									<HorizontalAlign>Left</HorizontalAlign>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="КоличествоЧасовПоРолиКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="КоличествоЧасовПоРолиРасширеннаяПодсказка" id="28"/>
+								</LabelField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="ДоляТрудозатрат" id="10">
+					<DataPath>ДоляТрудозатрат</DataPath>
+					<EditFormat>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧН=; ЧГ=</v8:content>
+						</v8:item>
+					</EditFormat>
+					<ContextMenu name="ДоляТрудозатратКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ДоляТрудозатратРасширеннаяПодсказка" id="12"/>
+					<Events>
+						<Event name="OnChange">ДоляТрудозатратПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Button name="КомандаНазначить" id="34">
+			<Type>UsualButton</Type>
+			<DefaultButton>true</DefaultButton>
+			<CommandName>Form.Command.КомандаНазначить</CommandName>
+			<ExtendedTooltip name="КомандаНазначитьРасширеннаяПодсказка" id="35"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ПрофильРаспределения" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Профиль распределения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.упоПрофилиРаспределенияТрудозатрат</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ДатаСтарта" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата старта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="МинимальнаяДатаСтарта" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Минимальная дата старта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоЧасовПоРоли" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество часов по роли (за все время)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоЧасов" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество часов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДоляТрудозатрат" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доля трудозатрат, %</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>7</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТрудовойРесурс" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Трудовой ресурс</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.упоТрудовыеРесурсы</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПроектнаяЗадачаЗеркало" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проектная задача зеркало</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Роль" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Роль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.упоРоли</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="УИДСтрокиЗадачи" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>УИДСтроки задачи</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДобавитьВОчередь" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить в очередь</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ДобавитьВОчередь</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="КоличествоЧасовПоРолиЗаПериод" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество часов по роли (за период)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РаспределятьНаПериодПланирования" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Распределять на период планирования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаНазначить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Назначить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Назначить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаНазначить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

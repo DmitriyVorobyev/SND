@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta><link rel="stylesheet" type="text/css" href="v8help://service_book/service_style"></link><meta name="GENERATOR" content="MSHTML 11.00.9600.19155"></meta></head><body>
+<h1>Документ Регистрация значений показателей эффективности проекта</h1>
+<h2>Назначение</h2>
+<p>Документ "Регистрация значений показателей эффективности проекта" предназначен для регистрации в системе текущих значений показателей эффективности инвестиций для выбранного проекта.</p>
+<p class="Important"><font color="#ff0000"><strong>Важно!</strong></font> При помощи документа "Регистрация значений показателей эффективности проекта" можно ввести в систему значения только тех показателей, для которых установлен режим заполнения <em>Автоматически в документе расчет эффективности</em>.</p>
+<h2>Форма объекта</h2>
+<p>При создании документа "Регистрация значений показателей эффективности проекта" необходимо заполнить следующие реквизиты:</p>
+<menu><li><strong>Номер</strong> — уникальный номер документа (формируется автоматически); 
+</li>
+<li><strong>Дата</strong> — дата документа (по умолчанию подставляется текущая дата); 
+</li>
+<li><strong>Проект</strong> — проект, для которого необходимо выполнить регистрацию показателей; 
+</li>
+<li><strong>Период расчета</strong> — в расчете показателей эффективности используются плановые данные БДДС по проекту за указанный период;
+</li>
+<li>Кнопка <strong class="ControlElement">Заполнить период по сроку проекта</strong> — автоматически заполняет период расчета по плановым датам начала и завершения проекта (начало самой ранней и завершение самой поздней задач).
+</li></menu><p>Значения показателей записываются в табличную часть документа, которая содержит следующие реквизиты:</p>
+<menu><li><strong>Индикатор</strong> — элемент справочника <a href="Catalog.упоПоказателиПроектов/Help">Показатели проектов</a>; 
+</li>
+<li><strong>Значение индикатора</strong> — текущее значение показателя.</li></menu><p>Для заполнения табличной части используются следующие кнопки:</p>
+<menu><li>Кнопка <strong class="ControlElement">Добавить</strong> / <strong class="ControlElement">Подобрать</strong> — вызвать универсальную форму подбора табличных частей документов; 
+</li>
+<li>Кнопка <strong class="ControlElement">Заполнить</strong> — вызвать функцию автоматического заполнения табличной части (туда будут помещены все возможные показатели проекта с режимом заполнения <em>Автоматически в документе расчет эффективности</em>); 
+</li>
+<li>Кнопка <strong class="ControlElement">Пересчитать</strong> — выполнить расчет значений показателей за указанный период.</li></menu><p>Значения показателей эффективности инвестиций для проекта рассчитываются на основании плановых данных БДДС с учетом ставки дисконтирования.</p>
+<p class="Important"><strong><font color="#ff0000">Важно!</font></strong> В качестве ставки дисконтирования используется значение элемента справочника <a href="Catalog.упоПоказателиПроектов/Help">Показатели проектов</a>, указанного в <a href="CommonForm.упоНастройкаПараметровPM/Help">Параметрах подсистемы PM</a> как показатель ставки дисконтирования (группа настроек "Заявки на проекты"), зарегистрированное для проекта документом <a href="Document.упоРегистрацияПоказателейПроекта/Help">Регистрация значений показателей проектов</a>.</p>
+<p>Показатели эффективности проекта:</p>
+<menu><li><strong>Чистая приведенная стоимость NPV</strong> — разница между всеми поступлениями и выплатами, приведенными к текущему моменту времени.
+</li></menu><table cellspacing="1" cellpadding="1" width="" align="center" bgcolor="#116611"><tbody><tr><td>
+<table cellspacing="1" cellpadding="5" width="" bgcolor="#ffffff"><tbody><tr bgcolor="#ffffff"><td width="" rowspan="5" align="center"><strong><nobr>NPV =</nobr></strong></td>
+<td width="" align="center"><strong><nobr>n</nobr></strong></td>
+<td width="" rowspan="2" align="center"><strong><nobr>CF<sub>t</sub></nobr></strong></td>
+<td width="" rowspan="5" align="center"><strong><nobr>—</nobr></strong></td>
+<td width="" rowspan="5" align="center"><strong><nobr>I</nobr></strong></td></tr><tr bgcolor="#ffffff"><td rowspan="3" align="center"><strong><nobr>∑</nobr></strong></td></tr><tr bgcolor="#ffffff"><td align="center"><strong><nobr>──────</nobr></strong></td></tr><tr bgcolor="#ffffff"><td rowspan="2" align="center"><strong><nobr>(1 + r)<sup>t</sup></nobr></strong></td>
+</tr><tr bgcolor="#ffffff"><td align="center"><strong><nobr>t=1</nobr></strong></td></tr></tbody></table></td></tr></tbody></table><menu><menu><li><em>n</em> — длительность жизненного цикла проекта;
+</li>
+<li><em>t</em> — период жизненного цикла проекта;
+</li>
+<li><em>CF<sub>t</sub></em> — денежный поток в период t;
+</li>
+<li><em>r</em> — ставка дисконтирования;
+</li>
+<li><em>I</em> — начальный инвестируемый капитал.</li></menu><li><strong>Внутренняя ставка доходности IRR</strong> — процентная ставка, при которой чистая приведенная стоимость (NPV) равна 0.</li></menu><table cellspacing="1" cellpadding="1" width="" align="center" bgcolor="#116611"><tbody><tr><td>
+<table cellspacing="1" cellpadding="3" width="" bgcolor="#ffffff"><tbody><tr bgcolor="#ffffff"><td width="" rowspan="5" align="center"><strong><nobr>I =</nobr></strong></td>
+<td width="" align="center"><strong><nobr>n</nobr></strong></td>
+<td width="" rowspan="2" align="center"><strong><nobr>CF<sub>t</sub></nobr></strong></td></tr><tr bgcolor="#ffffff"><td rowspan="3" align="center"><strong><nobr>∑</nobr></strong></td></tr><tr bgcolor="#ffffff"><td align="center"><strong><nobr>──────</nobr></strong></td></tr><tr bgcolor="#ffffff"><td rowspan="2" align="center"><strong><nobr>(1 + IRR)<sup>t</sup></nobr></strong></td></tr><tr bgcolor="#ffffff"><td align="center"><strong><nobr>t=1</nobr></strong></td></tr></tbody></table></td></tr></tbody></table><menu><li><strong>Срок окупаемости PBP</strong> — период времени, необходимый для того, чтобы доходы, генерируемые инвестициями, покрыли затраты на инвестиции.</li></menu><table cellspacing="1" cellpadding="1" width="" align="center" bgcolor="#116611"><tbody><tr><td>
+<table cellspacing="1" cellpadding="3" width="" bgcolor="#ffffff"><tbody><tr bgcolor="#ffffff"><td width="" rowspan="3" align="center"><strong><nobr>PBP = n, если</nobr></strong></td>
+<td width="" align="center"><strong><nobr>n</nobr></strong></td>
+<td width="" rowspan="3" align="center"><strong><nobr>CF<sub>t</sub> &gt; I</nobr></strong></td></tr><tr bgcolor="#ffffff"><td align="center"><strong><nobr>∑</nobr></strong></td></tr><tr bgcolor="#ffffff"><td align="center"><strong><nobr>t=1</nobr></strong></td></tr></tbody></table></td></tr></tbody></table><menu><li><strong>Индекс прибыльности PI</strong> — отношение приведенной величины поступлений к приведенной величине платежей.</li></menu><table cellspacing="1" cellpadding="1" width="" align="center" bgcolor="#116611"><tbody><tr><td>
+<table cellspacing="1" cellpadding="3" width="" bgcolor="#ffffff"><tbody><tr bgcolor="#ffffff"><td><strong><nobr></nobr></strong></td>
+<td width="" align="center"><strong><nobr>n</nobr></strong></td>
+<td width="" rowspan="2" align="center"><strong><nobr>CF<sub>t</sub></nobr></strong></td></tr><tr bgcolor="#ffffff"><td><strong><nobr></nobr></strong></td>
+<td rowspan="3" align="center"><strong><nobr>∑</nobr></strong></td></tr><tr bgcolor="#ffffff"><td><strong><nobr></nobr></strong></td>
+<td align="center"><strong><nobr>──────</nobr></strong></td></tr><tr bgcolor="#ffffff"><td><strong><nobr></nobr></strong></td>
+<td rowspan="2" align="center"><strong><nobr>(1 + IRR)<sup>t</sup></nobr></strong></td></tr><tr bgcolor="#ffffff"><td width="" rowspan="3" align="center"><strong><nobr>PI =</nobr></strong></td>
+<td align="center"><strong><nobr>t=1</nobr></strong></td></tr><tr bgcolor="#ffffff"><td colspan="2" align="center"><strong><nobr>────────────</nobr></strong></td></tr><tr bgcolor="#ffffff"><td colspan="2" align="center"><strong><nobr>I</nobr></strong></td></tr></tbody></table></td></tr></tbody></table><menu><li><strong>Чистый денежный поток NCF</strong> — разность между суммами поступлений и выплат денежных средств.</li></menu><table cellspacing="1" cellpadding="1" width="" align="center" bgcolor="#116611"><tbody><tr><td>
+<table cellspacing="1" cellpadding="1" width="" bgcolor="#ffffff"><tbody><tr bgcolor="#ffffff"><td><strong><nobr>NCF = CF<sub>+</sub> - CF<sub>-</sub></nobr></strong></td></tr></tbody></table></td></tr></tbody></table><menu><menu><li><em>CF<sub>+</sub></em> — положительный денежный поток;
+</li>
+<li><em>CF<sub>-</sub></em> — отрицательный денежный поток.</li></menu></menu><h3>Дополнительно</h3>
+<p>Значения показателей проекта, которые были введены в систему при помощи документа, можно проанализировать при помощи отчета <a href="Report.упоАнализПроектовПоПоказателямСКД/Help">Анализ проектов по показателям</a> или при помощи обработки <a href="DataProcessor.упоПанельПоказателей/Help">Панель руководителя</a>.</p></body></html>

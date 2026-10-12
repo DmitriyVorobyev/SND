@@ -1,0 +1,646 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Настройки заполнения направления деятельности по умолчанию</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаОбъектыУчета" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объекты аналитического учета</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<ExtendedTooltip name="ГруппаОбъектыУчетаРасширеннаяПодсказка" id="32"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаУчетДоходов" id="33">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Учет доходов</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаУчетДоходовРасширеннаяПодсказка" id="34"/>
+					<ChildItems>
+						<CheckBoxField name="УчетДоходов" id="35">
+							<DataPath>УчетДоходов</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="УчетДоходовКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="УчетДоходовРасширеннаяПодсказка" id="37"/>
+						</CheckBoxField>
+						<LabelDecoration name="УчетДоходовПояснение" id="38">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Учет по направлению деятельности расчетов с клиентами, выручки и прочих доходов.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="УчетДоходовПояснениеКонтекстноеМеню" id="39"/>
+							<ExtendedTooltip name="УчетДоходовПояснениеРасширеннаяПодсказка" id="40"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаУчетРасчетовСПоставщиками" id="135">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Учет расчетов с поставщиками</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Vendor AR/AP</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаУчетРасчетовСПоставщикамиРасширеннаяПодсказка" id="136"/>
+					<ChildItems>
+						<CheckBoxField name="УчетРасчетовСПоставщиками" id="137">
+							<DataPath>УчетРасчетовСПоставщиками</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="УчетРасчетовСПоставщикамиКонтекстноеМеню" id="138"/>
+							<ExtendedTooltip name="УчетРасчетовСПоставщикамиРасширеннаяПодсказка" id="139"/>
+						</CheckBoxField>
+						<LabelDecoration name="УчетРасчетовСПоставщикамиПояснение" id="140">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Учет по направлению деятельности расчетов с поставщиками.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Accounting in the line of business of vendor AR/AP.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="УчетРасчетовСПоставщикамиПояснениеКонтекстноеМеню" id="141"/>
+							<ExtendedTooltip name="УчетРасчетовСПоставщикамиПояснениеРасширеннаяПодсказка" id="142"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаУчетДС" id="56">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Учет ДС</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаУчетДСРасширеннаяПодсказка" id="57"/>
+					<ChildItems>
+						<CheckBoxField name="ДенежныеСредства" id="58">
+							<DataPath>УчетДенежныхСредств</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ДенежныеСредстваКонтекстноеМеню" id="59"/>
+							<ExtendedTooltip name="ДенежныеСредстваРасширеннаяПодсказка" id="60"/>
+							<Events>
+								<Event name="OnChange">ДенежныеСредстваПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<LabelDecoration name="ДенежныеСредстваПояснение" id="61">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Учет денежных средств в кассах и на банковских счетах по направлению деятельности.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДенежныеСредстваПояснениеКонтекстноеМеню" id="62"/>
+							<ExtendedTooltip name="ДенежныеСредстваПояснениеРасширеннаяПодсказка" id="63"/>
+						</LabelDecoration>
+						<UsualGroup name="ГруппаСпособУчетаДС" id="64">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Способ учета ДС</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаСпособУчетаДСРасширеннаяПодсказка" id="65"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация2" id="66">
+									<ContextMenu name="Декорация2КонтекстноеМеню" id="67"/>
+									<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="68"/>
+								</LabelDecoration>
+								<RadioButtonField name="СпособУчетаДС" id="69">
+									<DataPath>СпособУчетаДС</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<RadioButtonType>RadioButtons</RadioButtonType>
+									<ColumnsCount>1</ColumnsCount>
+									<EqualColumnsWidth>true</EqualColumnsWidth>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>под направления выделяются отдельные кассы и банковские счета</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">РаздельныйУчет</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>остатки денежных средств определяются по корреспонденции приходов и расходов этого направления</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">ПоКорреспонденции</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="СпособУчетаДСКонтекстноеМеню" id="70"/>
+									<ExtendedTooltip name="СпособУчетаДСРасширеннаяПодсказка" id="71"/>
+									<Events>
+										<Event name="OnChange">СпособУчетаДСПриИзменении</Event>
+									</Events>
+								</RadioButtonField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаУчетЗатрат" id="41">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Учет затрат</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаУчетЗатратРасширеннаяПодсказка" id="42"/>
+					<ChildItems>
+						<CheckBoxField name="УчетЗатрат" id="43">
+							<DataPath>УчетЗатрат</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Учет запасов и расходов</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="УчетЗатратКонтекстноеМеню" id="44"/>
+							<ExtendedTooltip name="УчетЗатратРасширеннаяПодсказка" id="45"/>
+							<Events>
+								<Event name="OnChange">УчетЗатратПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<LabelDecoration name="УчетЗатратПояснение" id="46">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Учет по направлению деятельности расчетов с поставщиками, запасов, производства и прочих расходов.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="УчетЗатратПояснениеКонтекстноеМеню" id="47"/>
+							<ExtendedTooltip name="УчетЗатратПояснениеРасширеннаяПодсказка" id="48"/>
+						</LabelDecoration>
+						<UsualGroup name="ГруппаДенежныеСредстваВнеоборотныеАктивы" id="49">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Денежные средства И Внеоборотные активы</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДенежныеСредстваВнеоборотныеАктивыРасширеннаяПодсказка" id="50"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияОступ" id="51">
+									<ContextMenu name="ДекорацияОступКонтекстноеМеню" id="52"/>
+									<ExtendedTooltip name="ДекорацияОступРасширеннаяПодсказка" id="53"/>
+								</LabelDecoration>
+								<UsualGroup name="ГруппаДСиВА" id="54">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Д си ВА</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаДСиВАРасширеннаяПодсказка" id="55"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаВнеоборотныеАктивы1" id="72">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа внеоборотные активы</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаВнеоборотныеАктивы1РасширеннаяПодсказка" id="73"/>
+											<ChildItems>
+												<CheckBoxField name="ВнеоборотныеАктивы" id="74">
+													<DataPath>УчетВнеоборотныхАктивов</DataPath>
+													<TitleLocation>Right</TitleLocation>
+													<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ВнеоборотныеАктивыКонтекстноеМеню" id="75"/>
+													<ExtendedTooltip name="ВнеоборотныеАктивыРасширеннаяПодсказка" id="76">
+														<Title formatted="false">
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Аналитический учет по направлению деятельности ОС и НМА.</v8:content>
+															</v8:item>
+														</Title>
+													</ExtendedTooltip>
+												</CheckBoxField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаОбособлениеСверхПотребностиОтступ" id="106">
+							<EnableContentChange>true</EnableContentChange>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Обособление сверх потребности отступ</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОбособлениеСверхПотребностиОтступРасширеннаяПодсказка" id="107"/>
+							<ChildItems>
+								<LabelDecoration name="НадписьОтступОбеспечениеСверхПотребности" id="108">
+									<ContextMenu name="НадписьОтступОбеспечениеСверхПотребностиКонтекстноеМеню" id="109"/>
+									<ExtendedTooltip name="НадписьОтступОбеспечениеСверхПотребностиРасширеннаяПодсказка" id="110"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаРежимНалогообложения" id="119">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим налогообложения</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаРежимНалогообложенияРасширеннаяПодсказка" id="120"/>
+			<ChildItems>
+				<LabelDecoration name="ЗаголовокРежимНалогообложения" id="121">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Налогообложение реализации по направлению:</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ЗаголовокРежимНалогообложенияКонтекстноеМеню" id="122"/>
+					<ExtendedTooltip name="ЗаголовокРежимНалогообложенияРасширеннаяПодсказка" id="123"/>
+				</LabelDecoration>
+				<UsualGroup name="ГруппаРежимНалогообложенияОпределяетсяЗначением" id="124">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Налогообложение реализации по направлению</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаРежимНалогообложенияОпределяетсяЗначениемРасширеннаяПодсказка" id="125"/>
+					<ChildItems>
+						<RadioButtonField name="РежимНалогообложенияОпределяетсяЗначением" id="126">
+							<DataPath>РежимНалогообложения</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Налогооблжение операций по договору</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>None</TitleLocation>
+							<RadioButtonType>Auto</RadioButtonType>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>определяется указанным значением</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">0</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="РежимНалогообложенияОпределяетсяЗначениемКонтекстноеМеню" id="127"/>
+							<ExtendedTooltip name="РежимНалогообложенияОпределяетсяЗначениемРасширеннаяПодсказка" id="128"/>
+							<Events>
+								<Event name="OnChange">РежимНалогообложенияПриИзменении</Event>
+							</Events>
+						</RadioButtonField>
+						<InputField name="НалогообложениеНДС" id="129">
+							<DataPath>НалогообложениеНДС</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<Width>25</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ListChoiceMode>true</ListChoiceMode>
+							<AutoMarkIncomplete>true</AutoMarkIncomplete>
+							<ContextMenu name="НалогообложениеНДСКонтекстноеМеню" id="130"/>
+							<ExtendedTooltip name="НалогообложениеНДСРасширеннаяПодсказка" id="131"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<RadioButtonField name="РежимНалогообложенияОпределяетсяВДокументе" id="132">
+					<DataPath>РежимНалогообложения</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<RadioButtonType>Auto</RadioButtonType>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>определяется в заказах и накладных</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">1</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="РежимНалогообложенияОпределяетсяВДокументеКонтекстноеМеню" id="133"/>
+					<ExtendedTooltip name="РежимНалогообложенияОпределяетсяВДокументеРасширеннаяПодсказка" id="134"/>
+					<Events>
+						<Event name="OnChange">РежимНалогообложенияПриИзменении</Event>
+					</Events>
+				</RadioButtonField>
+			</ChildItems>
+		</UsualGroup>
+		<CommandBar name="Группа2" id="22">
+			<HorizontalLocation>Right</HorizontalLocation>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="23"/>
+			<ChildItems>
+				<Button name="ЗаписатьИЗакрыть" id="24">
+					<Type>CommandBarButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>Form.Command.ЗаписатьИЗакрыть</CommandName>
+					<ExtendedTooltip name="ЗаписатьИЗакрытьРасширеннаяПодсказка" id="25"/>
+				</Button>
+				<Button name="Записать" id="18">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.Записать</CommandName>
+					<ExtendedTooltip name="ЗаписатьРасширеннаяПодсказка" id="19"/>
+				</Button>
+				<Button name="Закрыть" id="20">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.StandardCommand.Close</CommandName>
+					<ExtendedTooltip name="ЗакрытьРасширеннаяПодсказка" id="21"/>
+				</Button>
+				<Button name="Справка" id="143">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.StandardCommand.Help</CommandName>
+					<ExtendedTooltip name="СправкаРасширеннаяПодсказка" id="144"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="УчетДоходов" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учет расчетов с клиентами и доходов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="УчетЗатрат" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учет затрат</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="УчетДенежныхСредствРаздельно" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учет денежных средств раздельно</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="УчетДенежныхСредствПоКорреспонденции" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учет денежных средств по корреспонденции</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="УчетВнеоборотныхАктивов" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учет внеоборотных активов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="УчетДенежныхСредств" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учет денежных средств</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="СпособУчетаДС" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Способ учета ДС</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>20</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ДопускаетсяОбособлениеСверхПотребности" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Допускается обособление сверх потребности</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РежимНалогообложения" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим налогообложения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НалогообложениеНДС" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Налогообложение НДС</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ТипыНалогообложенияНДС</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="УчетНДСКэшированныеЗначенияПараметров" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учет НДС кэшированные значения параметров</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="УчетРасчетовСПоставщиками" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учет расчетов с поставщиками</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Записать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Записать</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗаписатьИЗакрыть" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать и закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать и закрыть</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаписатьИЗакрыть</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Subsystem uuid="a806d3f8-1c8d-41b8-9ad6-2ab2743c4890">
+		<Properties>
+			<Name>упоОбъемыИВыполнениеПроектов</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объемы и выполнение проектов</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоАналитикаПоПодразделениямКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоАналитикаПоПодразделениямСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоДоходыПоПодразделениям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоДоходыПоНатуральнымПоказателям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоРасходыПоПодразделениям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоДоходыПоОбъемам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоРасходыПоОбъемам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоРасходыПоНатуральнымПоказателям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоНатуральныйПоказательДоходовПоУмолчанию</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоРольДоходовПоУмолчанию</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоПодразделениеДоходовПоУмолчанию</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоНатуральныйПоказательРасходовПоУмолчанию</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоРольРасходовПоУмолчанию</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоПодразделениеРасходовПоУмолчанию</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоВедетсяБюджетДоходов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоНормаСтоимостиПоУмолчаниюВнешняя</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоВедетсяБюджетРасходов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоПланироватьЗатратыНаМатериалы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоПланироватьДополнительныеЗатратыПоЗадаче</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоСтатьяДоходовПоУмолчанию</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоСтатьяЗатратПоУмолчанию</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоПрофильДоходовПоУмолчанию</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоПрофильРасходовПоУмолчанию</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоСобственныеСилыСубподряд</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоПортфелиПроектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Проекты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоПроектнаяЗадача</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияФактическихДоходовИРасходов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияФактическиВыполненногоОбъема</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДоговорыКонтрагентов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоРоли</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоСтатусыОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.упоСпособПривязкиРаспределения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.упоПланФактныйАнализБДР_Подразделения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.упоВыполненныеИПринятыеОбъемы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.упоПланФактныйАнализРаспределенияОбъемов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.упоСкользящийБДРОбъемыБДДС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.упоБюджетСМРПоГлавамССР</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.упоАнализВыполнимостиПроектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.упоНастройкаУчетаВРазрезеПодразделений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоДанныеПлановДоходовИРасходов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоДанныеПлановВыпускаСубпродуктов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоДанныеПлановПотребностейМатериальныхРесурсов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоДанныеПлановТрудозатратРолей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоНастройкаАналитикиВРазрезеПодразделений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоАктуальныеПланыВыполненияОбъемов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоАктуальныеПланыДоходовИРасходовПодразделения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоДанныеПлановОбъемовПодразделения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоДанныеПлановДоходовИРасходовПодразделения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоДанныеРаспределенияДоходовПоПериодам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.упоВыполненныеПринятыеОбъемы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.упоФактВыполненияОбъемовОбороты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.упоФактДоходовИРасходовОбороты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоОбработчикиСобытийСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоПроектыИЗадачиВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоРаботаСФормамиСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоРесурсыИНормыВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоУправлениеФормамиКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.упоНастройкаПараметровPM</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ИдентификаторыОбъектовМетаданных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоАктуализацияПроекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоРасчетКалендарногоПланаПроекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.упоУпрощенныйВводСтруктурыПроекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.упоВидЭлементаОбъемов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.упоСравнениеВерсий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоНормаСтоимостиПоУмолчанию</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоФактВыполненияОбъемовПоДням</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоЕдиницаИзмеренияВремениДляРасчетаПоказателей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоПланироватьТрудозатратыПоПроекту</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоАвтоматическиРассчитыватьПроцентГотовностиЭтаповПроекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоИспользоватьЗначенияДляПроектныхЗадачВРасчетахСПоказателямиGGF</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоУчитыватьТрудозатратыПриРасчетеПроцентаГотовности</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоАналитикаПоПодразделениямПовтИспВызов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоАналитикаПоПодразделениямКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоУчитыватьПериодРегистрацииНормСтоимостиПриРасчетеТрудозатрат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоСинхронизацияФактическиВыполненныхОбъемов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоЧтениеСинхронизацииФактическиВыполненныхОбъемов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоДобавлениеИзменениеСинхронизацииФактическиВыполненныхОбъемов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоИспДлитВместоПустТрудЗатДляРасчГотовности</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоСинхронизацияФактическихДоходовИРасходов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоПроектнаяЗадачаПоУмолчаниюДляБДР</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоУказыватьПодразделениеРолиПриПланированииТР</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DocumentJournal.упоДокументыРасчетаПроекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоРассчитыватьПроцентГотовностиПоФактическимДоходнымОбъемам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">e66dbaf1-8c42-4f99-b4f1-89a7f2148e71</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Subsystem uuid="2a1fa91b-0e89-4c4e-b034-295965935933">
+		<Properties>
+			<Name>упоСинхронизацияДанныхPM</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Синхронизация данных (PM)</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбменДаннымиПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоОбменДаннымиСобытия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоМенеджерОбменаЧерезУниверсальныйФормат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияФактическихДоходовИРасходов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияФактическихДвиженийДенежныхСредств</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.упоФормаВыбораДополнительныхУсловий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбменДаннымиXDTOСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоСохранениеДанныхПроекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Проекты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоПроектнаяЗадача</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.Синхронизировать</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.СинхронизироватьСДополнительнымиПараметрами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.НастройкиПодключения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ЗагрузитьПравилаРегистрацииОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.СценарииСинхронизации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.СобытияОтправки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.СобытияПолучения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ПолучитьНастройкиСинхронизацииДляДругойПрограммы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.СоставОтправляемыхДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.УдалитьНастройкуСинхронизации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоПроектыИЗадачиСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоСинхронизацияДанныхЧерезУниверсальныйФорматЗарегистрироватьИзменение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоСинхронизацияДанныхЧерезУниверсальныйФорматЗарегистрироватьУдаление</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоСинхронизацияФактическихДвиженийДенежныхСредств</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">WebService.pmExchange</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоДобавлениеИзменениеСинхронизацииФактическихДвиженийДенежныхСредств</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоЧтениеСинхронизацииФактическихДвиженийДенежныхСредств</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоДобавлениеИзменениеНаправленияДеятельности</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоСинхронизацияФактическиВыполненныхОбъемов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоЧтениеСинхронизацииФактическиВыполненныхОбъемов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоДобавлениеИзменениеСинхронизацииФактическиВыполненныхОбъемов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоСинхронизацияФактическихДоходовИРасходов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоСоответствиеПодразделенийИПодразделенийОрганизаций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоКлючиАналитикиФактаБДР</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоИсточникиДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоСинхронизацияФактическихТрудозатрат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоДобавлениеИзменениеСинхронизацииФактическихТрудозатрат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоДобавлениеИзменениеСинхронизацииФактическихДоходовИРасходов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоЧтениеСинхронизацииФактическихТрудозатрат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоЧтениеСинхронизацииФактическихДоходовИРасходов</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects>
+			<Subsystem>упоПереходУПРОФ</Subsystem>
+		</ChildObjects>
+	</Subsystem>
+</MetaDataObject>

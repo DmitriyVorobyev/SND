@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="20"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаШапкаЛево" id="21">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шапка лево</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шапка лево</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаШапкаЛевоРасширеннаяПодсказка" id="22"/>
+					<ChildItems>
+						<InputField name="Номер" id="1">
+							<DataPath>Объект.Number</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+						</InputField>
+						<InputField name="Организация" id="16">
+							<DataPath>Объект.Организация</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ОрганизацияКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="18"/>
+						</InputField>
+						<InputField name="Сотрудник" id="13">
+							<DataPath>Объект.Сотрудник</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="СотрудникКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="СотрудникРасширеннаяПодсказка" id="15"/>
+						</InputField>
+						<InputField name="ДатаИнцидента" id="10">
+							<DataPath>Объект.ДатаИнцидента</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДатаИнцидентаКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ДатаИнцидентаРасширеннаяПодсказка" id="12"/>
+						</InputField>
+						<InputField name="РешениеRequest" id="34">
+							<DataPath>Объект.РешениеRequest</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="РешениеRequestКонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="РешениеRequestРасширеннаяПодсказка" id="36"/>
+						</InputField>
+						<UsualGroup name="Группа1" id="70">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="71"/>
+							<ChildItems>
+								<InputField name="ДатаНачалаОтсутствия" id="72">
+									<DataPath>Объект.ДатаНачалаОтсутствия</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДатаНачалаОтсутствияКонтекстноеМеню" id="73"/>
+									<ExtendedTooltip name="ДатаНачалаОтсутствияРасширеннаяПодсказка" id="74"/>
+								</InputField>
+								<InputField name="ДатаОкончанияОтсутствия" id="75">
+									<DataPath>Объект.ДатаОкончанияОтсутствия</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДатаОкончанияОтсутствияКонтекстноеМеню" id="76"/>
+									<ExtendedTooltip name="ДатаОкончанияОтсутствияРасширеннаяПодсказка" id="77"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаШапкаПраво" id="23">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шапка право</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шапка право</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаШапкаПравоРасширеннаяПодсказка" id="24"/>
+					<ChildItems>
+						<InputField name="Дата" id="4">
+							<DataPath>Объект.Date</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дата документа</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+						</InputField>
+						<InputField name="ПервыйВход" id="31">
+							<DataPath>Объект.ПервыйВход</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПервыйВходКонтекстноеМеню" id="32"/>
+							<ExtendedTooltip name="ПервыйВходРасширеннаяПодсказка" id="33"/>
+						</InputField>
+						<InputField name="ПоследнийВыход" id="25">
+							<DataPath>Объект.ПоследнийВыход</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПоследнийВыходКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="ПоследнийВыходРасширеннаяПодсказка" id="27"/>
+						</InputField>
+						<UsualGroup name="ГруппаОтработаноЧасов" id="46">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа отработано часов</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа отработано часов</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОтработаноЧасовРасширеннаяПодсказка" id="47"/>
+							<ChildItems>
+								<InputField name="ОтработаноЧасов" id="28">
+									<DataPath>Объект.ОтработаноЧасов</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ОтработаноЧасовКонтекстноеМеню" id="29"/>
+									<ExtendedTooltip name="ОтработаноЧасовРасширеннаяПодсказка" id="30"/>
+								</InputField>
+								<InputField name="ОтработаноЧасовВремя" id="48">
+									<DataPath>Объект.ОтработаноВремени</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ОтработаноЧасовВремяКонтекстноеМеню" id="49"/>
+									<ExtendedTooltip name="ОтработаноЧасовВремяРасширеннаяПодсказка" id="50"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<CheckBoxField name="ОтразитьВТабеле" id="37">
+							<DataPath>Объект.ОтразитьВТабеле</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ОтразитьВТабелеКонтекстноеМеню" id="38"/>
+							<ExtendedTooltip name="ОтразитьВТабелеРасширеннаяПодсказка" id="39"/>
+							<Events>
+								<Event name="OnChange">ОтразитьВТабелеПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="ВидРабочегоВремени" id="40">
+							<DataPath>Объект.ВидРабочегоВремени</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ВидРабочегоВремениКонтекстноеМеню" id="41"/>
+							<ExtendedTooltip name="ВидРабочегоВремениРасширеннаяПодсказка" id="42"/>
+						</InputField>
+						<InputField name="СостояниеСотрудника" id="43">
+							<DataPath>Объект.СостояниеСотрудника</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="СостояниеСотрудникаКонтекстноеМеню" id="44"/>
+							<ExtendedTooltip name="СостояниеСотрудникаРасширеннаяПодсказка" id="45"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ВидыИнцидентов" id="51">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ВидыИнцидентов</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ВидыИнцидентовКонтекстноеМеню" id="52"/>
+			<AutoCommandBar name="ВидыИнцидентовКоманднаяПанель" id="53"/>
+			<ExtendedTooltip name="ВидыИнцидентовРасширеннаяПодсказка" id="54"/>
+			<SearchStringAddition name="ВидыИнцидентовСтрокаПоиска" id="55">
+				<AdditionSource>
+					<Item>ВидыИнцидентов</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ВидыИнцидентовСтрокаПоискаКонтекстноеМеню" id="56"/>
+				<ExtendedTooltip name="ВидыИнцидентовСтрокаПоискаРасширеннаяПодсказка" id="57"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ВидыИнцидентовСостояниеПросмотра" id="58">
+				<AdditionSource>
+					<Item>ВидыИнцидентов</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ВидыИнцидентовСостояниеПросмотраКонтекстноеМеню" id="59"/>
+				<ExtendedTooltip name="ВидыИнцидентовСостояниеПросмотраРасширеннаяПодсказка" id="60"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ВидыИнцидентовУправлениеПоиском" id="61">
+				<AdditionSource>
+					<Item>ВидыИнцидентов</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ВидыИнцидентовУправлениеПоискомКонтекстноеМеню" id="62"/>
+				<ExtendedTooltip name="ВидыИнцидентовУправлениеПоискомРасширеннаяПодсказка" id="63"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ВидыИнцидентовНомерСтроки" id="64">
+					<DataPath>Объект.ВидыИнцидентов.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВидыИнцидентовНомерСтрокиКонтекстноеМеню" id="65"/>
+					<ExtendedTooltip name="ВидыИнцидентовНомерСтрокиРасширеннаяПодсказка" id="66"/>
+				</LabelField>
+				<InputField name="ВидыИнцидентовВидИнцидента" id="67">
+					<DataPath>Объект.ВидыИнцидентов.ВидИнцидента</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ВидыИнцидентовВидИнцидентаКонтекстноеМеню" id="68"/>
+					<ExtendedTooltip name="ВидыИнцидентовВидИнцидентаРасширеннаяПодсказка" id="69"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ИКТ_RequestРаботаНеПоГрафику</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

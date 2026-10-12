@@ -1,0 +1,1432 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Popup name="ПодменюСоздатьНаОсновании" id="174">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Создать на основании</v8:content>
+					</v8:item>
+				</Title>
+				<Picture>
+					<xr:Ref>StdPicture.InputOnBasis</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<Representation>Picture</Representation>
+				<ExtendedTooltip name="ПодменюСоздатьНаОснованииРасширеннаяПодсказка" id="175"/>
+			</Popup>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnSaveDataInSettingsAtServer">ПриСохраненииДанныхВНастройкахНаСервере</Event>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="NewWriteProcessing">ОбработкаЗаписиНового</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="ExternalEvent">ВнешнееСобытие</Event>
+		<Event name="OnReopen">ПриПовторномОткрытии</Event>
+		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="ActivationProcessing">ОбработкаАктивизации</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+		<Event name="BeforeLoadDataFromSettingsAtServer">ПередЗагрузкойДанныхИзНастроекНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ГруппаСтраницы" id="77">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основное</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>true</VerticalStretch>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="78"/>
+			<ChildItems>
+				<Page name="ГруппаОсновное" id="176">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основное</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа основное</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ScrollOnCompress>true</ScrollOnCompress>
+					<ExtendedTooltip name="ГруппаОсновноеРасширеннаяПодсказка" id="177"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаШапка" id="11">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Шапка</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаШапкаExtendedTooltip" id="18"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаШапкаЛево" id="12">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Шапка лево</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаШапкаЛевоExtendedTooltip" id="19"/>
+									<ChildItems>
+										<InputField name="Код" id="1">
+											<DataPath>Объект.Code</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+											<ExtendedTooltip name="КодExtendedTooltip" id="20"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаШапкаПраво" id="15">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Шапка право</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаШапкаПравоExtendedTooltip" id="21"/>
+									<ChildItems>
+										<LabelField name="НадписьПоследняяМодификация" id="16">
+											<DataPath>НадписьПоследняяМодификация</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<HorizontalAlign>Right</HorizontalAlign>
+											<Hiperlink>true</Hiperlink>
+											<ContextMenu name="НадписьПоследняяМодификацияКонтекстноеМеню" id="17"/>
+											<ExtendedTooltip name="НадписьПоследняяМодификацияExtendedTooltip" id="22"/>
+											<Events>
+												<Event name="Click">НадписьПоследняяМодификацияНажатие</Event>
+											</Events>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="Наименование" id="3">
+							<DataPath>Объект.Description</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>40</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>70</MaxWidth>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+							<ExtendedTooltip name="НаименованиеExtendedTooltip" id="23"/>
+						</InputField>
+						<InputField name="ПолноеНаименование" id="7">
+							<DataPath>Объект.ПолноеНаименование</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>70</MaxWidth>
+							<ContextMenu name="ПолноеНаименованиеКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="ПолноеНаименованиеExtendedTooltip" id="25"/>
+						</InputField>
+						<UsualGroup name="ГруппаОсновнойПроект" id="130">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Основной проект</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОсновнойПроектРасширеннаяПодсказка" id="131"/>
+							<ChildItems>
+								<InputField name="ПроектСтруктуры" id="132">
+									<DataPath>Объект.ПроектСтруктуры</DataPath>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>40</MaxWidth>
+									<ContextMenu name="ПроектСтруктурыКонтекстноеМеню" id="133"/>
+									<ExtendedTooltip name="ПроектСтруктурыРасширеннаяПодсказка" id="134"/>
+									<Events>
+										<Event name="OnChange">ПроектСтруктурыПриИзменении</Event>
+									</Events>
+								</InputField>
+								<Button name="КомандаОткрытьСтруктуруПроекта" id="141">
+									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
+									<CommandName>Form.Command.ОткрытьСтруктуруПроекта</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.GanttChart</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+									<ExtendedTooltip name="КомандаОткрытьСтруктуруПроектаРасширеннаяПодсказка" id="142"/>
+								</Button>
+								<LabelDecoration name="ПредупреждениеПроектСтруктуры" id="135">
+									<TextColor>#008000</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>При записи будет создан новый проект</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ПредупреждениеПроектСтруктурыКонтекстноеМеню" id="136"/>
+									<ExtendedTooltip name="ПредупреждениеПроектСтруктурыРасширеннаяПодсказка" id="137"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="Родитель" id="5">
+							<DataPath>Объект.Parent</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>40</MaxWidth>
+							<ContextMenu name="РодительКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="РодительExtendedTooltip" id="24"/>
+						</InputField>
+						<UsualGroup name="ГруппаНастройкиИндикаторКартинка" id="101">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройки индикатор картинка</v8:content>
+								</v8:item>
+							</Title>
+							<Width>55</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<HorizontalAlign>Right</HorizontalAlign>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНастройкиИндикаторКартинкаExtendedTooltip" id="102"/>
+							<ChildItems>
+								<PictureField name="Реквизит1" id="106">
+									<DataPath>Объект.КартинкаПоУмолчанию</DataPath>
+									<Width>3</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>3</MaxWidth>
+									<Height>1</Height>
+									<HorizontalStretch>false</HorizontalStretch>
+									<VerticalStretch>false</VerticalStretch>
+									<ValuesPicture>
+										<xr:Ref>CommonPicture.упоКоллекция_ИконкиПанельРуководителя</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</ValuesPicture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="Реквизит1КонтекстноеМеню" id="107"/>
+									<ExtendedTooltip name="Реквизит1ExtendedTooltip" id="108"/>
+								</PictureField>
+								<Button name="ВыбратьКартинку" id="109">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ВыбратьКартинку</CommandName>
+									<ExtendedTooltip name="ВыбратьКартинкуExtendedTooltip" id="110"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПодвал" id="119">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подвал</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ThroughAlign>DontUse</ThroughAlign>
+							<ExtendedTooltip name="ГруппаПодвалРасширеннаяПодсказка" id="120"/>
+							<ChildItems>
+								<InputField name="Комментарий" id="9">
+									<DataPath>Объект.Комментарий</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>84</MaxWidth>
+									<AutoMaxHeight>false</AutoMaxHeight>
+									<MaxHeight>2</MaxHeight>
+									<MultiLine>true</MultiLine>
+									<ContextMenu name="КомментарийКонтекстноеМеню" id="10"/>
+									<ExtendedTooltip name="КомментарийExtendedTooltip" id="26"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаОпцииПроектнойМодели" id="31">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Опции проектной модели</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница опции проектной модели</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ScrollOnCompress>true</ScrollOnCompress>
+					<ExtendedTooltip name="СтраницаОпцииПроектнойМоделиРасширеннаяПодсказка" id="32"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаУчетПоПодразделениям" id="33">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Учет доходов и расходов</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа учет по подразделениям</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="ГруппаУчетПоПодразделениямРасширеннаяПодсказка" id="34"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаДоходы" id="35">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Доходы</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ExtendedTooltip name="ГруппаДоходыРасширеннаяПодсказка" id="36"/>
+									<ChildItems>
+										<CheckBoxField name="ВедетсяБюджетДоходов" id="37">
+											<DataPath>ВедетсяБюджетДоходов</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ВедетсяБюджетДоходовКонтекстноеМеню" id="38"/>
+											<ExtendedTooltip name="ВедетсяБюджетДоходовРасширеннаяПодсказка" id="39"/>
+											<Events>
+												<Event name="OnChange">ДоходыПоПодразделениямПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<UsualGroup name="ГруппаДоходыПоПодразделениям" id="189">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа доходы по подразделениям</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа доходы по подразделениям</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаДоходыПоПодразделениямРасширеннаяПодсказка" id="190"/>
+											<ChildItems>
+												<LabelDecoration name="Декорация3" id="191">
+													<Width>1</Width>
+													<ContextMenu name="Декорация3КонтекстноеМеню" id="192"/>
+													<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="193"/>
+												</LabelDecoration>
+												<CheckBoxField name="ДоходыПоПодразделениям" id="40">
+													<DataPath>ДоходыПоПодразделениям</DataPath>
+													<TitleLocation>Right</TitleLocation>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ДоходыПоПодразделениямКонтекстноеМеню" id="41"/>
+													<ExtendedTooltip name="ДоходыПоПодразделениямРасширеннаяПодсказка" id="42"/>
+													<Events>
+														<Event name="OnChange">ДоходыПоПодразделениямПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаДоходыПоОбъемам" id="194">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа доходы по объемам</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа доходы по объемам</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаДоходыПоОбъемамРасширеннаяПодсказка" id="195"/>
+											<ChildItems>
+												<LabelDecoration name="Декорация4" id="196">
+													<Width>3</Width>
+													<ContextMenu name="Декорация4КонтекстноеМеню" id="197"/>
+													<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="198"/>
+												</LabelDecoration>
+												<CheckBoxField name="ДоходыПоОбъемам" id="43">
+													<DataPath>ДоходыПоОбъемам</DataPath>
+													<TitleLocation>Right</TitleLocation>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ДоходыПоОбъемамКонтекстноеМеню" id="44"/>
+													<ExtendedTooltip name="ДоходыПоОбъемамРасширеннаяПодсказка" id="45"/>
+													<Events>
+														<Event name="OnChange">ДоходыПоПодразделениямПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаДоходыПоНатуральнымПоказателям" id="199">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа доходы по натуральным показателям</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа доходы по натуральным показателям</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаДоходыПоНатуральнымПоказателямРасширеннаяПодсказка" id="200"/>
+											<ChildItems>
+												<LabelDecoration name="Декорация5" id="201">
+													<Width>5</Width>
+													<ContextMenu name="Декорация5КонтекстноеМеню" id="202"/>
+													<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="203"/>
+												</LabelDecoration>
+												<CheckBoxField name="ДоходыПоНатуральнымПоказателям" id="46">
+													<DataPath>ДоходыПоНатуральнымПоказателям</DataPath>
+													<TitleLocation>Right</TitleLocation>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ДоходыПоНатуральнымПоказателямКонтекстноеМеню" id="47"/>
+													<ExtendedTooltip name="ДоходыПоНатуральнымПоказателямРасширеннаяПодсказка" id="48"/>
+													<Events>
+														<Event name="OnChange">ДоходыПоПодразделениямПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаРасходы" id="49">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Расходы</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ExtendedTooltip name="ГруппаРасходыРасширеннаяПодсказка" id="50"/>
+									<ChildItems>
+										<CheckBoxField name="ВедетсяБюджетРасходов" id="51">
+											<DataPath>ВедетсяБюджетРасходов</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ВедетсяБюджетРасходовКонтекстноеМеню" id="52"/>
+											<ExtendedTooltip name="ВедетсяБюджетРасходовРасширеннаяПодсказка" id="53"/>
+											<Events>
+												<Event name="OnChange">РасходыПоПодразделениямПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<UsualGroup name="ГруппаРасходыПоПодразделениям" id="204">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа расходы по подразделениям</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа расходы по подразделениям</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаРасходыПоПодразделениямРасширеннаяПодсказка" id="205"/>
+											<ChildItems>
+												<LabelDecoration name="Декорация6" id="206">
+													<Width>1</Width>
+													<ContextMenu name="Декорация6КонтекстноеМеню" id="207"/>
+													<ExtendedTooltip name="Декорация6РасширеннаяПодсказка" id="208"/>
+												</LabelDecoration>
+												<CheckBoxField name="РасходыПоПодразделениям" id="54">
+													<DataPath>РасходыПоПодразделениям</DataPath>
+													<TitleLocation>Right</TitleLocation>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="РасходыПоПодразделениямКонтекстноеМеню" id="55"/>
+													<ExtendedTooltip name="РасходыПоПодразделениямРасширеннаяПодсказка" id="56"/>
+													<Events>
+														<Event name="OnChange">РасходыПоПодразделениямПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаРасходыПоОбъемам" id="209">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа расходы по объемам</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа расходы по объемам</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаРасходыПоОбъемамРасширеннаяПодсказка" id="210"/>
+											<ChildItems>
+												<LabelDecoration name="Декорация7" id="211">
+													<Width>3</Width>
+													<ContextMenu name="Декорация7КонтекстноеМеню" id="212"/>
+													<ExtendedTooltip name="Декорация7РасширеннаяПодсказка" id="213"/>
+												</LabelDecoration>
+												<CheckBoxField name="РасходыПоОбъемам" id="57">
+													<DataPath>РасходыПоОбъемам</DataPath>
+													<TitleLocation>Right</TitleLocation>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="РасходыПоОбъемамКонтекстноеМеню" id="58"/>
+													<ExtendedTooltip name="РасходыПоОбъемамРасширеннаяПодсказка" id="59"/>
+													<Events>
+														<Event name="OnChange">РасходыПоПодразделениямПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаРасходыПоНатуральнымПоказателям" id="214">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа расходы по натуральным показателям</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа расходы по натуральным показателям</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаРасходыПоНатуральнымПоказателямРасширеннаяПодсказка" id="215"/>
+											<ChildItems>
+												<LabelDecoration name="Декорация8" id="216">
+													<Width>5</Width>
+													<ContextMenu name="Декорация8КонтекстноеМеню" id="217"/>
+													<ExtendedTooltip name="Декорация8РасширеннаяПодсказка" id="218"/>
+												</LabelDecoration>
+												<CheckBoxField name="РасходыПоНатуральнымПоказателям" id="60">
+													<DataPath>РасходыПоНатуральнымПоказателям</DataPath>
+													<TitleLocation>Right</TitleLocation>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="РасходыПоНатуральнымПоказателямКонтекстноеМеню" id="61"/>
+													<ExtendedTooltip name="РасходыПоНатуральнымПоказателямРасширеннаяПодсказка" id="62"/>
+													<Events>
+														<Event name="OnChange">РасходыПоПодразделениямПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="НастройкаРаспределенияБДР" id="152">
+							<DataPath>НастройкаРаспределенияБДР</DataPath>
+							<Width>30</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>30</MaxWidth>
+							<ContextMenu name="НастройкаРаспределенияБДРКонтекстноеМеню" id="153"/>
+							<ExtendedTooltip name="НастройкаРаспределенияБДРРасширеннаяПодсказка" id="154"/>
+						</InputField>
+						<UsualGroup name="ГруппаУчетДвиженияДенежныхСредств" id="96">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Учет движения денежных средств</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаУчетДвиженияДенежныхСредствРасширеннаяПодсказка" id="97"/>
+							<ChildItems>
+								<CheckBoxField name="ВедетсяБюджетДвиженияДенежныхСредств" id="98">
+									<DataPath>ВедетсяБюджетДвиженияДенежныхСредств</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ВедетсяБюджетДвиженияДенежныхСредствКонтекстноеМеню" id="99"/>
+									<ExtendedTooltip name="ВедетсяБюджетДвиженияДенежныхСредствРасширеннаяПодсказка" id="100"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПланированиеРесурсов" id="63">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Учет ресурсов</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа планирование ресурсов</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаПланированиеРесурсовРасширеннаяПодсказка" id="64"/>
+							<ChildItems>
+								<CheckBoxField name="ПланироватьТрудозатратыПоПроекту" id="87">
+									<DataPath>ПланироватьТрудозатратыПоПроекту</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПланироватьТрудозатратыПоПроектуКонтекстноеМеню" id="88"/>
+									<ExtendedTooltip name="ПланироватьТрудозатратыПоПроектуРасширеннаяПодсказка" id="89"/>
+									<Events>
+										<Event name="OnChange">ПланироватьТрудозатратыПоПроектуПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<UsualGroup name="ГруппаПланированиеРесурсовКолонки" id="166">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа планирование ресурсов колонки</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа планирование ресурсов колонки</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПланированиеРесурсовКолонкиРасширеннаяПодсказка" id="167"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаПланированиеРесурсовЛево" id="219">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа планирование ресурсов лево</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа планирование ресурсов лево</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаПланированиеРесурсовЛевоРасширеннаяПодсказка" id="220"/>
+											<ChildItems>
+												<LabelDecoration name="Декорация1" id="221">
+													<Width>1</Width>
+													<ContextMenu name="Декорация1КонтекстноеМеню" id="222"/>
+													<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="223"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаПланированиеРесурсовПраво" id="224">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа планирование ресурсов право</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа планирование ресурсов право</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаПланированиеРесурсовПравоРасширеннаяПодсказка" id="225"/>
+											<ChildItems>
+												<CheckBoxField name="УказыватьПодразделениеРолиПриПланированииТР" id="168">
+													<DataPath>УказыватьПодразделениеРолиПриПланированииТР</DataPath>
+													<TitleLocation>Right</TitleLocation>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Требовать обязательно указывать подразделение роли при планировании трудозатрат</v8:content>
+														</v8:item>
+													</ToolTip>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="УказыватьПодразделениеРолиПриПланированииТРКонтекстноеМеню" id="169"/>
+													<ExtendedTooltip name="УказыватьПодразделениеРолиПриПланированииТРРасширеннаяПодсказка" id="170"/>
+												</CheckBoxField>
+												<CheckBoxField name="УчитыватьПериодРегистрацииНормСтоимостиПриРасчетеТрудозатрат" id="146">
+													<DataPath>УчитыватьПериодРегистрацииНормСтоимостиПриРасчетеТрудозатрат</DataPath>
+													<TitleLocation>Right</TitleLocation>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="УчитыватьПериодРегистрацииНормСтоимостиПриРасчетеТрудозатратКонтекстноеМеню" id="147"/>
+													<ExtendedTooltip name="УчитыватьПериодРегистрацииНормСтоимостиПриРасчетеТрудозатратРасширеннаяПодсказка" id="148"/>
+												</CheckBoxField>
+												<UsualGroup name="ГруппаНормаСтоимости" id="226">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа норма стоимости</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа норма стоимости</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаНормаСтоимостиРасширеннаяПодсказка" id="227"/>
+													<ChildItems>
+														<InputField name="НормаСтоимостиТрудовыхРесурсов" id="121">
+															<DataPath>НормаСтоимостиТрудовыхРесурсов</DataPath>
+															<Width>20</Width>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<MaxWidth>30</MaxWidth>
+															<ContextMenu name="НормаСтоимостиТрудовыхРесурсовКонтекстноеМеню" id="122"/>
+															<ExtendedTooltip name="НормаСтоимостиТрудовыхРесурсовРасширеннаяПодсказка" id="123"/>
+														</InputField>
+														<InputField name="ВнешняяНормаСтоимостиТрудовыхРесурсов" id="124">
+															<DataPath>ВнешняяНормаСтоимостиТрудовыхРесурсов</DataPath>
+															<Width>20</Width>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<MaxWidth>30</MaxWidth>
+															<ContextMenu name="ВнешняяНормаСтоимостиТрудовыхРесурсовКонтекстноеМеню" id="125"/>
+															<ExtendedTooltip name="ВнешняяНормаСтоимостиТрудовыхРесурсовРасширеннаяПодсказка" id="126"/>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<CheckBoxField name="ПланироватьЗатратыНаМатериалы" id="71">
+									<DataPath>ПланироватьЗатратыНаМатериалы</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Изменение опции доступно при снятой опции "Расходы по натуральным показателям"</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПланироватьЗатратыНаМатериалыКонтекстноеМеню" id="72"/>
+									<ExtendedTooltip name="ПланироватьЗатратыНаМатериалыРасширеннаяПодсказка" id="73"/>
+								</CheckBoxField>
+								<CheckBoxField name="ПланироватьДополнительныеЗатратыПоЗадаче" id="74">
+									<DataPath>ПланироватьДополнительныеЗатратыПоЗадаче</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПланироватьДополнительныеЗатратыПоЗадачеКонтекстноеМеню" id="75"/>
+									<ExtendedTooltip name="ПланироватьДополнительныеЗатратыПоЗадачеРасширеннаяПодсказка" id="76"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПрочиеОпции" id="117">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Прочие опции</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа планирование ресурсов</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаПрочиеОпцииРасширеннаяПодсказка" id="118"/>
+							<ChildItems>
+								<CheckBoxField name="ХранитьВВерсияхПроцентыГотовСтатусыИФактСроки" id="163">
+									<DataPath>ХранитьВВерсияхПроцентыГотовСтатусыИФактСроки</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ХранитьВВерсияхПроцентыГотовСтатусыИФактСрокиКонтекстноеМеню" id="164"/>
+									<ExtendedTooltip name="ХранитьВВерсияхПроцентыГотовСтатусыИФактСрокиРасширеннаяПодсказка" id="165"/>
+								</CheckBoxField>
+								<CheckBoxField name="ИспользоватьАналитикуКонтрагентДляСС" id="81">
+									<DataPath>ИспользоватьАналитикуКонтрагентДляСС</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ИспользоватьАналитикуКонтрагентДляССКонтекстноеМеню" id="82"/>
+									<ExtendedTooltip name="ИспользоватьАналитикуКонтрагентДляССРасширеннаяПодсказка" id="83"/>
+								</CheckBoxField>
+								<CheckBoxField name="РазрешитьСозданиеОбсужденийБезУказанияПроектнойЗадачи" id="90">
+									<DataPath>РазрешитьСозданиеОбсужденийБезУказанияПроектнойЗадачи</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="РазрешитьСозданиеОбсужденийБезУказанияПроектнойЗадачиКонтекстноеМеню" id="91"/>
+									<ExtendedTooltip name="РазрешитьСозданиеОбсужденийБезУказанияПроектнойЗадачиРасширеннаяПодсказка" id="92"/>
+								</CheckBoxField>
+								<CheckBoxField name="РазрешитьСписыватьЧасыНаПЗпроектаВСтатусеОстановлен" id="111">
+									<DataPath>РазрешитьСписаниеЧасовНаПроектныеЗадачиПроектаВСтатусеОстановлен</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="РазрешитьСписыватьЧасыНаПЗпроектаВСтатусеОстановленКонтекстноеМеню" id="112"/>
+									<ExtendedTooltip name="РазрешитьСписыватьЧасыНаПЗпроектаВСтатусеОстановленРасширеннаяПодсказка" id="113"/>
+								</CheckBoxField>
+								<CheckBoxField name="РазрешитьСписаниеЧасовНаПроектныеЗадачиПроектаВСтатусахЗапланированУтвержден" id="186">
+									<DataPath>РазрешитьСписаниеЧасовНаПроектныеЗадачиПроектаВСтатусахЗапланированУтвержден</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="РазрешитьСписаниеЧасовНаПроектныеЗадачиПроектаВСтатусахЗапланированУтвержденКонтекстноеМеню" id="187"/>
+									<ExtendedTooltip name="РазрешитьСписаниеЧасовНаПроектныеЗадачиПроектаВСтатусахЗапланированУтвержденРасширеннаяПодсказка" id="188"/>
+								</CheckBoxField>
+								<CheckBoxField name="ИспользоватьЗначенияДляПроектныхЗадачВРасчетахСПоказателямиGGF" id="93">
+									<DataPath>ИспользоватьЗначенияДляПроектныхЗадачВРасчетахСПоказателямиGGF</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ИспользоватьЗначенияДляПроектныхЗадачВРасчетахСПоказателямиGGFКонтекстноеМеню" id="94"/>
+									<ExtendedTooltip name="ИспользоватьЗначенияДляПроектныхЗадачВРасчетахСПоказателямиGGFРасширеннаяПодсказка" id="95"/>
+								</CheckBoxField>
+								<CheckBoxField name="НаследоватьЗначениеПоляОбъектИзЗадачиРодителя" id="149">
+									<DataPath>НаследоватьЗначениеПоляОбъектИзЗадачиРодителя</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="НаследоватьЗначениеПоляОбъектИзЗадачиРодителяКонтекстноеМеню" id="150"/>
+									<ExtendedTooltip name="НаследоватьЗначениеПоляОбъектИзЗадачиРодителяРасширеннаяПодсказка" id="151"/>
+								</CheckBoxField>
+								<CheckBoxField name="ЗапретитьРПЗИзменятьСрокиЧужихЗадач" id="143">
+									<DataPath>ЗапретитьРПЗИзменятьСрокиЧужихЗадач</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ЗапретитьРПЗИзменятьСрокиЧужихЗадачКонтекстноеМеню" id="144"/>
+									<ExtendedTooltip name="ЗапретитьРПЗИзменятьСрокиЧужихЗадачРасширеннаяПодсказка" id="145"/>
+								</CheckBoxField>
+								<CheckBoxField name="РассчитыватьПроцентГотовностиПоФактическимДоходнымОбъемам" id="183">
+									<DataPath>РассчитыватьПроцентГотовностиПоФактическимДоходнымОбъемам</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="РассчитыватьПроцентГотовностиПоФактическимДоходнымОбъемамКонтекстноеМеню" id="184"/>
+									<ExtendedTooltip name="РассчитыватьПроцентГотовностиПоФактическимДоходнымОбъемамРасширеннаяПодсказка" id="185"/>
+								</CheckBoxField>
+								<InputField name="упоНастройкаПоказателейДляКарточкиПроектов" id="114">
+									<DataPath>упоНастройкаПоказателейДляКарточкиПроектов</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройка показателей для паспорта проекта</v8:content>
+										</v8:item>
+									</Title>
+									<Width>30</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<DropListButton>false</DropListButton>
+									<ChoiceButton>true</ChoiceButton>
+									<TextEdit>false</TextEdit>
+									<ContextMenu name="упоНастройкаПоказателейДляКарточкиПроектовКонтекстноеМеню" id="115"/>
+									<ExtendedTooltip name="упоНастройкаПоказателейДляКарточкиПроектовРасширеннаяПодсказка" id="116"/>
+									<Events>
+										<Event name="StartChoice">упоНастройкаПоказателейДляКарточкиПроектовНачалоВыбора</Event>
+										<Event name="Clearing">упоНастройкаПоказателейДляКарточкиПроектовОчистка</Event>
+									</Events>
+								</InputField>
+								<InputField name="НастройкаДереваКлючевыхПоказателей" id="127">
+									<DataPath>НастройкаДереваКлючевыхПоказателей</DataPath>
+									<Width>30</Width>
+									<ContextMenu name="НастройкаДереваКлючевыхПоказателейКонтекстноеМеню" id="128"/>
+									<ExtendedTooltip name="НастройкаДереваКлючевыхПоказателейРасширеннаяПодсказка" id="129"/>
+								</InputField>
+								<InputField name="НастройкаУровняПланированияПриРасчетеГотовностиПроектов" id="138">
+									<DataPath>НастройкаУровняПланированияПриРасчетеГотовностиПроектов</DataPath>
+									<Width>30</Width>
+									<ContextMenu name="НастройкаУровняПланированияПриРасчетеГотовностиПроектовКонтекстноеМеню" id="139"/>
+									<ExtendedTooltip name="НастройкаУровняПланированияПриРасчетеГотовностиПроектовРасширеннаяПодсказка" id="140"/>
+								</InputField>
+								<UsualGroup name="ГруппаНазначатьРСПОсновнойРолиКакРПЗ" id="158">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Автоматическое назначение руководителя проектной задачи</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа назначать РСПОсновной роли как РПЗ</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<ExtendedTooltip name="ГруппаНазначатьРСПОсновнойРолиКакРПЗРасширеннаяПодсказка" id="159"/>
+									<ChildItems>
+										<CheckBoxField name="НазначатьРСПОсновнойРолиКакРПЗ" id="155">
+											<DataPath>НазначатьРСПОсновнойРолиКакРПЗ</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="НазначатьРСПОсновнойРолиКакРПЗКонтекстноеМеню" id="156"/>
+											<ExtendedTooltip name="НазначатьРСПОсновнойРолиКакРПЗРасширеннаяПодсказка" id="157"/>
+											<Events>
+												<Event name="OnChange">НазначатьРСПОсновнойРолиКакРПЗПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<UsualGroup name="ГруппаУстанавливатьПризнакОсновнаяПриДобавленииРоли" id="178">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа устанавливать признак основная при добавлении роли</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа устанавливать признак основная при добавлении роли</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаУстанавливатьПризнакОсновнаяПриДобавленииРолиРасширеннаяПодсказка" id="179"/>
+											<ChildItems>
+												<LabelDecoration name="Декорация2" id="180">
+													<Width>2</Width>
+													<ContextMenu name="Декорация2КонтекстноеМеню" id="181"/>
+													<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="182"/>
+												</LabelDecoration>
+												<CheckBoxField name="УстанавливатьПризнакОсновнаяПриДобавленииРоли" id="160">
+													<DataPath>УстанавливатьПризнакОсновнаяПриДобавленииРоли</DataPath>
+													<TitleLocation>Right</TitleLocation>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="УстанавливатьПризнакОсновнаяПриДобавленииРолиКонтекстноеМеню" id="161"/>
+													<ExtendedTooltip name="УстанавливатьПризнакОсновнаяПриДобавленииРолиРасширеннаяПодсказка" id="162"/>
+												</CheckBoxField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаДополнительныеРеквизиты" id="79">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительные реквизиты</v8:content>
+						</v8:item>
+					</Title>
+					<ScrollOnCompress>true</ScrollOnCompress>
+					<ExtendedTooltip name="ГруппаДополнительныеРеквизитыРасширеннаяПодсказка" id="80"/>
+					<ChildItems>
+						<UsualGroup name="СтраницаПараметры" id="29">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Параметры</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="СтраницаПараметрыРасширеннаяПодсказка" id="30"/>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.упоПортфелиПроектов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="НадписьПоследняяМодификация" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Надпись последняя модификация</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ВедетсяБюджетДоходов" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ведется бюджет доходов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ВедетсяБюджетРасходов" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ведется бюджет расходов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ДоходыПоНатуральнымПоказателям" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доходы по натуральным показателям</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ДоходыПоОбъемам" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доходы по объемам</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ДоходыПоПодразделениям" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доходы по подразделениям</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПланироватьДополнительныеЗатратыПоЗадаче" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Планировать дополнительные затраты по проектной задаче</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПланироватьЗатратыНаМатериалы" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Планировать затраты на материалы и оборудование </v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="РасходыПоНатуральнымПоказателям" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расходы по натуральным показателям</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="РасходыПоОбъемам" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расходы по объемам</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="РасходыПоПодразделениям" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расходы по подразделениям</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ИспользоватьАналитикуКонтрагентДляСС" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать аналитику "Контрагент" / "Трудовой ресурс" для собственных сил</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПланироватьТрудозатратыПоПроекту" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Планировать трудозатраты по проекту</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="РазрешитьСозданиеОбсужденийБезУказанияПроектнойЗадачи" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разрешить создание обсуждений без указания проектной задачи</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьЗначенияДляПроектныхЗадачВРасчетахСПоказателямиGGF" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>В расчетах с показателями Go–Get–Freeze–Move использовать значения показателей, указанные в проектной задаче</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВедетсяБюджетДвиженияДенежныхСредств" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ведется бюджет движения денежных средств</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РазрешитьСписаниеЧасовНаПроектныеЗадачиПроектаВСтатусеОстановлен" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разрешить списание часов на проектные задачи проекта в статусе "Остановлен"</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="упоНастройкаПоказателейДляКарточкиПроектов" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка показателей для карточки проектов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="упоНастройкаПоказателейДляКарточкиПроектовНастройка" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка показателей для карточки проектов</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="НормаСтоимостиТрудовыхРесурсов" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Норма стоимости</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.упоНормыСтоимости</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВнешняяНормаСтоимостиТрудовыхРесурсов" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Внешняя норма стоимости</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.упоНормыСтоимости</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПараметрыПодключаемыхКоманд" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры подключаемых команд</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="НастройкаДереваКлючевыхПоказателей" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка дерева ключевых показателей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.упоНастройкиДереваКлючевыхПоказателей</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НастройкаУровняПланированияПриРасчетеГотовностиПроектов" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка уровня планирования при расчете готовности проектов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.упоУровеньПланирования</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗапретитьРПЗИзменятьСрокиЧужихЗадач" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запретить руководителю проектной задачи изменять сроки задач других руководителей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="УчитыватьПериодРегистрацииНормСтоимостиПриРасчетеТрудозатрат" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учитывать период регистрации норм стоимости при расчете трудозатрат Ролей и ТР</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НаследоватьЗначениеПоляОбъектИзЗадачиРодителя" id="32">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наследовать значение поля "Объект" из задачи-родителя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НастройкаРаспределенияБДР" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка распределения БДР по умолчанию</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.упоНастройкиРаспределенияБДР</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="НазначатьРСПОсновнойРолиКакРПЗ" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автоматически назначать руководителя подразделения основной роли руководителем проектной задачи</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="УстанавливатьПризнакОсновнаяПриДобавленииРоли" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автоматическая установка признака "Основная" при добавлении роли</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ХранитьВВерсияхПроцентыГотовСтатусыИФактСроки" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Хранить в версиях проценты готовности, статусы и фактические сроки проектных задач</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="УказыватьПодразделениеРолиПриПланированииТР" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обязательно указывать подразделение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РассчитыватьПроцентГотовностиПоФактическимДоходнымОбъемам" id="35">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рассчитывать процент готовности при регистрации фактически выполненных объемов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="РазрешитьСписаниеЧасовНаПроектныеЗадачиПроектаВСтатусахЗапланированУтвержден" id="34">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разрешить списание часов на проектные задачи проекта в статусах "Запланирован" и "Утвержден"</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВыбратьКартинку" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать картинку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать картинку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыбратьКартинку</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьСтруктуруПроекта" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть структуру проекта</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть структуру проекта</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьСтруктуруПроекта</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<CommandBar>
+			<Item>
+				<Command>CommonCommand.ИнтеграцияС1СДокументооборотСоздатьПисьмо</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Catalog.упоЗадания.Command.СоздатьЗадание</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>CommonCommand.ИнтеграцияС1СДокументооборотСоздатьБизнесПроцесс</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>CommonCommand.ИнтеграцияС1СДокументооборотНачатьОбработку</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</CommandBar>
+	</CommandInterface>
+</Form>

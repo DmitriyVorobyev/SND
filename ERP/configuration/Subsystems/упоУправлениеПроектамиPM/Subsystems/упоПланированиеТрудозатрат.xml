@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Subsystem uuid="9a36fe40-60d1-4274-8483-6f3e2d873875">
+		<Properties>
+			<Name>упоПланированиеТрудозатрат</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Планирование трудозатрат</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоВерсииПроекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоПрогнозТрудозатратПоРолям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоВерсионирование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоВерсияПланаПроекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ДвиженияДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоРаспределениеТрудозатратВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоДобавлениеИзменениеПрогнозаТрудозатратПоРолям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоЧтениеПрогнозаТрудозатратПоРолям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.упоПорядокГруппировокПрогнозированиеТрудозатрат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоДанныеРаспределенияПланаТрудозатратТрудовыхРесурсовПоДням</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоПланированиеТрудозатратПоТрудовымРесурсам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.упоВариантыРаспределенияТрудозатрат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоДанныеПлановТрудозатратРолей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоШаблоныПроектныхЗадач</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.упоАнализВыполнимостиПроектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.упоУпрощенныйВводСтруктурыПроекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоЗадания</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоПроектнаяЗадача</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоАктуализацияПроектаВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоЗаданияСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоОбработчикиСобытийВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоПодборВТабличнуюЧастьСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоПроведениеДокументовВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоПроектыИЗадачиВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоПроектыИЗадачиСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.упоРоли</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.упоПрограммыПроектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.упоПодразделения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.упоУровеньПланирования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.упоЗаданиеОткрыто</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.упоЗаданиеЗавершено</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.упоЗаданиеОтменено</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.упоПроект</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоПрофилиНастроекПрогнозаТрудозатратПоРолям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоДобавлениеИзменениеПрофилейНастроекПрогнозаТрудозатратПоРолям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоПрофильНастроекПрогнозаТрудозатратПоРолям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.упоПрофильПересчетаТрудозатрат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоПрофильПересчетаТрудозатратПоУмолчанию</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоПланированиеТрудозатратВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоЧтениеПрофилейНастроекПрогнозаТрудозатратПоРолям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.упоАнализИзмененийПоПрогнозуТрудозатратПоРолям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоПланированиеТрудозатратКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.упоАнализИзмененийПоПланированиюТрудозатратПоТрудовымРесурсам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоДобавлениеИзменениеПланированияТрудозатратПоТрудовымРесурса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоЧтениеПланированияТрудозатратПоТрудовымРесурсам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоАктуальныеПланыТрудозатратПоДнямВерсии</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоАктуальныеПланыТрудозатратПоДнямТекущаяВерсия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоАктуальныеПланыТрудозатратСводноВерсии</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоАктуальныеПланыТрудозатратСводноТекущаяВерсия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">0c79c604-96d5-4643-a1f0-9a9039c51c95</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

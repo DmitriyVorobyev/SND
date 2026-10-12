@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<CommandsVisibility>
+		<Command name="Document.упоРегистрацияФактическихДоходовИРасходов.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.упоРегистрацияФактическихДвиженийДенежныхСредств.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.упоТабличныйБюджетДРПроекта.Command.ТабличныйБюджетДР">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.упоТабличныйБюджетДДСПроекта.Command.ТабличныйБюджетДДС">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.упоСинхронизацияФактическихДоходовИРасходов.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.упоСинхронизацияФактическихДвиженийДенежныхСредств.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="Document.упоРегистрацияФактическихДоходовИРасходов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.упоРегистрацияФактическихДвиженийДенежныхСредств.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.упоТабличныйБюджетДРПроекта.Command.ТабличныйБюджетДР">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель1</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.упоТабличныйБюджетДДСПроекта.Command.ТабличныйБюджетДДС">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель1</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.упоСинхронизацияФактическихДоходовИРасходов.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель2</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.упоСинхронизацияФактическихДвиженийДенежныхСредств.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель2</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="CommonCommand.упоПанельОтчетовИнтерфейсПроектноеБюджетирование">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
+		<Command name="Document.упоРегистрацияФактическихДоходовИРасходов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
+		<Command name="Document.упоРегистрацияФактическихДвиженийДенежныхСредств.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
+		<Command name="Catalog.Контрагенты.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:c50a78b6-9966-4779-9592-f4f827f3e682">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.упоСтатьиДоходов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.упоСтатьиЗатрат.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.СтатьиДвиженияДенежныхСредств.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.упоПрофилиРаспределенияДоходовИРасходов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.упоТабличныйБюджетДРПроекта.Command.ТабличныйБюджетДР">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель1</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.упоТабличныйБюджетДДСПроекта.Command.ТабличныйБюджетДДС">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель1</CommandGroup>
+		</Command>
+		<Command name="Document.упоСинхронизацияФактическихДоходовИРасходов.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель2</CommandGroup>
+		</Command>
+		<Command name="Document.упоСинхронизацияФактическихДвиженийДенежныхСредств.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель2</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelImportant</Group>
+		<Group>NavigationPanelOrdinary</Group>
+		<Group>CommandGroup.упоГруппаРазделитель1</Group>
+		<Group>CommandGroup.упоГруппаРазделитель2</Group>
+		<Group>CommandGroup.упоГруппаРазделитель3</Group>
+		<Group>ActionsPanelReports</Group>
+	</GroupsOrder>
+</CommandInterface>

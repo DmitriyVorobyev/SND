@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Document uuid="16d06a26-5104-461c-a506-1b0fca95a596">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.СчетНаОплатуКлиенту" category="Object">
+				<xr:TypeId>a9360346-e016-468d-97cf-781b47801080</xr:TypeId>
+				<xr:ValueId>b6dafd6b-f272-4095-9122-07e407ff3f70</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.СчетНаОплатуКлиенту" category="Ref">
+				<xr:TypeId>6616faba-f015-4fb7-9f07-fe6ddd2d43a4</xr:TypeId>
+				<xr:ValueId>fcd6d6f6-5482-4d22-9d09-c93640b24b26</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.СчетНаОплатуКлиенту" category="Selection">
+				<xr:TypeId>c11d184c-4a50-4b42-b826-173603fb32f5</xr:TypeId>
+				<xr:ValueId>802e1c6e-9354-4e87-87df-353985f8d3e5</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.СчетНаОплатуКлиенту" category="List">
+				<xr:TypeId>e7c686e5-1551-4b35-8e38-1156bc8347ed</xr:TypeId>
+				<xr:ValueId>c847a93a-882e-45af-998c-d36486a0074f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.СчетНаОплатуКлиенту" category="Manager">
+				<xr:TypeId>38bef5b7-2924-4fe9-8b7b-24e4e557aedd</xr:TypeId>
+				<xr:ValueId>1643d95a-0c77-4310-b0dd-964387c82e79</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:PropertyState>
+				<xr:Property>ObjectModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+			<xr:PropertyState>
+				<xr:Property>ManagerModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>СчетНаОплатуКлиенту</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>7deae7a3-c5c6-4e3a-8a69-ee8c92e40c9a</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаДокумента</Form>
+			<TabularSection uuid="bd4cb332-0412-4d94-a64f-52af3075be35">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.СчетНаОплатуКлиенту.ЭтапыГрафикаОплаты" category="TabularSection">
+						<xr:TypeId>d378c6eb-8b90-420c-a4d5-e5104acc5ac6</xr:TypeId>
+						<xr:ValueId>c36eae51-7291-4d94-a562-b40e5b7bdaa7</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.СчетНаОплатуКлиенту.ЭтапыГрафикаОплаты" category="TabularSectionRow">
+						<xr:TypeId>897ada62-9614-4a40-9827-6b908c00e358</xr:TypeId>
+						<xr:ValueId>33150cf4-4576-46cb-8155-94f6cabc9c76</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ЭтапыГрафикаОплаты</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>c4374777-c7e1-4276-8810-c6c0de450022</ExtendedConfigurationObject>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="838c9c98-7e1b-48cc-8f29-352cc0874878">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>ПроцентПлатежа</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>dba487e1-7ef1-48fe-85ee-88849e29095f</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>5</v8:Digits>
+									<v8:FractionDigits>2</v8:FractionDigits>
+									<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+								</v8:NumberQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="73ab6a63-5b7e-4dda-9151-f6b46a69c7b5">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>ИКТ_РасшифровкаПлатежа</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>12f200f3-caf2-470b-9887-66f2164d308c</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>0</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

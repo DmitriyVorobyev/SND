@@ -1,0 +1,1129 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Popup name="ПодменюСоздатьНаОсновании" id="214">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Создать на основании</v8:content>
+					</v8:item>
+				</Title>
+				<Picture>
+					<xr:Ref>StdPicture.InputOnBasis</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<Representation>Picture</Representation>
+				<ExtendedTooltip name="ПодменюСоздатьНаОснованииРасширеннаяПодсказка" id="215"/>
+			</Popup>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnSaveDataInSettingsAtServer">ПриСохраненииДанныхВНастройкахНаСервере</Event>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="NewWriteProcessing">ОбработкаЗаписиНового</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="ExternalEvent">ВнешнееСобытие</Event>
+		<Event name="OnReopen">ПриПовторномОткрытии</Event>
+		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="ActivationProcessing">ОбработкаАктивизации</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+		<Event name="BeforeLoadDataFromSettingsAtServer">ПередЗагрузкойДанныхИзНастроекНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ThroughAlign>DontUse</ThroughAlign>
+			<ExtendedTooltip name="ГруппаШапкаExtendedTooltip" id="54"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаНомерДатаМодификация" id="154">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер дата модификация</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНомерДатаМодификацияРасширеннаяПодсказка" id="155"/>
+					<ChildItems>
+						<InputField name="Код" id="1">
+							<DataPath>Объект.Code</DataPath>
+							<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>10</MaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="КодExtendedTooltip" id="56"/>
+						</InputField>
+						<LabelField name="НадписьПоследняяМодификация" id="16">
+							<DataPath>НадписьПоследняяМодификация</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<HorizontalAlign>Right</HorizontalAlign>
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Hiperlink>true</Hiperlink>
+							<ContextMenu name="НадписьПоследняяМодификацияКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="НадписьПоследняяМодификацияExtendedTooltip" id="58"/>
+							<Events>
+								<Event name="Click">НадписьПоследняяМодификацияНажатие</Event>
+							</Events>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="Наименование" id="3">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>40</MaxWidth>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="59"/>
+				</InputField>
+				<InputField name="ПолноеНаименование" id="7">
+					<DataPath>Объект.ПолноеНаименование</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>40</MaxWidth>
+					<ContextMenu name="ПолноеНаименованиеКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ПолноеНаименованиеExtendedTooltip" id="61"/>
+				</InputField>
+				<InputField name="Родитель" id="5">
+					<DataPath>Объект.Parent</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>40</MaxWidth>
+					<ContextMenu name="РодительКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="РодительExtendedTooltip" id="60"/>
+				</InputField>
+				<InputField name="СобствСилы_Субподряд" id="124">
+					<DataPath>Объект.СобствСилы_Субподряд</DataPath>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>40</MaxWidth>
+					<ContextMenu name="СобствСилы_СубподрядКонтекстноеМеню" id="125"/>
+					<ExtendedTooltip name="СобствСилы_СубподрядРасширеннаяПодсказка" id="126"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="ОсновнаяПанель" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основная панель</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ОсновнаяПанельExtendedTooltip" id="62"/>
+			<ChildItems>
+				<Page name="СтраницаСтатьиЗатрат" id="19">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статьи затрат</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаСтатьиЗатратExtendedTooltip" id="63"/>
+					<ChildItems>
+						<UsualGroup name="СтатьиЗатратИнформация" id="46">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Распределение стоимости по статьям затрат</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="СтатьиЗатратИнформацияExtendedTooltip" id="64"/>
+							<ChildItems>
+								<Table name="СтатьиЗатрат" id="47">
+									<Representation>List</Representation>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>СтатьиЗатрат</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статьи затрат</v8:content>
+										</v8:item>
+									</Title>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="СтатьиЗатратКонтекстноеМеню" id="48"/>
+									<AutoCommandBar name="СтатьиЗатратКоманднаяПанель" id="49"/>
+									<ExtendedTooltip name="СтатьиЗатратExtendedTooltip" id="65"/>
+									<SearchStringAddition name="СтатьиЗатратСтрокаПоиска" id="127">
+										<AdditionSource>
+											<Item>СтатьиЗатрат</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="СтатьиЗатратСтрокаПоискаКонтекстноеМеню" id="128"/>
+										<ExtendedTooltip name="СтатьиЗатратСтрокаПоискаРасширеннаяПодсказка" id="129"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="СтатьиЗатратСостояниеПросмотра" id="130">
+										<AdditionSource>
+											<Item>СтатьиЗатрат</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="СтатьиЗатратСостояниеПросмотраКонтекстноеМеню" id="131"/>
+										<ExtendedTooltip name="СтатьиЗатратСостояниеПросмотраРасширеннаяПодсказка" id="132"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="СтатьиЗатратУправлениеПоиском" id="133">
+										<AdditionSource>
+											<Item>СтатьиЗатрат</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="СтатьиЗатратУправлениеПоискомКонтекстноеМеню" id="134"/>
+										<ExtendedTooltip name="СтатьиЗатратУправлениеПоискомРасширеннаяПодсказка" id="135"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<InputField name="СтатьиЗатратСтатьяЗатрат" id="50">
+											<DataPath>СтатьиЗатрат.СтатьяЗатрат</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="СтатьиЗатратСтатьяЗатратКонтекстноеМеню" id="51"/>
+											<ExtendedTooltip name="СтатьиЗатратСтатьяЗатратExtendedTooltip" id="66"/>
+										</InputField>
+										<InputField name="СтатьиЗатратДоляСуммы" id="52">
+											<DataPath>СтатьиЗатрат.ДоляСуммы</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="СтатьиЗатратДоляСуммыКонтекстноеМеню" id="53"/>
+											<ExtendedTooltip name="СтатьиЗатратДоляСуммыExtendedTooltip" id="67"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаРесурсы" id="20">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Трудовые ресурсы</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаРесурсыExtendedTooltip" id="68"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаРесурсыИнформация" id="34">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Назначение трудовых ресурсов на роль</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="ГруппаРесурсыИнформацияExtendedTooltip" id="69"/>
+							<ChildItems>
+								<Table name="ТаблицаРесурсы" id="23">
+									<UseAlternationRowColor>true</UseAlternationRowColor>
+									<EnableStartDrag>true</EnableStartDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>ТаблицаРесурсы</DataPath>
+									<RowPictureDataPath>ТаблицаРесурсы.DefaultPicture</RowPictureDataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица ресурсы</v8:content>
+										</v8:item>
+									</Title>
+									<CommandSet>
+										<ExcludedCommand>SetDateInterval</ExcludedCommand>
+									</CommandSet>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<AutoRefresh>false</AutoRefresh>
+									<AutoRefreshPeriod>60</AutoRefreshPeriod>
+									<Period>
+										<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+										<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+										<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+									</Period>
+									<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+									<RestoreCurrentRow>false</RestoreCurrentRow>
+									<TopLevelParent xsi:nil="true"/>
+									<ShowRoot>true</ShowRoot>
+									<AllowRootChoice>false</AllowRootChoice>
+									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+									<ContextMenu name="ТаблицаРесурсыКонтекстноеМеню" id="24"/>
+									<AutoCommandBar name="ТаблицаРесурсыКоманднаяПанель" id="25">
+										<ChildItems>
+											<Button name="ТаблицаТрудовыеРесурсыУстановитьПериод" id="112">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ТрудовыеРесурсыУстановитьПериод</CommandName>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Установить период</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="ТаблицаТрудовыеРесурсыУстановитьПериодРасширеннаяПодсказка" id="113"/>
+											</Button>
+											<Button name="ТаблицаРесурсыНайти" id="114">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ТаблицаРесурсы.StandardCommand.Find</CommandName>
+												<ExtendedTooltip name="ТаблицаРесурсыНайтиРасширеннаяПодсказка" id="115"/>
+											</Button>
+											<Button name="ТаблицаРесурсыОтменитьПоиск" id="116">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ТаблицаРесурсы.StandardCommand.CancelSearch</CommandName>
+												<ExtendedTooltip name="ТаблицаРесурсыОтменитьПоискРасширеннаяПодсказка" id="117"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ТаблицаРесурсыExtendedTooltip" id="70"/>
+									<SearchStringAddition name="ТаблицаРесурсыСтрокаПоиска" id="136">
+										<AdditionSource>
+											<Item>ТаблицаРесурсы</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ТаблицаРесурсыСтрокаПоискаКонтекстноеМеню" id="137"/>
+										<ExtendedTooltip name="ТаблицаРесурсыСтрокаПоискаРасширеннаяПодсказка" id="138"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ТаблицаРесурсыСостояниеПросмотра" id="139">
+										<AdditionSource>
+											<Item>ТаблицаРесурсы</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ТаблицаРесурсыСостояниеПросмотраКонтекстноеМеню" id="140"/>
+										<ExtendedTooltip name="ТаблицаРесурсыСостояниеПросмотраРасширеннаяПодсказка" id="141"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ТаблицаРесурсыУправлениеПоиском" id="142">
+										<AdditionSource>
+											<Item>ТаблицаРесурсы</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ТаблицаРесурсыУправлениеПоискомКонтекстноеМеню" id="143"/>
+										<ExtendedTooltip name="ТаблицаРесурсыУправлениеПоискомРасширеннаяПодсказка" id="144"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="ТаблицаРесурсыПериод" id="26">
+											<DataPath>ТаблицаРесурсы.Period</DataPath>
+											<ContextMenu name="ТаблицаРесурсыПериодКонтекстноеМеню" id="27"/>
+											<ExtendedTooltip name="ТаблицаРесурсыПериодExtendedTooltip" id="71"/>
+										</LabelField>
+										<LabelField name="ТаблицаРесурсыРесурс" id="28">
+											<DataPath>ТаблицаРесурсы.Ресурс</DataPath>
+											<ContextMenu name="ТаблицаРесурсыРесурсКонтекстноеМеню" id="29"/>
+											<ExtendedTooltip name="ТаблицаРесурсыРесурсExtendedTooltip" id="72"/>
+										</LabelField>
+										<LabelField name="ТаблицаРесурсыРоль" id="30">
+											<DataPath>ТаблицаРесурсы.Роль</DataPath>
+											<ContextMenu name="ТаблицаРесурсыРольКонтекстноеМеню" id="31"/>
+											<ExtendedTooltip name="ТаблицаРесурсыРольExtendedTooltip" id="73"/>
+										</LabelField>
+										<LabelField name="ТаблицаРесурсыСтандартнаяКартинка" id="32">
+											<DataPath>ТаблицаРесурсы.DefaultPicture</DataPath>
+											<Visible>false</Visible>
+											<ContextMenu name="ТаблицаРесурсыСтандартнаяКартинкаКонтекстноеМеню" id="33"/>
+											<ExtendedTooltip name="ТаблицаРесурсыСтандартнаяКартинкаExtendedTooltip" id="74"/>
+										</LabelField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаСтоимость" id="21">
+					<EnableContentChange>true</EnableContentChange>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Стоимость</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаСтоимостьExtendedTooltip" id="75"/>
+					<ChildItems>
+						<UsualGroup name="СтоимостьИнформация" id="22">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Стоимость использования роли</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="СтоимостьИнформацияExtendedTooltip" id="76"/>
+							<ChildItems>
+								<Table name="ТаблицаСтоимость" id="35">
+									<UseAlternationRowColor>true</UseAlternationRowColor>
+									<EnableStartDrag>true</EnableStartDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>ТаблицаСтоимость</DataPath>
+									<RowPictureDataPath>ТаблицаСтоимость.DefaultPicture</RowPictureDataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица стоимость</v8:content>
+										</v8:item>
+									</Title>
+									<CommandSet>
+										<ExcludedCommand>SetDateInterval</ExcludedCommand>
+									</CommandSet>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<AutoRefresh>false</AutoRefresh>
+									<AutoRefreshPeriod>60</AutoRefreshPeriod>
+									<Period>
+										<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+										<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+										<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+									</Period>
+									<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+									<RestoreCurrentRow>false</RestoreCurrentRow>
+									<TopLevelParent xsi:nil="true"/>
+									<ShowRoot>true</ShowRoot>
+									<AllowRootChoice>false</AllowRootChoice>
+									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+									<ContextMenu name="ТаблицаСтоимостьКонтекстноеМеню" id="36"/>
+									<AutoCommandBar name="ТаблицаСтоимостьКоманднаяПанель" id="37">
+										<ChildItems>
+											<Button name="ТаблицаСтоимостьСтоимостьУстановитьПериод" id="122">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.СтоимостьУстановитьПериод</CommandName>
+												<ExtendedTooltip name="ТаблицаСтоимостьСтоимостьУстановитьПериодРасширеннаяПодсказка" id="123"/>
+											</Button>
+											<Button name="ТаблицаСтоимостьНайти" id="118">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ТаблицаСтоимость.StandardCommand.Find</CommandName>
+												<ExtendedTooltip name="ТаблицаСтоимостьНайтиРасширеннаяПодсказка" id="119"/>
+											</Button>
+											<Button name="ТаблицаСтоимостьОтменитьПоиск" id="120">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ТаблицаСтоимость.StandardCommand.CancelSearch</CommandName>
+												<ExtendedTooltip name="ТаблицаСтоимостьОтменитьПоискРасширеннаяПодсказка" id="121"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ТаблицаСтоимостьExtendedTooltip" id="77"/>
+									<SearchStringAddition name="ТаблицаСтоимостьСтрокаПоиска" id="145">
+										<AdditionSource>
+											<Item>ТаблицаСтоимость</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ТаблицаСтоимостьСтрокаПоискаКонтекстноеМеню" id="146"/>
+										<ExtendedTooltip name="ТаблицаСтоимостьСтрокаПоискаРасширеннаяПодсказка" id="147"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ТаблицаСтоимостьСостояниеПросмотра" id="148">
+										<AdditionSource>
+											<Item>ТаблицаСтоимость</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ТаблицаСтоимостьСостояниеПросмотраКонтекстноеМеню" id="149"/>
+										<ExtendedTooltip name="ТаблицаСтоимостьСостояниеПросмотраРасширеннаяПодсказка" id="150"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ТаблицаСтоимостьУправлениеПоиском" id="151">
+										<AdditionSource>
+											<Item>ТаблицаСтоимость</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ТаблицаСтоимостьУправлениеПоискомКонтекстноеМеню" id="152"/>
+										<ExtendedTooltip name="ТаблицаСтоимостьУправлениеПоискомРасширеннаяПодсказка" id="153"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="ТаблицаСтоимостьПериод" id="38">
+											<DataPath>~ТаблицаСтоимость.Period</DataPath>
+											<ContextMenu name="ТаблицаСтоимостьПериодКонтекстноеМеню" id="39"/>
+											<ExtendedTooltip name="ТаблицаСтоимостьПериодExtendedTooltip" id="78"/>
+										</LabelField>
+										<LabelField name="ТаблицаСтоимостьПериод1" id="205">
+											<DataPath>ТаблицаСтоимость.Период</DataPath>
+											<ContextMenu name="ТаблицаСтоимостьПериод1КонтекстноеМеню" id="206"/>
+											<ExtendedTooltip name="ТаблицаСтоимостьПериод1РасширеннаяПодсказка" id="207"/>
+										</LabelField>
+										<LabelField name="ТаблицаСтоимостьНорма" id="44">
+											<DataPath>ТаблицаСтоимость.Норма</DataPath>
+											<ContextMenu name="ТаблицаСтоимостьНормаКонтекстноеМеню" id="45"/>
+											<ExtendedTooltip name="ТаблицаСтоимостьНормаExtendedTooltip" id="79"/>
+										</LabelField>
+										<LabelField name="ТаблицаСтоимостьЕдиницаНормирования" id="40">
+											<DataPath>ТаблицаСтоимость.ЕдиницаНормирования</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Ед. изм.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ТаблицаСтоимостьЕдиницаНормированияКонтекстноеМеню" id="41"/>
+											<ExtendedTooltip name="ТаблицаСтоимостьЕдиницаНормированияExtendedTooltip" id="80"/>
+										</LabelField>
+										<LabelField name="ТаблицаСтоимостьЕдСтоимость" id="42">
+											<DataPath>ТаблицаСтоимость.ЕдСтоимость</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Стоимость</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ТаблицаСтоимостьЕдСтоимостьКонтекстноеМеню" id="43"/>
+											<ExtendedTooltip name="ТаблицаСтоимостьЕдСтоимостьExtendedTooltip" id="81"/>
+										</LabelField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаПодразделения" id="156">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подразделения</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаПодразделенияРасширеннаяПодсказка" id="157"/>
+					<ChildItems>
+						<UsualGroup name="ПодразделенияРоли" id="158">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подразделения роли</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Стоимость информация</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="ПодразделенияРолиРасширеннаяПодсказка" id="159"/>
+							<ChildItems>
+								<Table name="ТаблицаПодразделения" id="160">
+									<CommandBarLocation>Bottom</CommandBarLocation>
+									<ChangeRowSet>false</ChangeRowSet>
+									<ChangeRowOrder>false</ChangeRowOrder>
+									<UseAlternationRowColor>true</UseAlternationRowColor>
+									<EnableStartDrag>true</EnableStartDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>ТаблицаПодразделения</DataPath>
+									<RowPictureDataPath>ТаблицаПодразделения.DefaultPicture</RowPictureDataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица подразделения</v8:content>
+										</v8:item>
+									</Title>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<AutoRefresh>false</AutoRefresh>
+									<AutoRefreshPeriod>60</AutoRefreshPeriod>
+									<Period>
+										<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+										<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+										<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+									</Period>
+									<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+									<RestoreCurrentRow>false</RestoreCurrentRow>
+									<TopLevelParent xsi:nil="true"/>
+									<ShowRoot>true</ShowRoot>
+									<AllowRootChoice>false</AllowRootChoice>
+									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+									<ContextMenu name="ТаблицаПодразделенияКонтекстноеМеню" id="161"/>
+									<AutoCommandBar name="ТаблицаПодразделенияКоманднаяПанель" id="162">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ТаблицаПодразделенияРасширеннаяПодсказка" id="163"/>
+									<SearchStringAddition name="ТаблицаПодразделенияСтрокаПоиска" id="164">
+										<AdditionSource>
+											<Item>ТаблицаПодразделения</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ТаблицаПодразделенияСтрокаПоискаКонтекстноеМеню" id="165"/>
+										<ExtendedTooltip name="ТаблицаПодразделенияСтрокаПоискаРасширеннаяПодсказка" id="166"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ТаблицаПодразделенияСостояниеПросмотра" id="167">
+										<AdditionSource>
+											<Item>ТаблицаПодразделения</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ТаблицаПодразделенияСостояниеПросмотраКонтекстноеМеню" id="168"/>
+										<ExtendedTooltip name="ТаблицаПодразделенияСостояниеПросмотраРасширеннаяПодсказка" id="169"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ТаблицаПодразделенияУправлениеПоиском" id="170">
+										<AdditionSource>
+											<Item>ТаблицаПодразделения</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ТаблицаПодразделенияУправлениеПоискомКонтекстноеМеню" id="171"/>
+										<ExtendedTooltip name="ТаблицаПодразделенияУправлениеПоискомРасширеннаяПодсказка" id="172"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="ТаблицаПодразделенияПериод" id="211">
+											<DataPath>ТаблицаПодразделения.Период</DataPath>
+											<ContextMenu name="ТаблицаПодразделенияПериодКонтекстноеМеню" id="212"/>
+											<ExtendedTooltip name="ТаблицаПодразделенияПериодРасширеннаяПодсказка" id="213"/>
+										</LabelField>
+										<LabelField name="ТаблицаПодразделенияПодразделение" id="173">
+											<DataPath>ТаблицаПодразделения.Подразделение</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Подразделение</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ТаблицаПодразделенияПодразделениеКонтекстноеМеню" id="174"/>
+											<ExtendedTooltip name="ТаблицаПодразделенияПодразделениеРасширеннаяПодсказка" id="175"/>
+										</LabelField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаМощности" id="176">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Мощности</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаМощностиРасширеннаяПодсказка" id="177"/>
+					<ChildItems>
+						<UsualGroup name="Мощность" id="178">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Мощность роли</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="МощностьРасширеннаяПодсказка" id="179"/>
+							<ChildItems>
+								<Table name="ТаблицаМощности" id="180">
+									<ChangeRowSet>false</ChangeRowSet>
+									<ChangeRowOrder>false</ChangeRowOrder>
+									<UseAlternationRowColor>true</UseAlternationRowColor>
+									<InitialListView>Beginning</InitialListView>
+									<EnableStartDrag>true</EnableStartDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>ТаблицаМощности</DataPath>
+									<RowPictureDataPath>ТаблицаМощности.DefaultPicture</RowPictureDataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица мощности</v8:content>
+										</v8:item>
+									</Title>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<AutoRefresh>false</AutoRefresh>
+									<AutoRefreshPeriod>60</AutoRefreshPeriod>
+									<Period>
+										<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+										<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+										<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+									</Period>
+									<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+									<RestoreCurrentRow>false</RestoreCurrentRow>
+									<TopLevelParent xsi:nil="true"/>
+									<ShowRoot>true</ShowRoot>
+									<AllowRootChoice>false</AllowRootChoice>
+									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+									<ContextMenu name="ТаблицаМощностиКонтекстноеМеню" id="181"/>
+									<AutoCommandBar name="ТаблицаМощностиКоманднаяПанель" id="182">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ТаблицаМощностиРасширеннаяПодсказка" id="183"/>
+									<SearchStringAddition name="ТаблицаМощностиСтрокаПоиска" id="184">
+										<AdditionSource>
+											<Item>ТаблицаМощности</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ТаблицаМощностиСтрокаПоискаКонтекстноеМеню" id="185"/>
+										<ExtendedTooltip name="ТаблицаМощностиСтрокаПоискаРасширеннаяПодсказка" id="186"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ТаблицаМощностиСостояниеПросмотра" id="187">
+										<AdditionSource>
+											<Item>ТаблицаМощности</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ТаблицаМощностиСостояниеПросмотраКонтекстноеМеню" id="188"/>
+										<ExtendedTooltip name="ТаблицаМощностиСостояниеПросмотраРасширеннаяПодсказка" id="189"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ТаблицаМощностиУправлениеПоиском" id="190">
+										<AdditionSource>
+											<Item>ТаблицаМощности</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ТаблицаМощностиУправлениеПоискомКонтекстноеМеню" id="191"/>
+										<ExtendedTooltip name="ТаблицаМощностиУправлениеПоискомРасширеннаяПодсказка" id="192"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="ТаблицаМощностиДата" id="193">
+											<DataPath>ТаблицаМощности.Дата</DataPath>
+											<Format>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ДФ=dd.MM.yyyy</v8:content>
+												</v8:item>
+											</Format>
+											<ContextMenu name="ТаблицаМощностиДатаКонтекстноеМеню" id="194"/>
+											<ExtendedTooltip name="ТаблицаМощностиДатаРасширеннаяПодсказка" id="195"/>
+										</LabelField>
+										<LabelField name="ТаблицаМощностиПодразделение" id="202">
+											<DataPath>ТаблицаМощности.Подразделение</DataPath>
+											<ContextMenu name="ТаблицаМощностиПодразделениеКонтекстноеМеню" id="203"/>
+											<ExtendedTooltip name="ТаблицаМощностиПодразделениеРасширеннаяПодсказка" id="204"/>
+										</LabelField>
+										<LabelField name="ТаблицаМощностиКалендарь" id="196">
+											<DataPath>ТаблицаМощности.Календарь</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Календарь</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ТаблицаМощностиКалендарьКонтекстноеМеню" id="197"/>
+											<ExtendedTooltip name="ТаблицаМощностиКалендарьРасширеннаяПодсказка" id="198"/>
+										</LabelField>
+										<LabelField name="ТаблицаМощностиМощность" id="199">
+											<DataPath>ТаблицаМощности.Мощность</DataPath>
+											<ContextMenu name="ТаблицаМощностиМощностьКонтекстноеМеню" id="200"/>
+											<ExtendedTooltip name="ТаблицаМощностиМощностьРасширеннаяПодсказка" id="201"/>
+										</LabelField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<UsualGroup name="ГруппаДополнительныеРеквизиты" id="83">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительные реквизиты и свойства</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="ГруппаДополнительныеРеквизитыExtendedTooltip" id="84"/>
+		</UsualGroup>
+		<CheckBoxField name="НеОтображать" id="208">
+			<DataPath>Объект.НеОтображать</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="НеОтображатьКонтекстноеМеню" id="209"/>
+			<ExtendedTooltip name="НеОтображатьРасширеннаяПодсказка" id="210"/>
+		</CheckBoxField>
+		<InputField name="Комментарий" id="9">
+			<DataPath>Объект.Комментарий</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="КомментарийExtendedTooltip" id="82"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.упоРоли</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="НадписьПоследняяМодификация" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Надпись последняя модификация</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ТаблицаРесурсы" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица ресурсы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	упоРолиТрудовыхРесурсов.Период,
+	упоРолиТрудовыхРесурсов.Ресурс,
+	упоРолиТрудовыхРесурсов.Роль
+ИЗ
+	РегистрСведений.упоРолиТрудовыхРесурсов.СрезПоследних(
+			{(&amp;КонецПериода)},
+			Роль = &amp;Роль
+				И НЕ &amp;ЭтоНовый) КАК упоРолиТрудовыхРесурсов
+ГДЕ
+	упоРолиТрудовыхРесурсов.РольНазначена
+{ГДЕ
+	(упоРолиТрудовыхРесурсов.Период &gt;= &amp;НачалоПериода)}</QueryText>
+				<MainTable>InformationRegister.упоРолиТрудовыхРесурсов.SliceLast</MainTable>
+				<AutoSaveUserSettings>false</AutoSaveUserSettings>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ТаблицаСтоимость" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица стоимость</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	упоНормыСтоимостиРесурсов.Период КАК Период,
+	упоНормыСтоимостиРесурсов.Норма КАК Норма,
+	упоНормыСтоимостиРесурсов.ЕдиницаНормирования КАК ЕдиницаНормирования,
+	ВЫРАЗИТЬ(упоНормыСтоимостиРесурсов.ЕдСтоимость КАК ЧИСЛО(15, 2)) КАК ЕдСтоимость
+ИЗ
+	РегистрСведений.упоНормыСтоимостиРесурсов КАК упоНормыСтоимостиРесурсов
+ГДЕ
+	упоНормыСтоимостиРесурсов.Ресурс = &amp;Ресурс
+	И НЕ &amp;ЭтоНовый
+{ГДЕ
+	(упоНормыСтоимостиРесурсов.Период &gt;= &amp;НачалоПериода
+			И упоНормыСтоимостиРесурсов.Период &lt;= &amp;КонецПериода)}</QueryText>
+				<MainTable>InformationRegister.упоНормыСтоимостиРесурсов</MainTable>
+				<AutoSaveUserSettings>false</AutoSaveUserSettings>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Период</dcsset:field>
+							<dcsset:orderType>Desc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="СтатьиЗатрат" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статьи затрат</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Columns>
+				<Column name="СтатьяЗатрат" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статья для распределения затрат</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.упоСтатьиЗатрат</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДоляСуммы" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доля суммы (%)</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПараметрыПодключаемыхКоманд" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры подключаемых команд</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ТаблицаПодразделения" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица подразделения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	упоСоставПодразделенийСрезПоследних.Подразделение КАК Подразделение,
+	упоСоставПодразделенийСрезПоследних.Период КАК Период
+ИЗ
+	РегистрСведений.упоСоставПодразделений.СрезПоследних(
+			,
+			Роль = &amp;Роль
+				И НЕ &amp;ЭтоНовый) КАК упоСоставПодразделенийСрезПоследних
+ГДЕ
+	упоСоставПодразделенийСрезПоследних.ВходитВСостав</QueryText>
+				<MainTable>InformationRegister.упоСоставПодразделений.SliceLast</MainTable>
+				<AutoSaveUserSettings>false</AutoSaveUserSettings>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ТаблицаМощности" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица мощности</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	упоМощностьРесурсов.Подразделение КАК Подразделение,
+	упоМощностьРесурсов.Календарь КАК Календарь,
+	упоМощностьРесурсов.Мощность КАК Мощность,
+	упоМощностьРесурсов.Период КАК Дата
+ИЗ
+	РегистрСведений.упоМощностьРесурсов КАК упоМощностьРесурсов
+ГДЕ
+	упоМощностьРесурсов.Ресурс = &amp;Ресурс И НЕ &amp;ЭтоНовый</QueryText>
+				<MainTable>InformationRegister.упоМощностьРесурсов</MainTable>
+				<AutoSaveUserSettings>false</AutoSaveUserSettings>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Дата</dcsset:field>
+							<dcsset:orderType>Desc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ТрудовыеРесурсыУстановитьПериод" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Трудовые ресурсы установить период</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Трудовые ресурсы установить период</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SetDateInterval</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ТрудовыеРесурсыУстановитьПериод</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СтоимостьУстановитьПериод" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стоимость установить период</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стоимость установить период</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SetDateInterval</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СтоимостьУстановитьПериод</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<CommandBar>
+			<Item>
+				<Command>CommonCommand.ИнтеграцияС1СДокументооборотСоздатьПисьмо</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>CommonCommand.ИнтеграцияС1СДокументооборотСоздатьБизнесПроцесс</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Catalog.упоЗадания.Command.СоздатьЗадание</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоРегистрацияРолейТрудовогоРесурса.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоРегистрацияМощностиРолей.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоРегистрацияСоставаПодразделения.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоРегистрацияСтоимостиРесурса.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.упоРегистрацияСтоимостиРесурсов.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>CommonCommand.ИнтеграцияС1СДокументооборотНачатьОбработку</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</CommandBar>
+	</CommandInterface>
+</Form>

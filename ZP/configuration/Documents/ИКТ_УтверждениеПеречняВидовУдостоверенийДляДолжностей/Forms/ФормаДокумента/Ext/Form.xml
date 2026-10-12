@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Организация" id="7">
+			<DataPath>Объект.Организация</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ОрганизацияКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Подразделение" id="10">
+			<DataPath>Объект.Подразделение</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПодразделениеКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ПодразделениеРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<UsualGroup name="Удостоверение" id="38">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удостоверение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="УдостоверениеРасширеннаяПодсказка" id="39"/>
+			<ChildItems>
+				<InputField name="ГруппаДопускаУдостоверения" id="13">
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ГруппаДопускаУдостоверенияКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ГруппаДопускаУдостоверенияРасширеннаяПодсказка" id="15"/>
+				</InputField>
+				<InputField name="ГруппаДопускаУдостоверенияВладелец" id="40">
+					<Enabled>false</Enabled>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="ГруппаДопускаУдостоверенияВладелецКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="ГруппаДопускаУдостоверенияВладелецРасширеннаяПодсказка" id="42"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Должности" id="16">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.Должности</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ДолжностиКонтекстноеМеню" id="17"/>
+			<AutoCommandBar name="ДолжностиКоманднаяПанель" id="18"/>
+			<ExtendedTooltip name="ДолжностиРасширеннаяПодсказка" id="19"/>
+			<SearchStringAddition name="ДолжностиСтрокаПоиска" id="20">
+				<AdditionSource>
+					<Item>Должности</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДолжностиСтрокаПоискаКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="ДолжностиСтрокаПоискаРасширеннаяПодсказка" id="22"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДолжностиСостояниеПросмотра" id="23">
+				<AdditionSource>
+					<Item>Должности</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДолжностиСостояниеПросмотраКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="ДолжностиСостояниеПросмотраРасширеннаяПодсказка" id="25"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДолжностиУправлениеПоиском" id="26">
+				<AdditionSource>
+					<Item>Должности</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДолжностиУправлениеПоискомКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="ДолжностиУправлениеПоискомРасширеннаяПодсказка" id="28"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="OnStartEdit">ДолжностиПриНачалеРедактирования</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="ДолжностиНомерСтроки" id="29">
+					<DataPath>Объект.Должности.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДолжностиНомерСтрокиКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ДолжностиНомерСтрокиРасширеннаяПодсказка" id="31"/>
+				</LabelField>
+				<InputField name="ДолжностиДолжность" id="32">
+					<DataPath>Объект.Должности.Должность</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДолжностиДолжностьКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ДолжностиДолжностьРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="ДолжностиВидУдостоверения" id="43">
+					<DataPath>Объект.Должности.ВидУдостоверения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДолжностиВидУдостоверенияКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="ДолжностиВидУдостоверенияРасширеннаяПодсказка" id="45"/>
+				</InputField>
+				<CheckBoxField name="ДолжностиВидУдостоверенияОбязательное" id="49">
+					<DataPath>Объект.Должности.ВидУдостоверения.Обязательное</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ДолжностиВидУдостоверенияОбязательноеКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="ДолжностиВидУдостоверенияОбязательноеРасширеннаяПодсказка" id="51"/>
+				</CheckBoxField>
+				<InputField name="ДолжностиГруппаДопуска" id="46">
+					<DataPath>Объект.Должности.ГруппаДопуска</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДолжностиГруппаДопускаКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="ДолжностиГруппаДопускаРасширеннаяПодсказка" id="48"/>
+				</InputField>
+				<CheckBoxField name="ДолжностиИспользуется" id="35">
+					<DataPath>Объект.Должности.Используется</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ДолжностиИспользуетсяКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ДолжностиИспользуетсяРасширеннаяПодсказка" id="37"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ИКТ_УтверждениеПеречняВидовУдостоверенийДляДолжностей</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

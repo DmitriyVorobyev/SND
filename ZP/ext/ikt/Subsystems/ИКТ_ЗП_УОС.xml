@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Subsystem uuid="bbad7bea-e12d-4d4d-9de0-75bfb55d50aa">
+		<InternalInfo>
+			<xr:PropertyState>
+				<xr:Property>CommandInterface</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ИКТ_ЗП_УОС</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>cae4ff13-7f32-4f2f-a4ee-c3d12d01bb2b</ExtendedConfigurationObject>
+			<Picture>
+				<xr:Ref>CommonPicture.ИКТ_РазделУУ</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИКТ_ЗП_УОС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ИКТ_ПолныеПраваУОС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ИКТ_ТолькоПросмотрУОС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ИКТ_ПриЗаписиДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.ИКТ_РеквизитыДляПроверкиУОС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Должности</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ИКТ_ВидыИнциндентовПоКРВУОС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ИКТ_ГрейдыУОС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ИКТ_ГруппыПодбораУОС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ИКТ_ГруппыУОС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ИКТ_ДолжностиС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ИКТ_РазделыПерсонала</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ИКТ_ТипыПроверкиКандидатовДБУОС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ИКТ_УровниДоступаУОС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Сотрудники</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ФизическиеЛица</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ШтатноеРасписание</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.БольничныйЛист</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ИзменениеГрафикаРаботыСписком</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.КадровыйПеревод</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.КадровыйПереводСписком</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Командировка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Отпуск</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПриемНаРаботу</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Увольнение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ИКТ_Сценарий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ИКТ_ЕдиницыИзмеренияKPI</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ИКТ_СостояниеДокументовУОС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ИКТ_СоответствиеДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ИКТ_СоответствиеОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ИКТ_РаботаВнеОфиса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommandGroup.ИКТ_Сервис</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommandGroup.ИКТ_Справочники</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommandGroup.ИКТ_Документы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ИКТ_РабочееМестоУОС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ИКТ_ЗаполнитьПоказательНачисленоЮОС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ИКТ_ТранслироватьДокументДанныеДляРасчетаЗарплатыВУОС</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Subsystem uuid="5eaa1117-f295-404a-be71-9a4a81890ebe">
+		<Properties>
+			<Name>упоОповещения</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оповещения</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоИспользоватьОповещения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РегламентныеИФоновыеЗадания</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.упоУсловияОграниченияДоступаКОповещениям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоВидыСобытий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоПодпискиНаОповещения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоОповещенияВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоТранспортОповещений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.упоЛогическиеОператоры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.упоОбработкаПроизошедшихСобытий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоОтправкаСообщенийЧерезЗадания</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоРаботаCTelegram</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоОповещенияПриЗаписи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоВидыПолучателейОповещений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоОчередьСобытийДляОповещений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоСрокХраненияСобытий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоОтправкаСообщенийПоEmail</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоСрокХраненияОповещений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.упоОбработкаДетекторовСобытий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоПроизошедшиеСобытия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоОтправленныеСообщения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.упоВариантыИзмененияОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.упоТипыТегов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.упоСпособыОтслеживанияСобытий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоТокенБотаTelegram</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоОповещенияПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоЧтениеИнформацииПоОповещениям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.упоВидыСравнения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоОповещенияПриЗаписиВРегистр</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоДатаПоследнейОчисткиСобытий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.упоЭлементИГруппа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоНастройкаОповещений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.упоВариантыХраненияПоляАдреса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.упоОтправкаСообщенийИзОчереди</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.упоВниманиеСинее</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоОповещенияПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоОповещенияПередЗаписьюДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоОповещенияПередЗаписьюСправочникаИлиПодобного</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.упоИспользоватьОповещения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоОтправкаСообщенийПоSMS</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоОповещенияПередЗаписьюВРегистр</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Пользователи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоАдресБазыДляНавигационныхСсылок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоОграниченияДоступаКОповещениям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоСоответствиеПользователейTelegram</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоОсобыеПраваНаОповещения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.упоНастройкиТранспортаОповещенийTelegram</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоОтправкаСообщенийПоTelegram</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

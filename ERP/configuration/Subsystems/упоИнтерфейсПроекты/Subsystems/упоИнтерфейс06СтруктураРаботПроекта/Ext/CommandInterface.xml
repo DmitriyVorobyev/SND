@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<CommandsVisibility>
+		<Command name="Report.упоАнализШаблонаПроектаСКД.Command.ОткрытьАнализШаблонаПроектаСКД">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.упоИзменениеТекущегоСотрудника.Command.ИзменениеТекущегоСотрудника">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.упоОткрытьПанельШаблонаПроекта">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.упоСозданиеПроектаИзШаблона.Command.СозданиеПроектаИзШаблона">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.упоСохранениеПроектаВШаблон.Command.СохранениеПроектаВШаблон">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.упоШаблоныПроектов.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.упоШаблоныПроектныхЗадач.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:3d06d282-72a9-495e-8555-c2a4fbceddab">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.упоШаблоныКонтрагентов.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:cf444ea5-5a37-4991-95d5-1614dab84c01">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.упоИмпортИзMSP.Command.ИмпортИзMSP">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.упоПроверкаСтруктурыПроекта.Command.ПроверкаСтруктурыПроекта">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.упоДополнительныеОбработкиСтруктураРаботПроекта">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.упоДополнительныеОтчетыСтруктураРаботПроекта">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="CommonCommand.упоОткрытьПанельШаблонаПроекта">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель1</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.упоСозданиеПроектаИзШаблона.Command.СозданиеПроектаИзШаблона">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель1</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.упоСохранениеПроектаВШаблон.Command.СохранениеПроектаВШаблон">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель1</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.упоШаблоныПроектов.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель1</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.упоШаблоныПроектныхЗадач.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель1</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="0:3d06d282-72a9-495e-8555-c2a4fbceddab">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель1</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.упоШаблоныКонтрагентов.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель1</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="0:cf444ea5-5a37-4991-95d5-1614dab84c01">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель1</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.упоИмпортИзMSP.Command.ИмпортИзMSP">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель2</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.упоПроверкаСтруктурыПроекта.Command.ПроверкаСтруктурыПроекта">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель2</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="CommonCommand.упоПанельОтчетовИнтерфейсСтруктураРаботПроекта">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
+		<Command name="Report.упоАнализШаблонаПроектаСКД.Command.ОткрытьАнализШаблонаПроектаСКД">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.упоИзменениеТекущегоСотрудника.Command.ИзменениеТекущегоСотрудника">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
+		<Command name="0:52030e59-405b-45a5-b632-9ab599b4ed37">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
+		<Command name="Report.упоСетевойГрафик.Command.СетевойГрафик">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.упоПроектнаяЗадача.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:149902ad-bf52-4a9d-bb79-4897dd8eb29f">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:027bbfbb-1159-4e9a-b711-8293f468c6a9">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.упоОткрытьПанельШаблонаПроекта">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель1</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.упоСозданиеПроектаИзШаблона.Command.СозданиеПроектаИзШаблона">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель1</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.упоСохранениеПроектаВШаблон.Command.СохранениеПроектаВШаблон">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель1</CommandGroup>
+		</Command>
+		<Command name="Catalog.упоШаблоныПроектов.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель1</CommandGroup>
+		</Command>
+		<Command name="Catalog.упоШаблоныПроектныхЗадач.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель1</CommandGroup>
+		</Command>
+		<Command name="0:3d06d282-72a9-495e-8555-c2a4fbceddab">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель1</CommandGroup>
+		</Command>
+		<Command name="Catalog.упоШаблоныКонтрагентов.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель1</CommandGroup>
+		</Command>
+		<Command name="0:cf444ea5-5a37-4991-95d5-1614dab84c01">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель1</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.упоИмпортИзMSP.Command.ИмпортИзMSP">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель2</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.упоПроверкаСтруктурыПроекта.Command.ПроверкаСтруктурыПроекта">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель2</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelImportant</Group>
+		<Group>NavigationPanelOrdinary</Group>
+		<Group>CommandGroup.упоГруппаРазделитель1</Group>
+		<Group>CommandGroup.упоГруппаРазделитель2</Group>
+	</GroupsOrder>
+</CommandInterface>

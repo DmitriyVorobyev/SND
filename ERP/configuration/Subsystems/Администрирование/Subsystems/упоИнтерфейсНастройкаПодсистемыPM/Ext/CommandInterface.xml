@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<CommandsVisibility>
+		<Command name="DataProcessor.упоРегистрацияСотрудника.Command.ОткрытьОбработкуупоРегистрацияСотрудника">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.упоИзменениеТекущегоСотрудника.Command.ИзменениеТекущегоСотрудника">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.упоПерерасчетСтоимостиРесурсовПроекта.Command.ПерерасчетСтоимостиРесурсовПроекта">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.упоПоискПроблемныхОбъектовИБ.Command.ПоискПроблемныхОбъектовИБ">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.упоНастройкаУчетаВРазрезеПодразделений.Command.упоНастройкаУчетаВРазрезеПодразделений">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.упоПереносПроектныхЗадач.Command.КомандаПереносПроектныхЗадач">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.упоПоискСсылок.Command.ПоискСсылок">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.упоПравилаИмпортаДополнительныхПолейИзMSProject.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.упоПроверкаСтруктурыПроекта.Command.ПроверкаСтруктурыПроекта">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.упоУдалениеПроекта.Command.упоУдалениеПроекта">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.упоУправлениеДаннымиПроекта.Command.упоУправлениеДаннымиПроекта">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.упоНастройкаУчетаВРазрезеПодразделений.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.упоПоискПроблемныхОбъектовИБ.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.упоСверткаРегистровПроцентыСтатусы.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.упоУдалениеПроекта.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.упоУправлениеДаннымиПроекта.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="DataProcessor.упоРегистрацияСотрудника.Command.ОткрытьОбработкуупоРегистрацияСотрудника">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.упоИзменениеТекущегоСотрудника.Command.ИзменениеТекущегоСотрудника">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="DataProcessor.упоРегистрацияСотрудника.Command.ОткрытьОбработкуупоРегистрацияСотрудника">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.упоИзменениеТекущегоСотрудника.Command.ИзменениеТекущегоСотрудника">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.упоРегистрацияДиспетчера.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.упоОсвобождениеДиспетчера.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.упоПерерасчетСтоимостиРесурсовПроекта.Command.ПерерасчетСтоимостиРесурсовПроекта">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.упоПоискПроблемныхОбъектовИБ.Command.ПоискПроблемныхОбъектовИБ">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.упоНастройкаУчетаВРазрезеПодразделений.Command.упоНастройкаУчетаВРазрезеПодразделений">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.упоПереносПроектныхЗадач.Command.КомандаПереносПроектныхЗадач">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.упоПоискСсылок.Command.ПоискСсылок">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.упоПравилаИмпортаДополнительныхПолейИзMSProject.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.упоПроверкаСтруктурыПроекта.Command.ПроверкаСтруктурыПроекта">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.упоУдалениеПроекта.Command.упоУдалениеПроекта">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.упоУправлениеДаннымиПроекта.Command.упоУправлениеДаннымиПроекта">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.упоНастройкиДереваКлючевыхПоказателей.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.упоОткрытьИнструментыИсправленияИОчисткиБазы">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelOrdinary</Group>
+	</GroupsOrder>
+</CommandInterface>

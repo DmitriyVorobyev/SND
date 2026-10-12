@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<DocumentJournal uuid="4d609b7b-bde8-458e-8a3b-d6320a4eeed6">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentJournalSelection.упоВыполнениеПроекта" category="Selection">
+				<xr:TypeId>d092d79f-a646-4c77-a927-9a5048a1c040</xr:TypeId>
+				<xr:ValueId>e9d0a58c-5364-4eae-b639-b38fd95f38a4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalList.упоВыполнениеПроекта" category="List">
+				<xr:TypeId>fdfab18d-e4cb-43a5-b01d-00eda08ea69b</xr:TypeId>
+				<xr:ValueId>71c5e74b-05d0-4a4e-ba84-295b08f8847b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalManager.упоВыполнениеПроекта" category="Manager">
+				<xr:TypeId>b62a4f36-d61d-4f5a-ae2d-5b4ff60cab04</xr:TypeId>
+				<xr:ValueId>e12d0d8d-9204-4e87-893f-84c1ab982ba7</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>упоВыполнениеПроекта</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнение проекта</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<DefaultForm>DocumentJournal.упоВыполнениеПроекта.Form.ФормаСпискаУправляемая</DefaultForm>
+			<AuxiliaryForm>DocumentJournal.упоВыполнениеПроекта.Form.ФормаСпискаУправляемая</AuxiliaryForm>
+			<UseStandardCommands>true</UseStandardCommands>
+			<RegisteredDocuments>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоАктуализацияПроекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияФактическихЗатратМатРесурсов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоРучнаяАктуализацияПроекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияФактическихДопЗатрат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияФактическихДвиженийДенежныхСредств</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияФактическихДоходовИРасходов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоСинхронизацияФактическихДоходовИРасходов</xr:Item>
+			</RegisteredDocuments>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<StandardAttributes>
+				<xr:StandardAttribute name="Type">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Ref">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Date">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Posted">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="DeletionMark">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Number">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+			</StandardAttributes>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Column uuid="b56e8fcf-3140-426c-85a2-f865bcc0d8a4">
+				<Properties>
+					<Name>АвторДокумента</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автор документа</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>IndexWithAdditionalOrder</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияФактическихЗатратМатРесурсов.Attribute.Автор</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.упоАктуализацияПроекта.Attribute.Автор</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.упоРучнаяАктуализацияПроекта.Attribute.Автор</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияФактическихДопЗатрат.Attribute.Автор</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияФактическихДвиженийДенежныхСредств.Attribute.Автор</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияФактическихДоходовИРасходов.Attribute.Автор</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="461788c6-760a-45d4-8d6b-af40e71a1699">
+				<Properties>
+					<Name>АвторИзменений</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автор изменений</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>IndexWithAdditionalOrder</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияФактическихЗатратМатРесурсов.Attribute.АвторИзменений</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.упоАктуализацияПроекта.Attribute.АвторИзменений</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.упоРучнаяАктуализацияПроекта.Attribute.АвторИзменений</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияФактическихДопЗатрат.Attribute.АвторИзменений</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияФактическихДвиженийДенежныхСредств.Attribute.АвторИзменений</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияФактическихДоходовИРасходов.Attribute.АвторИзменений</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="978281ef-ce9e-443f-9d0d-1c8cdaca2d56">
+				<Properties>
+					<Name>Проект</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проект</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>IndexWithAdditionalOrder</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияФактическихЗатратМатРесурсов.Attribute.Проект</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.упоАктуализацияПроекта.Attribute.Проект</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.упоРучнаяАктуализацияПроекта.Attribute.Проект</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияФактическихДопЗатрат.Attribute.Проект</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияФактическихДвиженийДенежныхСредств.Attribute.Проект</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияФактическихДоходовИРасходов.Attribute.Проект</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="b254072f-68b3-4782-9396-7529ffb0f9a7">
+				<Properties>
+					<Name>ПроектнаяЗадача</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проектная задача</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>IndexWithAdditionalOrder</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияФактическихДопЗатрат.Attribute.ПроектнаяЗадача</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияФактическихЗатратМатРесурсов.Attribute.ПроектнаяЗадача</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияФактическихДвиженийДенежныхСредств.Attribute.ПроектнаяЗадача</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.упоРегистрацияФактическихДоходовИРасходов.Attribute.УдалитьПроектнаяЗадача</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Form>ФормаСпискаУправляемая</Form>
+		</ChildObjects>
+	</DocumentJournal>
+</MetaDataObject>

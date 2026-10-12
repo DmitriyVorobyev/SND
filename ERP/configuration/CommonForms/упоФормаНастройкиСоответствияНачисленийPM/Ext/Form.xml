@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаКомандаСохранитьИПеренести" id="33">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.КомандаСохранитьИПеренести</CommandName>
+				<ExtendedTooltip name="ФормаКомандаСохранитьИПеренестиРасширеннаяПодсказка" id="34"/>
+			</Button>
+			<Button name="ФормаКомандаПеренестиВДокумент" id="27">
+				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
+				<CommandName>Form.Command.КомандаПеренестиВДокумент</CommandName>
+				<ExtendedTooltip name="ФормаКомандаПеренестиВДокументРасширеннаяПодсказка" id="28"/>
+			</Button>
+			<Button name="ФормаКомандаСохранить" id="25">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.КомандаСохранить</CommandName>
+				<ExtendedTooltip name="ФормаКомандаСохранитьРасширеннаяПодсказка" id="26"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="1">
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<Table name="Таблица" id="3">
+					<Representation>List</Representation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Таблица</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ТаблицаКонтекстноеМеню" id="4">
+						<Autofill>false</Autofill>
+					</ContextMenu>
+					<AutoCommandBar name="ТаблицаКоманднаяПанель" id="5">
+						<Autofill>false</Autofill>
+						<ChildItems>
+							<ButtonGroup name="ТаблицаГруппаУправлениеСписком" id="35">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Таблица группа управление списком</v8:content>
+									</v8:item>
+								</Title>
+								<ToolTip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Таблица группа управление списком</v8:content>
+									</v8:item>
+								</ToolTip>
+								<Representation>Compact</Representation>
+								<ExtendedTooltip name="ТаблицаГруппаУправлениеСпискомРасширеннаяПодсказка" id="36"/>
+								<ChildItems>
+									<Button name="ТаблицаКомандаУстановитьФлажки1" id="37">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.КомандаУстановитьФлажки</CommandName>
+										<ExtendedTooltip name="ТаблицаКомандаУстановитьФлажки1РасширеннаяПодсказка" id="38"/>
+									</Button>
+									<Button name="ТаблицаКомандаСнятьФлажки" id="39">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.КомандаСнятьФлажки</CommandName>
+										<ExtendedTooltip name="ТаблицаКомандаСнятьФлажкиРасширеннаяПодсказка" id="40"/>
+									</Button>
+								</ChildItems>
+							</ButtonGroup>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ТаблицаРасширеннаяПодсказка" id="6"/>
+					<SearchStringAddition name="ТаблицаСтрокаПоиска" id="7">
+						<AdditionSource>
+							<Item>Таблица</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ТаблицаСтрокаПоискаКонтекстноеМеню" id="8"/>
+						<ExtendedTooltip name="ТаблицаСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ТаблицаСостояниеПросмотра" id="10">
+						<AdditionSource>
+							<Item>Таблица</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ТаблицаСостояниеПросмотраКонтекстноеМеню" id="11"/>
+						<ExtendedTooltip name="ТаблицаСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ТаблицаУправлениеПоиском" id="13">
+						<AdditionSource>
+							<Item>Таблица</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ТаблицаУправлениеПоискомКонтекстноеМеню" id="14"/>
+						<ExtendedTooltip name="ТаблицаУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<CheckBoxField name="ТаблицаПометка" id="16">
+							<DataPath>Таблица.Пометка</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ТаблицаПометкаКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ТаблицаПометкаРасширеннаяПодсказка" id="18"/>
+						</CheckBoxField>
+						<InputField name="ТаблицаНачисление" id="19">
+							<DataPath>Таблица.Начисление</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ТаблицаНачислениеКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="ТаблицаНачислениеРасширеннаяПодсказка" id="21"/>
+						</InputField>
+						<InputField name="ТаблицаНачислениеPM" id="22">
+							<DataPath>Таблица.НачислениеPM</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ТаблицаНачислениеPMКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="ТаблицаНачислениеPMРасширеннаяПодсказка" id="24"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="УчетВоВнешнейСистеме" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учет во внешней системе</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Таблица" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="НачислениеPM" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начисление PM</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.упоНачисленияPM</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Начисление" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начисление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ChartOfCalculationTypesRef.Начисления</v8:Type>
+						<v8:Type>cfg:ChartOfCalculationTypesRef.Удержания</v8:Type>
+						<v8:Type>cfg:CatalogRef.упоНачисленияЗУП</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Пометка" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЗапретРедактирования" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запрет редактирования</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Таблица</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Таблица.ЗапретРедактирования</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#BCBCBC</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаСохранить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда сохранить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаСохранить</Action>
+		</Command>
+		<Command name="КомандаПеренестиВДокумент" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести в документ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести в документ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаПеренестиВДокумент</Action>
+		</Command>
+		<Command name="КомандаУстановитьФлажки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить пометку во всех строках</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаУстановитьФлажки</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="КомандаСнятьФлажки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять пометку во всех строках</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаСнятьФлажки</Action>
+		</Command>
+		<Command name="КомандаСохранитьИПеренести" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить и перенести</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохраняет соответствия в помеченных строках и переносит в таблицу документа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаСохранитьИПеренести</Action>
+		</Command>
+	</Commands>
+</Form>

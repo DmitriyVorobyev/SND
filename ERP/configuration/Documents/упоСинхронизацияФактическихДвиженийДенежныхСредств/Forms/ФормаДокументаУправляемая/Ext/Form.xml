@@ -1,0 +1,589 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Popup name="ПодменюСоздатьНаОсновании" id="111">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Создать на основании</v8:content>
+					</v8:item>
+				</Title>
+				<Picture>
+					<xr:Ref>StdPicture.InputOnBasis</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<Representation>Picture</Representation>
+				<ExtendedTooltip name="ПодменюСоздатьНаОснованииРасширеннаяПодсказка" id="112"/>
+			</Popup>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnSaveDataInSettingsAtServer">ПриСохраненииДанныхВНастройкахНаСервере</Event>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="NewWriteProcessing">ОбработкаЗаписиНового</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="ExternalEvent">ВнешнееСобытие</Event>
+		<Event name="OnReopen">ПриПовторномОткрытии</Event>
+		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="ActivationProcessing">ОбработкаАктивизации</Event>
+		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+		<Event name="BeforeLoadDataFromSettingsAtServer">ПередЗагрузкойДанныхИзНастроекНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ThroughAlign>DontUse</ThroughAlign>
+			<ExtendedTooltip name="ГруппаШапкаExtendedTooltip" id="53"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаНомерДатаМодификация" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер дата модификация</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНомерДатаМодификацияРасширеннаяПодсказка" id="54"/>
+					<ChildItems>
+						<InputField name="Номер" id="4">
+							<DataPath>Объект.Number</DataPath>
+							<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>10</MaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="НомерКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="НомерExtendedTooltip" id="55"/>
+						</InputField>
+						<InputField name="Дата" id="6">
+							<DataPath>Объект.Date</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>от</v8:content>
+								</v8:item>
+							</Title>
+							<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>20</MaxWidth>
+							<ContextMenu name="ДатаКонтекстноеМеню" id="7"/>
+							<ExtendedTooltip name="ДатаExtendedTooltip" id="56"/>
+						</InputField>
+						<LabelField name="НадписьПоследняяМодификация" id="8">
+							<DataPath>НадписьПоследняяМодификация</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<HorizontalAlign>Right</HorizontalAlign>
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Hiperlink>true</Hiperlink>
+							<ContextMenu name="НадписьПоследняяМодификацияКонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="НадписьПоследняяМодификацияExtendedTooltip" id="58"/>
+							<Events>
+								<Event name="Click">НадписьПоследняяМодификацияНажатие</Event>
+							</Events>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДвиженияДенежныхСредств" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фактические движения денежных средств</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<ExtendedTooltip name="ГруппаДвиженияДенежныхСредствExtendedTooltip" id="61"/>
+			<ChildItems>
+				<Table name="ДвиженияДенежныхСредств" id="14">
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>Объект.ДвиженияДенежныхСредств</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Движения денежных средств</v8:content>
+						</v8:item>
+					</Title>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ДвиженияДенежныхСредствКонтекстноеМеню" id="15"/>
+					<AutoCommandBar name="ДвиженияДенежныхСредствКоманднаяПанель" id="16">
+						<ChildItems>
+							<Popup name="ДвиженияДенежныхСредствГруппаПодобрать" id="42">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Подобрать</v8:content>
+									</v8:item>
+								</Title>
+								<Picture>
+									<xr:Ref>CommonPicture.упоДействиеПерейти</xr:Ref>
+									<xr:LoadTransparent>false</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="ДвиженияДенежныхСредствГруппаПодобратьExtendedTooltip" id="62"/>
+								<ChildItems>
+									<Button name="ДвиженияДенежныхСредствДействиеПодобрать_ДДС_ПоСтатьям" id="44">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ДействиеПодобрать_ДДС_ПоСтатьям</CommandName>
+										<ExtendedTooltip name="ДвиженияДенежныхСредствДействиеПодобрать_ДДС_ПоСтатьямExtendedTooltip" id="63"/>
+									</Button>
+									<Button name="ДвиженияДенежныхСредствДействиеПодобрать_ДДС_ПоКонтрагентам" id="43">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ДействиеПодобрать_ДДС_ПоКонтрагентам</CommandName>
+										<ExtendedTooltip name="ДвиженияДенежныхСредствДействиеПодобрать_ДДС_ПоКонтрагентамExtendedTooltip" id="64"/>
+									</Button>
+									<Popup name="ДвиженияДенежныхСредствГруппаПараметрыПодбора" id="45">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Параметры подбора</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ДвиженияДенежныхСредствГруппаПараметрыПодбораExtendedTooltip" id="65"/>
+										<ChildItems>
+											<Button name="ДДС_ПараметрыПодбора_НаправлениеПоступление" id="47">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ДДС_ПараметрыПодбора_НаправлениеПоступление</CommandName>
+												<ExtendedTooltip name="ДДС_ПараметрыПодбора_НаправлениеПоступлениеExtendedTooltip" id="66"/>
+											</Button>
+											<Button name="ДДС_ПараметрыПодбора_НаправлениеВыплата" id="46">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ДДС_ПараметрыПодбора_НаправлениеВыплата</CommandName>
+												<ExtendedTooltip name="ДДС_ПараметрыПодбора_НаправлениеВыплатаExtendedTooltip" id="67"/>
+											</Button>
+										</ChildItems>
+									</Popup>
+								</ChildItems>
+							</Popup>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ДвиженияДенежныхСредствExtendedTooltip" id="71"/>
+					<SearchStringAddition name="ДвиженияДенежныхСредствСтрокаПоиска" id="87">
+						<AdditionSource>
+							<Item>ДвиженияДенежныхСредств</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ДвиженияДенежныхСредствСтрокаПоискаКонтекстноеМеню" id="88"/>
+						<ExtendedTooltip name="ДвиженияДенежныхСредствСтрокаПоискаРасширеннаяПодсказка" id="89"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ДвиженияДенежныхСредствСостояниеПросмотра" id="90">
+						<AdditionSource>
+							<Item>ДвиженияДенежныхСредств</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ДвиженияДенежныхСредствСостояниеПросмотраКонтекстноеМеню" id="91"/>
+						<ExtendedTooltip name="ДвиженияДенежныхСредствСостояниеПросмотраРасширеннаяПодсказка" id="92"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ДвиженияДенежныхСредствУправлениеПоиском" id="93">
+						<AdditionSource>
+							<Item>ДвиженияДенежныхСредств</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ДвиженияДенежныхСредствУправлениеПоискомКонтекстноеМеню" id="94"/>
+						<ExtendedTooltip name="ДвиженияДенежныхСредствУправлениеПоискомРасширеннаяПодсказка" id="95"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="Drag">ДвиженияДенежныхСредствПеретаскивание</Event>
+						<Event name="ChoiceProcessing">ДвиженияДенежныхСредствОбработкаВыбора</Event>
+						<Event name="OnStartEdit">ДвиженияДенежныхСредствПриНачалеРедактирования</Event>
+					</Events>
+					<ChildItems>
+						<PictureField name="ДвиженияДенежныхСредствИконка" id="48">
+							<DataPath>Объект.ДвиженияДенежныхСредств.Иконка</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>2</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ValuesPicture>
+								<xr:Ref>CommonPicture.упоКоллекция_НаправлениеДДС</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+								<xr:TransparentPixel x="18" y="5"/>
+							</ValuesPicture>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="ДвиженияДенежныхСредствИконкаКонтекстноеМеню" id="49"/>
+							<ExtendedTooltip name="ДвиженияДенежныхСредствИконкаExtendedTooltip" id="72"/>
+						</PictureField>
+						<LabelField name="ДвиженияДенежныхСредствНомерСтроки" id="17">
+							<DataPath>Объект.ДвиженияДенежныхСредств.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>2</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="ДвиженияДенежныхСредствНомерСтрокиКонтекстноеМеню" id="18"/>
+							<ExtendedTooltip name="ДвиженияДенежныхСредствНомерСтрокиExtendedTooltip" id="73"/>
+						</LabelField>
+						<InputField name="ДвиженияДенежныхСредствДатаДвижения" id="27">
+							<DataPath>Объект.ДвиженияДенежныхСредств.ДатаДвижения</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMarkIncomplete>true</AutoMarkIncomplete>
+							<ContextMenu name="ДвиженияДенежныхСредствДатаДвиженияКонтекстноеМеню" id="28"/>
+							<ExtendedTooltip name="ДвиженияДенежныхСредствДатаДвиженияExtendedTooltip" id="78"/>
+						</InputField>
+						<InputField name="ДвиженияДенежныхСредствПроектнаяЗадача" id="99">
+							<DataPath>Объект.ДвиженияДенежныхСредств.ПроектнаяЗадача</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<TextEdit>false</TextEdit>
+							<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
+							<ContextMenu name="ДвиженияДенежныхСредствПроектнаяЗадачаКонтекстноеМеню" id="100"/>
+							<ExtendedTooltip name="ДвиженияДенежныхСредствПроектнаяЗадачаРасширеннаяПодсказка" id="101"/>
+							<Events>
+								<Event name="OnChange">ДвиженияДенежныхСредствПроектнаяЗадачаПриИзменении</Event>
+							</Events>
+						</InputField>
+						<LabelField name="ДвиженияДенежныхСредствПроектнаяЗадачаПроект" id="102">
+							<DataPath>Объект.ДвиженияДенежныхСредств.ПроектнаяЗадача.Проект</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ДвиженияДенежныхСредствПроектнаяЗадачаПроектКонтекстноеМеню" id="103"/>
+							<ExtendedTooltip name="ДвиженияДенежныхСредствПроектнаяЗадачаПроектРасширеннаяПодсказка" id="104"/>
+						</LabelField>
+						<InputField name="ДвиженияДенежныхСредствКонтрагент" id="19">
+							<DataPath>Объект.ДвиженияДенежныхСредств.Контрагент</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ДвиженияДенежныхСредствКонтрагентКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="ДвиженияДенежныхСредствКонтрагентExtendedTooltip" id="74"/>
+						</InputField>
+						<InputField name="ДвиженияДенежныхСредствДоговор" id="21">
+							<DataPath>Объект.ДвиженияДенежныхСредств.Договор</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ChoiceParameterLinks>
+								<xr:Link>
+									<xr:Name>Отбор.Контрагент</xr:Name>
+									<xr:DataPath xsi:type="xs:string">Items.ДвиженияДенежныхСредств.CurrentData.Контрагент</xr:DataPath>
+									<xr:ValueChange>Clear</xr:ValueChange>
+								</xr:Link>
+							</ChoiceParameterLinks>
+							<ContextMenu name="ДвиженияДенежныхСредствДоговорКонтекстноеМеню" id="22"/>
+							<ExtendedTooltip name="ДвиженияДенежныхСредствДоговорExtendedTooltip" id="75"/>
+							<Events>
+								<Event name="OnChange">ДвиженияДенежныхСредствДоговорПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ДвиженияДенежныхСредствСтатьяДДС" id="23">
+							<DataPath>Объект.ДвиженияДенежныхСредств.СтатьяДДС</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMarkIncomplete>true</AutoMarkIncomplete>
+							<ContextMenu name="ДвиженияДенежныхСредствСтатьяДДСКонтекстноеМеню" id="24"/>
+							<ExtendedTooltip name="ДвиженияДенежныхСредствСтатьяДДСExtendedTooltip" id="76"/>
+							<Events>
+								<Event name="OnChange">ДвиженияДенежныхСредствСтатьяДДСПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ДвиженияДенежныхСредствВидПлатежа" id="108">
+							<DataPath>Объект.ДвиженияДенежныхСредств.ВидПлатежа</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ДвиженияДенежныхСредствВидПлатежаКонтекстноеМеню" id="109"/>
+							<ExtendedTooltip name="ДвиженияДенежныхСредствВидПлатежаРасширеннаяПодсказка" id="110"/>
+						</InputField>
+						<InputField name="ДвиженияДенежныхСредствНаправлениеДвижения" id="25">
+							<DataPath>Объект.ДвиженияДенежныхСредств.НаправлениеДвижения</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMarkIncomplete>true</AutoMarkIncomplete>
+							<ContextMenu name="ДвиженияДенежныхСредствНаправлениеДвиженияКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="ДвиженияДенежныхСредствНаправлениеДвиженияExtendedTooltip" id="77"/>
+							<Events>
+								<Event name="OnChange">ДвиженияДенежныхСредствНаправлениеДвиженияПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ДвиженияДенежныхСредствВалюта" id="37">
+							<DataPath>Объект.ДвиженияДенежныхСредств.Валюта</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ДвиженияДенежныхСредствВалютаКонтекстноеМеню" id="38"/>
+							<ExtendedTooltip name="ДвиженияДенежныхСредствВалютаExtendedTooltip" id="79"/>
+						</InputField>
+						<InputField name="ДвиженияДенежныхСредствСумма" id="29">
+							<DataPath>Объект.ДвиженияДенежныхСредств.Сумма</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>14</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<AutoMarkIncomplete>true</AutoMarkIncomplete>
+							<ContextMenu name="ДвиженияДенежныхСредствСуммаКонтекстноеМеню" id="30"/>
+							<ExtendedTooltip name="ДвиженияДенежныхСредствСуммаExtendedTooltip" id="80"/>
+						</InputField>
+						<InputField name="ДвиженияДенежныхСредствВалютнаяСумма" id="105">
+							<DataPath>Объект.ДвиженияДенежныхСредств.ВалютнаяСумма</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>14</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="ДвиженияДенежныхСредствВалютнаяСуммаКонтекстноеМеню" id="106"/>
+							<ExtendedTooltip name="ДвиженияДенежныхСредствВалютнаяСуммаРасширеннаяПодсказка" id="107"/>
+						</InputField>
+						<InputField name="ДвиженияДенежныхСредствНомерПлатежногоДокумента" id="35">
+							<DataPath>Объект.ДвиженияДенежныхСредств.НомерПлатежногоДокумента</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>10</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="ДвиженияДенежныхСредствНомерПлатежногоДокументаКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="ДвиженияДенежныхСредствНомерПлатежногоДокументаExtendedTooltip" id="81"/>
+						</InputField>
+						<InputField name="ДвиженияДенежныхСредствДатаПлатежногоДокумента" id="33">
+							<DataPath>Объект.ДвиженияДенежныхСредств.ДатаПлатежногоДокумента</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>10</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="ДвиженияДенежныхСредствДатаПлатежногоДокументаКонтекстноеМеню" id="34"/>
+							<ExtendedTooltip name="ДвиженияДенежныхСредствДатаПлатежногоДокументаExtendedTooltip" id="82"/>
+						</InputField>
+						<InputField name="ДвиженияДенежныхСредствСсылкаНаРегистратор" id="96">
+							<DataPath>Объект.ДвиженияДенежныхСредств.СсылкаНаРегистратор</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<OpenButton>true</OpenButton>
+							<ContextMenu name="ДвиженияДенежныхСредствСсылкаНаРегистраторКонтекстноеМеню" id="97"/>
+							<ExtendedTooltip name="ДвиженияДенежныхСредствСсылкаНаРегистраторРасширеннаяПодсказка" id="98"/>
+							<Events>
+								<Event name="Opening">ДвиженияДенежныхСредствСсылкаНаРегистраторОткрытие</Event>
+							</Events>
+						</InputField>
+						<InputField name="ДвиженияДенежныхСредствКомментарийДвижения" id="31">
+							<DataPath>Объект.ДвиженияДенежныхСредств.КомментарийДвижения</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ДвиженияДенежныхСредствКомментарийДвиженияКонтекстноеМеню" id="32"/>
+							<ExtendedTooltip name="ДвиженияДенежныхСредствКомментарийДвиженияExtendedTooltip" id="83"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДополнительныеРеквизиты" id="85">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительные реквизиты и свойства</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="ГруппаДополнительныеРеквизитыExtendedTooltip" id="86"/>
+		</UsualGroup>
+		<InputField name="Комментарий" id="40">
+			<DataPath>Объект.Комментарий</DataPath>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="КомментарийExtendedTooltip" id="84"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.упоСинхронизацияФактическихДвиженийДенежныхСредств</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+			<Columns>
+				<AdditionalColumns table="Объект.ДвиженияДенежныхСредств">
+					<Column name="Иконка" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Иконка</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>10</v8:Digits>
+								<v8:FractionDigits>0</v8:FractionDigits>
+								<v8:AllowedSign>Any</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+					<Column name="НазваниеПроектнойЗадачи" id="2">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Название проектной задачи</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+		<Attribute name="НадписьПоследняяМодификация" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Надпись последняя модификация</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ПараметрыПодключаемыхКоманд" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры подключаемых команд</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДвиженияДенежныхСредствСсылкаНаРегистратор</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ДвиженияДенежныхСредств.СсылкаНаРегистратор</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string"/>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>Отображать</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДвиженияДенежныхСредствПроектнаяЗадача</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ДвиженияДенежныхСредств.ПроектнаяЗадача</dcsset:left>
+						<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="dcscor:Field">Объект.ДвиженияДенежныхСредств.НазваниеПроектнойЗадачи</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ДействиеПодобрать_ДДС_ПоСтатьям" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>По статьям ДДС</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Действие подобрать ДДС по статьям</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПодборВТЧФормы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ДействиеПодобрать_ДДС_ПоКонтрагентам" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>По контрагентам</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Действие подобрать ДДС по контрагентам</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПодборВТЧФормы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ДДС_ПараметрыПодбора_НаправлениеВыплата" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выплата денежных средств</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>По умолчанию выставлять новым элементам вид "выплата"</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДДС_ПараметрыПодбора_Направление</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ДДС_ПараметрыПодбора_НаправлениеПоступление" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поступление денежных средств</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>По умолчанию выставлять новым элементам вид "поступление"</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДДС_ПараметрыПодбора_Направление</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<CommandBar>
+			<Item>
+				<Command>Catalog.упоЗадания.Command.СоздатьЗадание</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</CommandBar>
+	</CommandInterface>
+</Form>

@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<CommandsVisibility>
+		<Command name="Catalog.упоСпецификации.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.упоСинхронизацияФактическиВыполненныхОбъемов.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:fc59acc3-f1f7-4e3f-96da-e580f2c5a88f">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.упоПроектнаяПродукция.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.упоТипыПроектнойПродукции.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.упоУправлениеВерсиямиПроекта.Command.упоУправлениеВерсиямиПроекта">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="Document.упоСинхронизацияФактическиВыполненныхОбъемов.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель1</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="0:fc59acc3-f1f7-4e3f-96da-e580f2c5a88f">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель2</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.упоПроектнаяПродукция.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель2</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.упоТипыПроектнойПродукции.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель2</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.упоУправлениеВерсиямиПроекта.Command.упоУправлениеВерсиямиПроекта">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="CommonCommand.упоПанельОтчетовИнтерфейсОбъемыИВыполнениеПроектов">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
+		<Command name="Document.упоПрогнозТрудозатратПоРолям.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.упоРучнаяАктуализацияПроекта.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.упоЗакрытиеЭтапа.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.упоСпецификации.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.упоРегистрацияФактическиВыполненногоОбъема.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.упоСинхронизацияФактическиВыполненныхОбъемов.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель1</CommandGroup>
+		</Command>
+		<Command name="0:fc59acc3-f1f7-4e3f-96da-e580f2c5a88f">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель2</CommandGroup>
+		</Command>
+		<Command name="Catalog.упоПроектнаяПродукция.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель2</CommandGroup>
+		</Command>
+		<Command name="Catalog.упоТипыПроектнойПродукции.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.упоГруппаРазделитель2</CommandGroup>
+		</Command>
+		<Command name="Document.упоРучнаяАктуализацияПроекта.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.упоРегистрацияФактическиВыполненногоОбъема.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.упоПрогнозТрудозатратПоРолям.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="1:fc59acc3-f1f7-4e3f-96da-e580f2c5a88f">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="2:fc59acc3-f1f7-4e3f-96da-e580f2c5a88f">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.упоЗакрытиеЭтапа.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Catalog.упоПроектнаяПродукция.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Catalog.упоТипыПроектнойПродукции.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.упоСинхронизацияФактическиВыполненныхОбъемов.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Catalog.упоСпецификации.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.упоУправлениеВерсиямиПроекта.Command.упоУправлениеВерсиямиПроекта">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelImportant</Group>
+		<Group>NavigationPanelOrdinary</Group>
+		<Group>CommandGroup.упоГруппаРазделитель1</Group>
+		<Group>CommandGroup.упоГруппаРазделитель2</Group>
+		<Group>ActionsPanelCreate</Group>
+		<Group>ActionsPanelTools</Group>
+	</GroupsOrder>
+</CommandInterface>

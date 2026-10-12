@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Subsystem uuid="627e6adf-78a3-49ea-a222-29fe371505f8">
+		<Properties>
+			<Name>упоОтражениеПервичныхДокументовВПроектномБюджетировании</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отражение первичных документов в проектном бюджетировании</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоОтражениеФактаВПроектномБюджетировании</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоОтражениеДокументовВПроектномБюджетировании</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоИспользоватьОтражениеПервичныхДокументовВПроектномБюджетировании</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоПравилаПолученияФактаДляПроектногоБюджетирования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.упоСтатусыОтраженияДокументовВПроектномБюджетировании</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоФактДвиженийДенежныхСредств</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.упоФактДоходовИРасходовОбороты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.упоОтражениеДокументовВПроектномБюджетировании</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоОчередьДокументовКОтражениюВПроектномБюджетировании</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоНачалоИспользованияОтраженияПервичныхДокументовВПроектномБюджетировании</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоДобавлениеИзменениеПравилОтражения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоЧтениеПравилОтражения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.упоОтражениеДокументовВПроектномБюджетировании</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоСопоставленныеФинансовыеСтатьи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоОшибкиОтраженияДокументовВПроектномБюджетировании</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.упоСопоставлениеФинансовыхСтатей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоЧтениеДокументовОтражения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоДобавлениеИзменениеДокументовОтражения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоДополнительныеПараметрыСеанса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.упоАнализ_БДР_по_БДДССКД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.упоДвиженияДенежныхСредствПланФактСКД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.упоДоходыИРасходыПланФактСКД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.упоОсвоенныеОбъемыEVA</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.упоПланФактныйАнализБДР_Подразделения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.упоПланФактныйАнализПоПрограмме</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.упоСкользящийБДДСПроекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.упоСкользящийБДРОбъемыБДДС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.упоСкользящийБДРПроекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоПроектноеБюджетированиеПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоПроектноеБюджетированиеСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоПроектноеБюджетированиеВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоПервичныеДокументыПроектногоБюджетированияОбработкаПроведения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоПервичныеДокументыПроектногоБюджетированияПриЗаписи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоПервичныеДокументыПроектногоБюджетированияУдалениеПроведения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоОтражениеИзмененийРНВПроектномБюджетировании</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоДокументОтражениеВПроектномБюджетированииУдалениеПроведения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоДокументОтражениеВПроектномБюджетированииПриЗаписи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоДокументОтражениеВПроектномБюджетированииПередЗаписью</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоДокументОтражениеВПроектномБюджетированииОбработкаПроведения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.упоИспользоватьОтражениеПервичныхДокументовВПроектномБюджетировании</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.упоТипыПравилПроектногоБюджетирования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.упоРазделыПравилПроектногоБюджетирования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоОтражениеДокументовВРеглУчетеПриЗаписи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МеждународныйУчетПроведениеСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЖурналПроводокМеждународныйУчет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НастройкиХозяйственныхОпераций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ХозяйственныеОперации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ОтражениеДокументовВМеждународномУчете</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccountingRegister.Международный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыОтраженияВМеждународномУчете</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьМеждународныйФинансовыйУчет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьМеждународныйФинансовыйУчет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.АктивностьПоРБМеждународный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.упоПроводкиДокументаОперативногоУчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОперацииЗакрытияМесяца</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоРазделОтражениеФактаВПроектномБюджетировании</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЗакрытиеМесяцаСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.БюджетированиеСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПравилаПолученияФактаПоСтатьямБюджетов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоДобавлениеИзменениеНаправленияДеятельности</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоПроектноеБюджетированиеКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ПодключаемыеКомандыПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Элемент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.упоДвижениеДенежныхСредств</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

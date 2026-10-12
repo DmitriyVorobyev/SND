@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Subsystem uuid="94e3456a-9743-4808-9aae-baaa37e9397a">
+		<Properties>
+			<Name>упоИнтеграцияПРОФ</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Интеграция ПРОФ</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Объекты, не входящие в ПРОФ</Comment>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МенеджерОбменаЧерезУниверсальныйФормат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОтражениеЗарплатыВБухучетеРасширенный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоМенеджерОбменаЧерезУниверсальныйФорматEPM</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоРаспределениеЗарплатыВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоРаспределениеЗарплатыКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоРаспределениеЗарплатыНастройкиСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоРаспределениеЗарплатыОбменЧерезУниверсальныйФормат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоРаспределениеЗарплатыСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбновлениеИнформационнойБазыEPM</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоНачисленияЗарплатаИВзносы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоУдалитьСлужебныеТипыПроектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоСоответствиеВидовНачисленийERP_PM</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоСоответствиеВидовНачисленийPM_ERP</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоСоответствиеВидовНачисленийЗУП_PM</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоСоответствиеНачисленийPM_ERP</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоСхемаОтраженияНачисленийPM_ERP</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.упоЗагрузкаНачисленийЗарплатыПоФизЛицам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.упоСозданиеСпособовОтраженияПроектныхЗадач</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.упоСхемаОтраженияЗарплатыERP_PM</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыНачисленийОплатыТрудаДляНУ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ОтражениеЗарплатыВФинансовомУчете</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СпособыОтраженияЗарплатыВБухУчете</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоНачисленияЗУП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоНачисленияPM</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.упоНастройкиРаспределенияЗарплаты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.упоФормаНастройкиСоответствияНачисленийPM</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.упоФормаВыбораНачислений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоДобавлениеИзменениеРаспределениеЗарплатыПоПроектам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоДобавлениеИзменениеРаспределениеОПРиОХР</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоДобавлениеИзменениеСогласованияТрудозатрат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоОтчетСогласованныеТрудозатратыДиспетчеры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоОтчетСогласованныеТрудозатраты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоЧтениеСогласованияТрудозатрат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоИспользоватьПодсистемуСогласованиеТрудозатрат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоНормаСтоимостиНесогласованныхТрудозатрат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоПериодСогласованияТрудозатрат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоУчетСогласованныхТрудозатратПоВидамОпераций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.упоСогласованиеТрудозатрат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.упоПериодыСогласованияТрудозатрат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.упоСогласованныеТрудозатраты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.упоСогласованныеТрудозатраты</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<CommandsVisibility>
+		<Command name="Catalog.Контрагенты.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:c50a78b6-9966-4779-9592-f4f827f3e682">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="Catalog.Контрагенты.StandardCommand.OpenList">
+			<CommandGroup>50cb05bc-b3f8-4209-b1b4-0775619415df</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="0:c50a78b6-9966-4779-9592-f4f827f3e682">
+			<CommandGroup>50cb05bc-b3f8-4209-b1b4-0775619415df</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="Document.упоРегистрацияЮридическихУсловийДоговора.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.упоРегистрацияЮридическихУсловийДоговора.Command.ОткрытьДополнительныеСоглашения">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.упоИзменениеСтатусаДоговора.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.упоВидДоговора.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.упоПравилаФормированияНаименованийДоговоров.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.упоСхемыОплаты.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.упоСтатусыОбъектов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.упоСозданиеДоговораИзШаблона.Command.СоздатьДоговорИзШаблона">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.Контрагенты.StandardCommand.OpenList">
+			<CommandGroup>50cb05bc-b3f8-4209-b1b4-0775619415df</CommandGroup>
+		</Command>
+		<Command name="0:c50a78b6-9966-4779-9592-f4f827f3e682">
+			<CommandGroup>50cb05bc-b3f8-4209-b1b4-0775619415df</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelOrdinary</Group>
+		<Group>50cb05bc-b3f8-4209-b1b4-0775619415df</Group>
+	</GroupsOrder>
+</CommandInterface>

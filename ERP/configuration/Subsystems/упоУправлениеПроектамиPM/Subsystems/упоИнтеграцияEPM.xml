@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Subsystem uuid="f6790bd0-4000-47fc-8a2d-88d6bee35286">
+		<Properties>
+			<Name>упоИнтеграцияEPM</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Интеграция EPM</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоОбработкаПолученияФормыСтатейДР_PM</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеБезналичныхДенежныхСредств</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоРазграничениеДоступаВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.упоРесурсыПроектаПланФактСКД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ОтражениеДокументовВРеглУчете</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоДвиженияДенежныхСредствСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.упоРежимИнтеграции_EPM2</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.СписаниеБезналичныхДенежныхСредств</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РасходныйКассовыйОрдер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.упоПанельШаблонаПроекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьНесколькоОрганизаций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьНесколькоОрганизаций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.упоТематическийПлан</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МодификацияКонфигурацииВызовСервераПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоСервисныеФункцииСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.упоЗатратыМатериальныхРесурсовПланФактСКД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПриходныйКассовыйОрдер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СтруктураПредприятия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоИнтеграцияEPMСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.упоАнализВыполнимостиПроектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СтатьиДвиженияДенежныхСредств</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоРаспределениеТрудозатратВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Проекты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДоговорыКонтрагентов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.упоПерерасчетСтоимостиРесурсовПроекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбновлениеИнформационнойБазыPMO</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.упоФормаРабочегоСтола_РПО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоУправлениеФормамиСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоСоответствиеПодразделенийИСтруктурыПредприятия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоРасчетКалендарныхСроковРедакция4Сервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоРаботаСФормамиСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПрофилиГруппДоступа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МодификацияКонфигурацииКлиентСерверПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоОбработчикиСобытийСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ChartOfAccounts.Международный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МодификацияКонфигурацииКлиентПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ChartOfCharacteristicTypes.СтатьиРасходов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоИнициализацияСистемыСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.упоУпрощенныйВводСтруктурыПроекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СтандартныеПодсистемыСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоИнтеграцияEPMКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ДвиженияДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ПодсистемыКонфигурацииПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбновлениеИнформационнойБазыСлужебный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбновлениеИнформационнойБазыEPM</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.упоУправлениеДаннымиПроекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МодификацияКонфигурацииПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоПроектыИЗадачиВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоАктуализацияПроектаВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоБиблиотекаШаблоновВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.ОформлениеОтчетовБежевый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоЗаписьИПроведениеПривилегированный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоРедактированиеСоответствияФинансовыхСтатей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Номенклатура</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоСервисныеФункцииВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоЭкспортMSProject</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СоглашенияСКлиентами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоОтражатьФактДДСПервичнымиДокументами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоОбработкаПолученияФормыПодразделенияИСтруктурыПредприятия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоЗаписатьВерсиюДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.упоФормированиеЗаказовПроектнойЗадачи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗаказПоставщику</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ПерсональныеНастройки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоОтражатьФактРасходаПриПриобретенииТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоПриЗаписиСтатейДР_Интеграция</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоНоменклатураПередЗаписью</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УправлениеДоступомПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.упоБазовыеПраваEPM</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоСоответствиеСтатейДР</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоПриЗаписиПодразделенияИлиСтруктурыПредприятия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СценарииТоварногоПланирования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоТрансляцияПланаДоходаРасходовВОборотыБюджетов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоВключатьНДСВФактДоходовПервичныхДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоОтражатьФактДоходовПервичнымиДокументами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.АктВыполненныхРабот</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.ОформлениеОтчетовЗеленый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоОтражениеПервичныхДокументовERP_ОбработкаПроведения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПриобретениеТоваровУслуг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоСопоставленныеФинансовыеСтатьи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РеализацияТоваровУслуг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.упоСопоставлениеФинансовыхСтатей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ChartOfCharacteristicTypes.СтатьиДоходов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СтатьиБюджетов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ЭтапыОплатыКлиентом</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипыНалогообложенияНДС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ПользователиСлужебный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьВерсионированиеОбъекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьИнтеграциюС1СДокументооборот</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗаказКлиента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗаказНаПроизводство</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Партнеры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СоглашенияСПоставщиками</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Пользователи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Склады</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ЭтапыОплатыПоставщику</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РегламентныеЗаданияПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗаказНаПроизводство2_2</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоПриЗаписиСтатейДР_PM</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ChartOfCharacteristicTypes.СтатьиАктивовПассивов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПроектыПрисоединенныеФайлы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.ОформлениеОтчетовЧерноБелый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.Тестирование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоСтатьяРасходовПриПриобретенииТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НаправленияДеятельности</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.упоЭтапыГрафика</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВариантыКомплектацииНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЭкземплярБюджета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоОбработкаЗаполненияДокументовERP</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗаявкаНаРасходованиеДенежныхСредств</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.упоДенежныеСредстваКВыплате</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоОбработкаПроведенияДокументовERP</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоОбработкаУдаленияПроведенияДокументовERP</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыЗаявокНаРасходованиеДенежныхСредств</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоОтражатьФактРасходовПервичнымиДокументами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.упоВключатьНДСВФактРасходовПервичныхДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Элемент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.упоАнализРаспределенияДоходовИРасходов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.упоПомощникРаспределенияРасходовПоПроектам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.упоВалютаУправленческогоУчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидыНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.упоСоответствиеСценариев</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Сценарии</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоОбработкаПолученияФормыСценария</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоПриЗаписиСценариев</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СпособыОтраженияЗарплатыВБухУчете</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ОтражениеЗарплатыВФинансовомУчете</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СтатьиРасходовЗарплата</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СтатьиФинансированияЗарплата</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыОперацийПоЗарплате</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ChartOfCalculationTypes.Начисления</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ChartOfCalculationTypes.Удержания</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.упоМенеджерОбменаЧерезУниверсальныйФорматEPM</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.упоОбработкаПроверкиЗаполненияДокументовERP</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЭлектронноеАктированиеЕИСПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗаявкаНаКомандировку</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.Помощь</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects>
+			<Subsystem>упоФактБДР</Subsystem>
+			<Subsystem>упоТМЦ</Subsystem>
+			<Subsystem>упоИнтерфейсРаспределениеОПРиОХР</Subsystem>
+			<Subsystem>упоРаспределениеОПРиОХР</Subsystem>
+			<Subsystem>упоИнтерфейсРаспределениеЗарплатыПоПроектам</Subsystem>
+		</ChildObjects>
+	</Subsystem>
+</MetaDataObject>
